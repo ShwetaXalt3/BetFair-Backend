@@ -4,9 +4,19 @@ const https = require('https');
  
 const certPath = "./Certificate/BetfairApp1.crt";
 const caPath = "./Certificate/client-2048.pem";
-const keyPath = "./Certificate/private_key.pem";  // Add Private Key
+const keyPath = "./Certificate/private_key.pem";
+ 
+let sessionToken = null; // Store token in memory
  
 const userLoginData = async () => {
+  // Return cached token if available
+  if (sessionToken) {
+    // console.log("Using existing session token:", sessionToken);
+    return { sessionToken };
+  }
+ 
+  // console.log("Fetching new session token...");
+ 
   const payload = new URLSearchParams({
     username: "admin@gbrbets.com",
     password: "Niva71gbmvl!"
@@ -21,7 +31,7 @@ const userLoginData = async () => {
   try {
     const agent = new https.Agent({
       cert: fs.readFileSync(certPath),
-      key: fs.readFileSync(keyPath),  // Include the Private Key
+      key: fs.readFileSync(keyPath),
       ca: fs.readFileSync(caPath),
       secureProtocol: 'TLSv1_2_method',
       ciphers: 'HIGH:!DH:!aNULL',
@@ -37,12 +47,17 @@ const userLoginData = async () => {
  
     const apiData = response.data;
  
-    console.log("Login Success", apiData);
-    return apiData;
+    if (apiData.sessionToken) {
+      sessionToken = apiData.sessionToken;
+      // console.log("New session token acquired:", apiData);
+      return apiData;
+    } else {
+       return
+    }
+  } catch (error) {
+    console.error("Login Failed:", error.response?.data || error.message);
+    throw new Error("Authentication failed");
   }
-  catch (error) {
-    console.error("Login Failed:", error.response ? error.response.data : error.message);
-  }
-}
+};
  
 module.exports = { userLoginData };

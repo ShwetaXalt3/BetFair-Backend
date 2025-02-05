@@ -1,74 +1,37 @@
-const { fetchEvent } = require('../Controllers/eventController');
-// const { fetchSport } = require('../Controllers/sportController');
-const { fetchTournament } = require('../Controllers/tournamentController');
-const { fetchMatchStatus } = require('../Controllers/matchController');
-const MergedData = require('./models/MergedData');
+// services/dataService.js
+
+const MergedData = require('../models/MergedData');
+const AllData = require('../services/AllData');
 
 // Function to fetch and store the merged data
-const processAndStoreData = async () => {
+const processAndStoreData = async (req, res) => {
   try {
-    // Step 1: Fetch Sport Data
-    // const sport = await fetchSport(event.eventId);
-    // if (!sport || !sport.sportId) {
-    //   throw new Error('Sport data is incomplete or missing sportId.');
-    // }
+    const allData = AllData.getAllData();
+    // console.log("Processing All Data:", allData.match);
 
-    // Step 2: Fetch Tournament Data
-    const tournament = await fetchTournament(sport.sportId);
-    if (!tournament || !tournament.matchName) {
-      throw new Error('Tournament data is incomplete or missing matchName.');
-    }
-
-    // Step 1: Fetch Event Data
-    const event = await fetchEvent();
-    if (!event || !event.eventId) {
-      throw new Error('Event data is incomplete or missing eventId.');
-    }
-    else{
-      console.log("Message" , event.result[0].eventType.name);
-    }
-    
-    // Step 4: Fetch Match Status
-    const match = await fetchMatchStatus({
-      matchName: tournament.matchName,
-      playerName: tournament.playerName,
-    });
-    if (!match || !match.matchStatus) {
-      throw new Error('Match data is incomplete or missing matchStatus.');
-    }
-
-    // Step 5: Merge and Save Data
     const mergedData = new MergedData({
-      // username: 'admin', // Hardcoded for now, ideally fetched from the session or request
-      // eventName: event.eventName,
-      // eventId: event.eventId,
-      // sportName: sport.sportName,
-      // sportId: sport.sportId,
-      // matchName: tournament.matchName,
-      // playerName: tournament.playerName,
-      // matchStatus: match.matchStatus,
-      // profit: match.profit,
-      // odds: match.odds,
-
-      Amount: 235,
+      Amount: "235",
       Match: "Hehe",
-      Odds: match.odds,
-      Player: tournament.matchName,
-      ProfitLoss: match.profit,
-      Status: match.matchStatus,
+      Odds: 235,
+      Player: "Shweta",
+      ProfitLoss: 56,
+      Status: "Hehe",
       Type: "WIN",
-      date: date,
-      market_id: tournament.marketId,
+      date: "5 Feb 2025",
+      market_id: 563,
       strategy: "Hehehe",
-      Sport:sport.sportId
+      Sport: "cricket"
     });
 
     // Save the merged data to the database
     await mergedData.save();
-    console.log('Data saved successfully!');
+    console.log('Data saved successfully!', mergedData);
   } catch (error) {
     console.error('Error in processing data:', error.message);
   }
 };
+
+// Now, execute the function after AllData is fully loaded
+processAndStoreData(AllData);
 
 module.exports = { processAndStoreData };

@@ -1,5 +1,6 @@
-const apiClient = require('../services/Client');
+const createClient = require('../services/Client');
 const getToken = require('../Controllers/authController');
+const  AllData  = require('../services/AllData');
  
 const fetchEvent = async (req, res) => {
   try {
@@ -8,7 +9,7 @@ const fetchEvent = async (req, res) => {
       return res.status(401).json({ message: 'Authentication failed. No sessionToken received.' });
     }
  
-    const token = apiData.sessionToken;
+    const apiClient = await createClient(apiData.sessionToken);
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
  
     const requestPayload = {
@@ -16,13 +17,13 @@ const fetchEvent = async (req, res) => {
       method: 'SportsAPING/v1.0/listEventTypes',
       params: { filter: {} },
     };
- 
-    const response = await apiClient.post(apiUrl, requestPayload, {
-      headers: {
-        'X-Authentication': token,
-      },
-    });
- 
+     
+    const response = await apiClient.post(apiUrl, requestPayload);
+    if(!response || !response.data){
+      throw new Error("Invalid response the api")
+    }
+        const eventData = response.data ;
+        AllData.event(eventData)
     res.status(200).json(response.data);
   } catch (error) {
     console.error('Error fetching event data:', error.message);
@@ -35,5 +36,7 @@ const fetchEvent = async (req, res) => {
     });
   }
 };
+console.log(fetchEvent);
+
  
 module.exports = { fetchEvent };
