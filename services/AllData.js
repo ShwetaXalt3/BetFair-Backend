@@ -1,9 +1,18 @@
 const AllData = {
     data: {
+      eventId: null,
+      competitionId: null,
       event: null,
       match: null,
       tournament: null,
       funds: null
+    },
+    setEventCompetition(eventId, competitionId) {
+      this.data.eventId = eventId;
+      this.data.competitionId = competitionId;
+    },
+    getEventCompetition() {
+      return { eventId: this.data.eventId, competitionId: this.data.competitionId };
     },
    
     event: function (eventData) {

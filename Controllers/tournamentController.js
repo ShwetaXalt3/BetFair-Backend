@@ -10,13 +10,12 @@ const fetchTournament = async (req, res) => {
     }
    
     const apiClient = await createClient(apiData.sessionToken);
-    const id = req.body?.id ?? "2"; 
-
-    
+    const id = req.body?.id ?? "2";
+ 
+   
     if(!id){
       res.send("id not found");
     }
-    console.log("Hello" , id);
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
     // Making the API request to fetch match data
  
@@ -30,10 +29,9 @@ const fetchTournament = async (req, res) => {
  
     res.status(200).json(response.data);
     const tournamentData = response.data;
-    // console.log("Hehe", tournamentData);
     AllData.tournament(tournamentData);
     return tournamentData;
-
+ 
   } catch (error) {
    
     console.error('Match Fetch Error:', error.message);

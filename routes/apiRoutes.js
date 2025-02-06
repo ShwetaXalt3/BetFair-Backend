@@ -7,6 +7,7 @@ const tournamentController = require('../Controllers/tournamentController');
 const matchController = require('../Controllers/matchController');
 const AccountFund=require("../Controllers/AccountFunds");
 const dataService = require('../services/dataService');
+const  placeOrder  = require('../Controllers/placeOrder');
 
 // Authentication route
 // router.post('/login', authController.userLoginData); // POST for login, authentication
@@ -20,10 +21,11 @@ router.post('/match', matchController.fetchMatch); // GET to fetch match status
 router.post('/accfunds',AccountFund.fetchFund);
 // router.post('/dataService' , dataService.processAndStoreData);
 router.post('/probability', probability.fetchProbability);
+router.post('/placeOrder' , placeOrder.placeOrders);
  
 
 //Merged data route - This is where the merged data is stored
- router.post('/mergedData', dataService.processAndStoreData); // POST to save merged data
+ router.post('/history', dataService.processAndStoreData); // POST to save merged data
 
 module.exports = router;
 

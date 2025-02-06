@@ -36,7 +36,7 @@ const fetchEvent = async (req, res) => {
     });
   }
 };
-console.log(fetchEvent);
+
 
  
 module.exports = { fetchEvent };

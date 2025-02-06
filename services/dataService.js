@@ -7,31 +7,47 @@ const AllData = require('../services/AllData');
 const processAndStoreData = async (req, res) => {
   try {
     const allData = AllData.getAllData();
-    // console.log("Processing All Data:", allData.match);
+    const eventData = allData.event;
+    const tournamentData = allData.tournament;
+    const matchData = allData.match;
+    const fundsData = allData.funds;
+    const {eventId , competitionId} = AllData.getEventCompetition();
+
+    // console.log(eventId);
+    // console.log(competitionId);
+
+    
+    // console.log(matchData.result);
+    const maping = tournamentData.result;
+    maping.map((i)=>{
+      console.log(i.competition.id);
+      
+    })
+     
+
 
     const mergedData = new MergedData({
-      Amount: "235",
-      Match: "Hehe",
+      Amount: "1000", 
+      Match: "T20",
       Odds: 235,
-      Player: "Shweta",
-      ProfitLoss: 56,
-      Status: "Hehe",
+      Player: "Tisha",
+      ProfitLoss: 500,
+      Status: "Pending",
       Type: "WIN",
-      date: "5 Feb 2025",
-      market_id: 563,
-      strategy: "Hehehe",
-      Sport: "cricket"
+      date: "15 Feb 2004",
+      market_id: 154,
+      strategy: "Strategy-4",
+      Sport: eventData.result[tournamentData.id-1].eventType.name
     });
 
     // Save the merged data to the database
-    await mergedData.save();
+    // await mergedData.save();
     console.log('Data saved successfully!', mergedData);
+    res.status(200).json(mergedData);
   } catch (error) {
     console.error('Error in processing data:', error.message);
   }
 };
-
-// Now, execute the function after AllData is fully loaded
 processAndStoreData(AllData);
 
 module.exports = { processAndStoreData };
