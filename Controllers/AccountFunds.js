@@ -12,13 +12,17 @@ const fetchFund=async(req,res)=>{
  
             const requestPayload = {
                  method: "AccountAPING/v1.0/getAccountFunds",
+
                };
            
                // Make the request with the correct structure
                const response = await apiClient.post(apiUrl, requestPayload);
                  AllData.funds(response.data);
                // Send successful response
-               res.status(200).json(response.data);
+               if(response.data.result.availableToBetBalance){
+                 res.status(200).json({"Amount" : response.data.result.availableToBetBalance });
+
+               }
     }
     catch(err){
         console.error('Error fetching Funds data:', err.message);

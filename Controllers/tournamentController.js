@@ -10,7 +10,7 @@ const fetchTournament = async (req, res) => {
     }
    
     const apiClient = await createClient(apiData.sessionToken);
-    const id = req.body?.id ?? "2";
+    const id = req.body.id;
  
    
     if(!id){
@@ -18,16 +18,48 @@ const fetchTournament = async (req, res) => {
     }
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
     // Making the API request to fetch match data
+
+    const targetDate = new Date();
+    
+    const marketStartTime = new Date(Date.UTC(targetDate.getUTCFullYear(), targetDate.getUTCMonth(), targetDate.getUTCDate(), 0, 0, 0));
+    const formattedMarketStartTime = marketStartTime.toISOString().split('.')[0] + "Z";
+   
+ 
+    const marketEndTime = new Date(marketStartTime);
+    marketEndTime.setUTCDate(marketEndTime.getUTCDate() + 1); // Move to next day
+    const formattedMarketEndTime = marketEndTime.toISOString().split('.')[0] + "Z";
+    
  
     const requestPayload={
           jsonrpc: "2.0",
           method: "SportsAPING/v1.0/listCompetitions",
-          params: { filter: {eventTypeIds: [id]} },
+          params: {
+             filter:{
+             eventTypeIds: [id],
+             marketStartTime : {from : marketStartTime, to: marketEndTime},
+
+             },
+             maxResults:100,
+
+             },
           id:id
          }
     const response = await apiClient.post(apiUrl, requestPayload);
+    // console.log(response.data);
+    
+    const tournamentDatas = response.data.result;
+
+     if (Array.isArray(tournamentDatas)) {
+  const tournamentNames = tournamentDatas.map(tournament => tournament.competition?.name).filter(Boolean);
+
  
-    res.status(200).json(response.data);
+  res.status(200).json({ tournaments: tournamentNames });
+
+  AllData.tournament(tournamentDatas);
+
+  return response.data;
+} 
+
     const tournamentData = response.data;
     AllData.tournament(tournamentData);
     return tournamentData;

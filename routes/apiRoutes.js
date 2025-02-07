@@ -20,7 +20,7 @@ router.post('/login',authController.userLoginData);
 router.post('/match', matchController.fetchMatch); // GET to fetch match status
 router.post('/accfunds',AccountFund.fetchFund);
 // router.post('/dataService' , dataService.processAndStoreData);
-router.post('/probability', probability.fetchProbability);
+router.post('/probability', probability.fetchProbability );
 router.post('/placeOrder' , placeOrder.placeOrders);
  
 

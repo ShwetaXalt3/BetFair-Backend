@@ -6,7 +6,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const connectDB = require('./config/db'); // Assuming your database connection logic is in ./config/db.js
 
 const app = express();
-const PORT = 6060
+const PORT = 5055
 
 // Middleware to parse JSON requests
 app.use(express.json());

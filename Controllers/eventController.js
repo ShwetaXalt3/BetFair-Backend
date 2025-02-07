@@ -24,7 +24,23 @@ const fetchEvent = async (req, res) => {
     }
         const eventData = response.data ;
         AllData.event(eventData)
-    res.status(200).json(response.data);
+
+      const validIds = ["2","6423", "7522", "61420","998917", "6422", "26420387"]
+      const mapping = response.data.result;
+      const validEventTypes = [];
+      mapping.forEach((i)=>{
+        if(validIds.includes(i.eventType.id)){
+          validEventTypes.push(i.eventType);
+        }
+      })
+      if(validEventTypes.length > 0){
+        res.status(200).json(validEventTypes);
+      }
+      else{
+        res.status(404).json({message : "No valid event type found"})
+      }
+      return eventData;
+      
   } catch (error) {
     console.error('Error fetching event data:', error.message);
     if (error.response) {

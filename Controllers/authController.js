@@ -24,7 +24,7 @@ let sessionToken = null; // Store token in memory
     password:password
   }).toString();
  
-  
+
  
   if (user === username && userPass === password) {
     console.log("User Login Successfully");
@@ -66,7 +66,7 @@ let sessionToken = null; // Store token in memory
  
     if (apiData.sessionToken) {
       sessionToken = apiData.sessionToken;
-      // console.log("New session token acquired:", apiData);
+      console.log("New session token acquired:", apiData);
       return apiData;
     } else {
        return

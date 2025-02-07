@@ -1,5 +1,3 @@
-// services/dataService.js
-
 const MergedData = require('../models/MergedData');
 const AllData = require('../services/AllData');
 
@@ -9,45 +7,35 @@ const processAndStoreData = async (req, res) => {
     const allData = AllData.getAllData();
     const eventData = allData.event;
     const tournamentData = allData.tournament;
-    const matchData = allData.match;
-    const fundsData = allData.funds;
-    const {eventId , competitionId} = AllData.getEventCompetition();
 
-    // console.log(eventId);
-    // console.log(competitionId);
 
-    
-    // console.log(matchData.result);
-    const maping = tournamentData.result;
-    maping.map((i)=>{
-      console.log(i.competition.id);
+    // Console log eventData to verify it's correctly stored
+    console.log("Stored Event Data in AllData:", tournamentData.id);
       
-    })
-     
 
 
     const mergedData = new MergedData({
-      Amount: "1000", 
-      Match: "T20",
-      Odds: 235,
-      Player: "Tisha",
+      Amount: 1000, 
+      Match: "Cricket",
+      Odds: 235, 
+      Player: "Rishika",
       ProfitLoss: 500,
-      Status: "Pending",
-      Type: "WIN",
-      date: "15 Feb 2004",
-      market_id: 154,
-      strategy: "Strategy-4",
-      Sport: eventData.result[tournamentData.id-1].eventType.name
+      Status: "T20",
+      date: "23 Dec 2003",
+      market_id: "1.2235",
+      strategy: "strategy-3",
+      Sport: "hehe"
     });
 
     // Save the merged data to the database
     // await mergedData.save();
+
     console.log('Data saved successfully!', mergedData);
     res.status(200).json(mergedData);
   } catch (error) {
     console.error('Error in processing data:', error.message);
+    res.status(500).json({ error: 'Failed to process data', message: error.message });
   }
 };
-processAndStoreData(AllData);
 
 module.exports = { processAndStoreData };
