@@ -1,51 +1,87 @@
-const createClient = require('../services/Client');
-const getToken = require('./authController');
+const axios = require('axios');
 const AllData = require('../services/AllData');
 
 const fetchProbability = async (req, res) => {
   try {
-    const { amount, strategies, marketData } = req.body;
+    const authHeader = req.headers['authorization'];
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(400).json({ message: 'Missing or invalid authorization header' });
+    }
+   
+    const sessionToken = authHeader.split(' ')[1];
+
+    const { amount, strategies } = req.body;
     console.log(amount, strategies);
+    const allData = AllData.getAllData();
+    const matchData = allData.matchh.result;
+    // console.log(matchData);
+    
 
-    if (!marketData || !Array.isArray(marketData)) {
-      return res.status(400).json({ message: 'Invalid or missing marketData array' });
+    if (!matchData || !Array.isArray(matchData)) {
+      return res.status(400).json({ message: 'Invalid or missing matchData array' });
     }
 
-    const apiData = await getToken.userLoginData();
-    if (!apiData || !apiData.sessionToken) {
-      return res.status(401).json({ message: 'Authentication failed. No sessionToken received.' });
-    }
+    const apiUrl = "http://127.0.0.1:5001/fetch_particular_match";
 
-    const apiClient = await createClient(apiData.sessionToken);
-    const apiUrl = "http://127.0.0.1:5002/fetch_particular_match";
-
-    // Constructing formatted response as payload
+    var id = ""
     const requestPayload = {
       data: {
-        market_catalogue: marketData.map(market => ({
-          amount: amount,
-          competition: {
-            id: market.competition?.id || "",
-            name: market.competition?.name || "",
-          },
-          marketId: market.marketId,
-          marketName: market.marketName,
-          runners: market.runners.map(runner => ({
-            handicap: runner.handicap,
-            metadata: {
-              runnerId: String(runner.selectionId),
+        market_catalogue: matchData.map(market => {
+          console.log("Market Data:", market); 
+    
+       
+          if (!Array.isArray(market.runners)) {
+            console.error(`Market ${market.marketId} has invalid runners structure`);
+            return {};  
+          }
+    
+          return {
+            amount: amount,  
+            strategy: strategies,  
+            competition: {
+              id: market.competition?.id || "",  
+              name: market.competition?.name || "",  
             },
-            runnerName: runner.runnerName,
-            selectionId: runner.selectionId,
-            sortPriority: runner.sortPriority,
-          })),
-          strategies: strategies,
-          totalMatched: market.totalMatched || 0,
-        })),
-      },
+            marketId: market.marketId,
+            marketName: market.marketName,
+            marketStartTime: market.marketStartTime || "",  
+            totalMatched: market.totalMatched || 0, 
+            runners: market.runners.map((runner, index) => {
+              // console.log(`Runner at index ${index}:`, runner); // Log each runner
+    
+              
+              const runnerName = runner?.runnerName;
+    
+              if (!runnerName) {
+                console.warn(`Runner at index ${index} has no runnerName!`);
+              }
+    
+              return {
+                runnerName: runnerName || "Unknown Runner",  
+                selectionId: runner?.selectionId || "",  
+                handicap: runner?.handicap || 0, 
+                sortPriority: runner?.sortPriority || 0,  
+                metadata: {
+                  runnerId: String(runner?.selectionId || ""),  
+                }
+              };
+            }),
+          };
+        }),
+      }
     };
+    
+    // console.log(requestPayload.data.market_catalogue.runners);
+    
+    
 
-    const response = await apiClient.post(apiUrl, requestPayload);
+    const response = await axios.post(apiUrl, requestPayload, {
+      headers: {
+        'X-Application': process.env.API_KEY,    
+        'Content-Type': 'application/json',    
+        'X-Authentication': sessionToken,      
+      }
+    });
     const data = response.data;
 
     // Optionally store the processed data

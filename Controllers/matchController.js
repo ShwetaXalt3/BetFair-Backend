@@ -1,21 +1,21 @@
-const createClient = require('../services/Client');
-const getToken = require('../Controllers/authController');
+const axios = require('axios')
 const AllData = require('../services/AllData');
 
 const fetchMatch = async (req, res) => {
   try {
-    const { eventId, competitionId , amount , strategies } = req.body;
+    const authHeader = req.headers['authorization'];
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(400).json({ message: 'Missing or invalid authorization header' });
+    }
+   
+    const sessionToken = authHeader.split(' ')[1];
+
+    // const { eventId, competitionId , amount , strategies } = req.body;
+    const {eventId , competitionId} = req.body;
     if (!eventId || !competitionId) {
       return res.status(400).send("Event ID or Competition ID not found");
     }
-
-    // Get API session token
-    const apiData = await getToken.userLoginData();
-    if (!apiData || !apiData.sessionToken) {
-      return res.status(401).json({ message: 'Authentication failed. No sessionToken received.' });
-    }
-
-    const apiClient = await createClient(apiData.sessionToken);
+    
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
 
     // Store event and competition data
@@ -49,7 +49,13 @@ const fetchMatch = async (req, res) => {
     };
 
     // Fetch market data
-    const response = await apiClient.post(apiUrl, requestPayload);
+    const response = await axios.post(apiUrl, requestPayload, {
+      headers: {
+        'X-Application': process.env.API_KEY,    
+        'Content-Type': 'application/json',    
+        'X-Authentication': sessionToken,      
+      }
+    });
     const marketData = response.data.result;
 
     if (!Array.isArray(marketData)) {
@@ -60,7 +66,7 @@ const fetchMatch = async (req, res) => {
     // Process the data to match the desired format
     const formattedResponse = {
       market_catalogue: marketData.map(market => ({
-        amount: amount, 
+        amount: 0, 
         competition: {
           id: market.competition?.id || "",
           name: market.competition?.name || "",
@@ -76,16 +82,19 @@ const fetchMatch = async (req, res) => {
           selectionId: runner.selectionId,
           sortPriority: runner.sortPriority,
         })),
-        strategies: strategies, // Default strategy
+        strategies: "strategies", // Default strategy
         totalMatched: market.totalMatched || 0,
       })),
     };
 
     // Store match data
-    AllData.match(marketData);
+    AllData.setEventCompetition(eventId , competitionId);
+    AllData.match(formattedResponse);
+    AllData.matchh(response.data)
 
     // Return formatted response
-    res.status(200).json(formattedResponse);
+    // res.status(200).json(formattedResponse);
+    res.status(200).json(response.data)
   } catch (error) {
     console.error('Match Fetch Error:', error.message);
     if (error.response) {

@@ -1,15 +1,16 @@
-const createClient = require('../services/Client');
-const getToken = require('../Controllers/authController');
 const  AllData  = require('../services/AllData');
+const axios = require('axios');
  
 const fetchEvent = async (req, res) => {
   try {
-    const apiData = await getToken.userLoginData();
-    if (!apiData || !apiData.sessionToken) {
-      return res.status(401).json({ message: 'Authentication failed. No sessionToken received.' });
+    const authHeader = req.headers['authorization'];
+ 
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(400).json({ message: 'Missing or invalid authorization header' });
     }
  
-    const apiClient = await createClient(apiData.sessionToken);
+    const sessionToken = authHeader.split(' ')[1];
+
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
  
     const requestPayload = {
@@ -18,7 +19,14 @@ const fetchEvent = async (req, res) => {
       params: { filter: {} },
     };
      
-    const response = await apiClient.post(apiUrl, requestPayload);
+    const response = await axios.post(apiUrl, requestPayload, {
+      headers: {
+        'X-Application': process.env.API_KEY,    
+        'Content-Type': 'application/json',    
+        'X-Authentication': sessionToken,      
+      }
+    });
+    
     if(!response || !response.data){
       throw new Error("Invalid response the api")
     }

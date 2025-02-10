@@ -1,15 +1,16 @@
-const getToken = require('../Controllers/authController'); // Import TokenService
-const createClient = require('../services/Client');
+const axios = require('axios')
 const  AllData  = require('../services/AllData');
  
 const fetchTournament = async (req, res) => {
   try {
-    const apiData = await getToken.userLoginData();
-    if (!apiData || !apiData.sessionToken) {
-      return res.status(401).json({ message: 'Authentication failed. No sessionToken received.' });
+    const authHeader = req.headers['authorization'];
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(400).json({ message: 'Missing or invalid authorization header' });
     }
    
-    const apiClient = await createClient(apiData.sessionToken);
+    const sessionToken = authHeader.split(' ')[1];
+
+
     const id = req.body.id;
  
    
@@ -44,7 +45,13 @@ const fetchTournament = async (req, res) => {
              },
           id:id
          }
-    const response = await apiClient.post(apiUrl, requestPayload);
+         const response = await axios.post(apiUrl, requestPayload, {
+          headers: {
+            'X-Application': process.env.API_KEY,    
+            'Content-Type': 'application/json',    
+            'X-Authentication': sessionToken,      
+          }
+        });
     // console.log(response.data);
     
     const tournamentDatas = response.data.result;
@@ -53,16 +60,17 @@ const fetchTournament = async (req, res) => {
   const tournamentNames = tournamentDatas.map(tournament => tournament.competition?.name).filter(Boolean);
 
  
-  res.status(200).json({ tournaments: tournamentNames });
+  // res.status(200).json({ tournaments: tournamentNames });
+  res.status(200).json(response.data)
 
-  AllData.tournament(tournamentDatas);
+  AllData.tournament(response.data);
 
   return response.data;
 } 
 
-    const tournamentData = response.data;
-    AllData.tournament(tournamentData);
-    return tournamentData;
+    // const tournamentData = response.data;
+    // AllData.tournament(tournamentData);
+    // return tournamentData;
  
   } catch (error) {
    

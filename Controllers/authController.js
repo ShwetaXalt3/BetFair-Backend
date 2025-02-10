@@ -6,38 +6,17 @@ const certPath = "./Certificate/BetfairApp1.crt";
 const caPath = "./Certificate/client-2048.pem";
 const keyPath = "./Certificate/private_key.pem";
  
-let sessionToken = null; // Store token in memory
- 
+
   const userLoginData = async (req,res) => {
-    // Return cached token if available
-    if (sessionToken) {
-      return { sessionToken };
-    }
+  
    
     const {user,userPass}=req.body;
  
-  const username="admin@gbrbets.com";
-  const password="Niva71gbmvl!";
  
   const payload = new URLSearchParams({
-    username:username,
-    password:password
+    username:user,
+    password:userPass
   }).toString();
- 
-
- 
-  if (user === username && userPass === password) {
-    console.log("User Login Successfully");
-    res.status(200).json({
-      success: true,
-      message: "User Login Successfully",
-      token: req.body.token
-  })
-  }
-  else {
-    console.log("Unauthorized User");
-    return res.status(401).json({ message: "Unauthorized User" });
-  }
  
   const headers = {
     'X-Application': "test",
@@ -65,11 +44,15 @@ let sessionToken = null; // Store token in memory
     const apiData = response.data;
  
     if (apiData.sessionToken) {
-      sessionToken = apiData.sessionToken;
-      console.log("New session token acquired:", apiData);
-      return apiData;
-    } else {
-       return
+      console.log("New session token acquired:", apiData.sessionToken);
+      return res.status(200).json({
+        success: true,
+        message: "User Login Successfully",
+        sessionToken: apiData.sessionToken 
+      });
+    }
+    else {
+      return res.status(500).json({ message: "Login Failed" });
     }
   } catch (error) {
     console.error("Login Failed:", error.response?.data || error.message);

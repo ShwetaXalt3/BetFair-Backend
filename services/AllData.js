@@ -4,6 +4,7 @@ const AllData = {
       competitionId: null,
       event: null,
       match: null,
+      matchh:null, 
       tournament: null,
       funds: null
     },
@@ -23,6 +24,11 @@ const AllData = {
     match: function (matchData) {
     //   console.log("Received Match Data:", matchData);
       this.data.match = matchData; 
+    },
+    matchh: function(matchData){
+      this.data.matchh = matchData;
+      // console.log(matchData);
+      
     },
    
     tournament: function (tournamentData) {
