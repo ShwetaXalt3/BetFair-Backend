@@ -8,6 +8,7 @@ const matchController = require('../Controllers/matchController');
 const AccountFund=require("../Controllers/AccountFunds");
 const dataService = require('../services/dataService');
 const  placeOrder  = require('../Controllers/placeOrder');
+const marketBook = require('../Controllers/marketBook')
 
 // Authentication route
 // router.post('/login', authController.userLoginData); // POST for login, authentication
@@ -22,6 +23,7 @@ router.post('/accfunds',AccountFund.fetchFund);
 // router.post('/dataService' , dataService.processAndStoreData);
 router.post('/probability', probability.fetchProbability );
 router.post('/placeOrder' , placeOrder.placeOrders);
+router.post('/marketbook', marketBook.fetchMarketBook) 
  
 
 //Merged data route - This is where the merged data is stored

@@ -6,7 +6,8 @@ const AllData = {
       match: null,
       matchh:null, 
       tournament: null,
-      funds: null
+      funds: null,
+      market : null,
     },
     setEventCompetition(eventId, competitionId) {
       this.data.eventId = eventId;
@@ -39,6 +40,15 @@ const AllData = {
     funds: function (fundData) {
     //   console.log("Received Fund Data:", fundData);
       this.data.funds = fundData; 
+    },
+    market : function(marketData){
+      // console.log(marketData);
+      
+      this.data.market =  marketData;
+    },
+    probability : function (probabilityData){
+      // console.log(probabilityData);
+      this.data.probability = probabilityData;
     },
    
     getAllData: function () {

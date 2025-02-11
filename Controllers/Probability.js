@@ -27,7 +27,7 @@ const fetchProbability = async (req, res) => {
     const requestPayload = {
       data: {
         market_catalogue: matchData.map(market => {
-          console.log("Market Data:", market); 
+          // console.log("Market Data:", market); 
     
        
           if (!Array.isArray(market.runners)) {
@@ -71,7 +71,7 @@ const fetchProbability = async (req, res) => {
       }
     };
     
-    // console.log(requestPayload.data.market_catalogue.runners);
+  
     
     
 
@@ -84,8 +84,8 @@ const fetchProbability = async (req, res) => {
     });
     const data = response.data;
 
-    // Optionally store the processed data
-    AllData.match(data);
+   
+    AllData.probability(data);
     
     res.status(200).json(data);
   } catch (error) {

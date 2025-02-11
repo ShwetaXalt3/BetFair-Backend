@@ -31,7 +31,7 @@ const fetchEvent = async (req, res) => {
       throw new Error("Invalid response the api")
     }
         const eventData = response.data ;
-        AllData.event(eventData)
+        AllData.event(eventData);
 
       const validIds = ["2","6423", "7522", "61420","998917", "6422", "26420387"]
       const mapping = response.data.result;
