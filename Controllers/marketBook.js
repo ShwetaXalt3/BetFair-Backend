@@ -20,7 +20,7 @@ const fetchMarketBook = async (sessionToken, marketId) => {
                 priceProjection: {
                     priceData: ["EX_BEST_OFFERS"]
                 }
-            },
+            },  
             id: 1
         };
 
@@ -34,6 +34,7 @@ const fetchMarketBook = async (sessionToken, marketId) => {
 
         // console.log("Market Book Data:", JSON.stringify(response.data, null, 2));
         AllData.market(response.data);  // Save market data (optional)
+        // console.log("from market book ", response.data);
         
         return response.data; // Return market data
 

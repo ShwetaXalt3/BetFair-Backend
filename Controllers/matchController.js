@@ -108,4 +108,9 @@ const fetchMatch = async (req, res) => {
   }
 };
 
-module.exports = { fetchMatch };
+const getMatch = ()=>{
+     console.log("from match");
+     
+}
+
+module.exports = { fetchMatch , getMatch };

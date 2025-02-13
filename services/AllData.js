@@ -18,13 +18,13 @@ const AllData = {
     },
    
     event: function (eventData) {
-    //   console.log("Received Event Data:", eventData);
-      this.data.event = eventData; 
+      // console.log("Received Event Data:", eventData);
+        this.data.event = eventData
     },
    
     match: function (matchData) {
-    //   console.log("Received Match Data:", matchData);
-      this.data.match = matchData; 
+      // console.log("Received Match Data:", matchData);
+       this.data.match = matchData; 
     },
     matchh: function(matchData){
       this.data.matchh = matchData;

@@ -1,4 +1,4 @@
-const { all } = require('axios');
+const axios = require('axios');
 const MergedData = require('../models/MergedData');
 const AllData = require('../services/AllData');
 
@@ -8,22 +8,21 @@ const processAndStoreData = async (req, res) => {
     const allData = AllData.getAllData();
     const eId = allData.eventId;
     const cId = allData.competitionId;
-    const eventData = allData.event.result;
+    const eventData = allData.event;
     const tournamentData = allData.tournament;
     const matchData = allData.match;
-    console.log(matchData);
-    console.log(eId);
-    console.log(cId);
-    
+    // console.log(matchData);
+    // console.log("Event Id",eId);
+    // console.log("Comp",cId);
     
 
-      let sportName = "";
-    eventData.map((i)=>{
-      if(i.eventType.id === tournamentData.id){
-        sportName = i.eventType.name
-      }
-    })
-  console.log(sportName);
+    //   let sportName = "";
+    // eventData.map((i)=>{
+    //   if(i.eventType.id === tournamentData.id){
+    //     sportName = i.eventType.name
+    //   }
+    // })
+  // console.log(sportName);
     const mergedData = new MergedData({
       Amount: 0, 
       // Match: "Cricket",
@@ -36,7 +35,7 @@ const processAndStoreData = async (req, res) => {
       // date: "23 Dec 2003",
       // market_id: "1.2235",
       strategy: "strategy-3",
-      Sport:sportName
+      Sport:"ha"
     });
 
     // Save the merged data to the database
