@@ -60,13 +60,19 @@ const fetchStrategy2 = async(sessionToken , marketId , amount) =>{
       console.log(responseData);
   
    const responseLength = Object.keys(responseData).length
+  //  console.log(responseLength);
+   
    const marketBookData = await fetchMarketBook(sessionToken, marketId)
    const runner1 = marketBookData.result[0].runners[0];
    const firstBackOdds = runner1.ex.availableToBack?.[0]?.price || null;
+   
    const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
+   console.log(firstBackOdds , firstLayOdds);
    const  selection_Id = firstRunner.selectionId
    
    const prob_Star = 1/(firstBackOdds + firstLayOdds);
+   console.log(prob_Star);
+   
    
       if(responseLength == 0){
         // return responseData.status(200).json({message : "Cant predict"})
@@ -80,22 +86,27 @@ const fetchStrategy2 = async(sessionToken , marketId , amount) =>{
                   selection_Id,
                   marketId,
                   side : "BACK",
-                  size : "0",
+                  size : amount,
                   price :firstBackOdds,
                 }
                 const backResponse = await placeBettt(betData , sessionToken);
                 console.log(backResponse);
+                console.log("Back Bet Placed");
+                
         }
         else{
           const betData  = {
             selection_Id,
             marketId,
             side : "BACK",
-            size : "0",
+            // size : "0",
+            size : amount,
             price :firstBackOdds,
           }
           const backResponse = await placeBettt(betData , sessionToken);
           console.log(backResponse);
+          console.log("Lay Bet Placed");
+          
         }
         
       }
@@ -108,7 +119,7 @@ const fetchStrategy2 = async(sessionToken , marketId , amount) =>{
 }
 
 async function placeBettt(strategyData , sessionToken ) {
-  const { selectionId, marketId, side, size, price } = strategyData;
+  const { selection_Id, marketId, side, size, price } = strategyData;
 
   const apiUrl = "https://api.betfair.com/exchange/betting/json-rpc/v1";
 
@@ -119,13 +130,13 @@ async function placeBettt(strategyData , sessionToken ) {
       marketId,
       instructions: [
         {
-          selectionId,
-          handicap: "0", 
+          selectionId : selection_Id,
+          handicap: 0, 
           side: side,
           orderType: "LIMIT",
           limitOrder: {
-            size,
-            price,
+            size : parseFloat(size),
+            price : parseFloat(price),
             persistenceType: "PERSIST",
           },
         },
@@ -140,10 +151,11 @@ async function placeBettt(strategyData , sessionToken ) {
         'X-Application': process.env.API_KEY,
         'Content-Type': 'application/json',
         'X-Authentication': sessionToken,
+        
       },
     });
 
-    console.log('API Response:', response.data);
+    // console.log('API Response:', response.data);
 
     return response.data;
 `    // return res.status(200).json(response.data)

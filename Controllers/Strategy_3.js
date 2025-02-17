@@ -5,48 +5,56 @@ const AllData = require('../services/AllData')
 
 
 function layStakeCalculator(backStake, layBetPrice, backBetPrice) {
+  console.log("Hello ", backStake, layBetPrice);
 
-  console.log("Hello " , backStake , layBetPrice );
-  
   let layStake = (backStake * backBetPrice) / layBetPrice;
-  layStake = Math.round(layStake * 100) / 100; 
+  layStake = Math.round(layStake * 100) / 100;
   return layStake;
 }
 
-const fetchStrategy3 = async (sessionToken, marketId , amount) => {
+const fetchStrategy3 = async (sessionToken, marketId, amount) => {
   try {
     const allData = AllData.getAllData();
-const matchData = allData.matchh; 
+    const matchData = allData.matchh;
+    // console.log(matchData);
 
-if (matchData && matchData.result && Array.isArray(matchData.result)) {
-  var marketTimes = matchData.result
-    .filter(matchh => matchh.marketId === marketId)  
-    .map(matchh => matchh.marketStartTime);  
-} else {
-  console.log("Error: matchData.result is not available or not an array");
-}
-      
+    var marketTimes;
+    if (matchData && matchData.result && Array.isArray(matchData.result)) {
+      marketTimes = matchData.result
+        .filter(matchh => matchh.marketId === marketId)
+        .map(matchh => {
+          // console.log(matchh.marketStartTime); 
+          return matchh.marketStartTime;
+        });
+    } else {
+      console.log("Error: matchData.result is not available or not an array");
+    }
+
+
+
+    const dateInUTC = new Date(marketTimes);
+    const dateInIST = dateInUTC.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
     const marketBookData = await fetchMarketBook(sessionToken, marketId);
     // console.log(marketBookData);
-    
+
+
     if (!marketBookData || !marketBookData.result || marketBookData.result.length === 0) {
       throw new Error("Invalid market book data");
     }
-    // console.log(marketBookData.result[0].runners[0].ex);
-    
 
 
-    // Extract odds for both runners
+
     const runner1 = marketBookData.result[0].runners[0];
     const runner2 = marketBookData.result[0].runners[1];
+    // console.log(runner1 , runner2);
+
 
     const firstBackOdds = runner1.ex.availableToBack?.[0]?.price || null;
     const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
     const secondBackOdds = runner2.ex.availableToBack?.[0]?.price || null;
-    // const secondLayOdds = runner2.ex.availableToLay?.[0]?.price || null;
 
-   
+
 
     if (!firstBackOdds || !secondBackOdds) {
       throw new Error("Back odds not found");
@@ -67,167 +75,261 @@ if (matchData && matchData.result && Array.isArray(matchData.result)) {
       // layPrice = firstLayOdds;
     }
     if (!lastPriceTraded) {
-      return res.status(400).json({ "message": "not dound last traded" })
+      // return res.status(400).json({ "message": "not dound last traded" })
+      console.log("Not found last traded");
+
     }
     if (lastPriceTraded <= 1.1) {
-      return res.status(400).json({ "message": "Back bet price is low" })
+      // return res.status(400).json({ "message": "Back bet price is low" })
+      console.log("Back bet is low");
+
     }
-    if(lastPriceTraded<=1.2){
-      layPrice = (lastPriceTraded-0.5)
+    if (lastPriceTraded <= 1.2) {
+      layPrice = (lastPriceTraded - 0.5)
     }
-    else if(lastPriceTraded>1.2){
-       layPrice = (lastPriceTraded-0.1)
+    else if (lastPriceTraded > 1.2) {
+      layPrice = (lastPriceTraded - 0.1)
     }
 
-    if(layPrice<1.05){
+    if (layPrice < 1.05) {
       layPrice = 1.05
     }
 
-    backPrice = (amount/2);
-   
-   
+    backPrice = (amount / 2);
+
+
     // let backStake = layStakeCalculator(size, backPrice, lastPriceTraded);
     try {
       const betData = {
         selectionId,
         marketId,
         side: 'BACK',
-        size: "0",  
-        price: lastPriceTraded, 
+        size: backPrice,
+        price: lastPriceTraded,
       };
-    
-      
-      const backResponse = await placeBettt(betData, sessionToken);
-  
-      
-      if (backResponse.error) {
-        console.error("BACK bet placement failed. Stopping strategy.");
-        return;
-      }
+      console.log("Last price Traded  back bet ", lastPriceTraded);
+
+
+      // const backResponse = await placeBettt(betData, sessionToken);
+
+
+      // if (backResponse.error) {
+      //   console.error("BACK bet placement failed. Stopping strategy.");
+      //   return;
+      // }
+      // else{
+      //   console.log("Back Bet placed Successfully!!");
+
+      // }
       // res.status(200).json(backResponse)
       // return backResponse
-      
-      let layBetList = [100,100,100,100,100,100];
-      let index = 5;
-      
-      //--------------- Start while loop for LAY condition checking---------------------|||||||||||||
 
-  if(backResponse.result.status === 'SUCESS'){
+      let layBetList = [100, 100, 100, 100, 100, 100];
+      let index = 5;
+
+      //--------------- Start while loop for LAY condition checking---------------------|||||||||||||
+      let triggerTime = null; // Declare globally
+
+      const initializeTriggerTime = (marketTimes) => {
+        if (!triggerTime && marketTimes.length > 0) {
+          const matchStartTime = new Date(marketTimes[0]);
+          // console.log(matchStartTime);
+
+
+          if (!isNaN(matchStartTime.getTime())) {
+            triggerTime = new Date(matchStartTime.getTime() + 30 * 60000);
+            // console.log("Trigger Time Set:", triggerTime);
+          }
+        }
+      };
+
+
+      initializeTriggerTime(marketTimes);
+
+
+
+      // backResponse.result.status = 'SUCESS'
+
+      // if(backResponse.result.status === 'SUCESS'){
+
+      if (true) {
+        // await processAndStoreData();
         while (true) {
+
+          console.log("\n");
+
           console.log("Fetching Market Book again for LAY conditions...");
+
+
+          if (matchData?.result && Array.isArray(matchData.result)) {
+            const market = matchData.result.find(matchh => matchh.marketId === marketId);
+
+            if (market?.runners?.length > 0) {
+              // Find the runner with the given selectionId   
+              const runner = market.runners.find(r => r.selectionId === selectionId);
+
+              if (runner) {
+                console.log("Runner Name:", runner.runnerName);
+              } else {
+                console.log("Runner not found for selectionId:", targetSelectionId);
+              }
+            } else {
+              console.log("No runners found for the given marketId.");
+            }
+          } else {
+            console.log("Error: matchData.result is not available or not an array.");
+          }
+
+
+
+          // ---------------------------Match Start time --------------------
+
 
 
 
           const updatedMarketBook = await fetchMarketBook(sessionToken, marketId);
           const updatedRunner = updatedMarketBook.result[0].runners.find(r => r.selectionId === selectionId);
-         
-          
+
+
           const updatedBackPrice = updatedRunner.ex.availableToBack?.[0]?.price || null;
           const updatedLayPrice = updatedRunner.ex.availableToLay?.[0]?.price || null;
-           console.log(updatedLayPrice);
-           
-          const  backBetPrice = lastPriceTraded;
+          // const istDate = new Date(marketTimes.getTime() + (5.5 * 60 * 60 * 1000));
+          console.log("Updated lay price : ", updatedLayPrice);
+          console.log("selection ID : ", selectionId);
+          console.log("Market Id ", marketId);
+          console.log("Market Start Time", dateInIST);
+          //  console.log("Lay odd List is " , layBetList);
+          console.log("Index is : ", index);
 
-          if(marketBookData.status === 'CLOSED'){
-            return res.status(200).json({message : "betting closed"})
+          //  console.log("Trigger Time is : " , triggerTime);
+
+
+          const backBetPrice = lastPriceTraded;
+
+          if (marketBookData.status === 'CLOSED') {
+            return res.status(200).json({ message: "betting closed" })
             // break;
           }
-          if(updatedLayPrice < (backBetPrice-0.01)  && layBetList[index] !== updatedLayPrice ){
+          if (updatedLayPrice < (backBetPrice - 0.01) && layBetList[index] !== updatedLayPrice) {
             layBetList.push(updatedLayPrice);
-            index = index+1;
+            index = index + 1;
           }
+          console.log("Lay odd List is ", layBetList);
 
-          if(layBetList[index-5]< layBetList[index]){
-            const layStake  = layStakeCalculator(backBetPrice  , layBetList[index], lastPriceTraded)
+          if (layBetList[index - 5] < layBetList[index]) {
+            const layStake = layStakeCalculator(backPrice, layBetList[index], lastPriceTraded)
             const betData = {
               selectionId,
               marketId,
               side: 'LAY',
-              size: "0",  
-              price: layStake[index] 
+              size: backPrice,
+              price: layStake[index]
             }
-            const layResponse = await placeBettt(betData, sessionToken);
-      
-            console.log("LAY Bet Response: ", layResponse);
+            // const layResponse = await placeBettt(betData, sessionToken);
+            console.log("Lay bet placed on ", layStake[index]);
+
+            // console.log("LAY Bet Response: ", layResponse);
+            console.log("Lay Bet Places SuccessFully - 1");
+
+
             break;
 
           }
 
-          if(backBetPrice > 1.5){
-            if(layBetList[index]<backBetPrice - 0.1){
-              const layStake  = layStakeCalculator(backBetPrice  , layBetList[index], lastPriceTraded)
-            const betData = {
-              selectionId,
-              marketId,
-              side: 'LAY',
-              size: "0",  
-              price: layStake[index] 
+          if (backBetPrice > 1.5) {
+            if (layBetList[index] < (backBetPrice - 0.1)) {
+              const layStake = layStakeCalculator(backPrice, layBetList[index], lastPriceTraded)
+              const betData = {
+                selectionId,
+                marketId,
+                side: 'LAY',
+                size: backPrice,
+                price: layStake[index]
+              }
+              // const layResponse = await placeBettt(betData, sessionToken);
+
+              // console.log("LAY Bet Response: ", layResponse);
+              console.log("Lay bet placed on ", layStake[index]);
+              console.log("Lay Bet Places SuccessFully - 2");
+              break;
             }
-            const layResponse = await placeBettt(betData, sessionToken);
-      
-            console.log("LAY Bet Response: ", layResponse);
-            break;
-            }
-          }else{
-            if(layBetList[index]<backBetPrice - 0.05){
-              const layStake  = layStakeCalculator(backBetPrice  , layBetList[index], lastPriceTraded)
-            const betData = {
-              selectionId,
-              marketId,
-              side: 'LAY',
-              size: "0",  
-              price: layStake[index] 
-            }
-            const layResponse = await placeBettt(betData, sessionToken);
-      
-            console.log("LAY Bet Response: ", layResponse);
-            break;
+          } else {
+            if (layBetList[index] < (backBetPrice - 0.05)) {
+              const layStake = layStakeCalculator(backPrice, layBetList[index], lastPriceTraded)
+              const betData = {
+                selectionId,
+                marketId,
+                side: 'LAY',
+                size: backPrice,
+                price: layStake[index]
+              }
+              // const layResponse = await placeBettt(betData, sessionToken);
+
+              // console.log("LAY Bet Response: ", layResponse);
+              console.log("Lay bet placed on ", layStake[index]);
+              console.log("Lay Bet Places SuccessFully - 3");
+              break;
             }
           }
 
-          if(layBetList[index] == layPrice){
-            const layStake  = layStakeCalculator(backBetPrice  , layBetList[index], lastPriceTraded)
+          if (layBetList[index] == layPrice) {
+            const layStake = layStakeCalculator(backPrice, layBetList[index], lastPriceTraded)
             const betData = {
               selectionId,
               marketId,
               side: 'LAY',
-              size: "0",  
-              price: layStake[index] 
+              size: backPrice,
+              price: layStake[index]
             }
-            const layResponse = await placeBettt(betData, sessionToken);
-      
-            console.log("LAY Bet Response: ", layResponse);
-            break;
-          }
-    
-            // -------------------------trigger time-----------------------
-          const currentTime = new Date();
-          const matchStartTime = marketTimes; // Replace with actual match start time
-          const triggerTime = new Date(matchStartTime.getTime() + 30 * 60000);
+            // const layResponse = await placeBettt(betData, sessionToken);
 
-          if(currentTime>=triggerTime){
-            if(updatedLayPrice> backBetPrice + 0.3){
-              const layStake  = layStakeCalculator(backBetPrice  , layBetList[index], lastPriceTraded)
+            // console.log("LAY Bet Response: ", layResponse);
+            console.log("Lay bet placed on ", layStake[index]);
+            console.log("Lay Bet Places SuccessFully - 4");
+            break;
+          }
+
+          // -------------------------trigger time-----------------------
+
+          const currentTime = new Intl.DateTimeFormat('en-US', {
+            // timeZone: 'Asia/Kolkata', // Change to your desired time zone  
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+          }).format(new Date());
+
+          // console.log("Time in IST:", currentTime);  
+
+
+          // if(currentTime>=triggerTime){
+          if (updatedLayPrice > (backBetPrice + 0.3)) {
+            const layStake = layStakeCalculator(backPrice, updatedLayPrice, lastPriceTraded)
             const betData = {
               selectionId,
               marketId,
               side: 'LAY',
-              size: "0",  
-              price: layStake[index] 
+              size: backPrice,
+              price: updatedLayPrice
             }
-            const layResponse = await placeBettt(betData, sessionToken);
-      
-            console.log("LAY Bet Response: ", layResponse);
+            // const layResponse = await placeBettt(betData, sessionToken);
+
+            // console.log("LAY Bet Response: ", layResponse);
+            console.log("Lay bet placed on ", updatedLayPrice);
+            console.log("Lay Bet Places SuccessFully - 5");
+            console.log("Triggered Time", triggerTime)
             break;
-            }
           }
-    
+          // }
+
           // Wait for 30 seconds before checking again
-          await new Promise(resolve => setTimeout(resolve, 30000));
+          await new Promise(resolve => setTimeout(resolve, 5000));
         }
       }
-    
-    
+
+
     } catch (error) {
       console.error('Error placing BACK bet:', error.message);
     }
@@ -242,9 +344,9 @@ if (matchData && matchData.result && Array.isArray(matchData.result)) {
 
 
 
-async function placeBettt(strategyData , sessionToken ) {
+async function placeBettt(strategyData, sessionToken) {
   const { selectionId, marketId, side, size, price } = strategyData;
-  
+
   // console.log("tgtfgtfg", strategyData);
 
   // console.log('Placing Bet with strategy data:', strategyData);
@@ -260,7 +362,7 @@ async function placeBettt(strategyData , sessionToken ) {
       instructions: [
         {
           selectionId,
-          handicap: "0", 
+          handicap: "0",
           side: side,
           orderType: "LIMIT",
           limitOrder: {
@@ -286,13 +388,13 @@ async function placeBettt(strategyData , sessionToken ) {
     console.log('API Response:', response.data);
 
     return response.data;
-`    // return res.status(200).json(response.data)
+    `    // return res.status(200).json(response.data)
 `  } catch (error) {
     console.error('Error placing bet:', error.message);
     throw new Error('Error placing bet: ' + error.message);
-  
-};
 
- }
+  };
+
+}
 
 module.exports = { fetchStrategy3 };

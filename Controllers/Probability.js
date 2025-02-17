@@ -84,10 +84,16 @@ const fetchProbability = async (req, res) => {
     });
     const data = response.data;
 
-   
-    AllData.probability(data);
-    
-    res.status(200).json(data);
+
+// data.winning_player_data = data.winning_player_data.filter(player => player.player_win_prob !== "");
+
+// if (data.winning_player_data.length === 0) {
+//     console.log("No valid data found with probability.");
+//     return res.status(400).json({ message: "No valid probability data available" });
+// }
+AllData.probability(data);
+res.status(200).json(data);
+
   } catch (error) {
     console.error('Fetch Probability Error:', error.message);
     if (error.response) {
