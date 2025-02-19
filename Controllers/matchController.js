@@ -40,6 +40,7 @@ const fetchMatch = async (req, res) => {
           marketStartTime: { from: formattedMarketStartTime, to: formattedMarketEndTime },
           marketTypeCodes: ['MATCH_ODDS'],
           inPlayOnly: "false",
+          sort :"FIRST_TO_START"
         },
         marketProjection: ["RUNNER_METADATA", "COMPETITION", "MARKET_START_TIME"],
         locale: "en",
@@ -62,7 +63,7 @@ const fetchMatch = async (req, res) => {
       console.error("Unexpected API response:", marketData);
       return res.status(500).json({ message: "Unexpected API response format." });
     }
-
+    const filteredResponse = marketData.filter(market =>       market.runners.every(runner => !runner.runnerName.includes('/'))).map(market => ({ ...market,      runners: market.runners.filter(runner => !runner.runnerName.includes('/')) }));
     // Process the data to match the desired format
     const formattedResponse = {
       market_catalogue: marketData.map(market => ({
@@ -94,7 +95,7 @@ const fetchMatch = async (req, res) => {
 
     // Return formatted response
     // res.status(200).json(formattedResponse);
-    res.status(200).json(response.data)
+    res.status(200).json(filteredResponse)
   } catch (error) {
     console.error('Match Fetch Error:', error.message);
     if (error.response) {

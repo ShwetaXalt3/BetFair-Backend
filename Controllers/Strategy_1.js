@@ -57,16 +57,17 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
         const responseData = await prediction(firstRunner.runnerName, secondRunner.runnerName, tournamentDate, sessionToken)
 
         const responseLength = Object.keys(responseData).length;
-        
-        if(responseLength == 0){
+
+        if (responseLength == 0) {
             console.log("data not found");
-            
+            return;
+
         }
         const marketBookData = await fetchMarketBook(sessionToken, marketId)
 
 
-        const runner1 = marketBookData.result[0].runners;
-        // console.log(runner1.ex);
+        const runnersData = marketBookData.result[0].runners;
+        // console.log(runnersData.ex);
 
         let backOdds, layOdds, layPrice
         let selection_Id;
@@ -81,7 +82,7 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
             prob = responseData["Player2_Win_prob (1)"]["0"];
         }
 
-        runner1.map((i) => {
+        runnersData.map((i) => {
             if (i.selectionId == selection_Id) {
                 backOdds = i.ex.availableToBack[0].price;
                 layOdds = i.ex.availableToLay[0].price;
@@ -94,9 +95,11 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
 
         if (lastPriceTraded == 0) {
             console.log("You cant");
+            return;
         }
         if (lastPriceTraded <= 1.1) {
             console.log("You cant");
+            return;
 
         }
         if (lastPriceTraded <= 1.2) {
@@ -109,22 +112,39 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
         if (layPrice < 1.05) {
             layPrice = 1.05;
         }
-
+          var backStack , layStack;
         backStack = amount / 2;
         layStack = amount / 2;
 
         try {
-            const betData = {
-                selection_Id,
-                marketId,
-                side: 'BACK',
-                size: backStack,
-                price: lastPriceTraded,
-            };
-                                                           
-            // const backResponse = await placeBettt(betData, sessionToken);
-            console.log("Back bet placed At : " ,  lastPriceTraded);
-            
+            try {
+
+                const betData = {
+                    selection_Id,
+                    marketId,
+                    side: 'BACK',
+                    size: backStack,
+                    price: lastPriceTraded,
+                };
+                // var backResponse = await placeBettt(betData, sessionToken);
+                // var statuss = backResponse.result.status;
+                var statuss = "SUCESS" 
+
+                if (!backResponse) {
+                    console.log("back bet failed");
+                    return;
+                }
+                else {
+                    console.log("Back bet placed At : ", lastPriceTraded);
+                    // return backResponse;
+
+                }
+
+            } catch (err) {
+                console.log("error placing back bet", err);
+
+            }
+
 
 
             //   if (backResponse.error) {
@@ -134,21 +154,25 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
 
             let layBetList = [100, 100, 100, 100, 100, 100];
             let index = 5;
+            let layResponse = null;
 
-            // if (backResponse.result.status === 'SUCESS') {
-            if(true){
+            if (statuss === 'SUCESS') {
+                // if(true){
                 while (true) {
                     console.log("\n");
-                    
+
                     console.log("Fetching Market Book again for LAY conditions...");
 
                     const updatedMarketBook = await fetchMarketBook(sessionToken, marketId);
                     const updatedRunner = updatedMarketBook.result[0].runners.find(r => r.selectionId === selection_Id);
 
 
-                    const updatedBackPrice = updatedRunner.ex.availableToBack?.[0]?.price || null;
-                    const updatedLayPrice = updatedRunner.ex.availableToLay?.[0]?.price || null;
-                    console.log(updatedLayPrice);
+                    const updatedLayPrice = updatedRunner.ex.availableToLay?.[0]?.price || NaN;
+                    console.log(updatedLayPrice); 
+                    console.log("Updated lay price : ", updatedLayPrice);
+                    console.log("Selection Id : ", selection_Id);
+                    console.log("Market Id : ", marketId);
+                    console.log("index is : ", index);
 
                     const backBetPrice = lastPriceTraded;
 
@@ -161,23 +185,26 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                         index = index + 1;
                     }
 
+
                     if (layBetList[index - 5] < layBetList[index]) {
 
                         const betData = {
                             selection_Id,
                             marketId,
                             side: 'LAY',
-                            size: "0",
+                            size: layStack,
                             price: layBetList[index]
                         }
-                        // const layResponse = await placeBettt(betData, sessionToken);
+                        //  layResponse = await placeBettt(betData, sessionToken);
 
                         // console.log("LAY Bet Response: ", layResponse);
-                        console.log("Lay bet placed - 1 "  , layBetList[index]);
-                        
+                        console.log("Lay bet placed - 1 ", layBetList[index]);
+
                         break;
 
                     }
+
+
 
                     if (backBetPrice > 1.5) {
                         if (layBetList[index] < (backBetPrice - 0.1)) {
@@ -186,13 +213,13 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                                 selection_Id,
                                 marketId,
                                 side: 'LAY',
-                                size: "0",
+                                size: layStack,
                                 price: layBetList[index]
                             }
-                            // const layResponse = await placeBettt(betData, sessionToken);
+                            //  layResponse = await placeBettt(betData, sessionToken);
 
                             // console.log("LAY Bet Response: ", layResponse);
-                            console.log("Lay bet placed - 2 "  , layBetList[index]);
+                            console.log("Lay bet placed - 2 ", layBetList[index]);
 
                             break;
                         }
@@ -203,13 +230,14 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                                 selection_Id,
                                 marketId,
                                 side: 'LAY',
-                                size: "0",
+                                size: layStack,
                                 price: layBetList[index]
                             }
-                            // const layResponse = await placeBettt(betData, sessionToken);
+                            //  layResponse = await placeBettt(betData, sessionToken);
 
                             // console.log("LAY Bet Response: ", layResponse);
-                            console.log("Lay bet placed - 3 "  , layBetList[index]);
+                            console.log("Lay bet placed - 3 ", layBetList[index]);
+
 
                             break;
                         }
@@ -221,13 +249,14 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                             selection_Id,
                             marketId,
                             side: 'LAY',
-                            size: "0",
+                            size: layStack,
                             price: layBetList[index]
                         }
-                        // const layResponse = await placeBettt(betData, sessionToken);
+                        //  layResponse = await placeBettt(betData, sessionToken);
 
                         // console.log("LAY Bet Response: ", layResponse);
-                        console.log("Lay bet placed - 4 "  , layBetList[index]);
+                        console.log("Lay bet placed - 4 ", layBetList[index]);
+
 
                         break;
                     }
@@ -238,20 +267,22 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                 }
             }
 
+            return { backResponse, layResponse };
+
         }
         catch (err) {
             console.log(err);
         }
     }
     catch (err) {
-              console.log(err);
-              
+        console.log(err);
+
     }
 
 }
 
 async function placeBettt(strategyData, sessionToken) {
-    
+
     const { selection_Id, marketId, side, size, price } = strategyData;
     // console.log(selection_Id  , marketId , side , size , price);
 
@@ -269,13 +300,13 @@ async function placeBettt(strategyData, sessionToken) {
             marketId,
             instructions: [
                 {
-                    selectionId : selection_Id ,
+                    selectionId: selection_Id,
                     handicap: 0,
                     side: side,
                     orderType: "LIMIT",
                     limitOrder: {
-                        size : parseFloat(size),
-                        price : parseFloat(price),
+                        size: parseFloat(size),
+                        price: parseFloat(price),
                         persistenceType: "PERSIST",
                     },
                 },

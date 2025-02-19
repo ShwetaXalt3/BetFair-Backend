@@ -1,59 +1,60 @@
 const AllData = {
-    data: {
-      eventId: null,
-      competitionId: null,
-      event: null,
-      match: null,
-      matchh:null, 
-      tournament: null,
-      funds: null,
-      market : null,
-    },
-    setEventCompetition(eventId, competitionId) {
-      this.data.eventId = eventId;
-      this.data.competitionId = competitionId;
-    },
-    getEventCompetition() {
-      return { eventId: this.data.eventId, competitionId: this.data.competitionId };
-    },
-   
-    event: function (eventData) {
-      // console.log("Received Event Data:", eventData);
-        this.data.event = eventData
-    },
-   
-    match: function (matchData) {
-      // console.log("Received Match Data:", matchData);
-       this.data.match = matchData; 
-    },
-    matchh: function(matchData){
-      this.data.matchh = matchData;
-      // console.log(matchData);
-      
-    },
-   
-    tournament: function (tournamentData) {
-    //   console.log("Received Tournament Data:", tournamentData);
-      this.data.tournament = tournamentData;
-    },
-   
-    funds: function (fundData) {
-    //   console.log("Received Fund Data:", fundData);
-      this.data.funds = fundData; 
-    },
-    market : function(marketData){
-      // console.log(marketData);
-      
-      this.data.market =  marketData;
-    },
-    probability : function (probabilityData){
-      // console.log(probabilityData);
-      this.data.probability = probabilityData;
-    },
-   
-    getAllData: function () {
-      return this.data; 
-    }
-  };
-   
-  module.exports = AllData;
+  data: {
+    eventId: null,
+    competitionId: null,
+    strategy:null,
+    event: null,
+    match: null,
+    matchh:null,
+    tournament: null,
+    funds: null,
+    market : null,
+    placeorder:null,
+    profit:null
+  },
+  setEventCompetition(eventId, competitionId) {
+    this.data.eventId = eventId;
+    this.data.competitionId = competitionId;
+  },
+  setStrategy(Rstrategy){
+    this.data.strategy=Rstrategy;
+  },
+  getEventCompetition() {
+    return { eventId: this.data.eventId, competitionId: this.data.competitionId };
+  },
+ 
+  event: function (eventData) {
+      this.data.event = eventData
+  },
+ 
+  match: function (matchData) {
+     this.data.match = matchData;
+  },
+  matchh: function(matchData){
+    this.data.matchh = matchData;
+  },
+  tournament: function (tournamentData) {
+    this.data.tournament = tournamentData;
+  },
+ 
+  funds: function (fundData) {
+    this.data.funds = fundData;
+  },
+  market : function(marketData){
+    this.data.market =  marketData;
+  },
+  probability : function (probabilityData){
+    this.data.probability = probabilityData;
+  },
+  placeorder:function(orderData){
+    this.data.placeorder=orderData;
+  },
+  profit:function(profitData){
+    this.data.profit=profitData;
+  },
+  getAllData: function () {
+    return this.data;
+  }
+};
+ 
+module.exports = AllData;

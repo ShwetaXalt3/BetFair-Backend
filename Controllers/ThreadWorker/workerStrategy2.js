@@ -63,11 +63,11 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
         const firstBackOdds = runner1.ex.availableToBack?.[0]?.price || null;
 
         const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
-        console.log(firstBackOdds, firstLayOdds);
+        // console.log(firstBackOdds, firstLayOdds);
         const selection_Id = firstRunner.selectionId
 
         const prob_Star = 1 / (firstBackOdds + firstLayOdds);
-        console.log(prob_Star);
+        console.log("prob star" , prob_Star);
 
 
         if (responseLength == 0) {
@@ -87,26 +87,34 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                 }
                 // const backResponse = await placeBettt(betData , sessionToken);
                 // console.log(backResponse);
-                console.log("Back Bet Placed");
+                console.log("Back Bet Placed " , firstBackOdds );
+                console.log("Strategy 2 completed");
+                parentPort.postMessage({ success: true, backResponse  });
+                // return backResponse;
 
             }
             else {
                 const betData = {
                     selection_Id,
                     marketId,
-                    side: "BACK",
+                    side: "LAY",
                     // size : "0",
                     size: amount,
-                    price: firstBackOdds,
+                    price: firstLayOdds,
                 }
-                //   const backResponse = await placeBettt(betData , sessionToken);
-                //   console.log(backResponse);
-                console.log("Lay Bet Placed");
+                //   const layResponse = await placeBettt(betData , sessionToken);
+                //   console.log(layResponse);
+                console.log("Lay Bet Placed" , firstLayOdds);
+                console.log("Strategy 2 completed");
+                parentPort.postMessage({ success: true, layResponse  });
+
+                return layResponse;
+
 
             }
 
         }
-        parentPort.postMessage({ success: true, marketId });
+       
     }
     catch (err) {
         console.log(err);

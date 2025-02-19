@@ -67,11 +67,11 @@ const fetchStrategy2 = async(sessionToken , marketId , amount) =>{
    const firstBackOdds = runner1.ex.availableToBack?.[0]?.price || null;
    
    const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
-   console.log(firstBackOdds , firstLayOdds);
+  //  console.log(firstBackOdds , firstLayOdds);
    const  selection_Id = firstRunner.selectionId
    
    const prob_Star = 1/(firstBackOdds + firstLayOdds);
-   console.log(prob_Star);
+   console.log("Prob star" , prob_Star);
    
    
       if(responseLength == 0){
@@ -89,23 +89,25 @@ const fetchStrategy2 = async(sessionToken , marketId , amount) =>{
                   size : amount,
                   price :firstBackOdds,
                 }
-                const backResponse = await placeBettt(betData , sessionToken);
+                // const backResponse = await placeBettt(betData , sessionToken);
                 console.log(backResponse);
                 console.log("Back Bet Placed");
+                return backResponse;
                 
         }
         else{
           const betData  = {
             selection_Id,
             marketId,
-            side : "BACK",
+            side : "LAY",
             // size : "0",
             size : amount,
-            price :firstBackOdds,
+            price :firstLayOdds,
           }
-          const backResponse = await placeBettt(betData , sessionToken);
-          console.log(backResponse);
+          // const layResponse = await placeBettt(betData , sessionToken);
+          console.log(layResponse);
           console.log("Lay Bet Placed");
+          return backResponse;
           
         }
         
@@ -156,6 +158,7 @@ async function placeBettt(strategyData , sessionToken ) {
     });
 
     // console.log('API Response:', response.data);
+   
 
     return response.data;
 `    // return res.status(200).json(response.data)

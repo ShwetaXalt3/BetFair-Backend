@@ -1,11 +1,17 @@
-const axios = require('axios');
+
 const { fetchStrategy3 } = require('../Controllers/ThreadWorker/strategy3');
 const { fetchStrategy1 } = require('../Controllers/ThreadWorker/strategy1');
 const { fetchStrategy2 } = require('../Controllers/ThreadWorker/strategy2');
 
+const strategyMap = {
+  Strategy_3: fetchStrategy3,
+  Strategy_2: fetchStrategy2,
+  Strategy_1: fetchStrategy1,
+};
+
 const placeOrders = async (req, res) => {
   try {
-    const { marketId, strategy, amount } = req.body;
+    const { markets } = req.body;
     const authHeader = req.headers['authorization'];
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -14,32 +20,33 @@ const placeOrders = async (req, res) => {
 
     const sessionToken = authHeader.split(' ')[1];
 
-    if (!marketId || !strategy) {
-      return res.status(400).json({ message: 'Missing required parameters in request body' });
+    if (!markets || !Array.isArray(markets) || markets.length === 0) {
+      return res.status(400).json({ message: 'Invalid or missing markets array' });
     }
 
-    const marketIds = Array.isArray(marketId) ? marketId : [marketId]; // Ensure marketId is an array
-
-    let fetchStrategy;
-
-    switch (strategy) {
-      case 'Strategy_3':
-        fetchStrategy = fetchStrategy3;
-        break;
-      case 'Strategy_2':
-        fetchStrategy = fetchStrategy2;
-        break;
-      case 'Strategy_1':
-        fetchStrategy = fetchStrategy1;
-        break;
-      default:
-        return res.status(400).json({ message: 'Invalid strategy' });
-    }
-
-    // Process all market IDs in parallel
+    // Process each market ID with its respective strategy
     const strategyResults = await Promise.all(
-      marketIds.map((id) => fetchStrategy(sessionToken, id, amount))
-    );
+      markets.map(({ marketId, strategy , amount }) => {
+        const fetchStrategy = strategyMap[strategy];
+        // console.log(fetchStrategy);
+        
+
+        if (!fetchStrategy) {
+          return Promise.resolve({ marketId, error: 'Invalid strategy' });
+        }
+
+        return fetchStrategy(sessionToken, marketId, amount).then(result => ({
+          marketId,
+          strategy,
+          result,
+        })).catch(error => ({
+          marketId,
+          strategy,
+          error: error.message,
+        }));
+      })
+    ); 
+
 
     return res.status(200).json(strategyResults);
 
@@ -53,3 +60,67 @@ const placeOrders = async (req, res) => {
 };
 
 module.exports = { placeOrders };
+
+
+// const axios = require('axios');
+// const { fetchStrategy3 } = require('../Controllers/Strategy_3');
+// // const {fetchStrategy3} = require('../Controllers/ThreadWorker/strategy3');
+// // const {fetchStrategy1} = require('../Controllers/ThreadWorker/strategy1')
+// // const {fetchStrategy2} = require('../Controllers/ThreadWorker/strategy2')
+// const {fetchStrategy2} = require('../Controllers/Strategy_2')
+// const {fetchStrategy1} = require('../Controllers/Strategy_1')
+// const AllData = require('../services/AllData')
+
+// const placeOrders = async (req, res) => {
+
+//   try {
+//     const { marketId, strategy , amount } = req.body;
+//     AllData.setStrategy(strategy);
+//     const authHeader = req.headers['authorization'];
+//     if (!authHeader || !authHeader.startsWith('Bearer ')) {
+//       return res.status(400).json({ message: 'Missing or invalid authorization header' });
+//     }
+
+//     const sessionToken = authHeader.split(' ')[1];
+
+//     if (!marketId || !strategy) {
+//       return res.status(400).json({ message: 'Missing required parameters in request body' });
+//     }
+
+//     // If Strategy 3 is selected, execute fetchStrategy3
+//     if (strategy === 'Strategy_3') {
+//       const strategyData = await fetchStrategy3(sessionToken, marketId, amount);
+//       if (strategyData) {
+//         AllData.placeorder(strategyData.result)
+//         return res.status(200).json(strategyData)
+//       }
+//     } 
+//     else if(strategy === 'Strategy_2'){
+//             const strategyData = await fetchStrategy2(sessionToken, marketId , amount)
+//             if(strategyData){
+//               return res.status(200).json(strategyData);
+//             }
+//      }
+//     else if(strategy === 'Strategy_1') {
+//       const strategyData = await fetchStrategy1(sessionToken , marketId , amount);
+//       if(strategyData){
+//         return res.status(200).json(strategyData);
+//         }
+//     }
+//     else{
+      
+//       return res.status(400).json({ message: 'Invalid strategy' });
+//     }
+
+//   } catch (error) {
+//     console.error('Error in placeOrders:', error.message);
+//     return res.status(500).json({
+//       message: 'Failed to process placeOrder',
+//       error: error.message,
+//     });
+//   }
+// };
+
+
+
+// module.exports = { placeOrders };

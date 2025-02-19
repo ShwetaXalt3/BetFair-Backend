@@ -1,7 +1,8 @@
-const  AllData  = require('../services/AllData');
 const axios = require('axios');
+const moment = require('moment');
+const AllData=require('../services/AllData')
  
-const fetchEvent = async (req, res) => {
+const fetchProfit = async (req, res) => {
   try {
     const authHeader = req.headers['authorization'];
  
@@ -10,13 +11,24 @@ const fetchEvent = async (req, res) => {
     }
  
     const sessionToken = authHeader.split(' ')[1];
-
     const apiUrl = process.env.API_BASE_URL || "https://api.betfair.com/exchange/betting/json-rpc/v1";
+   
+    // Calculate date range
+    const startDate = moment().subtract(2, 'days').toISOString();
+    const endDate = moment().add(2, 'days').toISOString();
  
     const requestPayload = {
-      jsonrpc: '2.0',
-      method: 'SportsAPING/v1.0/listEventTypes',
-      params: { filter: {} },
+      jsonrpc: "2.0",
+      method: "SportsAPING/v1.0/listClearedOrders",
+      params: {
+        betStatus: "SETTLED",
+        groupBy: "BET",
+        settledDateRange: {
+          from: startDate,
+          to: endDate
+        }
+      },
+      id: 1
     };
      
     const response = await axios.post(apiUrl, requestPayload, {
@@ -26,30 +38,15 @@ const fetchEvent = async (req, res) => {
         'X-Authentication': sessionToken,      
       }
     });
-    
-    if(!response || !response.data){
-      throw new Error("Invalid response the api")
+   
+    const profitData=response.data;
+    AllData.profit(profitData);
+ 
+    if (!response || !response.data) {
+      throw new Error("Invalid response from the API");
     }
-        const eventData = response.data ;
-        // AllData.event(eventData);
-
-      const validIds = ["2","6423", "7522", "61420","998917", "6422", "26420387"]
-      const mapping = response.data.result;
-      const validEventTypes = [];
-      mapping.forEach((i)=>{
-        if(validIds.includes(i.eventType.id)){
-          validEventTypes.push(i.eventType);
-        }
-      })
-      if(validEventTypes.length > 0){
-        res.status(200).json(validEventTypes);
-        AllData.event(validEventTypes)
-      }
-      else{
-        res.status(404).json({message : "No valid event type found"})
-      }
-      return eventData;
-      
+    res.status(200).json(response.data);
+     
   } catch (error) {
     console.error('Error fetching event data:', error.message);
     if (error.response) {
@@ -61,7 +58,7 @@ const fetchEvent = async (req, res) => {
     });
   }
 };
-
-
  
-module.exports = { fetchEvent };
+module.exports = { fetchProfit };
+setInterval(fetchProfit, 2 * 60 * 60 * 1000);
+ 
