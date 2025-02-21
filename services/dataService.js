@@ -65,6 +65,14 @@ const processAndStoreData = async (req, res) => {
     const date = bPlaceorder.result.instructionReports[0].placedDate;
     // const marketId = bPlaceorder.marketId || "UNKNOWN_MARKET";
 
+    if(status==="SUCCESS"){
+      status="Matched";
+    }
+    else{
+      status="Unmatched";
+    }
+    
+
  
     const mergedData = new MergedData({
       Amount: amount,

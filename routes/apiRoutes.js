@@ -43,7 +43,7 @@ const AccountFund=require("../Controllers/AccountFunds");
 const  placeOrder  = require('../Controllers/placeOrder');
 const marketBook = require('../Controllers/marketBook');
 const profit=require('../Controllers/Profit');
-// const getMergeData=require('../services/getMergeServices');
+const getMergeData=require('../services/getMergeServices');
  
 // Authentication route
 // router.post('/login', authController.userLoginData); // POST for login, authentication
@@ -59,7 +59,7 @@ router.post('/profit' , profit.fetchProfit);
 router.post('/probability', probability.fetchProbability );
 router.post('/placeOrder' , placeOrder.placeOrders);
 router.post('/marketbook', marketBook.fetchMarketBook);
-// router.get('/gethistory',getMergeData.getMergedData);
+router.get('/gethistory',getMergeData.getMergedData);
  
  
 //Merged data route - This is where the merged data is stored
