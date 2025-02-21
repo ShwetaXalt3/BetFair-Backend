@@ -1,3 +1,4 @@
+
 const { Worker } = require('worker_threads');
 const path = require('path');
 const AllData = require('../../services/AllData');
@@ -12,94 +13,59 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
 
         return new Promise((resolve, reject) => {
             const worker = new Worker(path.join(__dirname, 'workerStrategy3.js'));
+        
+            let storedBackResponse = null;
+            let storedLayResponse = null;
 
             activeWorkers.add(worker); 
 
             worker.postMessage({ sessionToken, marketId, amount, matchData });
 
             worker.on("message", (result) => {
-                console.log("Worker Result:", result);
-                if (activeWorkers.has(worker)) {
-                    resolve(result); // Return response of the first completed worker
-                    activeWorkers.delete(worker); // Remove worker from tracking
+                if (result.success) {
+              
+                    storedBackResponse = result.backResponse;
+                    storedLayResponse = result.layResponse;
+                 
+                    if (storedBackResponse) AllData.backplaceorder(storedBackResponse);
+                    if (storedLayResponse) AllData.layplaceorder(storedLayResponse);
+                    if (activeWorkers.has(worker)) {
+                   
+                        resolve({
+                            success: true,
+                            backResponse: storedBackResponse,
+                            layResponse: storedLayResponse
+                        });
+                        activeWorkers.delete(worker);
+                    }
+                } else {
+                    resolve({
+                        success: false,
+                        reason: result.reason || result.error || 'Unknown error'
+                    });
+                    activeWorkers.delete(worker);
                 }
             });
 
             worker.on("error", (err) => {
                 console.error("Worker Error:", err);
                 reject(err);
-                activeWorkers.delete(worker); // Cleanup on error
+                activeWorkers.delete(worker);
             });
 
             worker.on("exit", (code) => {
                 if (code !== 0) {
                     console.error(`Worker stopped with exit code ${code}`);
                 }
-                activeWorkers.delete(worker); // Cleanup on exit
+                activeWorkers.delete(worker);
             });
         });
 
     } catch (err) {
         console.error("Error in Strategy 3 Worker Thread:", err);
+        throw err;
     }
 };
 
 module.exports = { fetchStrategy3 };
-
-
-
-// const { Worker } = require('worker_threads');
-// const path = require('path');
-// const AllData = require('../../services/AllData');
-
-// const fetchStrategy3 = async (sessionToken, marketIds, amount) => {
-//     try {
-//         const allData = AllData.getAllData();
-//         const matchData = allData.matchh;
-//         console.log("Starting Strategy 3 in Worker Threads...");
-
-//         return new Promise((resolve, reject) => {
-//             const results = new Array(marketIds.length).fill(null); // Store results by index
-//             let completedCount = 0; // Track how many are completed
-
-//             marketIds.forEach((marketId, index) => {
-//                 const worker = new Worker(path.join(__dirname, 'workerStrategy3.js'));
-
-//                 worker.postMessage({ sessionToken, marketId, amount, matchData });
-
-//                 worker.on("message", (result) => {
-//                     console.log(`Worker for index ${index} completed with result:`, result);
-//                     results[index] = result; // Store result at the correct index
-//                     completedCount++;
-
-//                     // If all workers have completed, resolve the promise with ordered results
-//                     if (completedCount === marketIds.length) {
-//                         resolve(results);
-//                     }
-//                 });
-
-//                 worker.on("error", (err) => {
-//                     console.error(`Worker Error at index ${index}:`, err);
-//                     results[index] = { error: "Worker failed" }; // Store error at the correct index
-//                     completedCount++;
-
-//                     if (completedCount === marketIds.length) {
-//                         resolve(results);
-//                     }
-//                 });
-
-//                 worker.on("exit", (code) => {
-//                     if (code !== 0) {
-//                         console.error(`Worker at index ${index} stopped with exit code ${code}`);
-//                     }
-//                 });
-//             });
-//         });
-
-//     } catch (err) {
-//         console.error("Error in Strategy 3 Worker Threads:", err);
-//     }
-// };
-
-// module.exports = { fetchStrategy3 };
 

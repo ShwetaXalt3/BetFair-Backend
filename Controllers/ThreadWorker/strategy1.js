@@ -14,11 +14,36 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
             const worker = new Worker(path.join(__dirname, 'workerStrategy1.js'));
             
             // console.log(matchData);
+            let storedBackResponse = null;
+            let storedLayResponse = null;
+
+            activeWorkers.add(worker);
             worker.postMessage({ sessionToken, marketId, amount , matchData });
 
             worker.on("message", (result) => {
-                console.log("Worker Result:", result);
-                resolve(result);
+                if (result.success) {
+              
+                    storedBackResponse = result.backResponse;
+                    storedLayResponse = result.layResponse;
+                 
+                    if (storedBackResponse) AllData.backplaceorder(storedBackResponse);
+                    if (storedLayResponse) AllData.layplaceorder(storedLayResponse);
+                    if (activeWorkers.has(worker)) {
+                   
+                        resolve({
+                            success: true,
+                            backResponse: storedBackResponse,
+                            layResponse: storedLayResponse
+                        });
+                        activeWorkers.delete(worker);
+                    }
+                } else {
+                    resolve({
+                        success: false,
+                        reason: result.reason || result.error || 'Unknown error'
+                    });
+                    activeWorkers.delete(worker);
+                }
             });
 
             worker.on("error", (err) => {

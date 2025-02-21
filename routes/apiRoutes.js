@@ -39,7 +39,7 @@ const eventController = require('../Controllers/eventController');
 const tournamentController = require('../Controllers/tournamentController');
 const matchController = require('../Controllers/matchController');
 const AccountFund=require("../Controllers/AccountFunds");
-const dataService = require('../services/dataService');
+ const dataService = require('../services/dataService');
 const  placeOrder  = require('../Controllers/placeOrder');
 const marketBook = require('../Controllers/marketBook');
 const profit=require('../Controllers/Profit');
@@ -64,6 +64,6 @@ router.post('/marketbook', marketBook.fetchMarketBook);
  
 //Merged data route - This is where the merged data is stored
  
- router.post('/history',dataService.processAndStoreData); // POST to save merged data
+  router.post('/history',dataService.processAndStoreData); // POST to save merged data
  
 module.exports = router;

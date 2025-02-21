@@ -60,5 +60,12 @@ const fetchProfit = async (req, res) => {
 };
  
 module.exports = { fetchProfit };
-setInterval(fetchProfit, 2 * 60 * 60 * 1000);
+// setInterval(async () => {
+//   try {
+//     await fetchProfit({ headers: { authorization: `Bearer ${process.env.API_TOKEN}` } }, { status: () => ({ json: () => {} }) });
+//   } catch (error) {
+//     console.error("Scheduled fetchProfit failed:", error);
+//   }
+// }, 2 * 60 * 60 * 1000);
+ 
  

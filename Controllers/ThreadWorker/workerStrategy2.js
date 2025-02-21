@@ -66,13 +66,15 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
         // console.log(firstBackOdds, firstLayOdds);
         const selection_Id = firstRunner.selectionId
 
-        const prob_Star = 1 / (firstBackOdds + firstLayOdds);
-        console.log("prob star" , prob_Star);
+        const prob_Star = (1 / (firstBackOdds + firstLayOdds)).toFixed(2);
+        console.log("prob star", prob_Star);
 
 
         if (responseLength == 0) {
             // return responseData.status(200).json({message : "Cant predict"})
             console.log("Cant predict");
+            const val = "Cannot predict";
+            parentPort.postMessage({ success: true, val });
             return;
 
         }
@@ -86,11 +88,12 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                     price: firstBackOdds,
                 }
                 // const backResponse = await placeBettt(betData , sessionToken);
+                const backResponse = "Hi  i am back response from strategy -2 "
                 // console.log(backResponse);
-                console.log("Back Bet Placed " , firstBackOdds );
+                console.log("Back Bet Placed ", firstBackOdds);
                 console.log("Strategy 2 completed");
-                parentPort.postMessage({ success: true, backResponse  });
-                // return backResponse;
+                parentPort.postMessage({ success: true, backResponse });
+                return backResponse;
 
             }
             else {
@@ -103,10 +106,11 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                     price: firstLayOdds,
                 }
                 //   const layResponse = await placeBettt(betData , sessionToken);
+                const layResponse = "Hi i am lay response from strategy -2"
                 //   console.log(layResponse);
-                console.log("Lay Bet Placed" , firstLayOdds);
+                console.log("Lay Bet Placed", firstLayOdds);
                 console.log("Strategy 2 completed");
-                parentPort.postMessage({ success: true, layResponse  });
+                parentPort.postMessage({ success: true, layResponse });
 
                 return layResponse;
 
@@ -114,7 +118,7 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
             }
 
         }
-       
+
     }
     catch (err) {
         console.log(err);

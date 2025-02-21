@@ -2,18 +2,22 @@
 const { fetchStrategy3 } = require('../Controllers/ThreadWorker/strategy3');
 const { fetchStrategy1 } = require('../Controllers/ThreadWorker/strategy1');
 const { fetchStrategy2 } = require('../Controllers/ThreadWorker/strategy2');
+const AllData = require('../services/AllData')
 
 const strategyMap = {
-  Strategy_3: fetchStrategy3,
-  Strategy_2: fetchStrategy2,
-  Strategy_1: fetchStrategy1,
+  strategy_3: fetchStrategy3,
+  strategy_2: fetchStrategy2,
+  strategy_1: fetchStrategy1,
 };
 
 const placeOrders = async (req, res) => {
   try {
     const { markets } = req.body;
     const authHeader = req.headers['authorization'];
-
+    const strategy = markets[0].strategy;  
+    AllData.setStrategy(strategy)
+    console.log("Placeorder Strategy ", strategy);
+    
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
       return res.status(400).json({ message: 'Missing or invalid authorization header' });
     }
@@ -27,6 +31,8 @@ const placeOrders = async (req, res) => {
     // Process each market ID with its respective strategy
     const strategyResults = await Promise.all(
       markets.map(({ marketId, strategy , amount }) => {
+        AllData.setMarketId(marketId);
+
         const fetchStrategy = strategyMap[strategy];
         // console.log(fetchStrategy);
         
