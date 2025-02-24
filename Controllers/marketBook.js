@@ -32,7 +32,7 @@ const fetchMarketBook = async (sessionToken, marketId) => {
             }
         });
 
-        // console.log("Market Book Data:", JSON.stringify(response.data, null, 2));
+        //  console.log("Market Book Data:", JSON.stringify(response.data, null, 2));
         AllData.market(response.data);  // Save market data (optional)
         // console.log("from market book ", response.data);
         

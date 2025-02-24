@@ -14,9 +14,6 @@ const placeOrders = async (req, res) => {
   try {
     const { markets } = req.body;
     const authHeader = req.headers['authorization'];
-    const strategy = markets[0].strategy;  
-    AllData.setStrategy(strategy)
-    console.log("Placeorder Strategy ", strategy);
     
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
       return res.status(400).json({ message: 'Missing or invalid authorization header' });
@@ -31,7 +28,9 @@ const placeOrders = async (req, res) => {
     // Process each market ID with its respective strategy
     const strategyResults = await Promise.all(
       markets.map(({ marketId, strategy , amount }) => {
+        AllData.setStrategy(strategy);
         AllData.setMarketId(marketId);
+        AllData.setAmount(amount);
 
         const fetchStrategy = strategyMap[strategy];
         // console.log(fetchStrategy);

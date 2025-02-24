@@ -29,6 +29,7 @@ async function prediction(firstRunner, secondRunner, tournamentDate, sessionToke
 }
 
 const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
+    
     try {
         console.log("I am from Strategy 2");
 

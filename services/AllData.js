@@ -12,7 +12,8 @@ const AllData = {
     market : null,
     backplaceorder:null,
     layplaceorder : null,
-    profit:null
+    profit:null,
+    amount: null, 
   },
   setEventCompetition(eventId, competitionId) {
     this.data.eventId = eventId;
@@ -25,7 +26,9 @@ const AllData = {
     this.data.strategy=Rstrategy;
     console.log(this.data.strategy);
   },
-
+  setAmount(Ramount){
+        this.data.amount = Ramount;
+  },
   getEventCompetition() {
     return { eventId: this.data.eventId, competitionId: this.data.competitionId };
   },
@@ -66,11 +69,11 @@ const AllData = {
     this.data.probability = probabilityData;
   },
   backplaceorder:function(orderData){
-    console.log("from alldata placeorder " , orderData);
+    // console.log("from alldata placeorder " , orderData);
     this.data.backplaceorder=orderData;
   },
   layplaceorder:function(orderData){
-    console.log("from alldata lay placeorder " , orderData);
+    // console.log("from alldata lay placeorder " , orderData);
     
     this.data.layplaceorder=orderData;
   },
