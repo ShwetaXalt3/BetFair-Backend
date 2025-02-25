@@ -1,28 +1,24 @@
-
 const { parentPort } = require('worker_threads');
 const axios = require('axios');
 const { fetchMarketBook } = require('../marketBook');
 
 function layStakeCalculator(backStake, layBetPrice, backBetPrice) {
-  console.log("Hello ", backStake, layBetPrice);
+  // console.log("Hello ", backStake, layBetPrice);
 
   let layStake = (backStake * backBetPrice) / layBetPrice;
   layStake = Math.round(layStake * 100) / 100;
   return layStake;
 }
 
-
-
 const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
   try {
     console.log(`Processing Strategy 3 for Market ID: ${marketId}`);
-    //  console.log(matchData);
+
     var marketTimes;
     if (matchData && matchData.result && Array.isArray(matchData.result)) {
       marketTimes = matchData.result
         .filter(matchh => matchh.marketId === marketId)
         .map(matchh => {
-          // console.log(matchh.marketStartTime);
           return matchh.marketStartTime;
         });
     } else {
@@ -30,8 +26,6 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
     }
 
     const marketBookData = await fetchMarketBook(sessionToken, marketId);
-    // console.log(marketBookData);
-
 
     if (!marketBookData || !marketBookData.result || marketBookData.result.length === 0) {
       throw new Error("Invalid market book data");
@@ -39,79 +33,57 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
 
     const runner1 = marketBookData.result[0].runners[0];
     const runner2 = marketBookData.result[0].runners[1];
-    // console.log(runner1 , runner2);
-
 
     const firstBackOdds = runner1.ex.availableToBack?.[0]?.price || null;
-    //  const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
+    const firstLayOdds = runner1.ex.availableToLay?.[0]?.price || null;
     const secondBackOdds = runner2.ex.availableToBack?.[0]?.price || null;
-
-
+    const secondLayOdds = runner2.ex.availableToLay?.[0]?.price || null;
+    let backBetPrice, selectionId, backStake, layPrice, layBetPrice;
 
     if (!firstBackOdds || !secondBackOdds) {
       const reason = "Back odds not found";
       parentPort.postMessage({ success: false, reason });
       return;
-      // throw new Error("Back odds not found");
     }
 
-    let lastPriceTraded, selectionId, backStake, layPrice;
-
-    // Determine the selection for BACK bet
     if (firstBackOdds > secondBackOdds) {
-      lastPriceTraded = secondBackOdds;
+      backBetPrice = secondBackOdds;
+      layBetPrice = secondLayOdds;
       selectionId = runner2.selectionId;
-      // backStake = secondBackOdds;
-      // layPrice = secondLayOdds;
     } else {
-      lastPriceTraded = firstBackOdds;
+      backBetPrice = firstBackOdds;
+      layBetPrice = firstLayOdds;
       selectionId = runner1.selectionId;
-      // backStake = firstBackOdds;
-      // layPrice = firstLayOdds;
     }
-    if (!lastPriceTraded) {
-      // return res.status(400).json({ "message": "not dound last traded" })
-      console.log("Not found last traded");
-      const reason = "Not found last traded"
-      parentPort.postMessage({ success: false, reason })
+    
+    if (!backBetPrice) {
+      console.log("Price Not found!!!!!");
+      const reason = "Price Not found!!!!!";
+      parentPort.postMessage({ success: false, reason });
       return;
-
     }
-    if (lastPriceTraded <= 1.1) {
-      // return res.status(400).json({ "message": "Back bet price is low" })
+    
+    if (backBetPrice <= 1.1) {
       console.log("Back bet is low");
-      const reason = "Back bet is low"
-      parentPort.postMessage({ success: false, reason })
+      const reason = "Back bet is low";
+      parentPort.postMessage({ success: false, reason });
       return;
-
-    }
-    if (lastPriceTraded <= 1.2) {
-      layPrice = (lastPriceTraded - 0.5)
-    }
-    else if (lastPriceTraded > 1.2) {
-      layPrice = (lastPriceTraded - 0.1)
     }
 
-    if (layPrice < 1.05) {
-      layPrice = 1.05
-    }
-
-    backStake = (amount / 2);
+    // Fix: Use amount instead of undefined 'size' variable
+    backStake = Math.round(amount / 2 * 10) / 10;
     var backResponse;
 
-    // let backStake = layStakeCalculator(size, backStake, lastPriceTraded);
-
     // -------------------back bet try catch---------------
-
     try {
       const betData = {
         selectionId,
         marketId,
         side: 'BACK',
         size: backStake,
-        price: lastPriceTraded,
+        price: backBetPrice,
       };
-      console.log("Last price Traded  back bet ", lastPriceTraded);
+      console.log(" back bet placed at  ", backBetPrice);
 
       //  backResponse = await placeBettt(betData, sessionToken);
       backResponse = {
@@ -137,450 +109,238 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
           "status": "SUCCESS"
         },
         "id": 1
-      }
+      };
 
       var statuss = backResponse.result.status;
-      // var statuss = "SUCCESS"
-
       if (backResponse.error) {
         console.error("BACK bet placement failed. Stopping strategy.");
+        parentPort.postMessage({ success: false, reason: "BACK bet placement failed" });
         return;
       }
       else {
         console.log("Back Bet placed Successfully!!");
-        parentPort.postMessage({ success: true, backResponse });
-        // try {
-        //   const response = await axios.post('http://localhost:6060/api/history');
-        //   console.log('API Response:', response.data);
-        // } catch (error) {
-        //   console.error('Error hitting API:', error.message);
-        // }
-
+       parentPort.postMessage({ success: true, backResponse, backBetPrice});
+       try {
+        const response = await axios.post('http://localhost:7000/api/Bhistory');
+      } catch (error) {
+        console.error('Error hitting API:', error);
+      }
       }
 
     } catch (err) {
       console.error("Error placing back bet", err);
       parentPort.postMessage({ success: false, error: err.message });
+      return;
     }
 
-    // ------------------------------Lay bet try catch---------------
-    try {
-      let layBetList = [100, 100, 100, 100, 100, 100];
-      let index = 5;
-      var layResponse = null;
-
-
-      let triggerTime = null;
-
-      const initializeTriggerTime = (marketTimes) => {
-        if (!triggerTime && marketTimes.length > 0) {
-          const matchStartTime = new Date(marketTimes[0]);
-          // console.log(matchStartTime);
-
-
-          if (!isNaN(matchStartTime.getTime())) {
-            triggerTime = new Date(matchStartTime.getTime() + 30 * 60000);
-            // console.log("Trigger Time Set:", triggerTime);
+    // ------------------------------Start monitoring for lay bet in background---------------
+    if (statuss === "SUCCESS") {
+      // Continue with lay monitoring in the background
+      monitor_market(marketBookData, backBetPrice, layBetPrice, selectionId, backStake, matchData, marketId, sessionToken)
+        .then(layResponse => {
+          if (layResponse) {
+            // When lay bet is complete, send another message with the lay response
+            parentPort.postMessage({ success: true, layResponse });
           }
-        }
-      };
-
-
-      initializeTriggerTime(marketTimes);
-
-
-
-
-      //-----------------------------------Lay condition-----------------
-      try {
-        if (statuss === "SUCCESS") {
-          // await processAndStoreData();
-          while (true) {
-
-            console.log("\n");
-
-            console.log("Fetching Market Book again for LAY conditions...");
-
-
-            //  if (matchData?.result && Array.isArray(matchData.result)) {
-            //    const market = matchData.result.find(matchh => matchh.marketId === marketId);
-
-            //    if (market?.runners?.length > 0) {
-            //      // Find the runner with the given selectionId  
-            //      const runner = market.runners.find(r => r.selectionId === selectionId);
-
-            //      if (runner) {
-            //        console.log("Runner Name:", runner.runnerName);
-            //      } else {
-            //        console.log("Runner not found for selectionId:", targetSelectionId);
-            //      }
-            //    } else {
-            //      console.log("No runners found for the given marketId.");
-            //    }
-            //  } else {
-            //    console.log("Error: matchData.result is not available or not an array.");
-            //  }
-
-
-
-            // ---------------------------Match Start time --------------------
-
-
-
-
-            const updatedMarketBook = await fetchMarketBook(sessionToken, marketId);
-            const updatedRunner = updatedMarketBook.result[0].runners.find(r => r.selectionId === selectionId);
-
-
-            const updatedLayPrice = updatedRunner.ex.availableToLay?.[0]?.price || NaN;
-            if (updatedLayPrice === null) {
-              continue;
-            }
-            console.log("Updated lay price : ", updatedLayPrice);
-            console.log("selection ID : ", selectionId);
-            console.log("Market Id ", marketId);
-            console.log("Index is : ", index);
-
-            const backBetPrice = lastPriceTraded;
-
-            if (marketBookData.status === 'CLOSED') {
-              return res.status(200).json({ message: "betting closed" })
-              // break;
-            }
-
-            if (updatedLayPrice < (backBetPrice - 0.01) && layBetList[index] !== updatedLayPrice) {
-
-              layBetList.push(updatedLayPrice);
-              index = index + 1;
-            }
-            console.log("Lay odd List is ", layBetList);
-
-
-            if (layBetList[index - 5] < layBetList[index]) {
-              const layStake = layStakeCalculator(backStake, layBetList[index], lastPriceTraded)
-              const betData = {
-                selectionId,
-                marketId,
-                side: 'LAY',
-                size: layStake,
-                price: layBetList[index]
-              }
-              //  layResponse = await placeBettt(betData, sessionToken);
-              // layResponse = "Hi i am lay response from strategy-3"
-              layResponse = {
-                "jsonrpc": "2.0",
-                "result": {
-                  "marketId": marketId,
-                  "instructionReports": [
-                    {
-                      "instruction": {
-                        "selectionId": selectionId,
-                        "handicap": 0,
-                        "limitOrder": {
-                          "size": 2,
-                          "price": 3,
-                          "persistenceType": "LAPSE"
-                        },
-                        "orderType": "LIMIT",
-                        "side": "LAY"
-                      },
-                      "betId": "31242604945",
-                      "placedDate": "2013-10-30T14:22:47.000Z",
-                      "averagePriceMatched": 0,
-                      "sizeMatched": 0,
-                      "status": "SUCCESS"
-                    }
-                  ],
-                  "status": "SUCCESS"
-                },
-                "id": 1
-              }
-              parentPort.postMessage({ success: true, layResponse });
-              console.log("Lay bet placed on ", layBetList[index]);
-
-              // console.log("LAY Bet Response: ", layResponse);
-              console.log("Lay Bet Places SuccessFully - 1");
-              // AllData.layplaceorder(layResponse)
-
-              try {
-                const response = await axios.post('http://localhost:6060/api/history');
-                console.log('API Response:', response.data);
-              } catch (error) {
-                console.error('Error hitting API:', error.message);
-              }
-
-
-              break;
-
-            }
-
-            if (backBetPrice > 1.5) {
-              if (layBetList[index] < (backBetPrice - 0.1)) {
-                const layStake = layStakeCalculator(backStake, layBetList[index], lastPriceTraded)
-                const betData = {
-                  selectionId,
-                  marketId,
-                  side: 'LAY',
-                  size: layStake,
-                  price: layBetList[index]
-                }
-                //  layResponse = await placeBettt(betData, sessionToken);
-                layResponse = {
-                  "jsonrpc": "2.0",
-                  "result": {
-                    "marketId": marketId,
-                    "instructionReports": [
-                      {
-                        "instruction": {
-                          "selectionId": selectionId,
-                          "handicap": 0,
-                          "limitOrder": {
-                            "size": 2,
-                            "price": 3,
-                            "persistenceType": "LAPSE"
-                          },
-                          "orderType": "LIMIT",
-                          "side": "LAY"
-                        },
-                        "betId": "31242604945",
-                        "placedDate": "2013-10-30T14:22:47.000Z",
-                        "averagePriceMatched": 0,
-                        "sizeMatched": 0,
-                        "status": "SUCCESS"
-                      }
-                    ],
-                    "status": "SUCCESS"
-                  },
-                  "id": 1
-                }
-                parentPort.postMessage({ success: true, layResponse });
-
-                // console.log("LAY Bet Response: ", layResponse);
-                console.log("Lay bet placed on ", layBetList[index]);
-                console.log("Lay Bet Places SuccessFully - 2");
-                // AllData.layplaceorder(layResponse)
-
-                try {
-                  const response = await axios.post('http://localhost:6060/api/history');
-                  console.log('API Response:', response.data);
-                } catch (error) {
-                  console.error('Error hitting API:', error.message);
-                }
-
-                break;
-              }
-            } else {
-              if (layBetList[index] < (backBetPrice - 0.05)) {
-                const layStake = layStakeCalculator(backStake, layBetList[index], lastPriceTraded)
-                const betData = {
-                  selectionId,
-                  marketId,
-                  side: 'LAY',
-                  size: layStake,
-                  price: layBetList[index]
-                }
-                //  layResponse = await placeBettt(betData, sessionToken);
-                layResponse = {
-                  "jsonrpc": "2.0",
-                  "result": {
-                    "marketId": marketId,
-                    "instructionReports": [
-                      {
-                        "instruction": {
-                          "selectionId": selectionId,
-                          "handicap": 0,
-                          "limitOrder": {
-                            "size": 2,
-                            "price": 3,
-                            "persistenceType": "LAPSE"
-                          },
-                          "orderType": "LIMIT",
-                          "side": "LAY"
-                        },
-                        "betId": "31242604945",
-                        "placedDate": "2013-10-30T14:22:47.000Z",
-                        "averagePriceMatched": 0,
-                        "sizeMatched": 0,
-                        "status": "SUCCESS"
-                      }
-                    ],
-                    "status": "SUCCESS"
-                  },
-                  "id": 1
-                }
-                parentPort.postMessage({ success: true, layResponse });
-
-                // console.log("LAY Bet Response: ", layResponse);
-                console.log("Lay bet placed on ", layBetList[index]);
-                console.log("Lay Bet Places SuccessFully - 3");
-                // AllData.layplaceorder(layResponse)
-
-                try {
-                  const response = await axios.post('http://localhost:6060/api/history');
-                  console.log('API Response:', response.data);
-                } catch (error) {
-                  console.error('Error hitting API:', error.message);
-                }
-
-                break;
-              }
-            }
-
-            if (layBetList[index] == layPrice) {
-              const layStake = layStakeCalculator(backStake, layBetList[index], lastPriceTraded)
-              const betData = {
-                selectionId,
-                marketId,
-                side: 'LAY',
-                size: layStake,
-                price: layBetList[index]
-              }
-              //  layResponse = await placeBettt(betData, sessionToken);
-              layResponse = {
-                "jsonrpc": "2.0",
-                "result": {
-                  "marketId": marketId,
-                  "instructionReports": [
-                    {
-                      "instruction": {
-                        "selectionId": selectionId,
-                        "handicap": 0,
-                        "limitOrder": {
-                          "size": 2,
-                          "price": 3,
-                          "persistenceType": "LAPSE"
-                        },
-                        "orderType": "LIMIT",
-                        "side": "LAY"
-                      },
-                      "betId": "31242604945",
-                      "placedDate": "2013-10-30T14:22:47.000Z",
-                      "averagePriceMatched": 0,
-                      "sizeMatched": 0,
-                      "status": "SUCCESS"
-                    }
-                  ],
-                  "status": "SUCCESS"
-                },
-                "id": 1
-              }
-              parentPort.postMessage({ success: true, layResponse });
-
-              // console.log("LAY Bet Response: ", layResponse);
-              console.log("Lay bet placed on ", layStake[index]);
-              console.log("Lay Bet Places SuccessFully - 4");
-              // AllData.layplaceorder(layResponse)
-
-              try {
-                const response = await axios.post('http://localhost:6060/api/history');
-                console.log('API Response:', response.data);
-              } catch (error) {
-                console.error('Error hitting API:', error.message);
-              }
-
-              break;
-            }
-
-            // -------------------------trigger time-----------------------
-
-            const currentTime = new Intl.DateTimeFormat('en-US', {
-              // timeZone: 'Asia/Kolkata', // Change to your desired time zone  
-              year: 'numeric',
-              month: '2-digit',
-              day: '2-digit',
-              hour: '2-digit',
-              minute: '2-digit',
-              second: '2-digit'
-            }).format(new Date());
-
-            // console.log("Time in IST:", currentTime);  
-
-
-
-            if (updatedLayPrice > (backBetPrice + 0.3)) {
-
-              const layStake = layStakeCalculator(backStake, updatedLayPrice, lastPriceTraded)
-              const betData = {
-                selectionId,
-                marketId,
-                side: 'LAY',
-                size: layStake,
-                price: updatedLayPrice
-              }
-              //  layResponse = await placeBettt(betData, sessionToken);
-              layResponse = {
-                "jsonrpc": "2.0",
-                "result": {
-                  "marketId": marketId,
-                  "instructionReports": [
-                    {
-                      "instruction": {
-                        "selectionId": selectionId,
-                        "handicap": 0,
-                        "limitOrder": {
-                          "size": 2,
-                          "price": 3,
-                          "persistenceType": "LAPSE"
-                        },
-                        "orderType": "LIMIT",
-                        "side": "LAY"
-                      },
-                      "betId": "31242604945",
-                      "placedDate": "2013-10-30T14:22:47.000Z",
-                      "averagePriceMatched": 0,
-                      "sizeMatched": 0,
-                      "status": "SUCCESS"
-                    }
-                  ],
-                  "status": "SUCCESS"
-                },
-                "id": 1
-              }
-              parentPort.postMessage({ success: true, layResponse });
-
-              // console.log("LAY Bet Response: ", layResponse);
-              console.log("Lay bet placed on ", updatedLayPrice);
-              console.log("Lay Bet Places SuccessFully - 5");
-              // AllData.layplaceorder(layResponse)
-
-              try {
-                const response = await axios.post('http://localhost:6060/api/history');
-                console.log('API Response:', response.data);
-              } catch (error) {
-                console.error('Error hitting API:', error.message);
-              }
-
-              //  console.log("Triggered Time", triggerTime)
-              break;
-            }
-            // }
-
-
-            await new Promise(resolve => setTimeout(resolve, 30000));
-          }
-          parentPort.postMessage({ success: true, backResponse, layResponse });
-        }
-
-
-      } catch (err) {
-        console.log(err);
-
-      }
-
-
-    } catch (err) {
-      console.log("Error placing lay bet", err);
-      parentPort.postMessage({ success: false, error: err.message });
+        })
+        .catch(err => {
+          console.log("Error in lay monitoring:", err);
+          parentPort.postMessage({ 
+            success: false, 
+            error: `Lay monitoring error: ${err.message}`,
+            stage: "lay_monitoring" 
+          });
+        });
     }
 
   } catch (err) {
     console.log("error in whole code", err);
-
+    parentPort.postMessage({ success: false, error: err.message });
   }
+};
+
+async function monitor_market(marketBookData, backBetPrice, layBetPrice, selectionId, backStake, matchData, marketId, sessionToken) {
+  // "Monitor market prices and execute lay bet when conditions are met
+  let previous_lay_price = layBetPrice;
+  const original_sl_price = parseFloat((layBetPrice + 0.5).toFixed(2));
+  let target_price = parseFloat((backBetPrice - 0.2).toFixed(2));
+  let sl_price = original_sl_price;
+  let normal_lay_price = layBetPrice;
+
+ 
+
+  while (true) {
+    try {
+      console.log("\n");
+      console.log("Fetching Market Book again for LAY conditions...");
+      const latest_market = await fetchMarketBook(sessionToken, marketId);
+      
+      if (!latest_market || !latest_market.result || latest_market.result.length === 0) {
+        console.log("Market no longer available");
+        return null;
+      }
+      
+      const updatedRunner = latest_market.result[0].runners.find(r => r.selectionId === selectionId);
+      
+      if (!updatedRunner) {
+        console.log("Runner no longer available");
+        return null;
+      }
+      
+      const current_lay_bet_price = updatedRunner.ex.availableToLay?.[0]?.price || NaN;
+      const current_back_bet_price = updatedRunner.ex.availableToBack?.[0]?.price || NaN;
+
+      if (latest_market.result[0].status === 'CLOSED') {
+        console.log("Market closed");
+        break;
+      }
+
+      if (current_lay_bet_price - normal_lay_price > 0.50) {
+        console.log("Abnormal Lay price");
+        continue;
+      } else {
+        normal_lay_price = current_lay_bet_price;
+      }
+
+      if (current_lay_bet_price < previous_lay_price) {
+        const updated = update_prices(
+          current_back_bet_price,
+          current_lay_bet_price,
+          backBetPrice,
+          layBetPrice,
+          target_price,
+          sl_price,
+          sessionToken
+        );
+        
+        target_price = updated.target_price;
+        sl_price = updated.sl_price;
+        previous_lay_price = current_lay_bet_price;
+      }
+      
+      if (current_lay_bet_price >= backBetPrice) {
+        console.log("In Above SL code");
+        sl_price = original_sl_price;
+        previous_lay_price = current_lay_bet_price;
+      }
+
+      console.log("back", current_back_bet_price);
+      console.log("Lay", current_lay_bet_price);
+
+      const status = await check_exit_conditions(
+        current_back_bet_price,
+        current_lay_bet_price,
+        target_price,
+        sl_price,
+        backStake,
+        backBetPrice,
+        selectionId,
+        marketId,
+        sessionToken
+      );
+
+      // console.log("status" , status);
+      if(status){
+        console.log("bet placed");
+        break;
+      }
+
+      await new Promise(resolve => setTimeout(resolve, 30000));
+     
+
+    } catch (err) {
+      console.log("Error in monitoring loop", err);
+    }
+  }
+  
+}
+
+function update_prices(current_back_bet_price, current_lay_bet_price, backBetPrice, layBetPrice, target_price, sl_price) {
+  let new_target_price = target_price;
+  let new_sl_price = sl_price;
+
+  if (current_lay_bet_price < backBetPrice) {
+    if (current_lay_bet_price >= (backBetPrice - 0.1)) {
+      new_sl_price = parseFloat((current_back_bet_price + 0.5).toFixed(2));
+    }
+    else if (backBetPrice > 1.5 && (backBetPrice - current_lay_bet_price) >= 0.2) {
+      new_sl_price = parseFloat((current_lay_bet_price + 0.05).toFixed(2));
+    }
+    else if (backBetPrice <= 1.5 && (backBetPrice - current_lay_bet_price) >= 0.1) {
+      new_sl_price = parseFloat((current_lay_bet_price + 0.05).toFixed(2));
+    }
+    else {
+      new_sl_price = parseFloat((current_lay_bet_price + 0.1).toFixed(2));
+    }
+
+    new_target_price = Math.max(parseFloat((current_back_bet_price - 0.2).toFixed(2)), 1.01);
+  }
+  
+  return { target_price: new_target_price, sl_price: new_sl_price };
+}
+
+async function check_exit_conditions(current_back_bet_price, current_lay_bet_price, target_price, sl_price, backStake, backBetPrice, selectionId, marketId, sessionToken) {
+  if (current_lay_bet_price <= target_price || current_lay_bet_price >= sl_price) {
+  // if(true){
+    const layStake = layStakeCalculator(backStake, current_lay_bet_price, backBetPrice);
+    
+    const betData = {
+      selectionId,
+      marketId,
+      side: 'LAY',
+      size: layStake,
+      price: current_lay_bet_price,
+    };
+
+    // const layResponse = await placeBettt(betData, sessionToken);
+    const layResponse = {
+      "jsonrpc": "2.0",
+      "result": {
+        "marketId": marketId,
+        "instructionReports": [
+          {
+            "instruction": {
+              "selectionId": selectionId,
+              "handicap": 0,
+              "limitOrder": {
+                "size": layStake,
+                "price": current_lay_bet_price,
+                "persistenceType": "LAPSE"
+              },
+              "orderType": "LIMIT",
+              "side": "LAY"
+            },
+            "betId": "31242604945",
+            "placedDate": new Date().toISOString(),
+            "averagePriceMatched": 0,
+            "sizeMatched": 0,
+            "status": "SUCCESS"
+          }
+        ],
+        "status": "SUCCESS"
+      },
+      "id": 1
+    };
+
+    console.log(`LAY bet placed at ${current_lay_bet_price}`);
+ 
+  
+
+      parentPort.postMessage({success:true , layResponse})
+      try {
+        const response = await axios.post('http://localhost:7000/api/Lhistory');
+        return { success: true, layResponse };
+      } catch (error) {
+        console.error('Error hitting API:', error.message);
+      }
+    
+  }
+  
+ 
 }
 
 async function placeBettt(strategyData, sessionToken) {
-  const { selection_Id, marketId, side, size, price } = strategyData;
+  const { selectionId, marketId, side, size, price } = strategyData;
   const apiUrl = "https://api.betfair.com/exchange/betting/json-rpc/v1";
 
   const payload = {
@@ -589,7 +349,7 @@ async function placeBettt(strategyData, sessionToken) {
     params: {
       marketId,
       instructions: [{
-        selectionId: selection_Id,
+        selectionId: selectionId,
         handicap: 0,
         side: side,
         orderType: "LIMIT",
@@ -618,7 +378,6 @@ async function placeBettt(strategyData, sessionToken) {
     return null;
   }
 }
-
 
 parentPort.on("message", async (data) => {
   await processStrategy3(data.sessionToken, data.marketId, data.amount, data.matchData);

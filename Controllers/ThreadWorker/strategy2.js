@@ -15,6 +15,10 @@ const fetchStrategy2 = async(sessionToken , marketId, amount) =>{
               worker.postMessage({sessionToken , marketId , amount , matchData});
 
               worker.on("message" , (result)=>{
+                AllData.getLastPrice(result.firstBackOdds)
+                AllData.backplaceorder(result.backResponse)
+                AllData.layplaceorder(result.layResponse)
+                
                 console.log("Worker result : " , result);
                 resolve(result);
               });

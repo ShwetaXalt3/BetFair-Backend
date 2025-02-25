@@ -13,7 +13,9 @@ const AllData = {
     backplaceorder:null,
     layplaceorder : null,
     profit:null,
-    amount: null, 
+    amount: null,
+    lastPriceTraded : null,
+ 
   },
   setEventCompetition(eventId, competitionId) {
     this.data.eventId = eventId;
@@ -32,32 +34,37 @@ const AllData = {
   getEventCompetition() {
     return { eventId: this.data.eventId, competitionId: this.data.competitionId };
   },
+  getLastPrice(lastPriceTraded){
+          this.data.lastPriceTraded = lastPriceTraded;
+          console.log(lastPriceTraded);
+         
+  },
  
   event: function (eventData) {
     // console.log("from all dataa event : ", eventData);
-    
+   
       this.data.event = eventData
   },
  
   match: function (matchData) {
     // console.log("from all dataa match : ", matchData);
-
+ 
      this.data.match = matchData;
   },
   matchh: function(matchData){
     // console.log("from all dataa match - 2 : ", matchData);
-
+ 
     this.data.matchh = matchData;
   },
   tournament: function (tournamentData) {
     // console.log("from all dataa tournament : ", tournamentData);
-
+ 
     this.data.tournament = tournamentData;
   },
  
   funds: function (fundData) {
     // console.log("from all dataa funds : ", fundData);
-
+ 
     this.data.funds = fundData;
   },
   market : function(marketData){
@@ -65,7 +72,7 @@ const AllData = {
   },
   probability : function (probabilityData){
     // console.log("from all dataa probability : ", probabilityData);
-
+ 
     this.data.probability = probabilityData;
   },
   backplaceorder:function(orderData){
@@ -74,12 +81,12 @@ const AllData = {
   },
   layplaceorder:function(orderData){
     // console.log("from alldata lay placeorder " , orderData);
-    
+   
     this.data.layplaceorder=orderData;
   },
   profit:function(profitData){
     // console.log("from alldata profit ", profitData);
-    
+   
     this.data.profit=profitData;
   },
   getAllData: function () {
@@ -88,3 +95,4 @@ const AllData = {
 };
  
 module.exports = AllData;
+ 

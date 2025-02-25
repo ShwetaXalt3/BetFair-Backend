@@ -44,6 +44,8 @@ const  placeOrder  = require('../Controllers/placeOrder');
 const marketBook = require('../Controllers/marketBook');
 const profit=require('../Controllers/Profit');
 const getMergeData=require('../services/getMergeServices');
+const dataServiceL = require('../services/dataServiceL')
+
  
 // Authentication route
 // router.post('/login', authController.userLoginData); // POST for login, authentication
@@ -64,6 +66,7 @@ router.get('/gethistory',getMergeData.getMergedData);
  
 //Merged data route - This is where the merged data is stored
  
-  router.post('/history',dataService.processAndStoreData); // POST to save merged data
+router.post('/Bhistory',dataService.processAndStoreData); 
+router.post('/Lhistory',dataServiceL.processAndStoreData);
  
 module.exports = router;
