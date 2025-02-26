@@ -6,16 +6,15 @@ const certPath = "./Certificate/BetfairApp1.crt";
 const caPath = "./Certificate/client-2048.pem";
 const keyPath = "./Certificate/private_key.pem";
  
-
-  const userLoginData = async (req,res) => {
-  
-   
-    const {user,userPass}=req.body;
+// Store the session token inside an object so it remains mutable
+let sessionToken = { token: null };
  
+const userLoginData = async (req, res) => {
+  const { user, userPass } = req.body;
  
   const payload = new URLSearchParams({
-    username:user,
-    password:userPass
+    username: user,
+    password: userPass
   }).toString();
  
   const headers = {
@@ -45,19 +44,23 @@ const keyPath = "./Certificate/private_key.pem";
  
     if (apiData.sessionToken) {
       console.log("New session token acquired:", apiData.sessionToken);
+      sessionToken.token = apiData.sessionToken; // ✅ Correctly updating the object property
+ 
       return res.status(200).json({
         success: true,
         message: "User Login Successfully",
-        sessionToken: apiData.sessionToken 
+        sessionToken: apiData.sessionToken
       });
-    }
-    else {
+    } else {
       return res.status(500).json({ message: "Login Failed" });
     }
   } catch (error) {
     console.error("Login Failed:", error.response?.data || error.message);
-    throw new Error("Authentication failed");
+    return res.status(500).json({ message: "Authentication failed" });
   }
 };
  
-module.exports = { userLoginData };
+module.exports = { userLoginData, sessionToken };
+ 
+ 
+ 

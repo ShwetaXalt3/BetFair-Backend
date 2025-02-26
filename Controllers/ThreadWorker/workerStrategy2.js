@@ -96,7 +96,7 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                                     "side": "BACK"
                                 },
                                 "betId": "31645233727",
-                                "placedDate": "2013-11-12T12:07:29.000Z",
+                                "placedDate": new Date().toISOString(),
                                 "status": "SUCCESS"
                             }
                         ],
@@ -153,7 +153,7 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                                     "side": "LAY"
                                 },
                                 "betId": "31242604945",
-                                "placedDate": "2013-10-30T14:22:47.000Z",
+                                "placedDate": new Date().toISOString(),
                                 "averagePriceMatched": 0,
                                 "sizeMatched": 0,
                                 "status": "SUCCESS"

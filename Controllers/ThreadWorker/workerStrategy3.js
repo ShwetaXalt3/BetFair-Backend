@@ -162,7 +162,7 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
 async function monitor_market(marketBookData, backBetPrice, layBetPrice, selectionId, backStake, matchData, marketId, sessionToken) {
   // "Monitor market prices and execute lay bet when conditions are met
   let previous_lay_price = layBetPrice;
-  const original_sl_price = parseFloat((layBetPrice + 0.5).toFixed(2));
+  let original_sl_price = parseFloat((layBetPrice + 0.5).toFixed(2));
   let target_price = parseFloat((backBetPrice - 0.2).toFixed(2));
   let sl_price = original_sl_price;
   let normal_lay_price = layBetPrice;

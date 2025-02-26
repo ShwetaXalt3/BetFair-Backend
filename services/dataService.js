@@ -29,13 +29,19 @@ const processAndStoreData = async (req, res) => {
    
     if (match && Array.isArray(match)) {
       match.forEach((i) => {
-        if (i.marketId === mId) {  // Only process the correct market
-          MatchName = i.competition?.name || "Unknown Match";
-   
-   
-          if (i.runners && Array.isArray(i.runners)) {
-            const player = i.runners.find(runner => runner.selectionId === sId);
-           
+        if (i.marketId === mId) {  
+         
+          const runners = i.runners || [];
+          const runnerNames = runners.map(runner => runner.runnerName);
+    
+        
+          const newMatchName = runnerNames.join(' Vs ');
+    
+          MatchName = newMatchName || "Unknown Match";
+    
+          if (runners && Array.isArray(runners)) {
+            const player = runners.find(runner => runner.selectionId === sId);
+    
             if (player) {
               PlayerName = player.runnerName;
             } else {
