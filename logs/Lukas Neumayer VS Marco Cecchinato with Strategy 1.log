@@ -1,0 +1,476 @@
+2025-02-27T09:57:59.082Z - INFO - Previous Lay Price 2.1599999999999997
+2025-02-27T09:57:59.082Z - INFO - Original Sl Price 
+2025-02-27T09:57:59.082Z - INFO - SL Price 2.66
+2025-02-27T09:57:59.082Z - INFO - Target Price 2.06
+2025-02-27T09:58:01.170Z - INFO - -------Connected-------
+2025-02-27T09:58:01.172Z - INFO - -----------------------------------
+2025-02-27T09:58:01.172Z - INFO - Market Data: {"op":"connection","connectionId":"203-270225095800-493059"}
+
+2025-02-27T09:58:01.173Z - ERROR - No odds data available
+2025-02-27T09:58:01.666Z - INFO - -----------------------------------
+2025-02-27T09:58:01.667Z - INFO - Market Data: {"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":2}
+
+2025-02-27T09:58:01.667Z - ERROR - No odds data available
+2025-02-27T09:58:01.948Z - INFO - -----------------------------------
+2025-02-27T09:58:01.948Z - INFO - Market Data: {"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-27T09:58:01.949Z - ERROR - No odds data available
+2025-02-27T09:58:01.955Z - INFO - -----------------------------------
+2025-02-27T09:58:01.955Z - INFO - Market Data: {"op":"mcm","id":1,"initialClk":"ggLLkbGMDYQC57a99gz4AZfoqo0N","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740650281507,"ct":"SUB_IMAGE","mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,129.12]],"batl":[[0,1.84,12.81]],"id":35635716},{"batb":[[0,2.26,1.71]],"batl":[[0,2.54,2.81]],"id":6374165}],"img":true}]}
+
+2025-02-27T09:58:01.955Z - INFO - [object Object]
+2025-02-27T09:58:01.956Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.54
+2025-02-27T09:58:03.858Z - INFO - -----------------------------------
+2025-02-27T09:58:03.858Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI0BAG4Acw==","pt":1740650283411,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.48,24.3]],"id":6374165}]}]}
+
+2025-02-27T09:58:03.858Z - INFO - [object Object]
+2025-02-27T09:58:03.859Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.48
+2025-02-27T09:58:05.867Z - INFO - -----------------------------------
+2025-02-27T09:58:05.868Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOUBAKoBANMB","pt":1740650284701,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.44,1.62]],"id":6374165}]}]}
+
+2025-02-27T09:58:05.868Z - INFO - [object Object]
+2025-02-27T09:58:05.868Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.44
+2025-02-27T09:58:06.868Z - INFO - -----------------------------------
+2025-02-27T09:58:06.868Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOACAIYCALYC","pt":1740650286421,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.44,3.62]],"id":6374165}]}]}
+
+2025-02-27T09:58:06.868Z - INFO - [object Object]
+2025-02-27T09:58:06.868Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.44
+2025-02-27T09:58:09.267Z - INFO - -----------------------------------
+2025-02-27T09:58:09.267Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIMEAPQCAKgD","pt":1740650288819,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,1.84,12]],"id":35635716},{"batb":[],"batl":[[0,2.44,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:09.267Z - INFO - [object Object]
+2025-02-27T09:58:09.267Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.44
+2025-02-27T09:58:09.689Z - INFO - -----------------------------------
+2025-02-27T09:58:09.690Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKkEAIYDAMQD","pt":1740650289242,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.26,1.51]],"batl":[[0,2.44,3.01]],"id":6374165}]}]}
+
+2025-02-27T09:58:09.690Z - INFO - [object Object]
+2025-02-27T09:58:09.690Z - INFO - Current Back Price: 2.26, Current Lay Price: 2.44
+2025-02-27T09:58:10.967Z - INFO - -----------------------------------
+2025-02-27T09:58:10.968Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APYEALUDAIcE","pt":1740650290519,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.18,163.22]],"id":6374165}]}]}
+
+2025-02-27T09:58:10.968Z - INFO - [object Object]
+2025-02-27T09:58:10.969Z - INFO - Current Back Price: 2.18, Current Lay Price: 2.44
+2025-02-27T09:58:11.266Z - INFO - -----------------------------------
+2025-02-27T09:58:11.266Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIcFAL0DAJgE","pt":1740650290817,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.18,162.52]],"batl":[],"id":6374165}]}]}
+
+2025-02-27T09:58:11.266Z - INFO - [object Object]
+2025-02-27T09:58:11.267Z - INFO - Current Back Price: 2.18, Current Lay Price: 2.44
+2025-02-27T09:58:11.479Z - INFO - -----------------------------------
+2025-02-27T09:58:11.479Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJkFAMkDAKAE","pt":1740650291031,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.71,331.99]],"id":35635716},{"batb":[[0,2.16,269.1]],"id":6374165}]}]}
+
+2025-02-27T09:58:11.479Z - INFO - [object Object]
+2025-02-27T09:58:11.480Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:12.851Z - INFO - -----------------------------------
+2025-02-27T09:58:12.851Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIQGAIoEAOME","pt":1740650292403,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.44,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:12.851Z - INFO - [object Object]
+2025-02-27T09:58:12.851Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:14.656Z - INFO - -----------------------------------
+2025-02-27T09:58:14.656Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIYHANQEANYF","pt":1740650294205,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,1.79,4.19]],"id":35635716}]}]}
+
+2025-02-27T09:58:14.657Z - INFO - [object Object]
+2025-02-27T09:58:14.657Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:15.492Z - INFO - -----------------------------------
+2025-02-27T09:58:15.493Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANAHAPwEAIUG","pt":1740650295038,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.32,651.21]],"id":6374165}]}]}
+
+2025-02-27T09:58:15.493Z - INFO - [object Object]
+2025-02-27T09:58:15.493Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.32
+2025-02-27T09:58:15.691Z - INFO - -----------------------------------
+2025-02-27T09:58:15.692Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOEHAIYFAJcG","pt":1740650295243,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.44,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:15.692Z - INFO - [object Object]
+2025-02-27T09:58:15.692Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:16.058Z - INFO - -----------------------------------
+2025-02-27T09:58:16.058Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APwHAJgFAK0G","pt":1740650295608,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,1.84,33.28]],"id":35635716},{"batb":[[0,2.18,20.36]],"batl":[[0,2.26,18.43]],"id":6374165}]}]}
+
+2025-02-27T09:58:16.058Z - INFO - [object Object]
+2025-02-27T09:58:16.058Z - INFO - Current Back Price: 2.18, Current Lay Price: 2.26
+2025-02-27T09:58:16.358Z - INFO - -----------------------------------
+2025-02-27T09:58:16.359Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJsIAKQFAL4G","pt":1740650295910,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,1.84,12]],"id":35635716},{"batb":[[0,2.16,269.1]],"batl":[[0,2.44,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:16.359Z - INFO - [object Object]
+2025-02-27T09:58:16.359Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:18.673Z - INFO - -----------------------------------
+2025-02-27T09:58:18.674Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APoJAIsGAMcH","pt":1740650298226,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,1.84,12.95]],"id":35635716}]}]}
+
+2025-02-27T09:58:18.674Z - INFO - [object Object]
+2025-02-27T09:58:18.674Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:19.494Z - INFO - -----------------------------------
+2025-02-27T09:58:19.494Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALoKAKwGAPwH","pt":1740650299046,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.72,33.86]],"batl":[],"id":35635716},{"batb":[],"batl":[[0,2.44,26.68]],"id":6374165}]}]}
+
+2025-02-27T09:58:19.494Z - INFO - [object Object]
+2025-02-27T09:58:19.495Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:20.268Z - INFO - -----------------------------------
+2025-02-27T09:58:20.269Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APkKAMgGAKYI","pt":1740650299816,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.71,331.99]],"batl":[],"id":35635716},{"batb":[],"batl":[[0,2.44,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:20.269Z - INFO - [object Object]
+2025-02-27T09:58:20.269Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:21.499Z - INFO - -----------------------------------
+2025-02-27T09:58:21.499Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANYLAIwHAPwI","pt":1740650301051,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.77,205.8]],"batl":[[0,1.83,206.35]],"id":35635716}]}]}
+
+2025-02-27T09:58:21.499Z - INFO - [object Object]
+2025-02-27T09:58:21.499Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:21.702Z - INFO - -----------------------------------
+2025-02-27T09:58:21.702Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOMLAJ4HAIQJ","pt":1740650301254,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.71,331.99]],"batl":[[0,1.84,12.95]],"id":35635716}]}]}
+
+2025-02-27T09:58:21.702Z - INFO - [object Object]
+2025-02-27T09:58:21.702Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:26.705Z - INFO - -----------------------------------
+2025-02-27T09:58:26.705Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APMOAJ8JAIEL","pt":1740650306255,"ct":"HEARTBEAT"}
+
+2025-02-27T09:58:26.705Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:26.983Z - INFO - -----------------------------------
+2025-02-27T09:58:26.983Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIQPAKgJAJIL","pt":1740650306535,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.44,2]],"id":6374165}]}]}
+
+2025-02-27T09:58:26.983Z - INFO - [object Object]
+2025-02-27T09:58:26.984Z - INFO - Current Back Price: 2.16, Current Lay Price: 2.44
+2025-02-27T09:58:28.983Z - INFO - -----------------------------------
+2025-02-27T09:58:28.983Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJsQAKMKAI0M","pt":1740650308535,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,10.35]],"batl":[[0,1.98,145.68]],"id":35635716},{"batb":[[0,1.99,220.12]],"batl":[[0,2.1,2704.34]],"id":6374165}]}]}
+
+2025-02-27T09:58:28.984Z - INFO - [object Object]
+2025-02-27T09:58:28.984Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:29.188Z - INFO - -----------------------------------
+2025-02-27T09:58:29.188Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKwQALAKAJ0M","pt":1740650308739,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,2]],"id":6374165}]}]}
+
+2025-02-27T09:58:29.188Z - INFO - [object Object]
+2025-02-27T09:58:29.188Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:29.290Z - INFO - -----------------------------------
+2025-02-27T09:58:29.290Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALQQALIKAKcM","pt":1740650308842,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.99,219.78]],"batl":[],"id":6374165}]}]}
+
+2025-02-27T09:58:29.290Z - INFO - [object Object]
+2025-02-27T09:58:29.290Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:29.397Z - INFO - -----------------------------------
+2025-02-27T09:58:29.397Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL4QALoKALEM","pt":1740650308949,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:29.397Z - INFO - [object Object]
+2025-02-27T09:58:29.397Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:30.323Z - INFO - -----------------------------------
+2025-02-27T09:58:30.323Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJgRAPYKAOkM","pt":1740650309875,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,117.76]],"id":35635716}]}]}
+
+2025-02-27T09:58:30.323Z - INFO - [object Object]
+2025-02-27T09:58:30.323Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:30.476Z - INFO - -----------------------------------
+2025-02-27T09:58:30.476Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKIRAIALAPYM","pt":1740650310028,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.99,110.89]],"batl":[],"id":6374165}]}]}
+
+2025-02-27T09:58:30.476Z - INFO - [object Object]
+2025-02-27T09:58:30.476Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:33.709Z - INFO - -----------------------------------
+2025-02-27T09:58:33.710Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOYSAPsLALUO","pt":1740650313260,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.08,14.86]],"id":6374165}]}]}
+
+2025-02-27T09:58:33.710Z - INFO - [object Object]
+2025-02-27T09:58:33.710Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:33.906Z - INFO - -----------------------------------
+2025-02-27T09:58:33.906Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APESAIIMAMAO","pt":1740650313459,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:33.906Z - INFO - [object Object]
+2025-02-27T09:58:33.906Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:36.179Z - INFO - -----------------------------------
+2025-02-27T09:58:36.180Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIcUAPgMAOEP","pt":1740650315731,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,118.35]],"batl":[[0,1.98,145.09]],"id":35635716}]}]}
+
+2025-02-27T09:58:36.180Z - INFO - [object Object]
+2025-02-27T09:58:36.180Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:36.704Z - INFO - -----------------------------------
+2025-02-27T09:58:36.704Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKkUAIsNAJIQ","pt":1740650316256,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,117.4]],"id":35635716}]}]}
+
+2025-02-27T09:58:36.705Z - INFO - [object Object]
+2025-02-27T09:58:36.705Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:37.103Z - INFO - -----------------------------------
+2025-02-27T09:58:37.103Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMEUAJwNAKkQ","pt":1740650316656,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.06,25.41]],"id":6374165}]}]}
+
+2025-02-27T09:58:37.103Z - INFO - [object Object]
+2025-02-27T09:58:37.104Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.06
+2025-02-27T09:58:37.323Z - INFO - -----------------------------------
+2025-02-27T09:58:37.324Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANIUAKgNALQQ","pt":1740650316875,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:58:37.324Z - INFO - [object Object]
+2025-02-27T09:58:37.324Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:37.613Z - INFO - -----------------------------------
+2025-02-27T09:58:37.614Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANsUALcNAMYQ","pt":1740650317167,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,113.21]],"id":35635716}]}]}
+
+2025-02-27T09:58:37.614Z - INFO - [object Object]
+2025-02-27T09:58:37.614Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:38.030Z - INFO - -----------------------------------
+2025-02-27T09:58:38.030Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APwUAMoNAOIQ","pt":1740650317582,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.1,2]],"id":6374165}]}]}
+
+2025-02-27T09:58:38.030Z - INFO - [object Object]
+2025-02-27T09:58:38.031Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:38.700Z - INFO - -----------------------------------
+2025-02-27T09:58:38.700Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALgVAOoNAI0R","pt":1740650318252,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,175.09]],"id":35635716}]}]}
+
+2025-02-27T09:58:38.700Z - INFO - [object Object]
+2025-02-27T09:58:38.700Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:39.320Z - INFO - -----------------------------------
+2025-02-27T09:58:39.320Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOQVAIkOALAR","pt":1740650318871,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,132.49]],"id":35635716}]}]}
+
+2025-02-27T09:58:39.321Z - INFO - [object Object]
+2025-02-27T09:58:39.321Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:39.522Z - INFO - -----------------------------------
+2025-02-27T09:58:39.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APQVAJIOALsR","pt":1740650319074,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,132.34]],"id":35635716}]}]}
+
+2025-02-27T09:58:39.522Z - INFO - [object Object]
+2025-02-27T09:58:39.522Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:40.503Z - INFO - -----------------------------------
+2025-02-27T09:58:40.503Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK0WAMYOAP4R","pt":1740650320055,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.08,25.41]],"id":6374165}]}]}
+
+2025-02-27T09:58:40.504Z - INFO - [object Object]
+2025-02-27T09:58:40.504Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:40.712Z - INFO - -----------------------------------
+2025-02-27T09:58:40.712Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALkWAMoOAIsS","pt":1740650320263,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.08,10]],"id":6374165}]}]}
+
+2025-02-27T09:58:40.712Z - INFO - [object Object]
+2025-02-27T09:58:40.712Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:42.715Z - INFO - -----------------------------------
+2025-02-27T09:58:42.715Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALYXALsPAIYT","pt":1740650322267,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,107.34]],"id":35635716}]}]}
+
+2025-02-27T09:58:42.715Z - INFO - [object Object]
+2025-02-27T09:58:42.715Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:47.715Z - INFO - -----------------------------------
+2025-02-27T09:58:47.715Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOYZALsRAOcV","pt":1740650327267,"ct":"HEARTBEAT"}
+
+2025-02-27T09:58:47.715Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:52.713Z - INFO - -----------------------------------
+2025-02-27T09:58:52.713Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIEcAKYTAL4Y","pt":1740650332267,"ct":"HEARTBEAT"}
+
+2025-02-27T09:58:52.713Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:56.337Z - INFO - -----------------------------------
+2025-02-27T09:58:56.337Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI4eAOsUAKwa","pt":1740650335885,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.08,47.08]],"id":6374165}]}]}
+
+2025-02-27T09:58:56.337Z - INFO - [object Object]
+2025-02-27T09:58:56.337Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:56.542Z - INFO - -----------------------------------
+2025-02-27T09:58:56.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKQeAPcUALYa","pt":1740650336092,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.08,37.08]],"id":6374165}]}]}
+
+2025-02-27T09:58:56.542Z - INFO - [object Object]
+2025-02-27T09:58:56.542Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:58:56.702Z - INFO - -----------------------------------
+2025-02-27T09:58:56.703Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALMeAIMVAMAa","pt":1740650336254,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,38.72]],"id":6374165}]}]}
+
+2025-02-27T09:58:56.703Z - INFO - [object Object]
+2025-02-27T09:58:56.703Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:57.525Z - INFO - -----------------------------------
+2025-02-27T09:58:57.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO0eALIVAPIa","pt":1740650337077,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,106.53]],"id":35635716}]}]}
+
+2025-02-27T09:58:57.526Z - INFO - [object Object]
+2025-02-27T09:58:57.526Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:58:59.734Z - INFO - -----------------------------------
+2025-02-27T09:58:59.734Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI0gANAWAJMc","pt":1740650339286,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,2.06,25.41]],"id":6374165}]}]}
+
+2025-02-27T09:58:59.734Z - INFO - [object Object]
+2025-02-27T09:58:59.734Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.06
+2025-02-27T09:58:59.938Z - INFO - -----------------------------------
+2025-02-27T09:58:59.938Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ4gAOEWAKEc","pt":1740650339489,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,38.72]],"id":6374165}]}]}
+
+2025-02-27T09:58:59.938Z - INFO - [object Object]
+2025-02-27T09:58:59.939Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:59:03.137Z - INFO - -----------------------------------
+2025-02-27T09:59:03.137Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APUhAM8YAN4d","pt":1740650342689,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.08,32.35]],"id":6374165}]}]}
+
+2025-02-27T09:59:03.137Z - INFO - [object Object]
+2025-02-27T09:59:03.138Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:59:03.817Z - INFO - -----------------------------------
+2025-02-27T09:59:03.818Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKoiAPkYAI8e","pt":1740650343368,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,85.61]],"id":35635716}]}]}
+
+2025-02-27T09:59:03.818Z - INFO - [object Object]
+2025-02-27T09:59:03.819Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.08
+2025-02-27T09:59:04.227Z - INFO - -----------------------------------
+2025-02-27T09:59:04.227Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANAiAJwZALUe","pt":1740650343778,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.96,23.73]],"batl":[],"id":35635716},{"batb":[],"batl":[[0,2.1,2]],"id":6374165}]}]}
+
+2025-02-27T09:59:04.228Z - INFO - [object Object]
+2025-02-27T09:59:04.228Z - INFO - Current Back Price: 1.99, Current Lay Price: 2.1
+2025-02-27T09:59:04.536Z - INFO - -----------------------------------
+2025-02-27T09:59:04.536Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOwiALIZAMke","pt":1740650344088,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.92,132.96]],"batl":[],"id":35635716},{"batb":[[0,1.81,16.42]],"batl":[[0,2.28,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:59:04.536Z - INFO - [object Object]
+2025-02-27T09:59:04.536Z - INFO - Current Back Price: 1.81, Current Lay Price: 2.28
+2025-02-27T09:59:04.637Z - INFO - -----------------------------------
+2025-02-27T09:59:04.638Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO8iALYZAM8e","pt":1740650344190,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.83,266.75]],"batl":[[0,2,2.37]],"id":35635716}]}]}
+
+2025-02-27T09:59:04.638Z - INFO - [object Object]
+2025-02-27T09:59:04.638Z - INFO - Current Back Price: 1.81, Current Lay Price: 2.28
+2025-02-27T09:59:07.742Z - INFO - -----------------------------------
+2025-02-27T09:59:07.742Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMIkAJUbAMIg","pt":1740650347293,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.82,269.56]],"id":35635716}]}]}
+
+2025-02-27T09:59:07.742Z - INFO - [object Object]
+2025-02-27T09:59:07.742Z - INFO - Current Back Price: 1.81, Current Lay Price: 2.28
+2025-02-27T09:59:09.450Z - INFO - -----------------------------------
+2025-02-27T09:59:09.450Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMQlAOMbAMQh","pt":1740650348993,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,309.43]],"id":6374165}]}]}
+
+2025-02-27T09:59:09.451Z - INFO - [object Object]
+2025-02-27T09:59:09.451Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:10.521Z - INFO - -----------------------------------
+2025-02-27T09:59:10.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIQmALkcAKoi","pt":1740650350072,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.1,715.59]],"id":6374165}]}]}
+
+2025-02-27T09:59:10.521Z - INFO - [object Object]
+2025-02-27T09:59:10.521Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.1
+2025-02-27T09:59:10.725Z - INFO - -----------------------------------
+2025-02-27T09:59:10.725Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI0mAMUcALwi","pt":1740650350277,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.94,20.42]],"batl":[[0,2.04,18.38]],"id":6374165}]}]}
+
+2025-02-27T09:59:10.726Z - INFO - [object Object]
+2025-02-27T09:59:10.726Z - INFO - Current Back Price: 1.94, Current Lay Price: 2.04
+2025-02-27T09:59:11.032Z - INFO - -----------------------------------
+2025-02-27T09:59:11.032Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ8mAM4cANoi","pt":1740650350582,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,309.43]],"batl":[[0,2.28,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:59:11.032Z - INFO - [object Object]
+2025-02-27T09:59:11.032Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:11.963Z - INFO - -----------------------------------
+2025-02-27T09:59:11.963Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANgmAJEdAJ4j","pt":1740650351507,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.94,162.11]],"batl":[],"id":35635716}]}]}
+
+2025-02-27T09:59:11.963Z - INFO - [object Object]
+2025-02-27T09:59:11.963Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:12.432Z - INFO - -----------------------------------
+2025-02-27T09:59:12.432Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APAmAK4dAMYj","pt":1740650351975,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,325.64]],"id":6374165}]}]}
+
+2025-02-27T09:59:12.432Z - INFO - [object Object]
+2025-02-27T09:59:12.432Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:15.034Z - INFO - -----------------------------------
+2025-02-27T09:59:15.034Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJwoALseANgk","pt":1740650354584,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,89.6]],"batl":[[0,2.26,14.86]],"id":6374165}]}]}
+
+2025-02-27T09:59:15.035Z - INFO - [object Object]
+2025-02-27T09:59:15.035Z - INFO - Current Back Price: 1.79, Current Lay Price: 2.26
+2025-02-27T09:59:15.598Z - INFO - -----------------------------------
+2025-02-27T09:59:15.598Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKQoAMAeAOEk","pt":1740650354683,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,132.69]],"batl":[[0,2.24,34.43]],"id":6374165}]}]}
+
+2025-02-27T09:59:15.598Z - INFO - [object Object]
+2025-02-27T09:59:15.598Z - INFO - Current Back Price: 1.79, Current Lay Price: 2.24
+2025-02-27T09:59:15.598Z - INFO - -----------------------------------
+2025-02-27T09:59:15.598Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALUoAMceAOok","pt":1740650354841,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,43.9]],"batl":[],"id":6374165}]}]}
+
+2025-02-27T09:59:15.598Z - INFO - [object Object]
+2025-02-27T09:59:15.598Z - INFO - Current Back Price: 1.79, Current Lay Price: 2.24
+2025-02-27T09:59:16.733Z - INFO - -----------------------------------
+2025-02-27T09:59:16.734Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKcpAKMfAM8l","pt":1740650356285,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,325.64]],"batl":[[0,2.28,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:59:16.734Z - INFO - [object Object]
+2025-02-27T09:59:16.735Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:17.041Z - INFO - -----------------------------------
+2025-02-27T09:59:17.041Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMYpALcfAOEl","pt":1740650356593,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.89,14.2]],"batl":[],"id":35635716}]}]}
+
+2025-02-27T09:59:17.041Z - INFO - [object Object]
+2025-02-27T09:59:17.041Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:18.434Z - INFO - -----------------------------------
+2025-02-27T09:59:18.434Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ0qAJYgALgm","pt":1740650357987,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.95,35.84]],"id":35635716},{"batb":[[0,1.8,83.58]],"batl":[[0,2.22,84.44]],"id":6374165}]}]}
+
+2025-02-27T09:59:18.434Z - INFO - [object Object]
+2025-02-27T09:59:18.434Z - INFO - Current Back Price: 1.8, Current Lay Price: 2.22
+2025-02-27T09:59:18.538Z - INFO - -----------------------------------
+2025-02-27T09:59:18.538Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKIqAJ4gAL8m","pt":1740650358090,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.89,14.2]],"id":35635716},{"batb":[[0,1.78,325.64]],"batl":[[0,2.28,2.81]],"id":6374165}]}]}
+
+2025-02-27T09:59:18.538Z - INFO - [object Object]
+2025-02-27T09:59:18.538Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:23.537Z - INFO - -----------------------------------
+2025-02-27T09:59:23.537Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANosAOkiAJ4p","pt":1740650363090,"ct":"HEARTBEAT"}
+
+2025-02-27T09:59:23.537Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:28.538Z - INFO - -----------------------------------
+2025-02-27T09:59:28.538Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALwvAM0kANEr","pt":1740650368090,"ct":"HEARTBEAT"}
+
+2025-02-27T09:59:28.538Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:31.771Z - INFO - -----------------------------------
+2025-02-27T09:59:31.772Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKExAOMlAK0t","pt":1740650371324,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.89,12.94]],"id":35635716}]}]}
+
+2025-02-27T09:59:31.772Z - INFO - [object Object]
+2025-02-27T09:59:31.772Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:32.082Z - INFO - -----------------------------------
+2025-02-27T09:59:32.082Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALcxAPElAMct","pt":1740650371633,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.82,269.56]],"id":35635716}]}]}
+
+2025-02-27T09:59:32.082Z - INFO - [object Object]
+2025-02-27T09:59:32.082Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:35.064Z - INFO - -----------------------------------
+2025-02-27T09:59:35.064Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APkyAIYnAI4v","pt":1740650374616,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.89,14.2]],"id":35635716}]}]}
+
+2025-02-27T09:59:35.064Z - INFO - [object Object]
+2025-02-27T09:59:35.065Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:35.981Z - INFO - -----------------------------------
+2025-02-27T09:59:35.981Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIIzAJQnAJ8v","pt":1740650374824,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,2.28,2]],"id":6374165}]}]}
+
+2025-02-27T09:59:35.982Z - INFO - [object Object]
+2025-02-27T09:59:35.982Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:36.499Z - INFO - -----------------------------------
+2025-02-27T09:59:36.499Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMszAM4nAPUv","pt":1740650376047,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.82,269.56]],"id":35635716},{"batb":[[0,1.78,309.43]],"id":6374165}]}]}
+
+2025-02-27T09:59:36.499Z - INFO - [object Object]
+2025-02-27T09:59:36.499Z - INFO - Current Back Price: 1.78, Current Lay Price: 2.28
+2025-02-27T09:59:37.589Z - INFO - -----------------------------------
+2025-02-27T09:59:37.589Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKQ0AIsoALYw","pt":1740650377139,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.18,2453.49]],"batl":[[0,2.3,2]],"id":35635716},{"batb":[[0,1.78,295.66]],"batl":[[0,1.79,10.37]],"id":6374165}]}]}
+
+2025-02-27T09:59:37.589Z - INFO - [object Object]
+2025-02-27T09:59:37.589Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:37.637Z - INFO - -----------------------------------
+2025-02-27T09:59:37.637Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKo0AI0oAL4w","pt":1740650377189,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.2,8.77]],"id":35635716}]}]}
+
+2025-02-27T09:59:37.637Z - INFO - [object Object]
+2025-02-27T09:59:37.637Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:37.957Z - INFO - -----------------------------------
+2025-02-27T09:59:37.957Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AME0AJ0oAOAw","pt":1740650377509,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,480.65]],"batl":[],"id":6374165}]}]}
+
+2025-02-27T09:59:37.957Z - INFO - [object Object]
+2025-02-27T09:59:37.958Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:38.574Z - INFO - -----------------------------------
+2025-02-27T09:59:38.574Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APQ0AMYoAIgx","pt":1740650378126,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.2,158.49]],"id":35635716}]}]}
+
+2025-02-27T09:59:38.574Z - INFO - [object Object]
+2025-02-27T09:59:38.575Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:38.773Z - INFO - -----------------------------------
+2025-02-27T09:59:38.774Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIM1ANIoAJox","pt":1740650378325,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,325.97]],"id":6374165}]}]}
+
+2025-02-27T09:59:38.774Z - INFO - [object Object]
+2025-02-27T09:59:38.774Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:41.047Z - INFO - -----------------------------------
+2025-02-27T09:59:41.047Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ42ALIpAMoy","pt":1740650380599,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.22,29.97]],"batl":[],"id":35635716}]}]}
+
+2025-02-27T09:59:41.047Z - INFO - [object Object]
+2025-02-27T09:59:41.047Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:44.498Z - INFO - -----------------------------------
+2025-02-27T09:59:44.498Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJU4ANUqAKQ0","pt":1740650384049,"mc":[{"id":"1.240151601","rc":[{"batb":[],"batl":[[0,1.79,9.07]],"id":6374165}]}]}
+
+2025-02-27T09:59:44.498Z - INFO - [object Object]
+2025-02-27T09:59:44.498Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:45.686Z - INFO - -----------------------------------
+2025-02-27T09:59:45.686Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANU4AJ0rAPI0","pt":1740650385238,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.78,321.89]],"id":6374165}]}]}
+
+2025-02-27T09:59:45.686Z - INFO - [object Object]
+2025-02-27T09:59:45.687Z - INFO - Current Back Price: 1.78, Current Lay Price: 1.79
+2025-02-27T09:59:48.271Z - INFO - -----------------------------------
+2025-02-27T09:59:48.272Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN05AKEsAKw2","pt":1740650387824,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,157]],"batl":[[0,1.8,34.19]],"id":6374165}]}]}
+
+2025-02-27T09:59:48.272Z - INFO - [object Object]
+2025-02-27T09:59:48.272Z - INFO - Current Back Price: 1.79, Current Lay Price: 1.8
+2025-02-27T09:59:48.480Z - INFO - -----------------------------------
+2025-02-27T09:59:48.480Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOs5AKosALk2","pt":1740650388031,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,1.79,77.72]],"id":6374165}]}]}
+
+2025-02-27T09:59:48.480Z - INFO - [object Object]
+2025-02-27T09:59:48.480Z - INFO - Current Back Price: 1.79, Current Lay Price: 1.8
+2025-02-27T09:59:48.688Z - INFO - -----------------------------------
+2025-02-27T09:59:48.688Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APg5ALQsAM02","pt":1740650388240,"mc":[{"id":"1.240151601","rc":[{"batl":[[0,1.8,32.89]],"id":6374165}]}]}
+
+2025-02-27T09:59:48.688Z - INFO - [object Object]
+2025-02-27T09:59:48.688Z - INFO - Current Back Price: 1.79, Current Lay Price: 1.8
+2025-02-27T09:59:49.684Z - INFO - -----------------------------------
+2025-02-27T09:59:49.684Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK06AOosAKI3","pt":1740650389236,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.2,158.49]],"batl":[],"id":35635716},{"batb":[],"batl":[[0,1.83,32.5]],"id":6374165}]}]}
+
+2025-02-27T09:59:49.684Z - INFO - [object Object]
+2025-02-27T09:59:49.684Z - INFO - Current Back Price: 1.79, Current Lay Price: 1.83
+2025-02-27T09:59:49.879Z - INFO - -----------------------------------
+2025-02-27T09:59:49.880Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALM6APAsALE3","pt":1740650389432,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.2,186.78]],"batl":[[0,2.4,10]],"id":35635716},{"batb":[],"batl":[[0,1.84,255.4]],"id":6374165}]}]}
+
+2025-02-27T09:59:49.880Z - INFO - [object Object]
+2025-02-27T09:59:49.880Z - INFO - Current Back Price: 1.79, Current Lay Price: 1.84
+2025-02-27T09:59:49.880Z - INFO - Stop loss condition met: Placing lay bet at stop loss price.
+2025-02-27T09:59:50.080Z - INFO - -----------------------------------
+2025-02-27T09:59:50.081Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL06APcsAL43","pt":1740650389633,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.04,380]],"id":35635716},{"batb":[],"batl":[[0,2,14.58]],"id":6374165}]}]}
+
+2025-02-27T09:59:50.081Z - INFO - [object Object]
+2025-02-27T09:59:50.081Z - INFO - Current Back Price: 1.79, Current Lay Price: 2
+2025-02-27T09:59:50.081Z - INFO - Stop loss condition met: Placing lay bet at stop loss price.
+2025-02-27T09:59:50.296Z - INFO - -----------------------------------
+2025-02-27T09:59:50.296Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMc6AIMtANE3","pt":1740650389848,"mc":[{"id":"1.240151601","rc":[{"batb":[[0,2.04,379.11]],"id":35635716}]}]}
+
+2025-02-27T09:59:50.296Z - INFO - [object Object]
+2025-02-27T09:59:50.296Z - INFO - Current Back Price: 1.79, Current Lay Price: 2
+2025-02-27T09:59:50.296Z - INFO - Stop loss condition met: Placing lay bet at stop loss price.
+2025-02-27T09:59:50.469Z - INFO - lay bet placed
+2025-02-27T09:59:50.469Z - INFO - lay bet placed and connection shut down
+2025-02-27T09:59:53.762Z - INFO - lay bet placed
+2025-02-27T09:59:53.762Z - INFO - lay bet placed and connection shut down
+2025-02-27T09:59:53.763Z - INFO - lay bet placed
+2025-02-27T09:59:53.763Z - INFO - lay bet placed and connection shut down

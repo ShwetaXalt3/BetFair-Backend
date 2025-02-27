@@ -78,6 +78,7 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
                     size: amount,
                     price: firstBackOdds,
                 }
+                // const backResponse  = await placeBettt(betData, sessionToken)
                 const backResponse = {
                     "jsonrpc": "2.0",
                     "result": {

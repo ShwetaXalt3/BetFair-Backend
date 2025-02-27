@@ -19,9 +19,9 @@ const processAndStoreData = async (req, res) => {
     const sId = bPlaceorder.result.instructionReports[0].instruction.selectionId;
     const Lp = allData.lastPriceTraded;
  
-    console.log( "-----------------------", bPlaceorder);
+    // console.log( "-----------------------", bPlaceorder);
     // console.log(mId , sId );
-    
+   
    
    
  
@@ -35,15 +35,15 @@ const processAndStoreData = async (req, res) => {
          
           const runners = i.runners || [];
           const runnerNames = runners.map(runner => runner.runnerName);
-    
-        
+   
+       
           const newMatchName = runnerNames.join(' Vs ');
-    
+   
           MatchName = newMatchName || "Unknown Match";
-    
+   
           if (runners && Array.isArray(runners)) {
             const player = runners.find(runner => runner.selectionId === sId);
-    
+   
             if (player) {
               PlayerName = player.runnerName;
             } else {
@@ -71,57 +71,56 @@ const processAndStoreData = async (req, res) => {
     var status = bPlaceorder.result.status;
     const date = bPlaceorder.result.instructionReports[0].placedDate;
     const utcDate = new Date(date);
-    const mexicoTimeOptions = { 
-      timeZone: 'America/Mexico_City', 
-      year: 'numeric', 
-      month: 'numeric', 
-      day: 'numeric', 
-      hour: 'numeric', 
-      minute: 'numeric', 
-      second: 'numeric' 
+    const mexicoTimeOptions = {
+      timeZone: 'America/Mexico_City',
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
     };
     const mexicoTime = utcDate.toLocaleString('en-US', mexicoTimeOptions);
     // console.log('Mexico City time:', mexicoTime);
-        
-
+       
+ 
     if(status==="SUCCESS"){
       status="Matched";
     }
     else{
       status="Unmatched";
     }
-   
+    //  console.log("strategy",strategies)
     if(!amount && !MatchName && !odd && !PlayerName && !status && !side && !date && !mId && !strategies && !eventName){
       return res.status(400).json({message :  "Unable to save data into database"})
     }
     else{
-     
-       const mergedData = new MergedData({
-         Amount: amount,
-         Match: MatchName,
-         Odds : Lp,
-         Player: PlayerName,
-        //  "Profit/Loss": 0,
-         Status: status,
-        //  Probability : 2.33,
-         Type : side,
-         date: date,
-         market_id: mId,
-         strategy: strategies,
-         Sport:eventName
-       });
-   
-     
-       
-     
-       console.log("-----------------------",mergedData);
-       await mergedData.save();
-       
-       console.log("Data save");
-       
-       return res.status(200).json(mergedData);
-
  
+      if(strategies.length===0){
+          return res.error("Strategy Not Found");
+      }
+ 
+     await strategies.map((i)=>{
+      const mergedData = new MergedData({
+          Amount: amount,
+          Match: MatchName,
+          Odds : Lp,
+          Player: PlayerName,
+         //  "Profit/Loss": 0,
+          Status: status,
+         //  Probability : 2.33,
+          Type : side,
+          date: date,
+          market_id: mId,
+          strategy: i,
+          Sport:eventName
+        });
+ 
+         mergedData.save();
+         console.log("-----------------------",mergedData);
+         console.log("Data save");
+        })
+        return res.status(200).json(mergedData);
     }
   } catch (error) {
     // console.error('Error in processing data:', error.message);
@@ -131,6 +130,7 @@ const processAndStoreData = async (req, res) => {
  
  
 module.exports = { processAndStoreData , };
+ 
  
  
  

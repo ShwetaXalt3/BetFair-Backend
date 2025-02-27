@@ -26,9 +26,10 @@ const AllData = {
   setMarketId(marketId){
     this.data.marketId = marketId;
   },
-  setStrategy(Rstrategy){
-    this.data.strategy=Rstrategy;
-    console.log(this.data.strategy);
+  setStrategy(strategy){
+    this.data.strategy=strategy
+    console.log("from all data" , strategy);
+   
   },
   setAmount(Ramount){
         this.data.amount = Ramount;
@@ -97,4 +98,5 @@ const AllData = {
 };
  
 module.exports = AllData;
+ 
  

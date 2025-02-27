@@ -231,6 +231,12 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
     let slPrice = originalSlPrice;
     let normalLayPrice = lay_bet_price;
  
+    match.info("Previous Lay Price "+previousLayPrice);
+    match.info("Original Sl Price ",originalSlPrice)
+    match.info("SL Price "+ slPrice);
+    match.info("Target Price "+targetPrice);
+ 
+ 
      var options = {
         host: 'stream-api.betfair.com',
         port: 443
@@ -261,8 +267,22 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
  
  
       const odds_data = {};
+      var socketStatus = false
       //Function to get live odds from the stream-api
       client.on('data', async function getLiveOdds(data) {
+        try{
+            if(socketStatus == true){
+                match.info("lay bet placed");
+                match.info("Trying to place bet second time, but the connection is closed");
+                client.off("data" , getLiveOdds);
+                match.info("++++++++++++++++++Socket status destroyess++++++++++++++++++++++")
+                client.destroy()
+                return ;
+            }
+        }catch(err){
+            console.log("err", err);
+            return ;
+        }
         match.info("-----------------------------------");
         const decodedData = data.toString();
      
@@ -364,18 +384,26 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
                 slPrice = originalSlPrice;
                 previousLayPrice = currentLayBetPrice;
             }
- 
+            match.info("Current Back " + currentBackBetPrice);
+            match.info("Current Lay " + currentLayBetPrice);
+            match.info("Target Price " + targetPrice);
+            match.info("SL Price " + slPrice);
+            
  
             const status = await checkExitConditions(currentBackBetPrice, currentLayBetPrice, targetPrice, slPrice, backStake, back_bet_price, selectionId, marketId, sessionToken, matchData, layStake,match);
  
-            if (status.success) {
-                match.info("lay bet placed");
-                client.off("data" , getLiveOdds);
-                match.info("lay bet placed and connection shut down");
-               
-                return ;
-               
-              }
+            match.info("Monitoring loop running, status: " + JSON.stringify(status.success));
+      if (status.success) {
+        socketStatus= true;
+        match.info("lay bet placed");
+        client.off("data" , getLiveOdds);
+        client.destroy()
+        // client.dest
+        match.info("lay bet placed and connection shut down");
+       
+        return ;
+       
+      }
  
             }catch(err){
                match.error("Error in monitoring loop",err);
@@ -387,9 +415,11 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
  
 client.on('end', () => {
     match.info('Connection closed by server.');
+    client.destroy();
   });
 client.on('error', (err) => {
   match.info('Error with SSL socket:', err);
+  client.destroy();
 });
  
  
@@ -448,6 +478,7 @@ async function checkExitConditions(currentBackBetPrice, currentLayBetPrice, targ
         }
        
              parentPort.postMessage({success:true , layResponse , layStake})
+             client.destroy();
              
              try {
                  const response = await axios.post('http://localhost:6060/api/Lhistory');
@@ -493,6 +524,8 @@ async function checkExitConditions(currentBackBetPrice, currentLayBetPrice, targ
         }
        
              parentPort.postMessage({success:true , layResponse , layStake})
+             client.destroy();
+
              
              try {
                  const response = await axios.post('http://localhost:6060/api/Lhistory');
@@ -558,9 +591,12 @@ function getBothPrice(marketBookData, selectionId) {
  
  
  
+ 
+ 
 parentPort.on("message", async (data) => {
     await processStrategy1(data.sessionToken, data.marketId, data.amount, data.matchData);
 });
+ 
  
  
  
