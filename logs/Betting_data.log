@@ -1,0 +1,250 @@
+2025-02-27T04:08:53.712Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T04:08:53.890Z - INFO - Processing Strategy 3 for Market ID: 1.240109108
+2025-02-27T04:09:10.575Z - INFO -  back bet placed at  1.75
+2025-02-27T04:09:10.577Z - INFO - Received back bet response from worker
+2025-02-27T04:09:10.575Z - INFO - Back Bet placed Successfully!!
+2025-02-27T04:09:13.132Z - INFO - Market Data:{"op":"connection","connectionId":"112-270225040912-596860"}
+
+2025-02-27T04:09:13.134Z - INFO - No odds data available
+2025-02-27T04:09:13.617Z - INFO - Market Data:{"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":9}
+
+2025-02-27T04:09:13.618Z - INFO - No odds data available
+2025-02-27T04:09:13.858Z - INFO - Market Data:{"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-27T04:09:13.859Z - INFO - No odds data available
+2025-02-27T04:09:13.883Z - INFO - Market Data:{"op":"mcm","id":1,"initialClk":"ggKK0vmLDYQC6pqD9gz4AbfY94wN","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740629353313,"ct":"SUB_IMAGE","mc":[{"id":"1.240109108","rc":[{"batb":[[0,2.16,36.19]],"batl":[[0,2.32,16]],"id":8813394},{"batb":[[0,1.75,30.34]],"batl":[[0,1.86,15.13]],"id":26794136}],"img":true}]}
+
+2025-02-27T04:09:13.883Z - INFO - [object Object]
+2025-02-27T04:09:13.883Z - INFO - In Above SL code
+2025-02-27T04:09:13.883Z - INFO - back
+2025-02-27T04:09:13.883Z - INFO - Lay
+2025-02-27T04:09:13.884Z - INFO - status
+2025-02-27T04:09:18.883Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ANoBANMBALkB","pt":1740629358313,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:18.884Z - INFO - In Above SL code
+2025-02-27T04:09:18.884Z - INFO - back
+2025-02-27T04:09:18.884Z - INFO - Lay
+2025-02-27T04:09:18.885Z - INFO - status
+2025-02-27T04:09:23.883Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AOYDAKkDAMwC","pt":1740629363313,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:23.883Z - INFO - In Above SL code
+2025-02-27T04:09:23.884Z - INFO - back
+2025-02-27T04:09:23.884Z - INFO - Lay
+2025-02-27T04:09:23.884Z - INFO - status
+2025-02-27T04:09:49.439Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ALAFAN0EANwD","pt":1740629368313,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:49.439Z - INFO - In Above SL code
+2025-02-27T04:09:49.439Z - INFO - back
+2025-02-27T04:09:49.439Z - INFO - Lay
+2025-02-27T04:09:49.439Z - INFO - status
+2025-02-27T04:09:49.788Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AJIHANwGAPQE","pt":1740629373313,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:49.788Z - INFO - In Above SL code
+2025-02-27T04:09:49.788Z - INFO - back
+2025-02-27T04:09:49.788Z - INFO - Lay
+2025-02-27T04:09:49.788Z - INFO - status
+2025-02-27T04:09:49.788Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"APgIALkIALwG","pt":1740629378314,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:49.789Z - INFO - In Above SL code
+2025-02-27T04:09:49.789Z - INFO - back
+2025-02-27T04:09:49.789Z - INFO - Lay
+2025-02-27T04:09:49.789Z - INFO - status
+2025-02-27T04:09:49.789Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AKQLAK4KAK8H","pt":1740629383314,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:49.789Z - INFO - In Above SL code
+2025-02-27T04:09:49.789Z - INFO - back
+2025-02-27T04:09:49.789Z - INFO - Lay
+2025-02-27T04:09:49.789Z - INFO - status
+2025-02-27T04:09:49.789Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AKgNAKgMAIgI","pt":1740629388315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:49.789Z - INFO - In Above SL code
+2025-02-27T04:09:49.789Z - INFO - back
+2025-02-27T04:09:49.789Z - INFO - Lay
+2025-02-27T04:09:49.790Z - INFO - status
+2025-02-27T04:09:53.886Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AP8OAIcOAOkI","pt":1740629393315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:53.886Z - INFO - In Above SL code
+2025-02-27T04:09:53.886Z - INFO - back
+2025-02-27T04:09:53.886Z - INFO - Lay
+2025-02-27T04:09:53.887Z - INFO - status
+2025-02-27T04:09:58.883Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AN8QAOMPAOAJ","pt":1740629398315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:09:58.884Z - INFO - In Above SL code
+2025-02-27T04:09:58.884Z - INFO - back
+2025-02-27T04:09:58.884Z - INFO - Lay
+2025-02-27T04:09:58.884Z - INFO - status
+2025-02-27T04:10:03.885Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AL0SAMYRANgK","pt":1740629403315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:10:03.885Z - INFO - In Above SL code
+2025-02-27T04:10:03.885Z - INFO - back
+2025-02-27T04:10:03.885Z - INFO - Lay
+2025-02-27T04:10:03.885Z - INFO - status
+2025-02-27T04:10:08.883Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ALwUAKoTAOgL","pt":1740629408315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:10:08.883Z - INFO - In Above SL code
+2025-02-27T04:10:08.883Z - INFO - back
+2025-02-27T04:10:08.883Z - INFO - Lay
+2025-02-27T04:10:08.884Z - INFO - status
+2025-02-27T04:10:13.883Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AL8WAM4VAPYM","pt":1740629413315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:10:13.883Z - INFO - In Above SL code
+2025-02-27T04:10:13.884Z - INFO - back
+2025-02-27T04:10:13.884Z - INFO - Lay
+2025-02-27T04:10:13.885Z - INFO - status
+2025-02-27T04:10:18.884Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ANYYAMMXAIkO","pt":1740629418315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:10:18.884Z - INFO - In Above SL code
+2025-02-27T04:10:18.885Z - INFO - back
+2025-02-27T04:10:18.885Z - INFO - Lay
+2025-02-27T04:10:18.885Z - INFO - status
+2025-02-27T04:10:23.884Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ALcaAKQZAI0P","pt":1740629423315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:10:23.884Z - INFO - In Above SL code
+2025-02-27T04:10:23.884Z - INFO - back
+2025-02-27T04:10:23.884Z - INFO - Lay
+2025-02-27T04:10:23.884Z - INFO - status
+2025-02-27T04:11:05.215Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AL0cAKcbAIEQ","pt":1740629428315,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.215Z - INFO - In Above SL code
+2025-02-27T04:11:05.216Z - INFO - back
+2025-02-27T04:11:05.216Z - INFO - Lay
+2025-02-27T04:11:05.216Z - INFO - status
+2025-02-27T04:11:05.554Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AKUeAJQdAPIQ","pt":1740629433316,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.554Z - INFO - In Above SL code
+2025-02-27T04:11:05.555Z - INFO - back
+2025-02-27T04:11:05.555Z - INFO - Lay
+2025-02-27T04:11:05.555Z - INFO - status
+2025-02-27T04:11:05.555Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AIcgAPUeAPMR","pt":1740629438317,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.555Z - INFO - In Above SL code
+2025-02-27T04:11:05.555Z - INFO - back
+2025-02-27T04:11:05.555Z - INFO - Lay
+2025-02-27T04:11:05.555Z - INFO - status
+2025-02-27T04:11:05.555Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AOQhANwgAPwS","pt":1740629443318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.556Z - INFO - In Above SL code
+2025-02-27T04:11:05.556Z - INFO - back
+2025-02-27T04:11:05.556Z - INFO - Lay
+2025-02-27T04:11:05.556Z - INFO - status
+2025-02-27T04:11:05.556Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AOsjALciANkT","pt":1740629448318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.556Z - INFO - In Above SL code
+2025-02-27T04:11:05.556Z - INFO - back
+2025-02-27T04:11:05.556Z - INFO - Lay
+2025-02-27T04:11:05.556Z - INFO - status
+2025-02-27T04:11:05.556Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ANslAJQkAK8U","pt":1740629453318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.556Z - INFO - In Above SL code
+2025-02-27T04:11:05.556Z - INFO - back
+2025-02-27T04:11:05.557Z - INFO - Lay
+2025-02-27T04:11:05.557Z - INFO - status
+2025-02-27T04:11:05.557Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AOsnAPwlALAV","pt":1740629458318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.557Z - INFO - In Above SL code
+2025-02-27T04:11:05.557Z - INFO - back
+2025-02-27T04:11:05.557Z - INFO - Lay
+2025-02-27T04:11:05.557Z - INFO - status
+2025-02-27T04:11:05.557Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AIYqAPMnAMQW","pt":1740629463318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:05.557Z - INFO - In Above SL code
+2025-02-27T04:11:05.557Z - INFO - back
+2025-02-27T04:11:05.558Z - INFO - Lay
+2025-02-27T04:11:05.558Z - INFO - status
+2025-02-27T04:11:08.887Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ALgsAOspALQX","pt":1740629468318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:08.887Z - INFO - In Above SL code
+2025-02-27T04:11:08.887Z - INFO - back
+2025-02-27T04:11:08.887Z - INFO - Lay
+2025-02-27T04:11:08.887Z - INFO - status
+2025-02-27T04:11:13.888Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"ALUuAOMrAJwY","pt":1740629473318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:13.888Z - INFO - In Above SL code
+2025-02-27T04:11:13.888Z - INFO - back
+2025-02-27T04:11:13.889Z - INFO - Lay
+2025-02-27T04:11:13.889Z - INFO - status
+2025-02-27T04:11:18.887Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AKEwANctAKQZ","pt":1740629478318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:18.887Z - INFO - In Above SL code
+2025-02-27T04:11:18.888Z - INFO - back
+2025-02-27T04:11:18.888Z - INFO - Lay
+2025-02-27T04:11:18.888Z - INFO - status
+2025-02-27T04:11:23.887Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AKEyAPsvAJwa","pt":1740629483318,"ct":"HEARTBEAT"}
+
+2025-02-27T04:11:23.888Z - INFO - In Above SL code
+2025-02-27T04:11:23.888Z - INFO - back
+2025-02-27T04:11:23.888Z - INFO - Lay
+2025-02-27T04:11:23.888Z - INFO - status
+2025-02-27T04:12:30.718Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T04:12:30.877Z - INFO - Processing Strategy 3 for Market ID: 1.240109108
+2025-02-27T04:12:32.266Z - INFO -  back bet placed at  1.75
+2025-02-27T04:12:32.268Z - INFO - Received back bet response from worker
+2025-02-27T04:12:32.266Z - INFO - Back Bet placed Successfully!!
+2025-02-27T04:12:32.274Z - ERROR - Error hitting API:
+2025-02-27T04:12:34.369Z - INFO - Market Data:{"op":"connection","connectionId":"109-270225041233-563239"}
+
+2025-02-27T04:12:34.369Z - INFO - No odds data available
+2025-02-27T04:12:34.839Z - INFO - Market Data:{"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":9}
+
+2025-02-27T04:12:34.839Z - INFO - No odds data available
+2025-02-27T04:13:01.884Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T04:13:02.086Z - INFO - Processing Strategy 3 for Market ID: 1.240109108
+2025-02-27T04:13:03.461Z - INFO -  back bet placed at  1.75
+2025-02-27T04:13:03.463Z - INFO - Received back bet response from worker
+2025-02-27T04:13:03.462Z - INFO - Back Bet placed Successfully!!
+2025-02-27T04:13:05.723Z - INFO - Market Data:{"op":"connection","connectionId":"103-270225041305-506702"}
+
+2025-02-27T04:13:05.723Z - INFO - No odds data available
+2025-02-27T04:13:06.223Z - INFO - Market Data:{"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":9}
+
+2025-02-27T04:13:06.223Z - INFO - No odds data available
+2025-02-27T04:13:06.475Z - INFO - Market Data:{"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-27T04:13:06.475Z - INFO - No odds data available
+2025-02-27T04:13:06.482Z - INFO - Market Data:{"op":"mcm","id":1,"initialClk":"ggKesPqLDYQClPSD9gz4Af2I+IwN","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740629585913,"ct":"SUB_IMAGE","mc":[{"id":"1.240109108","rc":[{"batb":[[0,2.16,36.19]],"batl":[[0,2.32,16]],"id":8813394},{"batb":[[0,1.75,30.34]],"batl":[[0,1.86,15.13]],"id":26794136}],"img":true}]}
+
+2025-02-27T04:13:06.483Z - INFO - [object Object]
+2025-02-27T04:13:06.484Z - INFO - In Above SL code
+2025-02-27T04:13:06.484Z - INFO - back
+2025-02-27T04:13:06.484Z - INFO - Lay
+2025-02-27T04:13:06.485Z - INFO - status
+2025-02-27T04:13:11.483Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AMACAM0BAIMB","pt":1740629590914,"ct":"HEARTBEAT"}
+
+2025-02-27T04:13:11.484Z - INFO - In Above SL code
+2025-02-27T04:13:11.484Z - INFO - back
+2025-02-27T04:13:11.485Z - INFO - Lay
+2025-02-27T04:13:11.485Z - INFO - status
+2025-02-27T04:13:16.482Z - INFO - Market Data:{"op":"mcm","id":1,"clk":"AMQEAJ4DAPEB","pt":1740629595914,"ct":"HEARTBEAT"}
+
+2025-02-27T04:13:16.482Z - INFO - In Above SL code
+2025-02-27T04:13:16.482Z - INFO - back
+2025-02-27T04:13:16.482Z - INFO - Lay
+2025-02-27T04:13:16.482Z - INFO - status
+2025-02-27T04:14:18.528Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T04:14:18.725Z - INFO - Processing Strategy 3 for Market ID: 1.240109108
+2025-02-27T04:14:49.561Z - INFO -  back bet placed at  1.75
+2025-02-27T04:14:49.562Z - INFO - Received back bet response from worker
+2025-02-27T04:14:49.561Z - INFO - Back Bet placed Successfully!!
+2025-02-27T04:15:20.735Z - INFO - Market Data:{"op":"connection","connectionId":"204-270225041520-498415"}
+
+2025-02-27T04:15:20.735Z - INFO - No odds data available
+2025-02-27T04:15:21.220Z - INFO - Market Data:{"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":9}
+
+2025-02-27T04:15:21.220Z - INFO - No odds data available
+2025-02-27T04:15:21.497Z - INFO - Market Data:{"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-27T04:15:21.497Z - INFO - No odds data available
+2025-02-27T04:15:21.506Z - INFO - Market Data:{"op":"mcm","id":1,"initialClk":"ggLD7/qLDYQCtKWE9gz4Acmm+IwN","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740629720939,"ct":"SUB_IMAGE","mc":[{"id":"1.240109108","rc":[{"batb":[[0,2.16,36.19]],"batl":[[0,2.32,16]],"id":8813394},{"batb":[[0,1.75,30.34]],"batl":[[0,1.86,15.13]],"id":26794136}],"img":true}]}
+
+2025-02-27T04:15:21.506Z - INFO - [object Object]
+2025-02-27T04:15:21.506Z - INFO - In Above SL code
+2025-02-27T04:15:21.506Z - INFO - back
+2025-02-27T04:15:21.507Z - INFO - Lay
+2025-02-27T04:15:21.507Z - INFO - status
+2025-02-27T05:23:38.064Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T06:23:11.122Z - INFO - Starting strategy 2 in worker thread..........
+2025-02-27T06:23:11.279Z - INFO - I am from Strategy 2
+2025-02-27T06:23:13.406Z - INFO - prob star0.04
+2025-02-27T06:23:13.408Z - INFO - Worker result : [object Object]
+2025-02-27T06:23:13.407Z - INFO - Back Bet Placed 12
+2025-02-27T06:23:13.407Z - INFO - Strategy 2 completed

@@ -8,7 +8,7 @@ const connectDB = require('./config/db'); // Assuming your database connection l
 
 const app = express();
 app.use(cors());
-const PORT = 7000
+const PORT = 6060
 
 // Middleware to parse JSON requests
 app.use(express.json());

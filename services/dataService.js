@@ -19,7 +19,9 @@ const processAndStoreData = async (req, res) => {
     const sId = bPlaceorder.result.instructionReports[0].instruction.selectionId;
     const Lp = allData.lastPriceTraded;
  
-    // console.log( "-----------------------", bPlaceorder);
+    console.log( "-----------------------", bPlaceorder);
+    // console.log(mId , sId );
+    
    
    
  
@@ -64,10 +66,24 @@ const processAndStoreData = async (req, res) => {
     })
  
  
-    const amount = amnt;
+    const amount = allData.BackAmount;
  
     var status = bPlaceorder.result.status;
     const date = bPlaceorder.result.instructionReports[0].placedDate;
+    const utcDate = new Date(date);
+    const mexicoTimeOptions = { 
+      timeZone: 'America/Mexico_City', 
+      year: 'numeric', 
+      month: 'numeric', 
+      day: 'numeric', 
+      hour: 'numeric', 
+      minute: 'numeric', 
+      second: 'numeric' 
+    };
+    const mexicoTime = utcDate.toLocaleString('en-US', mexicoTimeOptions);
+    // console.log('Mexico City time:', mexicoTime);
+        
+
     if(status==="SUCCESS"){
       status="Matched";
     }
@@ -85,9 +101,9 @@ const processAndStoreData = async (req, res) => {
          Match: MatchName,
          Odds : Lp,
          Player: PlayerName,
-         ProfitLoss: 0,
+        //  "Profit/Loss": 0,
          Status: status,
-         Probability : 2.33,
+        //  Probability : 2.33,
          Type : side,
          date: date,
          market_id: mId,
@@ -98,8 +114,8 @@ const processAndStoreData = async (req, res) => {
      
        
      
+       console.log("-----------------------",mergedData);
        await mergedData.save();
-       console.log(mergedData);
        
        console.log("Data save");
        

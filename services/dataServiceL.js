@@ -18,6 +18,8 @@ const processAndStoreData = async (req, res) => {
       const mId = layplaceorder.result.marketId;
     const Lp = layplaceorder.result.instructionReports[0].instruction.limitOrder.price
     const sId = layplaceorder.result.instructionReports[0].instruction.selectionId;
+    const Lay_amount = layplaceorder.result.instructionReports[0].instruction.limitOrder.size
+ 
     console.log("Market" , mId);
     console.log("Selection" , sId);
 
@@ -28,13 +30,19 @@ const processAndStoreData = async (req, res) => {
     
     if (match && Array.isArray(match)) {
       match.forEach((i) => {
-        if (i.marketId === mId) {  // Only process the correct market
-          MatchName = i.competition?.name || "Unknown Match";
+        if (i.marketId === mId) {  
+         
+          const runners = i.runners || [];
+          const runnerNames = runners.map(runner => runner.runnerName);
     
+        
+          const newMatchName = runnerNames.join(' Vs ');
     
-          if (i.runners && Array.isArray(i.runners)) {
-            const player = i.runners.find(runner => runner.selectionId === sId);
-            
+          MatchName = newMatchName || "Unknown Match";
+    
+          if (runners && Array.isArray(runners)) {
+            const player = runners.find(runner => runner.selectionId === sId);
+    
             if (player) {
               PlayerName = player.runnerName;
             } else {
@@ -60,7 +68,7 @@ const processAndStoreData = async (req, res) => {
     })
  
  
-    const amount = amnt;
+    // const amount = amnt;
   
     var status = layplaceorder.result.status;
     const date = layplaceorder.result.instructionReports[0].placedDate;
@@ -71,19 +79,19 @@ const processAndStoreData = async (req, res) => {
       status="Unmatched";
     }
     
-    if(!amount && !MatchName && !odd && !PlayerName && !status && !side && !date && !mId && !strategies && !eventName){
+    if(!Lay_amount && !MatchName && !odd && !PlayerName && !status && !side && !date && !mId && !strategies && !eventName){
       return res.status(400).json({message :  "Unable to save data into database"})
     }
     else{
       
        const mergedData = new MergedData({
-         Amount: amount,
+         Amount: Lay_amount,
          Match: MatchName,
          Odds : Lp,
          Player: PlayerName,
-         ProfitLoss: 0,
+        //  "Profit/Loss": 0,
          Status: status,
-         Probability : 2.33,
+        //  Probability : 2.33,
          Type : side,
          date: date,
          market_id: mId,

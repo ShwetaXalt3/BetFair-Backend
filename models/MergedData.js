@@ -1,18 +1,18 @@
 
 const mongoose = require("mongoose");
 const mergedDataSchema =new mongoose.Schema({
-    Amount: {type: Number},
     Match: {type: String},
+    strategy: {type: String},
+    Amount: {type: Number},
+    Type : {type :String},
     // layOdds: {type: Number},
     Odds : {type :Number},
-    Player: {type: String},
-    ProfitLoss: {type: Number},
     Status: {type: String},
-    Probability : {type : Number},
-    Type : {type :String},
-    date: {type: String},
+    Player: {type: String},
+    "Profit/Loss": {type: Number},
+    // Probability : {type : Number},
     market_id:{type: Number},
-    strategy: {type: String},
+    date: {type: String},
     Sport:{type: String}
 }
 )

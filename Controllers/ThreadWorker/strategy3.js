@@ -36,6 +36,8 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     if (result.backResponse && !workerState.backResolved) {
                         console.log("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
+                        AllData.data.BackAmount = result.backStake;
+
                      
                         
                         
@@ -55,6 +57,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     if (result.layResponse && !workerState.layResolved) {
                         console.log("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
+                        AllData.data.layAmount = result.layStake;
                         // console.log("---------dfd",result);
                         
                        

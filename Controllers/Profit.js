@@ -64,7 +64,7 @@ const fetchProfit = async (req, res) => {
  
       const updatedRecord = await MergedData.findOneAndUpdate(
         { market_id: marketId },  // Find by market_id
-        { $set: { ProfitLoss: profit } },  // Update the profit/loss field
+        { $set: { "Profit/Loss": profit } },  // Update the profit/loss field
         // { $set: { end_Date: lastMatchedDate } },
         { $set: { Status: "MATCH" } },
         { new: true }

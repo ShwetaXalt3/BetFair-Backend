@@ -13,9 +13,9 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
         const allData = AllData.getAllData();
         const matchData = allData.matchh;
 
-        if (!matchData || !matchData.result || !Array.isArray(matchData.result)) {
-            throw new Error("Invalid match data.");
-        }
+        // if (!matchData || !matchData.result || !Array.isArray(matchData.result)) {
+        //     throw new Error("Invalid match data.");
+        // }
 
         return new Promise((resolve, reject) => {
             // Create a new worker thread
@@ -45,6 +45,9 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                     if (result.backResponse && !workerState.backResolved) {
                         console.log("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
+                        AllData.data.BackAmount = result.backStack;
+                        console.log("-----------" , result.backStack);
+                        
                      
                         
                         
@@ -64,6 +67,9 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                     if (result.layResponse && !workerState.layResolved) {
                         console.log("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
+                        AllData.data.layAmount = result.layStake;
+                        console.log("-----------dgfg" ,result.layStake);
+
                         // console.log("---------dfd",result);
                         
                        
@@ -143,3 +149,8 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
 };
 
 module.exports = { fetchStrategy1 };
+
+
+
+ 
+ 

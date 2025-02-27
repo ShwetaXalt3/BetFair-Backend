@@ -15,6 +15,8 @@ const AllData = {
     profit:null,
     amount: null,
     lastPriceTraded : null,
+    BackAmount : null,
+    layAmount: null
  
   },
   setEventCompetition(eventId, competitionId) {
