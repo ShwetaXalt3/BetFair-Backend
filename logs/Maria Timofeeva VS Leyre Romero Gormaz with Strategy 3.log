@@ -1,0 +1,68 @@
+2025-02-27T07:18:50.314Z - INFO - ......Connected......
+2025-02-27T07:18:50.317Z - INFO - -----------------------------------
+2025-02-27T07:18:50.318Z - INFO - Market Data: {"op":"connection","connectionId":"204-270225071849-501497"}
+
+2025-02-27T07:18:50.318Z - ERROR - No odds data available
+2025-02-27T07:18:50.819Z - INFO - -----------------------------------
+2025-02-27T07:18:50.819Z - INFO - Market Data: {"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":9}
+
+2025-02-27T07:18:50.819Z - ERROR - No odds data available
+2025-02-27T07:18:51.075Z - INFO - -----------------------------------
+2025-02-27T07:18:51.076Z - INFO - Market Data: {"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-27T07:18:51.076Z - ERROR - No odds data available
+2025-02-27T07:18:51.082Z - INFO - -----------------------------------
+2025-02-27T07:18:51.083Z - INFO - Market Data: {"op":"mcm","id":1,"initialClk":"ggK1xpSMDYQCmPqi9gz4AcGujI0N","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740640730580,"ct":"SUB_IMAGE","mc":[{"id":"1.240173711","rc":[{"batb":[[0,2.92,75.38]],"batl":[[0,990,2.7]],"id":12154010},{"batb":[[0,1.35,2.42]],"batl":[[0,1.46,50]],"id":20136628}],"img":true}]}
+
+2025-02-27T07:18:51.083Z - INFO - Odds Data [object Object]
+2025-02-27T07:18:51.083Z - INFO - In Above SL code
+2025-02-27T07:18:51.083Z - INFO - Current Back 1.35
+2025-02-27T07:18:51.083Z - INFO - Current Lay 1.46
+2025-02-27T07:18:51.084Z - INFO - Target Price 1.15
+2025-02-27T07:18:51.084Z - INFO - SL Price 1.96
+2025-02-27T07:18:51.084Z - INFO - status[object Object]
+2025-02-27T07:18:56.083Z - INFO - -----------------------------------
+2025-02-27T07:18:56.084Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALgBAOMBAKEB","pt":1740640735580,"ct":"HEARTBEAT"}
+
+2025-02-27T07:18:56.084Z - INFO - In Above SL code
+2025-02-27T07:18:56.084Z - INFO - Current Back 1.35
+2025-02-27T07:18:56.084Z - INFO - Current Lay 1.46
+2025-02-27T07:18:56.084Z - INFO - Target Price 1.15
+2025-02-27T07:18:56.085Z - INFO - SL Price 1.96
+2025-02-27T07:18:56.085Z - INFO - status[object Object]
+2025-02-27T07:19:01.082Z - INFO - -----------------------------------
+2025-02-27T07:19:01.082Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI0DAPsDANEC","pt":1740640740580,"ct":"HEARTBEAT"}
+
+2025-02-27T07:19:01.082Z - INFO - In Above SL code
+2025-02-27T07:19:01.082Z - INFO - Current Back 1.35
+2025-02-27T07:19:01.082Z - INFO - Current Lay 1.46
+2025-02-27T07:19:01.082Z - INFO - Target Price 1.15
+2025-02-27T07:19:01.082Z - INFO - SL Price 1.96
+2025-02-27T07:19:01.082Z - INFO - status[object Object]
+2025-02-27T07:19:06.082Z - INFO - -----------------------------------
+2025-02-27T07:19:06.082Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN8EAP8FAJQE","pt":1740640745581,"ct":"HEARTBEAT"}
+
+2025-02-27T07:19:06.082Z - INFO - In Above SL code
+2025-02-27T07:19:06.082Z - INFO - Current Back 1.35
+2025-02-27T07:19:06.082Z - INFO - Current Lay 1.46
+2025-02-27T07:19:06.083Z - INFO - Target Price 1.15
+2025-02-27T07:19:06.083Z - INFO - SL Price 1.96
+2025-02-27T07:19:06.083Z - INFO - status[object Object]
+2025-02-27T07:19:11.111Z - INFO - -----------------------------------
+2025-02-27T07:19:11.111Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALgGANAHAKQF","pt":1740640750581,"ct":"HEARTBEAT"}
+
+2025-02-27T07:19:11.111Z - INFO - In Above SL code
+2025-02-27T07:19:11.111Z - INFO - Current Back 1.35
+2025-02-27T07:19:11.111Z - INFO - Current Lay 1.46
+2025-02-27T07:19:11.112Z - INFO - Target Price 1.15
+2025-02-27T07:19:11.112Z - INFO - SL Price 1.96
+2025-02-27T07:19:11.112Z - INFO - status[object Object]
+2025-02-27T07:19:16.108Z - INFO - -----------------------------------
+2025-02-27T07:19:16.108Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJgIAOgJALcG","pt":1740640755581,"ct":"HEARTBEAT"}
+
+2025-02-27T07:19:16.108Z - INFO - In Above SL code
+2025-02-27T07:19:16.108Z - INFO - Current Back 1.35
+2025-02-27T07:19:16.108Z - INFO - Current Lay 1.46
+2025-02-27T07:19:16.108Z - INFO - Target Price 1.15
+2025-02-27T07:19:16.108Z - INFO - SL Price 1.96
+2025-02-27T07:19:16.108Z - INFO - status[object Object]

@@ -2,13 +2,16 @@ const { Worker } = require('worker_threads');
 const path = require('path');
 const AllData = require('../../services/AllData');
 
-const activeWorkers = new Map(); // Using Map to track workers and their state
+ 
+const { setLogger } = require('../../logger');
+const logger = setLogger("Strategy_3", "logs/Betting_data.log");
+const activeWorkers = new Map(); 
 
 const fetchStrategy3 = async (sessionToken, marketId, amount) => {
     try {
         const allData = AllData.getAllData();
         const matchData = allData.matchh;
-        console.log("Starting Strategy 3 in Worker Thread...");
+        logger.info("Starting Strategy 3 in Worker Thread...");
 
         return new Promise((resolve, reject) => {
             const worker = new Worker(path.join(__dirname, 'workerStrategy3.js'));
@@ -24,7 +27,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
 
             worker.on("message", (result) => {
                 AllData.getLastPrice(result.backBetPrice)
-                // console.log("------------bgfb--" , result);
+                // logger.info("------------bgfb--" , result);
 
                 
                 const workerState = activeWorkers.get(worker);
@@ -34,7 +37,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                 if (result.success) {
                     // Process back response
                     if (result.backResponse && !workerState.backResolved) {
-                        console.log("Received back bet response from worker");
+                        logger.info("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
                         AllData.data.BackAmount = result.backStake;
 
@@ -55,16 +58,16 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     
                   
                     if (result.layResponse && !workerState.layResolved) {
-                        console.log("Received lay bet response from worker");
+                        logger.info("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
                         AllData.data.layAmount = result.layStake;
-                        // console.log("---------dfd",result);
+                        // logger.info("---------dfd",result);
                         
                        
                         workerState.layResolved = true;
                         activeWorkers.set(worker, workerState);
                        
-                        console.log("Lay bet completed for market:", marketId);
+                        logger.info("Lay bet completed for market:"+ marketId);
                     }
                 } else if (!workerState.backResolved) {
                     // Error before back response - resolve with error
@@ -80,7 +83,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
             });
 
             worker.on("error", (err) => {
-                console.error("Worker Error:", err);
+                logger.error("Worker Error:"+ err);
                 const workerState = activeWorkers.get(worker);
                 
                 if (!workerState || workerState.backResolved) {
@@ -94,7 +97,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
 
             worker.on("exit", (code) => {
                 if (code !== 0) {
-                    console.error(`Worker stopped with exit code ${code}`);
+                    logger.error(`Worker stopped with exit code ${code}`);
                     
                     // If the worker exited abnormally and we haven't resolved back yet, resolve with an error
                     const workerState = activeWorkers.get(worker);
@@ -115,7 +118,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
             setTimeout(() => {
                 const workerState = activeWorkers.get(worker);
                 if (workerState && !workerState.backResolved) {
-                    console.log(`Worker for market ${marketId} timed out after 5 minutes waiting for back response`);
+                    logger.info(`Worker for market ${marketId} timed out after 5 minutes waiting for back response`);
                     worker.terminate();
                     workerState.backResolved = true;
                     activeWorkers.set(worker, workerState);
@@ -128,7 +131,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
         });
 
     } catch (err) {
-        console.error("Error in Strategy 3 Worker Thread:", err);
+        logger.error("Error in Strategy 3 Worker Thread:"+ err);
         throw err;
     }
 };

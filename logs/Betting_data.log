@@ -248,3 +248,11 @@
 2025-02-27T06:23:13.408Z - INFO - Worker result : [object Object]
 2025-02-27T06:23:13.407Z - INFO - Back Bet Placed 12
 2025-02-27T06:23:13.407Z - INFO - Strategy 2 completed
+2025-02-27T07:18:46.576Z - INFO - Starting Strategy 3 in Worker Thread...
+2025-02-27T07:18:46.731Z - INFO - Processing Strategy 3 for Market ID: 1.240173711
+2025-02-27T07:18:48.072Z - INFO -  back bet placed at  1.35
+2025-02-27T07:18:48.074Z - INFO - Received back bet response from worker
+2025-02-27T07:18:48.073Z - INFO - Back Bet placed Successfully!!
+2025-02-27T07:18:48.080Z - ERROR - Error hitting database API:Request failed with status code 500
+2025-02-27T07:19:25.308Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-02-27T07:19:25.455Z - INFO - Processing Strategy 1 for Market ID: 1.240173711
