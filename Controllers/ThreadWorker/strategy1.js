@@ -31,7 +31,7 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
  
             // Listen for messages from the worker thread
             worker.on("message", (result) => {
-                AllData.getLastPrice(result. back_bet_price)
+                AllData.getLastPrice(result.back_bet_price)
  
                 const workerState = activeWorkers.get(worker);
                 if (!workerState) return; // Worker not found in our tracking map

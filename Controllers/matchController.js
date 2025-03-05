@@ -37,7 +37,7 @@ const fetchMatch = async (req, res) => {
         filter: {
           eventTypeIds: [eventId],
           competitionIds: [competitionId],
-          marketStartTime: { from: formattedMarketStartTime, to: formattedMarketEndTime },
+          // marketStartTime: { from: formattedMarketStartTime, to: formattedMarketEndTime },
           marketTypeCodes: ['MATCH_ODDS'],
           inPlayOnly: "true",
           sort :"FIRST_TO_START"
@@ -49,7 +49,7 @@ const fetchMatch = async (req, res) => {
       id: 1,
     };
 
-    // Fetch market data
+    // Fetch market data                 
     const response = await axios.post(apiUrl, requestPayload, {
       headers: {
         'X-Application': process.env.API_KEY,    

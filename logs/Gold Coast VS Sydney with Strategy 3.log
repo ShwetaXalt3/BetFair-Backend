@@ -1,0 +1,1344 @@
+2025-02-28T09:57:37.106Z - INFO - ......Connected......
+2025-02-28T09:57:37.109Z - INFO - -----------------------------------
+2025-02-28T09:57:37.109Z - INFO - Market Data: {"op":"connection","connectionId":"212-280225095737-677690"}
+
+2025-02-28T09:57:37.110Z - ERROR - No odds data available
+2025-02-28T09:57:37.656Z - INFO - -----------------------------------
+2025-02-28T09:57:37.657Z - INFO - Market Data: {"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":8}
+
+2025-02-28T09:57:37.657Z - ERROR - No odds data available
+2025-02-28T09:57:37.866Z - INFO - -----------------------------------
+2025-02-28T09:57:37.866Z - INFO - Market Data: {"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-28T09:57:37.866Z - ERROR - No odds data available
+2025-02-28T09:57:37.883Z - INFO - -----------------------------------
+2025-02-28T09:57:37.883Z - INFO - Market Data: {"op":"mcm","id":1,"initialClk":"ggKD/6GPDYQCzqLl+Qz4Af+hpZAN","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740736658183,"ct":"SUB_IMAGE","mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.5,8.25]],"batl":[[0,4.4,0.37]],"id":39985},{"batb":[[0,2,39.62]],"batl":[[0,3.8,0.49]],"id":4513766}],"img":true}]}
+
+2025-02-28T09:57:37.883Z - INFO - Odds Data [object Object]
+2025-02-28T09:57:37.883Z - INFO - Abnormal Lay price
+2025-02-28T09:57:42.883Z - INFO - -----------------------------------
+2025-02-28T09:57:42.883Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM4CAKADAJ0E","pt":1740736663183,"ct":"HEARTBEAT"}
+
+2025-02-28T09:57:42.883Z - INFO - Abnormal Lay price
+2025-02-28T09:57:47.883Z - INFO - -----------------------------------
+2025-02-28T09:57:47.884Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALcEAOcFAKkH","pt":1740736668183,"ct":"HEARTBEAT"}
+
+2025-02-28T09:57:47.884Z - INFO - Abnormal Lay price
+2025-02-28T09:57:52.883Z - INFO - -----------------------------------
+2025-02-28T09:57:52.883Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOsGAMwIAMYK","pt":1740736673183,"ct":"HEARTBEAT"}
+
+2025-02-28T09:57:52.883Z - INFO - Abnormal Lay price
+2025-02-28T09:57:57.883Z - INFO - -----------------------------------
+2025-02-28T09:57:57.883Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANAJAO4LAIgP","pt":1740736678183,"ct":"HEARTBEAT"}
+
+2025-02-28T09:57:57.884Z - INFO - Abnormal Lay price
+2025-02-28T09:58:02.890Z - INFO - -----------------------------------
+2025-02-28T09:58:02.890Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIsOAP4RAI4X","pt":1740736683190,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:02.890Z - INFO - Abnormal Lay price
+2025-02-28T09:58:07.888Z - INFO - -----------------------------------
+2025-02-28T09:58:07.889Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALsSANAXANwe","pt":1740736688190,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:07.889Z - INFO - Abnormal Lay price
+2025-02-28T09:58:12.889Z - INFO - -----------------------------------
+2025-02-28T09:58:12.890Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKcWANEcAMQl","pt":1740736693190,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:12.890Z - INFO - Abnormal Lay price
+2025-02-28T09:58:17.892Z - INFO - -----------------------------------
+2025-02-28T09:58:17.892Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM4ZAKkgAIwr","pt":1740736698190,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:17.892Z - INFO - Abnormal Lay price
+2025-02-28T09:58:22.896Z - INFO - -----------------------------------
+2025-02-28T09:58:22.897Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOYcAPQjAIsw","pt":1740736703197,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:22.897Z - INFO - Abnormal Lay price
+2025-02-28T09:58:27.896Z - INFO - -----------------------------------
+2025-02-28T09:58:27.896Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOYfAJwnAOs0","pt":1740736708197,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:27.896Z - INFO - Abnormal Lay price
+2025-02-28T09:58:32.897Z - INFO - -----------------------------------
+2025-02-28T09:58:32.898Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANIiAOwpAOs4","pt":1740736713197,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:32.898Z - INFO - Abnormal Lay price
+2025-02-28T09:58:37.896Z - INFO - -----------------------------------
+2025-02-28T09:58:37.897Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMcnALovAJs+","pt":1740736718198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:37.897Z - INFO - Abnormal Lay price
+2025-02-28T09:58:42.898Z - INFO - -----------------------------------
+2025-02-28T09:58:42.898Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKYqALEyAIdC","pt":1740736723198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:42.898Z - INFO - Abnormal Lay price
+2025-02-28T09:58:47.895Z - INFO - -----------------------------------
+2025-02-28T09:58:47.896Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMMtAOs1APJF","pt":1740736728198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:47.896Z - INFO - Abnormal Lay price
+2025-02-28T09:58:52.898Z - INFO - -----------------------------------
+2025-02-28T09:58:52.898Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI4xAI85AItK","pt":1740736733198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:52.899Z - INFO - Abnormal Lay price
+2025-02-28T09:58:57.896Z - INFO - -----------------------------------
+2025-02-28T09:58:57.896Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANEzAMU7AINO","pt":1740736738198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:58:57.896Z - INFO - Abnormal Lay price
+2025-02-28T09:59:02.896Z - INFO - -----------------------------------
+2025-02-28T09:59:02.897Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK82ALM+AL5R","pt":1740736743198,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:02.897Z - INFO - Abnormal Lay price
+2025-02-28T09:59:07.898Z - INFO - -----------------------------------
+2025-02-28T09:59:07.899Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMU5AIFBAPVU","pt":1740736748199,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:07.899Z - INFO - Abnormal Lay price
+2025-02-28T09:59:12.899Z - INFO - -----------------------------------
+2025-02-28T09:59:12.899Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMs8ANpDAK1Y","pt":1740736753199,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:12.899Z - INFO - Abnormal Lay price
+2025-02-28T09:59:17.902Z - INFO - -----------------------------------
+2025-02-28T09:59:17.902Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIE/AINHAO1b","pt":1740736758203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:17.903Z - INFO - Abnormal Lay price
+2025-02-28T09:59:22.901Z - INFO - -----------------------------------
+2025-02-28T09:59:22.902Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANRBAJxKALJf","pt":1740736763203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:22.902Z - INFO - Abnormal Lay price
+2025-02-28T09:59:27.901Z - INFO - -----------------------------------
+2025-02-28T09:59:27.901Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANJEAJpNAOxj","pt":1740736768203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:27.901Z - INFO - Abnormal Lay price
+2025-02-28T09:59:32.901Z - INFO - -----------------------------------
+2025-02-28T09:59:32.902Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP9GALpQALJn","pt":1740736773203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:32.902Z - INFO - Abnormal Lay price
+2025-02-28T09:59:37.902Z - INFO - -----------------------------------
+2025-02-28T09:59:37.902Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALNJAJhTALFq","pt":1740736778203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:37.902Z - INFO - Abnormal Lay price
+2025-02-28T09:59:42.903Z - INFO - -----------------------------------
+2025-02-28T09:59:42.903Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APlLALhWAMtt","pt":1740736783203,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:42.904Z - INFO - Abnormal Lay price
+2025-02-28T09:59:47.904Z - INFO - -----------------------------------
+2025-02-28T09:59:47.904Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIROAJxZAP5w","pt":1740736788205,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:47.904Z - INFO - Abnormal Lay price
+2025-02-28T09:59:52.904Z - INFO - -----------------------------------
+2025-02-28T09:59:52.905Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMNQAJVcAKp0","pt":1740736793206,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:52.905Z - INFO - Abnormal Lay price
+2025-02-28T09:59:57.905Z - INFO - -----------------------------------
+2025-02-28T09:59:57.905Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APhSAOFeAJB3","pt":1740736798206,"ct":"HEARTBEAT"}
+
+2025-02-28T09:59:57.905Z - INFO - Abnormal Lay price
+2025-02-28T10:00:02.910Z - INFO - -----------------------------------
+2025-02-28T10:00:02.910Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKlWAKhiAKd7","pt":1740736803206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:02.910Z - INFO - Abnormal Lay price
+2025-02-28T10:00:07.905Z - INFO - -----------------------------------
+2025-02-28T10:00:07.905Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANhZAJJmAPl/","pt":1740736808206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:07.905Z - INFO - Abnormal Lay price
+2025-02-28T10:00:12.905Z - INFO - -----------------------------------
+2025-02-28T10:00:12.906Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP5cAMRpAO+DAQ==","pt":1740736813206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:12.906Z - INFO - Abnormal Lay price
+2025-02-28T10:00:17.905Z - INFO - -----------------------------------
+2025-02-28T10:00:17.906Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI9gANtsAPyHAQ==","pt":1740736818206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:17.906Z - INFO - Abnormal Lay price
+2025-02-28T10:00:22.905Z - INFO - -----------------------------------
+2025-02-28T10:00:22.905Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOhiAKdwALaLAQ==","pt":1740736823206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:22.905Z - INFO - Abnormal Lay price
+2025-02-28T10:00:27.905Z - INFO - -----------------------------------
+2025-02-28T10:00:27.906Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANVlAMVzAP6OAQ==","pt":1740736828206,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:27.906Z - INFO - Abnormal Lay price
+2025-02-28T10:00:32.906Z - INFO - -----------------------------------
+2025-02-28T10:00:32.907Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOhoAIV2AMKSAQ==","pt":1740736833207,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:32.907Z - INFO - Abnormal Lay price
+2025-02-28T10:00:37.983Z - INFO - -----------------------------------
+2025-02-28T10:00:37.983Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI1rAN54AOiVAQ==","pt":1740736838285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:37.984Z - INFO - Abnormal Lay price
+2025-02-28T10:00:42.984Z - INFO - -----------------------------------
+2025-02-28T10:00:42.984Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMZtAMZ7AImZAQ==","pt":1740736843285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:42.984Z - INFO - Abnormal Lay price
+2025-02-28T10:00:47.984Z - INFO - -----------------------------------
+2025-02-28T10:00:47.984Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKZwAPV9AJacAQ==","pt":1740736848285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:47.984Z - INFO - Abnormal Lay price
+2025-02-28T10:00:52.984Z - INFO - -----------------------------------
+2025-02-28T10:00:52.984Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOlyALqAAQCcnwE=","pt":1740736853285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:52.984Z - INFO - Abnormal Lay price
+2025-02-28T10:00:57.986Z - INFO - -----------------------------------
+2025-02-28T10:00:57.986Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIt1AI6DAQCNogE=","pt":1740736858285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:00:57.986Z - INFO - Abnormal Lay price
+2025-02-28T10:01:02.982Z - INFO - -----------------------------------
+2025-02-28T10:01:02.982Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN13ANSFAQCFpQE=","pt":1740736863285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:02.983Z - INFO - Abnormal Lay price
+2025-02-28T10:01:07.984Z - INFO - -----------------------------------
+2025-02-28T10:01:07.984Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOl6AKSIAQCeqAE=","pt":1740736868285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:07.984Z - INFO - Abnormal Lay price
+2025-02-28T10:01:12.982Z - INFO - -----------------------------------
+2025-02-28T10:01:12.982Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOJ9AN6LAQDHqwE=","pt":1740736873285,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:12.982Z - INFO - Abnormal Lay price
+2025-02-28T10:01:13.304Z - INFO - -----------------------------------
+2025-02-28T10:01:13.304Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIJ+AIKMAQDeqwE=","pt":1740736873606,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.62,98.68]],"id":4513766}]}]}
+
+2025-02-28T10:01:13.304Z - INFO - Odds Data [object Object]
+2025-02-28T10:01:13.304Z - INFO - Abnormal Lay price
+2025-02-28T10:01:18.305Z - INFO - -----------------------------------
+2025-02-28T10:01:18.305Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOyAAQC2jwEAia8B","pt":1740736878607,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:18.305Z - INFO - Abnormal Lay price
+2025-02-28T10:01:19.539Z - INFO - -----------------------------------
+2025-02-28T10:01:19.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANWBAQCpkAEAgbAB","pt":1740736879840,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,2,98.68]],"id":39985}]}]}
+
+2025-02-28T10:01:19.540Z - INFO - Odds Data [object Object]
+2025-02-28T10:01:19.541Z - INFO - Abnormal Lay price
+2025-02-28T10:01:21.229Z - INFO - -----------------------------------
+2025-02-28T10:01:21.229Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANyCAQCtkQEAiLEB","pt":1740736881532,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.5,8.25]],"id":39985}]}]}
+
+2025-02-28T10:01:21.229Z - INFO - Odds Data [object Object]
+2025-02-28T10:01:21.229Z - INFO - Abnormal Lay price
+2025-02-28T10:01:26.236Z - INFO - -----------------------------------
+2025-02-28T10:01:26.236Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANSFAQCZlAEA2bQB","pt":1740736886532,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:26.236Z - INFO - Abnormal Lay price
+2025-02-28T10:01:31.230Z - INFO - -----------------------------------
+2025-02-28T10:01:31.230Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALCIAQDYlgEApLgB","pt":1740736891532,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:31.231Z - INFO - Abnormal Lay price
+2025-02-28T10:01:36.244Z - INFO - -----------------------------------
+2025-02-28T10:01:36.244Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP+KAQD+mQEAmLwB","pt":1740736896533,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:36.244Z - INFO - Abnormal Lay price
+2025-02-28T10:01:39.125Z - INFO - -----------------------------------
+2025-02-28T10:01:39.125Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANyMAQDMmwEAsL4B","pt":1740736899425,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.8,62.73]],"id":4513766}]}]}
+
+2025-02-28T10:01:39.126Z - INFO - Odds Data [object Object]
+2025-02-28T10:01:39.126Z - INFO - Abnormal Lay price
+2025-02-28T10:01:44.123Z - INFO - -----------------------------------
+2025-02-28T10:01:44.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALePAQDkngEAv8IB","pt":1740736904425,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:44.124Z - INFO - Abnormal Lay price
+2025-02-28T10:01:49.123Z - INFO - -----------------------------------
+2025-02-28T10:01:49.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJmSAQDsoQEAsMYB","pt":1740736909425,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:49.123Z - INFO - Abnormal Lay price
+2025-02-28T10:01:54.123Z - INFO - -----------------------------------
+2025-02-28T10:01:54.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIaVAQC2pAEA0skB","pt":1740736914426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:54.123Z - INFO - Abnormal Lay price
+2025-02-28T10:01:59.131Z - INFO - -----------------------------------
+2025-02-28T10:01:59.132Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN+XAQDDpgEA6cwB","pt":1740736919426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:01:59.132Z - INFO - Abnormal Lay price
+2025-02-28T10:02:04.228Z - INFO - -----------------------------------
+2025-02-28T10:02:04.228Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APOaAQCtqQEA49AB","pt":1740736924426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:04.229Z - INFO - Abnormal Lay price
+2025-02-28T10:02:09.128Z - INFO - -----------------------------------
+2025-02-28T10:02:09.129Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANudAQD7qwEAxtQB","pt":1740736929426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:09.129Z - INFO - Abnormal Lay price
+2025-02-28T10:02:14.134Z - INFO - -----------------------------------
+2025-02-28T10:02:14.134Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALegAQD2rgEAptgB","pt":1740736934426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:14.134Z - INFO - Abnormal Lay price
+2025-02-28T10:02:19.124Z - INFO - -----------------------------------
+2025-02-28T10:02:19.125Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKujAQCjsQEAodsB","pt":1740736939426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:19.125Z - INFO - Abnormal Lay price
+2025-02-28T10:02:24.124Z - INFO - -----------------------------------
+2025-02-28T10:02:24.124Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP+lAQDbswEAtN4B","pt":1740736944426,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:24.124Z - INFO - Abnormal Lay price
+2025-02-28T10:02:28.014Z - INFO - -----------------------------------
+2025-02-28T10:02:28.015Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ+oAQDltQEAuuAB","pt":1740736948315,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.6,164.47]],"id":39985}]}]}
+
+2025-02-28T10:02:28.015Z - INFO - Odds Data [object Object]
+2025-02-28T10:02:28.015Z - INFO - Abnormal Lay price
+2025-02-28T10:02:33.020Z - INFO - -----------------------------------
+2025-02-28T10:02:33.021Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APWqAQC4uAEAy+MB","pt":1740736953321,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:33.021Z - INFO - Abnormal Lay price
+2025-02-28T10:02:38.018Z - INFO - -----------------------------------
+2025-02-28T10:02:38.019Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOutAQCEuwEA6+YB","pt":1740736958321,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:38.019Z - INFO - Abnormal Lay price
+2025-02-28T10:02:43.018Z - INFO - -----------------------------------
+2025-02-28T10:02:43.018Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOuwAQCFvgEA6eoB","pt":1740736963321,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:43.019Z - INFO - Abnormal Lay price
+2025-02-28T10:02:48.034Z - INFO - -----------------------------------
+2025-02-28T10:02:48.034Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOezAQCYwAEA7+0B","pt":1740736968336,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:48.034Z - INFO - Abnormal Lay price
+2025-02-28T10:02:53.032Z - INFO - -----------------------------------
+2025-02-28T10:02:53.033Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP62AQDXwgEAhPEB","pt":1740736973336,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:53.033Z - INFO - Abnormal Lay price
+2025-02-28T10:02:58.034Z - INFO - -----------------------------------
+2025-02-28T10:02:58.034Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANq5AQCZxQEA4fMB","pt":1740736978336,"ct":"HEARTBEAT"}
+
+2025-02-28T10:02:58.034Z - INFO - Abnormal Lay price
+2025-02-28T10:03:03.033Z - INFO - -----------------------------------
+2025-02-28T10:03:03.033Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJm8AQDixwEAx/YB","pt":1740736983336,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:03.034Z - INFO - Abnormal Lay price
+2025-02-28T10:03:08.035Z - INFO - -----------------------------------
+2025-02-28T10:03:08.035Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKW/AQCbygEA9vkB","pt":1740736988336,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:08.035Z - INFO - Abnormal Lay price
+2025-02-28T10:03:12.769Z - INFO - -----------------------------------
+2025-02-28T10:03:12.769Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL3CAQDMzAEAiv4B","pt":1740736993070,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.5,4.95]],"id":39985}]}]}
+
+2025-02-28T10:03:12.769Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:12.770Z - INFO - Abnormal Lay price
+2025-02-28T10:03:15.558Z - INFO - -----------------------------------
+2025-02-28T10:03:15.559Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJzEAQD2zQEA/v8B","pt":1740736995861,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.01,40.51]],"id":39985}]}]}
+
+2025-02-28T10:03:15.559Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:15.559Z - INFO - Abnormal Lay price
+2025-02-28T10:03:20.559Z - INFO - -----------------------------------
+2025-02-28T10:03:20.559Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALLHAQD/zwEAjoMC","pt":1740737000861,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:20.559Z - INFO - Abnormal Lay price
+2025-02-28T10:03:20.699Z - INFO - -----------------------------------
+2025-02-28T10:03:20.699Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALnHAQCC0AEAmoMC","pt":1740737001002,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.8,4.95]],"id":39985}]}]}
+
+2025-02-28T10:03:20.699Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:20.699Z - INFO - Abnormal Lay price
+2025-02-28T10:03:25.142Z - INFO - -----------------------------------
+2025-02-28T10:03:25.143Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANzJAQDV0gEAuYYC","pt":1740737005443,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.01,40.51]],"id":39985}]}]}
+
+2025-02-28T10:03:25.143Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:25.143Z - INFO - Abnormal Lay price
+2025-02-28T10:03:30.140Z - INFO - -----------------------------------
+2025-02-28T10:03:30.140Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AILNAQDt1QEAyIoC","pt":1740737010443,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:30.140Z - INFO - Abnormal Lay price
+2025-02-28T10:03:35.140Z - INFO - -----------------------------------
+2025-02-28T10:03:35.140Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO/PAQCM2AEAyo0C","pt":1740737015443,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:35.140Z - INFO - Abnormal Lay price
+2025-02-28T10:03:40.141Z - INFO - -----------------------------------
+2025-02-28T10:03:40.141Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMzSAQCV2gEAnZAC","pt":1740737020443,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:40.141Z - INFO - Abnormal Lay price
+2025-02-28T10:03:40.415Z - INFO - -----------------------------------
+2025-02-28T10:03:40.415Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANzSAQCk2gEAq5AC","pt":1740737020717,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.05,20]],"id":39985}]}]}
+
+2025-02-28T10:03:40.416Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:40.416Z - INFO - Abnormal Lay price
+2025-02-28T10:03:45.414Z - INFO - -----------------------------------
+2025-02-28T10:03:45.415Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKHVAQCO3AEAwpMC","pt":1740737025717,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:45.415Z - INFO - Abnormal Lay price
+2025-02-28T10:03:50.414Z - INFO - -----------------------------------
+2025-02-28T10:03:50.414Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIfYAQCn3gEAkpYC","pt":1740737030717,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:50.414Z - INFO - Abnormal Lay price
+2025-02-28T10:03:51.126Z - INFO - -----------------------------------
+2025-02-28T10:03:51.127Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKrYAQDM3gEA6pYC","pt":1740737031430,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.62,98.68]],"id":4513766}]}]}
+
+2025-02-28T10:03:51.127Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:51.127Z - INFO - Abnormal Lay price
+2025-02-28T10:03:56.128Z - INFO - -----------------------------------
+2025-02-28T10:03:56.128Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APLaAQDk4AEAsZkC","pt":1740737036430,"ct":"HEARTBEAT"}
+
+2025-02-28T10:03:56.128Z - INFO - Abnormal Lay price
+2025-02-28T10:03:56.229Z - INFO - -----------------------------------
+2025-02-28T10:03:56.229Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APraAQDn4AEAtZkC","pt":1740737036532,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,2,62.73]],"id":4513766}]}]}
+
+2025-02-28T10:03:56.230Z - INFO - Odds Data [object Object]
+2025-02-28T10:03:56.230Z - INFO - Abnormal Lay price
+2025-02-28T10:04:00.817Z - INFO - -----------------------------------
+2025-02-28T10:04:00.817Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKvdAQDV4gEA/ZsC","pt":1740737041121,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.06,20]],"id":39985}]}]}
+
+2025-02-28T10:04:00.817Z - INFO - Odds Data [object Object]
+2025-02-28T10:04:00.817Z - INFO - Abnormal Lay price
+2025-02-28T10:04:01.537Z - INFO - -----------------------------------
+2025-02-28T10:04:01.537Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANjdAQCF4wEA7ZwC","pt":1740737041841,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.07,20]],"id":39985}]}]}
+
+2025-02-28T10:04:01.537Z - INFO - Odds Data [object Object]
+2025-02-28T10:04:01.537Z - INFO - Abnormal Lay price
+2025-02-28T10:04:06.539Z - INFO - -----------------------------------
+2025-02-28T10:04:06.539Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APjgAQDR5QEAsaAC","pt":1740737046841,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:06.539Z - INFO - Abnormal Lay price
+2025-02-28T10:04:11.537Z - INFO - -----------------------------------
+2025-02-28T10:04:11.538Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK3jAQDX5wEA9aMC","pt":1740737051841,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:11.538Z - INFO - Abnormal Lay price
+2025-02-28T10:04:16.538Z - INFO - -----------------------------------
+2025-02-28T10:04:16.538Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI7mAQDG6QEA+qYC","pt":1740737056841,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:16.538Z - INFO - Abnormal Lay price
+2025-02-28T10:04:16.748Z - INFO - -----------------------------------
+2025-02-28T10:04:16.748Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKPmAQDQ6QEAjKcC","pt":1740737057051,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,2,57.77]],"id":4513766}]}]}
+
+2025-02-28T10:04:16.748Z - INFO - Odds Data [object Object]
+2025-02-28T10:04:16.748Z - INFO - Abnormal Lay price
+2025-02-28T10:04:21.750Z - INFO - -----------------------------------
+2025-02-28T10:04:21.750Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJPpAQDv6wEAmqoC","pt":1740737062052,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:21.750Z - INFO - Abnormal Lay price
+2025-02-28T10:04:26.751Z - INFO - -----------------------------------
+2025-02-28T10:04:26.751Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOvrAQCd7gEAkq4C","pt":1740737067052,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:26.751Z - INFO - Abnormal Lay price
+2025-02-28T10:04:31.752Z - INFO - -----------------------------------
+2025-02-28T10:04:31.752Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL7uAQCN8AEA6bEC","pt":1740737072052,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:31.752Z - INFO - Abnormal Lay price
+2025-02-28T10:04:36.749Z - INFO - -----------------------------------
+2025-02-28T10:04:36.749Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIHxAQC08gEAkrUC","pt":1740737077052,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:36.749Z - INFO - Abnormal Lay price
+2025-02-28T10:04:36.779Z - INFO - -----------------------------------
+2025-02-28T10:04:36.779Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIXxAQC08gEAkrUC","pt":1740737077081,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.48,9.08]],"id":39985}]}]}
+
+2025-02-28T10:04:36.779Z - INFO - Odds Data [object Object]
+2025-02-28T10:04:36.779Z - INFO - Abnormal Lay price
+2025-02-28T10:04:41.778Z - INFO - -----------------------------------
+2025-02-28T10:04:41.778Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOLzAQDz9AEA4bgC","pt":1740737082081,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:41.779Z - INFO - Abnormal Lay price
+2025-02-28T10:04:46.782Z - INFO - -----------------------------------
+2025-02-28T10:04:46.782Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKr2AQCf9wEA8rsC","pt":1740737087081,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:46.782Z - INFO - Abnormal Lay price
+2025-02-28T10:04:51.784Z - INFO - -----------------------------------
+2025-02-28T10:04:51.784Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APP4AQCh+QEA5r4C","pt":1740737092081,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:51.784Z - INFO - Abnormal Lay price
+2025-02-28T10:04:56.778Z - INFO - -----------------------------------
+2025-02-28T10:04:56.778Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALL7AQDQ+wEAmcIC","pt":1740737097082,"ct":"HEARTBEAT"}
+
+2025-02-28T10:04:56.778Z - INFO - Abnormal Lay price
+2025-02-28T10:05:01.778Z - INFO - -----------------------------------
+2025-02-28T10:05:01.778Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMz+AQDl/QEAysUC","pt":1740737102082,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:01.778Z - INFO - Abnormal Lay price
+2025-02-28T10:05:06.778Z - INFO - -----------------------------------
+2025-02-28T10:05:06.778Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APSBAgC1gAIAwMkC","pt":1740737107082,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:06.778Z - INFO - Abnormal Lay price
+2025-02-28T10:05:11.781Z - INFO - -----------------------------------
+2025-02-28T10:05:11.781Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMmFAgDIggIAq80C","pt":1740737112083,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:11.782Z - INFO - Abnormal Lay price
+2025-02-28T10:05:16.781Z - INFO - -----------------------------------
+2025-02-28T10:05:16.781Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALGKAgDZhgIAgdMC","pt":1740737117083,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:16.781Z - INFO - Abnormal Lay price
+2025-02-28T10:05:21.780Z - INFO - -----------------------------------
+2025-02-28T10:05:21.781Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMGPAgCQjAIA1NkC","pt":1740737122084,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:21.781Z - INFO - Abnormal Lay price
+2025-02-28T10:05:26.780Z - INFO - -----------------------------------
+2025-02-28T10:05:26.780Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMCUAgCqkQIA0d8C","pt":1740737127084,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:26.780Z - INFO - Abnormal Lay price
+2025-02-28T10:05:31.780Z - INFO - -----------------------------------
+2025-02-28T10:05:31.780Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJiZAgDqlQIAnuUC","pt":1740737132084,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:31.781Z - INFO - Abnormal Lay price
+2025-02-28T10:05:32.626Z - INFO - -----------------------------------
+2025-02-28T10:05:32.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APOZAgC9lgIAjeYC","pt":1740737132930,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.07,20.2]],"id":39985}]}]}
+
+2025-02-28T10:05:32.626Z - INFO - Odds Data [object Object]
+2025-02-28T10:05:32.626Z - INFO - Abnormal Lay price
+2025-02-28T10:05:37.626Z - INFO - -----------------------------------
+2025-02-28T10:05:37.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKSeAgCvmgIAyuoC","pt":1740737137930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:37.626Z - INFO - Abnormal Lay price
+2025-02-28T10:05:42.625Z - INFO - -----------------------------------
+2025-02-28T10:05:42.625Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOCiAgC6ngIAp+8C","pt":1740737142930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:42.625Z - INFO - Abnormal Lay price
+2025-02-28T10:05:47.626Z - INFO - -----------------------------------
+2025-02-28T10:05:47.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN+mAgDCoQIA2fMC","pt":1740737147930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:47.626Z - INFO - Abnormal Lay price
+2025-02-28T10:05:52.625Z - INFO - -----------------------------------
+2025-02-28T10:05:52.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APupAgCvpAIAo/cC","pt":1740737152930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:52.626Z - INFO - Abnormal Lay price
+2025-02-28T10:05:57.626Z - INFO - -----------------------------------
+2025-02-28T10:05:57.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIatAgCApwIAgPsC","pt":1740737157930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:05:57.626Z - INFO - Abnormal Lay price
+2025-02-28T10:06:02.625Z - INFO - -----------------------------------
+2025-02-28T10:06:02.625Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AImwAgCAqgIAgP8C","pt":1740737162930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:02.625Z - INFO - Abnormal Lay price
+2025-02-28T10:06:07.626Z - INFO - -----------------------------------
+2025-02-28T10:06:07.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMCzAgCyrAIA0oID","pt":1740737167930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:07.626Z - INFO - Abnormal Lay price
+2025-02-28T10:06:12.625Z - INFO - -----------------------------------
+2025-02-28T10:06:12.625Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI63AgCJrwIAuIYD","pt":1740737172930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:12.626Z - INFO - Abnormal Lay price
+2025-02-28T10:06:17.626Z - INFO - -----------------------------------
+2025-02-28T10:06:17.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOe6AgC9sQIAyokD","pt":1740737177930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:17.626Z - INFO - Abnormal Lay price
+2025-02-28T10:06:22.626Z - INFO - -----------------------------------
+2025-02-28T10:06:22.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJC+AgCxtAIAno0D","pt":1740737182930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:22.627Z - INFO - Abnormal Lay price
+2025-02-28T10:06:27.625Z - INFO - -----------------------------------
+2025-02-28T10:06:27.626Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALTBAgDftgIA1ZAD","pt":1740737187930,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:27.626Z - INFO - Abnormal Lay price
+2025-02-28T10:06:27.932Z - INFO - -----------------------------------
+2025-02-28T10:06:27.933Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANPBAgD2tgIA9ZAD","pt":1740737188235,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.07,20]],"id":39985}]}]}
+
+2025-02-28T10:06:27.933Z - INFO - Odds Data [object Object]
+2025-02-28T10:06:27.933Z - INFO - Abnormal Lay price
+2025-02-28T10:06:32.935Z - INFO - -----------------------------------
+2025-02-28T10:06:32.935Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMjFAgCpuQIA65QD","pt":1740737193236,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:32.935Z - INFO - Abnormal Lay price
+2025-02-28T10:06:37.593Z - INFO - -----------------------------------
+2025-02-28T10:06:37.593Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANnIAgDjuwIAh5gD","pt":1740737197897,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.62,98.68]],"id":4513766}]}]}
+
+2025-02-28T10:06:37.593Z - INFO - Odds Data [object Object]
+2025-02-28T10:06:37.593Z - INFO - Abnormal Lay price
+2025-02-28T10:06:42.593Z - INFO - -----------------------------------
+2025-02-28T10:06:42.593Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIzMAgDCvgIAoZsD","pt":1740737202897,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:42.593Z - INFO - Abnormal Lay price
+2025-02-28T10:06:47.522Z - INFO - -----------------------------------
+2025-02-28T10:06:47.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALPPAgD4wAIAhp8D","pt":1740737207824,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,2,61.9]],"id":4513766}]}]}
+
+2025-02-28T10:06:47.523Z - INFO - Odds Data [object Object]
+2025-02-28T10:06:47.524Z - INFO - Abnormal Lay price
+2025-02-28T10:06:52.520Z - INFO - -----------------------------------
+2025-02-28T10:06:52.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIXTAgDVwwIAw6ID","pt":1740737212824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:52.520Z - INFO - Abnormal Lay price
+2025-02-28T10:06:57.521Z - INFO - -----------------------------------
+2025-02-28T10:06:57.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL7WAgCMxgIAzqUD","pt":1740737217824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:06:57.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:02.522Z - INFO - -----------------------------------
+2025-02-28T10:07:02.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJbaAgDwyAIAtKkD","pt":1740737222824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:02.522Z - INFO - Abnormal Lay price
+2025-02-28T10:07:07.521Z - INFO - -----------------------------------
+2025-02-28T10:07:07.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJHeAgD3ywIA7qwD","pt":1740737227824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:07.522Z - INFO - Abnormal Lay price
+2025-02-28T10:07:12.520Z - INFO - -----------------------------------
+2025-02-28T10:07:12.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMvhAgC0zgIAjLAD","pt":1740737232824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:12.520Z - INFO - Abnormal Lay price
+2025-02-28T10:07:17.521Z - INFO - -----------------------------------
+2025-02-28T10:07:17.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOTkAgCy0AIA5rID","pt":1740737237824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:17.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:22.520Z - INFO - -----------------------------------
+2025-02-28T10:07:22.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK/oAgDs0gIA8bUD","pt":1740737242824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:22.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:27.521Z - INFO - -----------------------------------
+2025-02-28T10:07:27.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANPrAgCi1QIA67gD","pt":1740737247824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:27.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:32.527Z - INFO - -----------------------------------
+2025-02-28T10:07:32.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIDvAgDN1wIA/rsD","pt":1740737252824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:32.528Z - INFO - Abnormal Lay price
+2025-02-28T10:07:37.520Z - INFO - -----------------------------------
+2025-02-28T10:07:37.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIHyAgDe2QIAvL8D","pt":1740737257824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:37.520Z - INFO - Abnormal Lay price
+2025-02-28T10:07:42.527Z - INFO - -----------------------------------
+2025-02-28T10:07:42.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKv1AgCs3AIAnsID","pt":1740737262824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:42.528Z - INFO - Abnormal Lay price
+2025-02-28T10:07:47.521Z - INFO - -----------------------------------
+2025-02-28T10:07:47.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP74AgC23gIA7MQD","pt":1740737267824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:47.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:52.520Z - INFO - -----------------------------------
+2025-02-28T10:07:52.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANb8AgDi4AIA5scD","pt":1740737272824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:52.521Z - INFO - Abnormal Lay price
+2025-02-28T10:07:57.521Z - INFO - -----------------------------------
+2025-02-28T10:07:57.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALqAAwCB4wIAp8oD","pt":1740737277824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:07:57.521Z - INFO - Abnormal Lay price
+2025-02-28T10:08:02.520Z - INFO - -----------------------------------
+2025-02-28T10:08:02.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOiDAwC85QIAr80D","pt":1740737282824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:02.520Z - INFO - Abnormal Lay price
+2025-02-28T10:08:07.521Z - INFO - -----------------------------------
+2025-02-28T10:08:07.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALyHAwCR6AIAn9AD","pt":1740737287824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:07.521Z - INFO - Abnormal Lay price
+2025-02-28T10:08:12.524Z - INFO - -----------------------------------
+2025-02-28T10:08:12.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMCLAwDR6gIApNMD","pt":1740737292824,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:12.524Z - INFO - Abnormal Lay price
+2025-02-28T10:08:17.520Z - INFO - -----------------------------------
+2025-02-28T10:08:17.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKWPAwCa7QIAm9YD","pt":1740737297825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:17.521Z - INFO - Abnormal Lay price
+2025-02-28T10:08:23.070Z - INFO - -----------------------------------
+2025-02-28T10:08:23.071Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APSSAwCx7wIAidkD","pt":1740737302825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:23.071Z - INFO - Abnormal Lay price
+2025-02-28T10:08:27.520Z - INFO - -----------------------------------
+2025-02-28T10:08:27.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANyWAwD78QIA1tsD","pt":1740737307825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:27.520Z - INFO - Abnormal Lay price
+2025-02-28T10:08:32.523Z - INFO - -----------------------------------
+2025-02-28T10:08:32.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMKaAwDQ9AIA1d4D","pt":1740737312825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:32.523Z - INFO - Abnormal Lay price
+2025-02-28T10:08:37.521Z - INFO - -----------------------------------
+2025-02-28T10:08:37.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJyeAwCq9wIAguID","pt":1740737317825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:37.521Z - INFO - Abnormal Lay price
+2025-02-28T10:08:42.522Z - INFO - -----------------------------------
+2025-02-28T10:08:42.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOeiAwDU+QIA3eQD","pt":1740737322825,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:42.522Z - INFO - Abnormal Lay price
+2025-02-28T10:08:47.521Z - INFO - -----------------------------------
+2025-02-28T10:08:47.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMmmAwD5+wIAmucD","pt":1740737327826,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:47.521Z - INFO - Abnormal Lay price
+2025-02-28T10:08:52.521Z - INFO - -----------------------------------
+2025-02-28T10:08:52.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIaqAwCb/gIAkeoD","pt":1740737332826,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:52.522Z - INFO - Abnormal Lay price
+2025-02-28T10:08:57.521Z - INFO - -----------------------------------
+2025-02-28T10:08:57.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANGuAwDlgAMA5uwD","pt":1740737337826,"ct":"HEARTBEAT"}
+
+2025-02-28T10:08:57.521Z - INFO - Abnormal Lay price
+2025-02-28T10:09:02.524Z - INFO - -----------------------------------
+2025-02-28T10:09:02.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AImyAwDZgwMA7u8D","pt":1740737342826,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:02.524Z - INFO - Abnormal Lay price
+2025-02-28T10:09:07.521Z - INFO - -----------------------------------
+2025-02-28T10:09:07.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APm1AwDrhgMAgPMD","pt":1740737347826,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:07.522Z - INFO - Abnormal Lay price
+2025-02-28T10:09:12.526Z - INFO - -----------------------------------
+2025-02-28T10:09:12.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOK5AwCyiQMAiPYD","pt":1740737352827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:12.526Z - INFO - Abnormal Lay price
+2025-02-28T10:09:17.523Z - INFO - -----------------------------------
+2025-02-28T10:09:17.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ29AwCOjAMAmPkD","pt":1740737357827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:17.523Z - INFO - Abnormal Lay price
+2025-02-28T10:09:22.523Z - INFO - -----------------------------------
+2025-02-28T10:09:22.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO3AAwCYjwMApPwD","pt":1740737362827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:22.524Z - INFO - Abnormal Lay price
+2025-02-28T10:09:27.523Z - INFO - -----------------------------------
+2025-02-28T10:09:27.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM3EAwCRkgMAxf4D","pt":1740737367827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:27.523Z - INFO - Abnormal Lay price
+2025-02-28T10:09:32.523Z - INFO - -----------------------------------
+2025-02-28T10:09:32.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJTIAwDPlAMAsoEE","pt":1740737372827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:32.524Z - INFO - Abnormal Lay price
+2025-02-28T10:09:37.522Z - INFO - -----------------------------------
+2025-02-28T10:09:37.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMzLAwCklwMAw4QE","pt":1740737377827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:37.522Z - INFO - Abnormal Lay price
+2025-02-28T10:09:42.521Z - INFO - -----------------------------------
+2025-02-28T10:09:42.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI/PAwDsmQMAgocE","pt":1740737382827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:42.521Z - INFO - Abnormal Lay price
+2025-02-28T10:09:47.521Z - INFO - -----------------------------------
+2025-02-28T10:09:47.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALfSAwC8nAMAsIkE","pt":1740737387827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:47.521Z - INFO - Abnormal Lay price
+2025-02-28T10:09:52.522Z - INFO - -----------------------------------
+2025-02-28T10:09:52.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJDWAwD1ngMA2YsE","pt":1740737392827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:52.522Z - INFO - Abnormal Lay price
+2025-02-28T10:09:57.523Z - INFO - -----------------------------------
+2025-02-28T10:09:57.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN/ZAwDToQMAjY4E","pt":1740737397827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:09:57.523Z - INFO - Abnormal Lay price
+2025-02-28T10:10:02.521Z - INFO - -----------------------------------
+2025-02-28T10:10:02.521Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKzdAwCcpAMAspAE","pt":1740737402827,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:02.521Z - INFO - Abnormal Lay price
+2025-02-28T10:10:07.522Z - INFO - -----------------------------------
+2025-02-28T10:10:07.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANnhAwDUpwMA2JME","pt":1740737407828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:07.522Z - INFO - Abnormal Lay price
+2025-02-28T10:10:12.524Z - INFO - -----------------------------------
+2025-02-28T10:10:12.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APLlAwDwqgMAnZYE","pt":1740737412828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:12.524Z - INFO - Abnormal Lay price
+2025-02-28T10:10:17.522Z - INFO - -----------------------------------
+2025-02-28T10:10:17.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKjqAwDerQMA7pgE","pt":1740737417828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:17.522Z - INFO - Abnormal Lay price
+2025-02-28T10:10:22.522Z - INFO - -----------------------------------
+2025-02-28T10:10:22.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJvuAwDrsAMAyJsE","pt":1740737422828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:22.523Z - INFO - Abnormal Lay price
+2025-02-28T10:10:27.523Z - INFO - -----------------------------------
+2025-02-28T10:10:27.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APvxAwDDswMAlJ4E","pt":1740737427828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:27.523Z - INFO - Abnormal Lay price
+2025-02-28T10:10:32.525Z - INFO - -----------------------------------
+2025-02-28T10:10:32.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANr1AwCntgMAzKAE","pt":1740737432828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:32.525Z - INFO - Abnormal Lay price
+2025-02-28T10:10:37.522Z - INFO - -----------------------------------
+2025-02-28T10:10:37.522Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM/5AwCruQMA+6IE","pt":1740737437828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:37.522Z - INFO - Abnormal Lay price
+2025-02-28T10:10:42.522Z - INFO - -----------------------------------
+2025-02-28T10:10:42.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK79AwCivAMA0aUE","pt":1740737442828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:42.523Z - INFO - Abnormal Lay price
+2025-02-28T10:10:47.524Z - INFO - -----------------------------------
+2025-02-28T10:10:47.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AISBBACEvwMAkKgE","pt":1740737447828,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:47.524Z - INFO - Abnormal Lay price
+2025-02-28T10:10:52.524Z - INFO - -----------------------------------
+2025-02-28T10:10:52.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN6EBADYwQMAzqoE","pt":1740737452829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:52.525Z - INFO - Abnormal Lay price
+2025-02-28T10:10:57.523Z - INFO - -----------------------------------
+2025-02-28T10:10:57.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL+IBADlxAMAra0E","pt":1740737457829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:10:57.524Z - INFO - Abnormal Lay price
+2025-02-28T10:11:02.524Z - INFO - -----------------------------------
+2025-02-28T10:11:02.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALyMBACsxwMAlrAE","pt":1740737462829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:02.524Z - INFO - Abnormal Lay price
+2025-02-28T10:11:07.523Z - INFO - -----------------------------------
+2025-02-28T10:11:07.523Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMyQBACZygMA/LIE","pt":1740737467829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:07.523Z - INFO - Abnormal Lay price
+2025-02-28T10:11:12.524Z - INFO - -----------------------------------
+2025-02-28T10:11:12.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANuUBADTzQMA/LUE","pt":1740737472829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:12.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:17.524Z - INFO - -----------------------------------
+2025-02-28T10:11:17.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL2YBADT0AMAu7gE","pt":1740737477829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:17.524Z - INFO - Abnormal Lay price
+2025-02-28T10:11:22.524Z - INFO - -----------------------------------
+2025-02-28T10:11:22.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APqbBACU0wMA9LoE","pt":1740737482829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:22.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:27.524Z - INFO - -----------------------------------
+2025-02-28T10:11:27.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOKfBADa1QMAqL0E","pt":1740737487829,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:27.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:32.525Z - INFO - -----------------------------------
+2025-02-28T10:11:32.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKyjBACu2AMA+L8E","pt":1740737492830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:32.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:37.524Z - INFO - -----------------------------------
+2025-02-28T10:11:37.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APimBACv2wMAysIE","pt":1740737497830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:37.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:42.525Z - INFO - -----------------------------------
+2025-02-28T10:11:42.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM6qBACE3gMA/sQE","pt":1740737502830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:42.526Z - INFO - Abnormal Lay price
+2025-02-28T10:11:47.524Z - INFO - -----------------------------------
+2025-02-28T10:11:47.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIyuBADV4AMA08cE","pt":1740737507830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:47.525Z - INFO - Abnormal Lay price
+2025-02-28T10:11:52.524Z - INFO - -----------------------------------
+2025-02-28T10:11:52.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM2xBACO4wMAksoE","pt":1740737512830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:52.524Z - INFO - Abnormal Lay price
+2025-02-28T10:11:57.525Z - INFO - -----------------------------------
+2025-02-28T10:11:57.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMS1BADh5QMA3swE","pt":1740737517830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:11:57.525Z - INFO - Abnormal Lay price
+2025-02-28T10:12:02.524Z - INFO - -----------------------------------
+2025-02-28T10:12:02.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APW5BAC/6AMAs88E","pt":1740737522830,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:02.524Z - INFO - Abnormal Lay price
+2025-02-28T10:12:07.525Z - INFO - -----------------------------------
+2025-02-28T10:12:07.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOi9BACV6wMAu9IE","pt":1740737527831,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:07.526Z - INFO - Abnormal Lay price
+2025-02-28T10:12:12.524Z - INFO - -----------------------------------
+2025-02-28T10:12:12.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKDCBACN7gMA0tUE","pt":1740737532832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:12.525Z - INFO - Abnormal Lay price
+2025-02-28T10:12:17.525Z - INFO - -----------------------------------
+2025-02-28T10:12:17.525Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP7FBADh8AMAp9gE","pt":1740737537832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:17.526Z - INFO - Abnormal Lay price
+2025-02-28T10:12:22.526Z - INFO - -----------------------------------
+2025-02-28T10:12:22.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANDJBAC78wMAt9sE","pt":1740737542832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:22.526Z - INFO - Abnormal Lay price
+2025-02-28T10:12:27.527Z - INFO - -----------------------------------
+2025-02-28T10:12:27.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AInNBACG9gMAjt4E","pt":1740737547832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:27.527Z - INFO - Abnormal Lay price
+2025-02-28T10:12:32.526Z - INFO - -----------------------------------
+2025-02-28T10:12:32.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMzQBACp+AMA9OAE","pt":1740737552832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:32.526Z - INFO - Abnormal Lay price
+2025-02-28T10:12:37.526Z - INFO - -----------------------------------
+2025-02-28T10:12:37.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APTTBACl+gMA1OME","pt":1740737557832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:37.526Z - INFO - Abnormal Lay price
+2025-02-28T10:12:42.526Z - INFO - -----------------------------------
+2025-02-28T10:12:42.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMXXBADZ/AMAleYE","pt":1740737562832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:42.527Z - INFO - Abnormal Lay price
+2025-02-28T10:12:47.527Z - INFO - -----------------------------------
+2025-02-28T10:12:47.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMLaBACh/wMAvekE","pt":1740737567832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:47.527Z - INFO - Abnormal Lay price
+2025-02-28T10:12:52.527Z - INFO - -----------------------------------
+2025-02-28T10:12:52.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMLdBADigQQAr+wE","pt":1740737572832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:52.527Z - INFO - Abnormal Lay price
+2025-02-28T10:12:57.530Z - INFO - -----------------------------------
+2025-02-28T10:12:57.531Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ7gBADMhAQAn+8E","pt":1740737577832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:12:57.531Z - INFO - Abnormal Lay price
+2025-02-28T10:13:02.525Z - INFO - -----------------------------------
+2025-02-28T10:13:02.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALrjBACxhwQAk/IE","pt":1740737582832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:02.526Z - INFO - Abnormal Lay price
+2025-02-28T10:13:07.526Z - INFO - -----------------------------------
+2025-02-28T10:13:07.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOjmBACgigQAgfUE","pt":1740737587832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:07.526Z - INFO - Abnormal Lay price
+2025-02-28T10:13:12.527Z - INFO - -----------------------------------
+2025-02-28T10:13:12.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALzqBADsjAQA+/cE","pt":1740737592832,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:12.527Z - INFO - Abnormal Lay price
+2025-02-28T10:13:17.528Z - INFO - -----------------------------------
+2025-02-28T10:13:17.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN3tBADxjwQAoPsE","pt":1740737597833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:17.528Z - INFO - Abnormal Lay price
+2025-02-28T10:13:22.527Z - INFO - -----------------------------------
+2025-02-28T10:13:22.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJHxBACDkwQAzv4E","pt":1740737602833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:22.529Z - INFO - Abnormal Lay price
+2025-02-28T10:13:27.528Z - INFO - -----------------------------------
+2025-02-28T10:13:27.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJj0BACDlgQAoYEF","pt":1740737607833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:27.528Z - INFO - Abnormal Lay price
+2025-02-28T10:13:32.527Z - INFO - -----------------------------------
+2025-02-28T10:13:32.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANj3BADrmAQA8oMF","pt":1740737612833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:32.527Z - INFO - Abnormal Lay price
+2025-02-28T10:13:38.111Z - INFO - -----------------------------------
+2025-02-28T10:13:38.111Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APH6BACenAQAzIcF","pt":1740737617833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:38.111Z - INFO - Abnormal Lay price
+2025-02-28T10:13:42.528Z - INFO - -----------------------------------
+2025-02-28T10:13:42.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKT+BAC+nwQAyIoF","pt":1740737622833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:42.528Z - INFO - Abnormal Lay price
+2025-02-28T10:13:47.528Z - INFO - -----------------------------------
+2025-02-28T10:13:47.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMCBBQCwogQAwY0F","pt":1740737627833,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:47.528Z - INFO - Abnormal Lay price
+2025-02-28T10:13:52.526Z - INFO - -----------------------------------
+2025-02-28T10:13:52.526Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMCEBQD5pAQAlpAF","pt":1740737632834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:52.527Z - INFO - Abnormal Lay price
+2025-02-28T10:13:57.527Z - INFO - -----------------------------------
+2025-02-28T10:13:57.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALeHBQDZpwQA6JIF","pt":1740737637834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:13:57.527Z - INFO - Abnormal Lay price
+2025-02-28T10:14:02.526Z - INFO - -----------------------------------
+2025-02-28T10:14:02.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANGKBQCxqgQAopUF","pt":1740737642834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:02.527Z - INFO - Abnormal Lay price
+2025-02-28T10:14:07.528Z - INFO - -----------------------------------
+2025-02-28T10:14:07.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APCNBQCerQQA/5cF","pt":1740737647834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:07.529Z - INFO - Abnormal Lay price
+2025-02-28T10:14:12.528Z - INFO - -----------------------------------
+2025-02-28T10:14:12.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APSQBQCUsAQAuZoF","pt":1740737652834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:12.528Z - INFO - Abnormal Lay price
+2025-02-28T10:14:17.527Z - INFO - -----------------------------------
+2025-02-28T10:14:17.527Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOaTBQCYswQA85wF","pt":1740737657834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:17.527Z - INFO - Abnormal Lay price
+2025-02-28T10:14:22.528Z - INFO - -----------------------------------
+2025-02-28T10:14:22.528Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMaWBQDqtQQA2Z8F","pt":1740737662834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:22.528Z - INFO - Abnormal Lay price
+2025-02-28T10:14:27.529Z - INFO - -----------------------------------
+2025-02-28T10:14:27.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALOZBQDhuAQA3KIF","pt":1740737667834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:27.530Z - INFO - Abnormal Lay price
+2025-02-28T10:14:32.529Z - INFO - -----------------------------------
+2025-02-28T10:14:32.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKScBQDeuwQAn6UF","pt":1740737672834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:32.529Z - INFO - Abnormal Lay price
+2025-02-28T10:14:37.529Z - INFO - -----------------------------------
+2025-02-28T10:14:37.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AImfBQDyvgQAnagF","pt":1740737677834,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:37.529Z - INFO - Abnormal Lay price
+2025-02-28T10:14:42.529Z - INFO - -----------------------------------
+2025-02-28T10:14:42.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJSiBQCOwgQAmqsF","pt":1740737682835,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:42.529Z - INFO - Abnormal Lay price
+2025-02-28T10:14:47.531Z - INFO - -----------------------------------
+2025-02-28T10:14:47.531Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJulBQD/xAQA2a4F","pt":1740737687835,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:47.531Z - INFO - Abnormal Lay price
+2025-02-28T10:14:52.530Z - INFO - -----------------------------------
+2025-02-28T10:14:52.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKCoBQDRxwQAybEF","pt":1740737692836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:52.530Z - INFO - Abnormal Lay price
+2025-02-28T10:14:57.530Z - INFO - -----------------------------------
+2025-02-28T10:14:57.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALWrBQCjygQAprQF","pt":1740737697836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:14:57.530Z - INFO - Abnormal Lay price
+2025-02-28T10:15:02.529Z - INFO - -----------------------------------
+2025-02-28T10:15:02.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKauBQDRzQQAs7cF","pt":1740737702836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:02.529Z - INFO - Abnormal Lay price
+2025-02-28T10:15:07.530Z - INFO - -----------------------------------
+2025-02-28T10:15:07.531Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALOxBQCE0QQAsroF","pt":1740737707836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:07.531Z - INFO - Abnormal Lay price
+2025-02-28T10:15:12.529Z - INFO - -----------------------------------
+2025-02-28T10:15:12.529Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALK0BQDQ1AQAj70F","pt":1740737712836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:12.529Z - INFO - Abnormal Lay price
+2025-02-28T10:15:17.529Z - INFO - -----------------------------------
+2025-02-28T10:15:17.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJW3BQCR2AQAy78F","pt":1740737717836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:17.530Z - INFO - Abnormal Lay price
+2025-02-28T10:15:22.530Z - INFO - -----------------------------------
+2025-02-28T10:15:22.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKK6BQCv2wQAocIF","pt":1740737722836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:22.530Z - INFO - Abnormal Lay price
+2025-02-28T10:15:27.530Z - INFO - -----------------------------------
+2025-02-28T10:15:27.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKi9BQDL3gQAvsQF","pt":1740737727836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:27.530Z - INFO - Abnormal Lay price
+2025-02-28T10:15:32.530Z - INFO - -----------------------------------
+2025-02-28T10:15:32.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMDABQCw4QQA+8YF","pt":1740737732836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:32.531Z - INFO - Abnormal Lay price
+2025-02-28T10:15:37.530Z - INFO - -----------------------------------
+2025-02-28T10:15:37.531Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALTDBQDI5AQA38kF","pt":1740737737836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:37.531Z - INFO - Abnormal Lay price
+2025-02-28T10:15:42.530Z - INFO - -----------------------------------
+2025-02-28T10:15:42.531Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALXGBQCH5wQAscwF","pt":1740737742836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:42.531Z - INFO - Abnormal Lay price
+2025-02-28T10:15:47.530Z - INFO - -----------------------------------
+2025-02-28T10:15:47.530Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ3JBQD/6QQA2c4F","pt":1740737747836,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:47.530Z - INFO - Abnormal Lay price
+2025-02-28T10:15:52.538Z - INFO - -----------------------------------
+2025-02-28T10:15:52.538Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM3MBQDr7AQAn9EF","pt":1740737752845,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:52.538Z - INFO - Abnormal Lay price
+2025-02-28T10:15:57.543Z - INFO - -----------------------------------
+2025-02-28T10:15:57.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALXPBQD37wQA7NMF","pt":1740737757847,"ct":"HEARTBEAT"}
+
+2025-02-28T10:15:57.543Z - INFO - Abnormal Lay price
+2025-02-28T10:16:02.540Z - INFO - -----------------------------------
+2025-02-28T10:16:02.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALHSBQDg8gQAo9YF","pt":1740737762847,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:02.540Z - INFO - Abnormal Lay price
+2025-02-28T10:16:07.539Z - INFO - -----------------------------------
+2025-02-28T10:16:07.539Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALzVBQCw9gQAk9kF","pt":1740737767847,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:07.539Z - INFO - Abnormal Lay price
+2025-02-28T10:16:12.539Z - INFO - -----------------------------------
+2025-02-28T10:16:12.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIfYBQCz+QQAutsF","pt":1740737772847,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:12.540Z - INFO - Abnormal Lay price
+2025-02-28T10:16:17.541Z - INFO - -----------------------------------
+2025-02-28T10:16:17.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO3aBQCW/AQA+d0F","pt":1740737777848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:17.541Z - INFO - Abnormal Lay price
+2025-02-28T10:16:22.540Z - INFO - -----------------------------------
+2025-02-28T10:16:22.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANLdBQD2/gQAuOAF","pt":1740737782848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:22.540Z - INFO - Abnormal Lay price
+2025-02-28T10:16:27.541Z - INFO - -----------------------------------
+2025-02-28T10:16:27.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMTgBQDWgQUAgeMF","pt":1740737787848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:27.541Z - INFO - Abnormal Lay price
+2025-02-28T10:16:32.545Z - INFO - -----------------------------------
+2025-02-28T10:16:32.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APXiBQC8hAUAtOUF","pt":1740737792848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:32.546Z - INFO - Abnormal Lay price
+2025-02-28T10:16:37.540Z - INFO - -----------------------------------
+2025-02-28T10:16:37.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKDlBQDFhwUAkegF","pt":1740737797848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:37.541Z - INFO - Abnormal Lay price
+2025-02-28T10:16:42.540Z - INFO - -----------------------------------
+2025-02-28T10:16:42.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APvnBQCtigUA7eoF","pt":1740737802848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:42.540Z - INFO - Abnormal Lay price
+2025-02-28T10:16:47.540Z - INFO - -----------------------------------
+2025-02-28T10:16:47.540Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMnqBQCFjQUA2+0F","pt":1740737807848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:47.541Z - INFO - Abnormal Lay price
+2025-02-28T10:16:52.542Z - INFO - -----------------------------------
+2025-02-28T10:16:52.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKntBQDFjwUAwPAF","pt":1740737812848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:52.542Z - INFO - Abnormal Lay price
+2025-02-28T10:16:57.542Z - INFO - -----------------------------------
+2025-02-28T10:16:57.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APvvBQDBkgUA+fIF","pt":1740737817848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:16:57.543Z - INFO - Abnormal Lay price
+2025-02-28T10:17:02.541Z - INFO - -----------------------------------
+2025-02-28T10:17:02.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALfyBQCllQUAnvUF","pt":1740737822848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:02.541Z - INFO - Abnormal Lay price
+2025-02-28T10:17:07.541Z - INFO - -----------------------------------
+2025-02-28T10:17:07.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL71BQCHmAUA3fcF","pt":1740737827848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:07.542Z - INFO - Abnormal Lay price
+2025-02-28T10:17:12.541Z - INFO - -----------------------------------
+2025-02-28T10:17:12.541Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIb4BQDtmgUA4fkF","pt":1740737832848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:12.541Z - INFO - Abnormal Lay price
+2025-02-28T10:17:17.541Z - INFO - -----------------------------------
+2025-02-28T10:17:17.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANP6BQCKngUA7/sF","pt":1740737837848,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:17.542Z - INFO - Abnormal Lay price
+2025-02-28T10:17:22.542Z - INFO - -----------------------------------
+2025-02-28T10:17:22.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJL+BQDJoQUA5f4F","pt":1740737842849,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:22.542Z - INFO - Abnormal Lay price
+2025-02-28T10:17:27.544Z - INFO - -----------------------------------
+2025-02-28T10:17:27.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AImCBgCDpgUApoMG","pt":1740737847849,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:27.544Z - INFO - Abnormal Lay price
+2025-02-28T10:17:32.543Z - INFO - -----------------------------------
+2025-02-28T10:17:32.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMaFBgCBqgUAj4cG","pt":1740737852849,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:32.543Z - INFO - Abnormal Lay price
+2025-02-28T10:17:37.542Z - INFO - -----------------------------------
+2025-02-28T10:17:37.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APSHBgC9rQUAjIoG","pt":1740737857850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:37.543Z - INFO - Abnormal Lay price
+2025-02-28T10:17:42.542Z - INFO - -----------------------------------
+2025-02-28T10:17:42.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APaKBgD9sAUAoY0G","pt":1740737862850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:42.542Z - INFO - Abnormal Lay price
+2025-02-28T10:17:47.542Z - INFO - -----------------------------------
+2025-02-28T10:17:47.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKmOBgCHtAUArZAG","pt":1740737867850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:47.543Z - INFO - Abnormal Lay price
+2025-02-28T10:17:52.542Z - INFO - -----------------------------------
+2025-02-28T10:17:52.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMqRBgCktwUAuZMG","pt":1740737872850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:52.543Z - INFO - Abnormal Lay price
+2025-02-28T10:17:57.543Z - INFO - -----------------------------------
+2025-02-28T10:17:57.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJeVBgDJugUA2pYG","pt":1740737877850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:17:57.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:02.542Z - INFO - -----------------------------------
+2025-02-28T10:18:02.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APGYBgCcvgUAjZoG","pt":1740737882850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:02.542Z - INFO - Abnormal Lay price
+2025-02-28T10:18:07.542Z - INFO - -----------------------------------
+2025-02-28T10:18:07.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ+cBgC7wgUA2J0G","pt":1740737887850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:07.542Z - INFO - Abnormal Lay price
+2025-02-28T10:18:12.542Z - INFO - -----------------------------------
+2025-02-28T10:18:12.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOWfBgCHxgUAy6AG","pt":1740737892850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:12.542Z - INFO - Abnormal Lay price
+2025-02-28T10:18:17.543Z - INFO - -----------------------------------
+2025-02-28T10:18:17.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANWjBgDAyQUA9aMG","pt":1740737897850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:17.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:22.543Z - INFO - -----------------------------------
+2025-02-28T10:18:22.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP2mBgD5zAUAiKcG","pt":1740737902850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:22.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:27.543Z - INFO - -----------------------------------
+2025-02-28T10:18:27.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APipBgDF0AUAqaoG","pt":1740737907850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:27.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:32.542Z - INFO - -----------------------------------
+2025-02-28T10:18:32.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJKtBgD/0wUA4K0G","pt":1740737912850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:32.544Z - INFO - Abnormal Lay price
+2025-02-28T10:18:37.542Z - INFO - -----------------------------------
+2025-02-28T10:18:37.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJuwBgC11wUAurEG","pt":1740737917850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:37.542Z - INFO - Abnormal Lay price
+2025-02-28T10:18:42.542Z - INFO - -----------------------------------
+2025-02-28T10:18:42.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANyzBgDN2gUA3bQG","pt":1740737922850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:42.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:47.544Z - INFO - -----------------------------------
+2025-02-28T10:18:47.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIy3BgCY3gUAxrgG","pt":1740737927850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:47.545Z - INFO - Abnormal Lay price
+2025-02-28T10:18:52.543Z - INFO - -----------------------------------
+2025-02-28T10:18:52.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ66BgDQ4QUA+bsG","pt":1740737932850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:52.543Z - INFO - Abnormal Lay price
+2025-02-28T10:18:57.543Z - INFO - -----------------------------------
+2025-02-28T10:18:57.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJy9BgD95AUA3r4G","pt":1740737937850,"ct":"HEARTBEAT"}
+
+2025-02-28T10:18:57.543Z - INFO - Abnormal Lay price
+2025-02-28T10:19:02.543Z - INFO - -----------------------------------
+2025-02-28T10:19:02.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKHABgC56AUA28EG","pt":1740737942851,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:02.543Z - INFO - Abnormal Lay price
+2025-02-28T10:19:07.544Z - INFO - -----------------------------------
+2025-02-28T10:19:07.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIDEBgD26wUAq8UG","pt":1740737947852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:07.544Z - INFO - Abnormal Lay price
+2025-02-28T10:19:12.544Z - INFO - -----------------------------------
+2025-02-28T10:19:12.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJXHBgC77wUAvsgG","pt":1740737952852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:12.545Z - INFO - Abnormal Lay price
+2025-02-28T10:19:17.546Z - INFO - -----------------------------------
+2025-02-28T10:19:17.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJbKBgCM8wUA4MsG","pt":1740737957852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:17.547Z - INFO - Abnormal Lay price
+2025-02-28T10:19:22.547Z - INFO - -----------------------------------
+2025-02-28T10:19:22.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJrNBgC19gUA0s4G","pt":1740737962852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:22.547Z - INFO - Abnormal Lay price
+2025-02-28T10:19:27.544Z - INFO - -----------------------------------
+2025-02-28T10:19:27.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK3QBgD++QUAy9EG","pt":1740737967852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:27.545Z - INFO - Abnormal Lay price
+2025-02-28T10:19:32.545Z - INFO - -----------------------------------
+2025-02-28T10:19:32.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN/TBgCY/QUAg9UG","pt":1740737972852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:32.545Z - INFO - Abnormal Lay price
+2025-02-28T10:19:37.545Z - INFO - -----------------------------------
+2025-02-28T10:19:37.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APvWBgDjgAYAhtgG","pt":1740737977852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:37.546Z - INFO - Abnormal Lay price
+2025-02-28T10:19:42.545Z - INFO - -----------------------------------
+2025-02-28T10:19:42.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJraBgC+hAYAjtsG","pt":1740737982852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:42.546Z - INFO - Abnormal Lay price
+2025-02-28T10:19:47.545Z - INFO - -----------------------------------
+2025-02-28T10:19:47.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJHdBgDqhwYA/d0G","pt":1740737987852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:47.545Z - INFO - Abnormal Lay price
+2025-02-28T10:19:52.543Z - INFO - -----------------------------------
+2025-02-28T10:19:52.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOnfBgD9igYA2OAG","pt":1740737992852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:52.544Z - INFO - Abnormal Lay price
+2025-02-28T10:19:57.545Z - INFO - -----------------------------------
+2025-02-28T10:19:57.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMHjBgDJjgYAxeMG","pt":1740737997852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:19:57.545Z - INFO - Abnormal Lay price
+2025-02-28T10:20:02.545Z - INFO - -----------------------------------
+2025-02-28T10:20:02.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALXmBgCVkgYA3eYG","pt":1740738002852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:02.546Z - INFO - Abnormal Lay price
+2025-02-28T10:20:07.544Z - INFO - -----------------------------------
+2025-02-28T10:20:07.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM/pBgCzlgYA4OoG","pt":1740738007852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:07.544Z - INFO - Abnormal Lay price
+2025-02-28T10:20:12.543Z - INFO - -----------------------------------
+2025-02-28T10:20:12.543Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK7sBgD0mQYA8+0G","pt":1740738012852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:12.543Z - INFO - Abnormal Lay price
+2025-02-28T10:20:17.544Z - INFO - -----------------------------------
+2025-02-28T10:20:17.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOzvBgDBnQYA8PAG","pt":1740738017852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:17.545Z - INFO - Abnormal Lay price
+2025-02-28T10:20:22.544Z - INFO - -----------------------------------
+2025-02-28T10:20:22.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APXyBgD1oAYAzfMG","pt":1740738022852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:22.544Z - INFO - Abnormal Lay price
+2025-02-28T10:20:27.544Z - INFO - -----------------------------------
+2025-02-28T10:20:27.544Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOn1BgCRpAYA5vYG","pt":1740738027852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:27.544Z - INFO - Abnormal Lay price
+2025-02-28T10:20:32.545Z - INFO - -----------------------------------
+2025-02-28T10:20:32.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANf4BgDhpwYAjvoG","pt":1740738032852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:32.545Z - INFO - Abnormal Lay price
+2025-02-28T10:20:37.545Z - INFO - -----------------------------------
+2025-02-28T10:20:37.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOH7BgDYqgYA6P0G","pt":1740738037852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:37.545Z - INFO - Abnormal Lay price
+2025-02-28T10:20:42.545Z - INFO - -----------------------------------
+2025-02-28T10:20:42.545Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOb+BgCVrgYAgYEH","pt":1740738042852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:42.545Z - INFO - Abnormal Lay price
+2025-02-28T10:20:47.549Z - INFO - -----------------------------------
+2025-02-28T10:20:47.549Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJKCBwC1sQYAjoQH","pt":1740738047852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:47.549Z - INFO - Abnormal Lay price
+2025-02-28T10:20:52.552Z - INFO - -----------------------------------
+2025-02-28T10:20:52.553Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIuFBwDOtAYAjYcH","pt":1740738052852,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:52.553Z - INFO - Abnormal Lay price
+2025-02-28T10:20:57.545Z - INFO - -----------------------------------
+2025-02-28T10:20:57.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALKIBwDytwYA7IkH","pt":1740738057853,"ct":"HEARTBEAT"}
+
+2025-02-28T10:20:57.546Z - INFO - Abnormal Lay price
+2025-02-28T10:21:02.546Z - INFO - -----------------------------------
+2025-02-28T10:21:02.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALWLBwDkugYA9owH","pt":1740738062853,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:02.546Z - INFO - Abnormal Lay price
+2025-02-28T10:21:07.547Z - INFO - -----------------------------------
+2025-02-28T10:21:07.548Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APmOBwD1vQYA45AH","pt":1740738067854,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:07.548Z - INFO - Abnormal Lay price
+2025-02-28T10:21:12.547Z - INFO - -----------------------------------
+2025-02-28T10:21:12.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKGSBwDnwAYAj5QH","pt":1740738072854,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:12.547Z - INFO - Abnormal Lay price
+2025-02-28T10:21:17.546Z - INFO - -----------------------------------
+2025-02-28T10:21:17.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APuUBwDKwwYAgpcH","pt":1740738077855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:17.547Z - INFO - Abnormal Lay price
+2025-02-28T10:21:22.550Z - INFO - -----------------------------------
+2025-02-28T10:21:22.551Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ6YBwCtxgYA/5kH","pt":1740738082855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:22.551Z - INFO - Abnormal Lay price
+2025-02-28T10:21:27.547Z - INFO - -----------------------------------
+2025-02-28T10:21:27.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALSbBwDzyAYAgJ0H","pt":1740738087855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:27.547Z - INFO - Abnormal Lay price
+2025-02-28T10:21:32.546Z - INFO - -----------------------------------
+2025-02-28T10:21:32.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMWeBwDRywYAmKAH","pt":1740738092855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:32.547Z - INFO - Abnormal Lay price
+2025-02-28T10:21:37.546Z - INFO - -----------------------------------
+2025-02-28T10:21:37.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMyhBwDLzgYAraMH","pt":1740738097855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:37.546Z - INFO - Abnormal Lay price
+2025-02-28T10:21:42.545Z - INFO - -----------------------------------
+2025-02-28T10:21:42.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALekBwCa0QYA2qYH","pt":1740738102855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:42.546Z - INFO - Abnormal Lay price
+2025-02-28T10:21:47.546Z - INFO - -----------------------------------
+2025-02-28T10:21:47.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJinBwCl1AYA7akH","pt":1740738107855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:47.546Z - INFO - Abnormal Lay price
+2025-02-28T10:21:52.549Z - INFO - -----------------------------------
+2025-02-28T10:21:52.549Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKiqBwDo1gYA0K0H","pt":1740738112855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:52.549Z - INFO - Abnormal Lay price
+2025-02-28T10:21:57.547Z - INFO - -----------------------------------
+2025-02-28T10:21:57.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK+tBwDd2QYAgbEH","pt":1740738117855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:21:57.547Z - INFO - Abnormal Lay price
+2025-02-28T10:22:02.547Z - INFO - -----------------------------------
+2025-02-28T10:22:02.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP2wBwDM3AYA17QH","pt":1740738122855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:02.547Z - INFO - Abnormal Lay price
+2025-02-28T10:22:07.549Z - INFO - -----------------------------------
+2025-02-28T10:22:07.549Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMe0BwD33wYA0LgH","pt":1740738127855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:07.549Z - INFO - Abnormal Lay price
+2025-02-28T10:22:12.549Z - INFO - -----------------------------------
+2025-02-28T10:22:12.550Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APq3BwDJ4gYA7LsH","pt":1740738132855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:12.550Z - INFO - Abnormal Lay price
+2025-02-28T10:22:17.547Z - INFO - -----------------------------------
+2025-02-28T10:22:17.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO+7BwDW5QYAt78H","pt":1740738137855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:17.547Z - INFO - Abnormal Lay price
+2025-02-28T10:22:22.548Z - INFO - -----------------------------------
+2025-02-28T10:22:22.548Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJu/BwC26AYAs8IH","pt":1740738142855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:22.548Z - INFO - Abnormal Lay price
+2025-02-28T10:22:27.548Z - INFO - -----------------------------------
+2025-02-28T10:22:27.548Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANLCBwDP6wYAsMYH","pt":1740738147855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:27.549Z - INFO - Abnormal Lay price
+2025-02-28T10:22:32.546Z - INFO - -----------------------------------
+2025-02-28T10:22:32.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN/FBwCg7gYA28kH","pt":1740738152855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:32.547Z - INFO - Abnormal Lay price
+2025-02-28T10:22:37.546Z - INFO - -----------------------------------
+2025-02-28T10:22:37.546Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALLJBwC48QYA9M0H","pt":1740738157855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:37.546Z - INFO - Abnormal Lay price
+2025-02-28T10:22:42.547Z - INFO - -----------------------------------
+2025-02-28T10:22:42.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKrMBwCu9AYAndEH","pt":1740738162855,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:42.548Z - INFO - Abnormal Lay price
+2025-02-28T10:22:45.028Z - INFO - -----------------------------------
+2025-02-28T10:22:45.028Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AILOBwDw9QYA5tIH","pt":1740738165337,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,1.62,98.68]],"id":4513766}]}]}
+
+2025-02-28T10:22:45.028Z - INFO - Odds Data [object Object]
+2025-02-28T10:22:45.028Z - INFO - Abnormal Lay price
+2025-02-28T10:22:50.029Z - INFO - -----------------------------------
+2025-02-28T10:22:50.030Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKLRBwDc+AYA9tUH","pt":1740738170338,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:50.030Z - INFO - Abnormal Lay price
+2025-02-28T10:22:50.123Z - INFO - -----------------------------------
+2025-02-28T10:22:50.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKbRBwDf+AYA+tUH","pt":1740738170431,"mc":[{"id":"1.239438681","rc":[{"batb":[[0,2.2,61.9]],"id":4513766}]}]}
+
+2025-02-28T10:22:50.123Z - INFO - Odds Data [object Object]
+2025-02-28T10:22:50.124Z - INFO - Abnormal Lay price
+2025-02-28T10:22:55.122Z - INFO - -----------------------------------
+2025-02-28T10:22:55.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKfUBwDT+wYAjtkH","pt":1740738175431,"ct":"HEARTBEAT"}
+
+2025-02-28T10:22:55.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:00.122Z - INFO - -----------------------------------
+2025-02-28T10:23:00.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALbXBwC5/gYAvNwH","pt":1740738180431,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:00.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:05.122Z - INFO - -----------------------------------
+2025-02-28T10:23:05.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANHaBwDAgQcAguAH","pt":1740738185432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:05.123Z - INFO - Abnormal Lay price
+2025-02-28T10:23:10.122Z - INFO - -----------------------------------
+2025-02-28T10:23:10.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIjeBwClhAcAveMH","pt":1740738190432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:10.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:15.123Z - INFO - -----------------------------------
+2025-02-28T10:23:15.123Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALjhBwCZhwcA6+YH","pt":1740738195432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:15.123Z - INFO - Abnormal Lay price
+2025-02-28T10:23:20.122Z - INFO - -----------------------------------
+2025-02-28T10:23:20.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIXlBwDdiQcA++kH","pt":1740738200432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:20.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:25.135Z - INFO - -----------------------------------
+2025-02-28T10:23:25.135Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKvoBwCrjAcAhu0H","pt":1740738205432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:25.135Z - INFO - Abnormal Lay price
+2025-02-28T10:23:30.122Z - INFO - -----------------------------------
+2025-02-28T10:23:30.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMzrBwCJjwcA2vAH","pt":1740738210432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:30.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:35.122Z - INFO - -----------------------------------
+2025-02-28T10:23:35.122Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALXvBwDxkQcAjvQH","pt":1740738215432,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:35.122Z - INFO - Abnormal Lay price
+2025-02-28T10:23:40.127Z - INFO - -----------------------------------
+2025-02-28T10:23:40.128Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOjyBwDclAcA1fcH","pt":1740738220433,"ct":"HEARTBEAT"}
+
+2025-02-28T10:23:40.128Z - INFO - Abnormal Lay price

@@ -26,10 +26,9 @@ const AllData = {
   setMarketId(marketId){
     this.data.marketId = marketId;
   },
-  setStrategy(strategy){
-    this.data.strategy=strategy
-    console.log("from all data" , strategy);
-   
+  setStrategy(Rstrategy){
+    this.data.strategy=Rstrategy;
+    console.log(this.data.strategy);
   },
   setAmount(Ramount){
         this.data.amount = Ramount;
@@ -39,7 +38,7 @@ const AllData = {
   },
   getLastPrice(lastPriceTraded){
           this.data.lastPriceTraded = lastPriceTraded;
-          console.log(lastPriceTraded);
+          // console.log(lastPriceTraded);
          
   },
  
@@ -98,5 +97,4 @@ const AllData = {
 };
  
 module.exports = AllData;
- 
  

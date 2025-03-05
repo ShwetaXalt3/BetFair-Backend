@@ -1,123 +1,183 @@
 const axios = require('axios');
 const MergedData = require('../models/MergedData');
 const AllData = require('../services/AllData');
- 
-// Function to fetch and store the merged data
+const TempBet = require('../models/TempSchema');
+
 const processAndStoreData = async (req, res) => {
   try {
-      
-      const allData = AllData.getAllData();
-      
-      const event = allData.event ;  
-      const layplaceorder = allData.layplaceorder;  
-      const prob = allData.probability;    
-      const match = allData.matchh.result;
-      const strategies=allData.strategy; 
-      const amnt = allData.amount;  
-      const eId=allData.eventId;      
-      const mId = layplaceorder.result.marketId;
-    const Lp = layplaceorder.result.instructionReports[0].instruction.limitOrder.price
-    const sId = layplaceorder.result.instructionReports[0].instruction.selectionId;
-    const Lay_amount = layplaceorder.result.instructionReports[0].instruction.limitOrder.size
- 
-    console.log("Market" , mId);
-    console.log("Selection" , sId);
+    const allData = AllData.getAllData();
+    const event = allData.event;
+    const layplaceorder = allData.layplaceorder;
+    const match = allData.matchh.result;
+    const strategies = allData.strategy;
+    const eId = allData.eventId;
+    const mId = layplaceorder.result.marketId;
 
-    
-   
-    
-    let MatchName,PlayerName,proLoss,eventName;
-    
+    const sId = layplaceorder.result.instructionReports[0].instruction.selectionId;
+    const Lp = layplaceorder.result.instructionReports[0].instruction.limitOrder.price;
+    const Lay_amount = layplaceorder.result.instructionReports[0].instruction.limitOrder.size;
+
+    let MatchName, PlayerName, eventName;
+
     if (match && Array.isArray(match)) {
       match.forEach((i) => {
-        if (i.marketId === mId) {  
-         
+        if (i.marketId === mId) {
           const runners = i.runners || [];
           const runnerNames = runners.map(runner => runner.runnerName);
-    
-        
           const newMatchName = runnerNames.join(' Vs ');
-    
           MatchName = newMatchName || "Unknown Match";
-    
+
           if (runners && Array.isArray(runners)) {
             const player = runners.find(runner => runner.selectionId === sId);
-    
             if (player) {
               PlayerName = player.runnerName;
-            } else {
-              console.log(`Selection ID ${sId} NOT found in Market ID ${mId}`);
             }
           }
         }
       });
     }
-    console.log("match name" , MatchName);
-    console.log("player name" , PlayerName);
-    
-    
-    
 
-
-    const side = layplaceorder.result.instructionReports[0].instruction.side; 
- 
-    event.forEach((i)=>{
-      if(eId===i.id){
-        eventName=i.name;
+    event.forEach((i) => {
+      if (eId === i.id) {
+        eventName = i.name;
       }
-    })
- 
- 
-    // const amount = amnt;
-  
-    var status = layplaceorder.result.status;
+    });
+
+    const side = layplaceorder.result.instructionReports[0].instruction.side;
     const date = layplaceorder.result.instructionReports[0].placedDate;
-    if(status==="SUCCESS"){
-      status="Matched";
-    }
-    else{
-      status="Unmatched";
-    }
-    
-    if(!Lay_amount && !MatchName && !odd && !PlayerName && !status && !side && !date && !mId && !strategies && !eventName){
-      return res.status(400).json({message :  "Unable to save data into database"})
-    }
-    else{
-      
-       const mergedData = new MergedData({
-         Amount: Lay_amount,
-         Match: MatchName,
-         Odds : Lp,
-         Player: PlayerName,
-        //  "Profit/Loss": 0,
-         Status: status,
-        //  Probability : 2.33,
-         Type : side,
-         date: date,
-         market_id: mId,
-         strategy: strategies,
-         Sport:eventName
-       });
-   
-      
-       
-      
-       await mergedData.save();
-       console.log("data saveddd");
-       console.log(mergedData);
 
-       return res.status(200).json(mergedData);
+    // Find the corresponding temporary back bet
+    const tempBackBet = await TempBet.findOne({
+      marketId: mId,
+      selectionId: sId,
+      side: 'BACK'
+    });
 
+    if (!tempBackBet) {
+      return res.status(400).json({ message: "No corresponding back bet found" });
     }
+
+    // Create lay bet entry with initial unmatched status
+    const tempLayBet = new TempBet({
+      marketId: mId,
+      selectionId: sId,
+      amount: null, // Initially null
+      odds: Lp,
+      side: 'LAY',
+      status: 'UNMATCHED',
+      matchName: MatchName,
+      playerName: PlayerName,
+      eventName: eventName,
+      strategy: strategies
+    });
+
+    await tempLayBet.save();
+
+    // Create a permanent record for the lay bet
+    const mergedData = new MergedData({
+      Amount: Lay_amount,
+      Match: MatchName,
+      Odds: Lp,
+      Player: PlayerName,
+      Status: 'UNMATCHED',
+      Type: side,
+      date: date,
+      market_id: mId,
+      strategy: strategies,
+      Sport: eventName
+    });
+
+    await mergedData.save();
+
+    return res.status(200).json({ 
+      tempLayBet, 
+      mergedData 
+    });
+
   } catch (error) {
-    console.error('Error in processing data:', error.message);
-    res.status(500).json({ error: 'Failed to process data', message: error.message });
+    res.status(500).json({ 
+      error: 'Failed to process data', 
+      message: error.message 
+    });
   }
 };
 
- 
-module.exports = { processAndStoreData};
- 
+// New function to complete the bet
+const completeBet = async (req, res) => {
+  try {
+    const { marketId, selectionId, layStake, layPrice, exitReason } = req.body;
 
- 
- 
+    // Find the temporary back and lay bets
+    const tempBackBet = await TempBet.findOne({ 
+      marketId, 
+      selectionId, 
+      side: 'BACK' 
+    });
+
+    const tempLayBet = await TempBet.findOne({ 
+      marketId, 
+      selectionId, 
+      side: 'LAY' 
+    });
+
+    if (!tempBackBet || !tempLayBet) {
+      return res.status(404).json({ message: "Bet not found" });
+    }
+
+    // Calculate profit/loss
+    const backAmount = tempBackBet.amount;
+    const backPrice = tempBackBet.odds;
+    const profitLoss = backAmount - layStake;
+
+    // Create a final record for the LAY bet with updated details
+    const mergedLayData = new MergedData({
+      Amount: layStake,
+      Match: tempBackBet.matchName,
+      Odds: layPrice,
+      Player: tempBackBet.playerName,
+      Status: 'MATCHED',
+      Type: 'LAY',
+      date: new Date().toISOString(),
+      market_id: marketId,
+      strategy: tempBackBet.strategy,
+      Sport: tempBackBet.eventName,
+      "Profit/Loss": profitLoss
+    });
+
+    await mergedLayData.save();
+
+    // Optionally, update the existing back bet record with profit/loss
+    await MergedData.findOneAndUpdate(
+      { 
+        market_id: marketId, 
+        Type: 'BACK' 
+      },
+      { 
+        "Profit/Loss": profitLoss 
+      }
+    );
+
+    // Delete temporary bets
+    await TempBet.deleteMany({ 
+      marketId, 
+      selectionId 
+    });
+
+    return res.status(200).json({ 
+      message: "Bet completed successfully", 
+      layBetData: mergedLayData,
+      exitReason 
+    });
+
+  } catch (error) {
+    console.error("Error completing bet:", error);
+    res.status(500).json({ 
+      error: 'Failed to complete bet', 
+      message: error.message 
+    });
+  }
+};
+module.exports = { 
+  processAndStoreData,
+  completeBet 
+};

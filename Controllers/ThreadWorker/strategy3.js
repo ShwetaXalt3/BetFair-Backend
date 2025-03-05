@@ -25,10 +25,9 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
 
             worker.postMessage({ sessionToken, marketId, amount, matchData });
 
-            worker.on("message", (result) => {
+            worker.on("message", async (result) => {
                 AllData.getLastPrice(result.backBetPrice)
-                // logger.info("------------bgfb--" , result);
-
+                
                 
                 const workerState = activeWorkers.get(worker);
                 
@@ -39,7 +38,9 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     if (result.backResponse && !workerState.backResolved) {
                         logger.info("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
+
                         AllData.data.BackAmount = result.backStake;
+
 
                      
                         
@@ -60,8 +61,23 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     if (result.layResponse && !workerState.layResolved) {
                         logger.info("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
+                        
                         AllData.data.layAmount = result.layStake;
-                        // logger.info("---------dfd",result);
+
+                        //----------Complete bet----------
+
+                        try {
+                            await axios.post('http://localhost:6060/completeBet', {
+                                marketId: result.marketId,
+                                selectionId: result.selectionId,
+                                layStake: result.layStake,
+                                layPrice: result.layPrice,
+                                exitReason: result.exitReason
+                            });
+                        } catch (error) {
+                            logger.error("Error calling completeBet API:", error);
+                        }
+                        
                         
                        
                         workerState.layResolved = true;

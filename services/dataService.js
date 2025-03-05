@@ -1,138 +1,111 @@
 const axios = require('axios');
 const MergedData = require('../models/MergedData');
 const AllData = require('../services/AllData');
- 
-// Function to fetch and store the merged data
+const TempBet = require('../models/TempSchema');
+
 const processAndStoreData = async (req, res) => {
   try {
-   
     const allData = AllData.getAllData();
-    const event = allData.event ;  
-    const bPlaceorder = allData.backplaceorder;  
-    const prob = allData.probability;    
+    const event = allData.event;
+    const bPlaceorder = allData.backplaceorder;
     const match = allData.matchh.result;
-    const strategies=allData.strategy;
-    const amnt = allData.amount;  
-    const eId=allData.eventId;
+    const strategies = allData.strategy;
+    const eId = allData.eventId;
     const mId = bPlaceorder.result.marketId;
-   
+
     const sId = bPlaceorder.result.instructionReports[0].instruction.selectionId;
     const Lp = allData.lastPriceTraded;
- 
-    // console.log( "-----------------------", bPlaceorder);
-    // console.log(mId , sId );
-   
-   
-   
- 
-   
-   
-    let MatchName,PlayerName,proLoss,eventName;
-   
+
+    let MatchName, PlayerName, eventName;
+
     if (match && Array.isArray(match)) {
       match.forEach((i) => {
-        if (i.marketId === mId) {  
-         
+        if (i.marketId === mId) {
           const runners = i.runners || [];
           const runnerNames = runners.map(runner => runner.runnerName);
-   
-       
           const newMatchName = runnerNames.join(' Vs ');
-   
           MatchName = newMatchName || "Unknown Match";
-   
+
           if (runners && Array.isArray(runners)) {
             const player = runners.find(runner => runner.selectionId === sId);
-   
             if (player) {
               PlayerName = player.runnerName;
-            } else {
-              console.log(`Selection ID ${sId} NOT found in Market ID ${mId}`);
             }
           }
         }
       });
     }
-   
-   
- 
- 
-    const side = bPlaceorder.result.instructionReports[0].instruction.side;
- 
-    event.forEach((i)=>{
-      if(eId===i.id){
-        eventName=i.name;
+
+    event.forEach((i) => {
+      if (eId === i.id) {
+        eventName = i.name;
       }
-    })
- 
- 
+    });
+
     const amount = allData.BackAmount;
- 
-    var status = bPlaceorder.result.status;
+    const side = bPlaceorder.result.instructionReports[0].instruction.side;
     const date = bPlaceorder.result.instructionReports[0].placedDate;
-    const utcDate = new Date(date);
-    const mexicoTimeOptions = {
-      timeZone: 'America/Mexico_City',
-      year: 'numeric',
-      month: 'numeric',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric'
-    };
-    const mexicoTime = utcDate.toLocaleString('en-US', mexicoTimeOptions);
-    // console.log('Mexico City time:', mexicoTime);
-       
- 
-    if(status==="SUCCESS"){
-      status="Matched";
-    }
-    else{
-      status="Unmatched";
-    }
-    //  console.log("strategy",strategies)
-    if(!amount && !MatchName && !odd && !PlayerName && !status && !side && !date && !mId && !strategies && !eventName){
-      return res.status(400).json({message :  "Unable to save data into database"})
-    }
-    else{
- 
-      if(strategies.length===0){
-          return res.error("Strategy Not Found");
-      }
- 
-     await strategies.map((i)=>{
-      const mergedData = new MergedData({
-          Amount: amount,
-          Match: MatchName,
-          Odds : Lp,
-          Player: PlayerName,
-         //  "Profit/Loss": 0,
-          Status: status,
-         //  Probability : 2.33,
-          Type : side,
-          date: date,
-          market_id: mId,
-          strategy: i,
-          Sport:eventName
-        });
- 
-         mergedData.save();
-         console.log("-----------------------",mergedData);
-         console.log("Data save");
-        })
-        return res.status(200).json(mergedData);
-    }
+
+    // Create and save temporary back bet (MATCHED)
+    const tempBackBet = new TempBet({
+      marketId: mId,
+      selectionId: sId,
+      amount: amount,
+      odds: Lp,
+      side: 'BACK',
+      status: 'MATCHED',
+      matchName: MatchName,
+      playerName: PlayerName,
+      eventName: eventName,
+      strategy: strategies
+    });
+
+    await tempBackBet.save();
+
+    // Create an unmatched LAY copy with null amount
+    const tempLayBet = new TempBet({
+      marketId: mId,
+      selectionId: sId,
+      amount: null,
+      odds: Lp,
+      side: 'LAY',
+      status: 'UNMATCHED',
+      matchName: MatchName,
+      playerName: PlayerName,
+      eventName: eventName,
+      strategy: strategies
+    });
+
+    await tempLayBet.save();
+
+    // Permanent record creation remains the same
+    const mergedData = new MergedData({
+      Amount: amount,
+      Match: MatchName,
+      Odds: Lp,
+      Player: PlayerName,
+      Status: 'MATCHED',
+      Type: side,
+      date: date,
+      market_id: mId,
+      strategy: strategies,
+      Sport: eventName
+    });
+
+    await mergedData.save();
+
+    return res.status(200).json({ 
+      tempBackBet, 
+      tempLayBet,
+      mergedData 
+    });
+
   } catch (error) {
-    // console.error('Error in processing data:', error.message);
-    res.status(500).json({ error: 'Failed to process data', message: error.message });
+    res.status(500).json({ 
+      error: 'Failed to process data', 
+      message: error.message 
+    });
   }
 };
- 
- 
-module.exports = { processAndStoreData , };
- 
- 
- 
- 
- 
- 
+
+module.exports = { processAndStoreData };

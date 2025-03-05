@@ -44,7 +44,8 @@ const  placeOrder  = require('../Controllers/placeOrder');
 const marketBook = require('../Controllers/marketBookApi');
 const profit=require('../Controllers/Profit');
 const getMergeData=require('../services/getMergeServices');
-const dataServiceL = require('../services/dataServiceL')
+// const dataServiceL = require('../services/dataServiceL')
+const { processAndStoreData: processLayData, completeBet } = require('../services/dataServiceL');
 
  
 // Authentication route
@@ -67,6 +68,7 @@ router.get('/gethistory',getMergeData.getMergedData);
 //Merged data route - This is where the merged data is stored
  
 router.post('/Bhistory',dataService.processAndStoreData); 
-router.post('/Lhistory',dataServiceL.processAndStoreData);
+router.post('/Lhistory',processLayData);
+router.post('/completeBet', completeBet);
  
 module.exports = router;

@@ -1,0 +1,2136 @@
+2025-02-28T11:18:46.266Z - INFO - ......Connected......
+2025-02-28T11:18:46.267Z - INFO - -----------------------------------
+2025-02-28T11:18:46.267Z - INFO - Market Data: {"op":"connection","connectionId":"207-280225111846-580256"}
+
+2025-02-28T11:18:46.267Z - ERROR - No odds data available
+2025-02-28T11:18:46.806Z - INFO - -----------------------------------
+2025-02-28T11:18:46.806Z - INFO - Market Data: {"op":"status","statusCode":"SUCCESS","connectionClosed":false,"connectionsAvailable":8}
+
+2025-02-28T11:18:46.807Z - ERROR - No odds data available
+2025-02-28T11:18:47.037Z - INFO - -----------------------------------
+2025-02-28T11:18:47.037Z - INFO - Market Data: {"op":"status","id":1,"statusCode":"SUCCESS","connectionClosed":false}
+
+2025-02-28T11:18:47.037Z - ERROR - No odds data available
+2025-02-28T11:18:47.064Z - INFO - -----------------------------------
+2025-02-28T11:18:47.064Z - INFO - Market Data: {"op":"mcm","id":1,"initialClk":"ggKt1byPDYQC4pP/+Qz4AeyTvZAN","clk":"AAAAAAAA","conflateMs":0,"heartbeatMs":5000,"pt":1740741527386,"ct":"SUB_IMAGE","mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,18.2]],"batl":[[0,2.18,60.97]],"id":9632777},{"batb":[[0,1.88,130.1]],"batl":[[0,1.89,8.72]],"id":26323542}],"img":true}]}
+
+2025-02-28T11:18:47.064Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.065Z - INFO - In Above SL code
+2025-02-28T11:18:47.065Z - INFO - Current Back 1.88
+2025-02-28T11:18:47.065Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.065Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.065Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.065Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:47.115Z - INFO - -----------------------------------
+2025-02-28T11:18:47.115Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AAUACgAL","pt":1740741527438,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.88,79.47]],"id":26323542}]}]}
+
+2025-02-28T11:18:47.115Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.115Z - INFO - In Above SL code
+2025-02-28T11:18:47.115Z - INFO - Current Back 1.88
+2025-02-28T11:18:47.115Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.115Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.115Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.115Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:47.211Z - INFO - -----------------------------------
+2025-02-28T11:18:47.212Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AA0AFAAW","pt":1740741527534,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,4.06]],"batl":[[0,2.2,73.73]],"id":9632777},{"batb":[[0,1.84,551.92]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:18:47.212Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.212Z - INFO - In Above SL code
+2025-02-28T11:18:47.212Z - INFO - Current Back 1.84
+2025-02-28T11:18:47.212Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.212Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.212Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.212Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:47.414Z - INFO - -----------------------------------
+2025-02-28T11:18:47.414Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ACYAJwAa","pt":1740741527737,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.04,79.52]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:18:47.414Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.414Z - INFO - In Above SL code
+2025-02-28T11:18:47.414Z - INFO - Current Back 1.84
+2025-02-28T11:18:47.415Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.415Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.415Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.415Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:47.532Z - INFO - -----------------------------------
+2025-02-28T11:18:47.532Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AC8AMgAj","pt":1740741527846,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.99,2]],"batl":[[0,2.24,2.4]],"id":9632777},{"batb":[[0,1.84,463.76]],"id":26323542}]}]}
+
+2025-02-28T11:18:47.532Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.532Z - INFO - In Above SL code
+2025-02-28T11:18:47.532Z - INFO - Current Back 1.84
+2025-02-28T11:18:47.532Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.532Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.532Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.532Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:47.643Z - INFO - -----------------------------------
+2025-02-28T11:18:47.643Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AD8ANwAs","pt":1740741527959,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.83,77.95]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:18:47.643Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:47.643Z - INFO - In Above SL code
+2025-02-28T11:18:47.643Z - INFO - Current Back 1.83
+2025-02-28T11:18:47.643Z - INFO - Current Lay 1.89
+2025-02-28T11:18:47.643Z - INFO - Target Price 1.68
+2025-02-28T11:18:47.643Z - INFO - SL Price 2.39
+2025-02-28T11:18:47.643Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:48.206Z - INFO - -----------------------------------
+2025-02-28T11:18:48.206Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AHoAZgBR","pt":1740741528528,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.89,8.61]],"id":26323542}]}]}
+
+2025-02-28T11:18:48.206Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:48.206Z - INFO - In Above SL code
+2025-02-28T11:18:48.206Z - INFO - Current Back 1.83
+2025-02-28T11:18:48.206Z - INFO - Current Lay 1.89
+2025-02-28T11:18:48.206Z - INFO - Target Price 1.68
+2025-02-28T11:18:48.206Z - INFO - SL Price 2.39
+2025-02-28T11:18:48.206Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:50.110Z - INFO - -----------------------------------
+2025-02-28T11:18:50.111Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANMCAJoCANkB","pt":1740741530424,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.18,74.41]],"id":9632777},{"batb":[[0,1.85,87.69]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:18:50.111Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:50.111Z - INFO - In Above SL code
+2025-02-28T11:18:50.111Z - INFO - Current Back 1.85
+2025-02-28T11:18:50.111Z - INFO - Current Lay 1.89
+2025-02-28T11:18:50.111Z - INFO - Target Price 1.68
+2025-02-28T11:18:50.111Z - INFO - SL Price 2.39
+2025-02-28T11:18:50.111Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:50.405Z - INFO - -----------------------------------
+2025-02-28T11:18:50.406Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOwCALACAPEB","pt":1740741530728,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.24,2.4]],"id":9632777},{"batb":[[0,1.85,17.46]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:18:50.406Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:50.406Z - INFO - In Above SL code
+2025-02-28T11:18:50.406Z - INFO - Current Back 1.85
+2025-02-28T11:18:50.406Z - INFO - Current Lay 1.89
+2025-02-28T11:18:50.406Z - INFO - Target Price 1.68
+2025-02-28T11:18:50.406Z - INFO - SL Price 2.39
+2025-02-28T11:18:50.406Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:50.715Z - INFO - -----------------------------------
+2025-02-28T11:18:50.715Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIEDANMCAIAC","pt":1740741531038,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,82.83]],"id":26323542}]}]}
+
+2025-02-28T11:18:50.716Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:50.716Z - INFO - In Above SL code
+2025-02-28T11:18:50.716Z - INFO - Current Back 1.81
+2025-02-28T11:18:50.716Z - INFO - Current Lay 1.89
+2025-02-28T11:18:50.716Z - INFO - Target Price 1.68
+2025-02-28T11:18:50.716Z - INFO - SL Price 2.39
+2025-02-28T11:18:50.716Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:50.808Z - INFO - -----------------------------------
+2025-02-28T11:18:50.809Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgDANoCAIUC","pt":1740741531132,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.84,7.79]],"id":26323542}]}]}
+
+2025-02-28T11:18:50.809Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:50.809Z - INFO - In Above SL code
+2025-02-28T11:18:50.809Z - INFO - Current Back 1.84
+2025-02-28T11:18:50.809Z - INFO - Current Lay 1.89
+2025-02-28T11:18:50.810Z - INFO - Target Price 1.68
+2025-02-28T11:18:50.810Z - INFO - SL Price 2.39
+2025-02-28T11:18:50.810Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:51.124Z - INFO - -----------------------------------
+2025-02-28T11:18:51.125Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKMDAPcCAJ4C","pt":1740741531445,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,82.83]],"id":26323542}]}]}
+
+2025-02-28T11:18:51.125Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:51.125Z - INFO - In Above SL code
+2025-02-28T11:18:51.126Z - INFO - Current Back 1.81
+2025-02-28T11:18:51.126Z - INFO - Current Lay 1.89
+2025-02-28T11:18:51.126Z - INFO - Target Price 1.68
+2025-02-28T11:18:51.126Z - INFO - SL Price 2.39
+2025-02-28T11:18:51.126Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:52.632Z - INFO - -----------------------------------
+2025-02-28T11:18:52.632Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK0EALAEAIsD","pt":1740741532956,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.99,2.31]],"id":9632777}]}]}
+
+2025-02-28T11:18:52.632Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:52.632Z - INFO - In Above SL code
+2025-02-28T11:18:52.632Z - INFO - Current Back 1.81
+2025-02-28T11:18:52.632Z - INFO - Current Lay 1.89
+2025-02-28T11:18:52.632Z - INFO - Target Price 1.68
+2025-02-28T11:18:52.632Z - INFO - SL Price 2.39
+2025-02-28T11:18:52.633Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:54.925Z - INFO - -----------------------------------
+2025-02-28T11:18:54.925Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKQGAL4GAMME","pt":1740741535248,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.99,2]],"id":9632777}]}]}
+
+2025-02-28T11:18:54.925Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:54.925Z - INFO - In Above SL code
+2025-02-28T11:18:54.926Z - INFO - Current Back 1.81
+2025-02-28T11:18:54.926Z - INFO - Current Lay 1.89
+2025-02-28T11:18:54.926Z - INFO - Target Price 1.68
+2025-02-28T11:18:54.926Z - INFO - SL Price 2.39
+2025-02-28T11:18:54.928Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:55.139Z - INFO - -----------------------------------
+2025-02-28T11:18:55.139Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALkGANoGANIE","pt":1740741535462,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,85.55]],"id":26323542}]}]}
+
+2025-02-28T11:18:55.139Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:55.139Z - INFO - In Above SL code
+2025-02-28T11:18:55.139Z - INFO - Current Back 1.81
+2025-02-28T11:18:55.139Z - INFO - Current Lay 1.89
+2025-02-28T11:18:55.139Z - INFO - Target Price 1.68
+2025-02-28T11:18:55.139Z - INFO - SL Price 2.39
+2025-02-28T11:18:55.140Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:56.633Z - INFO - -----------------------------------
+2025-02-28T11:18:56.633Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMoHAKkIAKgF","pt":1740741536955,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.89,7.69]],"id":26323542}]}]}
+
+2025-02-28T11:18:56.633Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:56.633Z - INFO - In Above SL code
+2025-02-28T11:18:56.634Z - INFO - Current Back 1.81
+2025-02-28T11:18:56.634Z - INFO - Current Lay 1.89
+2025-02-28T11:18:56.634Z - INFO - Target Price 1.68
+2025-02-28T11:18:56.634Z - INFO - SL Price 2.39
+2025-02-28T11:18:56.634Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:57.320Z - INFO - -----------------------------------
+2025-02-28T11:18:57.321Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgIAPgIAM8F","pt":1740741537643,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.24,1.2]],"id":9632777},{"batb":[[0,1.81,84.35]],"id":26323542}]}]}
+
+2025-02-28T11:18:57.321Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:57.321Z - INFO - In Above SL code
+2025-02-28T11:18:57.321Z - INFO - Current Back 1.81
+2025-02-28T11:18:57.321Z - INFO - Current Lay 1.89
+2025-02-28T11:18:57.321Z - INFO - Target Price 1.68
+2025-02-28T11:18:57.321Z - INFO - SL Price 2.39
+2025-02-28T11:18:57.321Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:57.517Z - INFO - -----------------------------------
+2025-02-28T11:18:57.517Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJkIAIYJAOEF","pt":1740741537840,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.26,2]],"id":9632777},{"batb":[[0,1.81,83.15]],"id":26323542}]}]}
+
+2025-02-28T11:18:57.517Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:57.517Z - INFO - In Above SL code
+2025-02-28T11:18:57.517Z - INFO - Current Back 1.81
+2025-02-28T11:18:57.518Z - INFO - Current Lay 1.89
+2025-02-28T11:18:57.518Z - INFO - Target Price 1.68
+2025-02-28T11:18:57.518Z - INFO - SL Price 2.39
+2025-02-28T11:18:57.518Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:58.126Z - INFO - -----------------------------------
+2025-02-28T11:18:58.126Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMgIAMsJAIMG","pt":1740741538450,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,80.43]],"id":26323542}]}]}
+
+2025-02-28T11:18:58.126Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:58.127Z - INFO - In Above SL code
+2025-02-28T11:18:58.127Z - INFO - Current Back 1.81
+2025-02-28T11:18:58.127Z - INFO - Current Lay 1.89
+2025-02-28T11:18:58.127Z - INFO - Target Price 1.68
+2025-02-28T11:18:58.127Z - INFO - SL Price 2.39
+2025-02-28T11:18:58.127Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:59.419Z - INFO - -----------------------------------
+2025-02-28T11:18:59.419Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALMJAM4KANoG","pt":1740741539741,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.95,2]],"batl":[[0,1.97,117]],"id":9632777},{"batb":[[0,1.97,152.28]],"batl":[[0,2.04,312.37]],"id":26323542}]}]}
+
+2025-02-28T11:18:59.419Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:59.419Z - INFO - In Above SL code
+2025-02-28T11:18:59.419Z - INFO - Current Back 1.97
+2025-02-28T11:18:59.419Z - INFO - Current Lay 2.04
+2025-02-28T11:18:59.419Z - INFO - Target Price 1.68
+2025-02-28T11:18:59.419Z - INFO - SL Price 2.39
+2025-02-28T11:18:59.419Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:59.727Z - INFO - -----------------------------------
+2025-02-28T11:18:59.727Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANEJAPIKAOsG","pt":1740741540051,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.04,310.37]],"id":26323542}]}]}
+
+2025-02-28T11:18:59.727Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:59.727Z - INFO - In Above SL code
+2025-02-28T11:18:59.727Z - INFO - Current Back 1.97
+2025-02-28T11:18:59.727Z - INFO - Current Lay 2.04
+2025-02-28T11:18:59.727Z - INFO - Target Price 1.68
+2025-02-28T11:18:59.727Z - INFO - SL Price 2.39
+2025-02-28T11:18:59.727Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:18:59.820Z - INFO - -----------------------------------
+2025-02-28T11:18:59.820Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANkJAIELAPIG","pt":1740741540143,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,1.2]],"id":26323542}]}]}
+
+2025-02-28T11:18:59.820Z - INFO - Odds Data [object Object]
+2025-02-28T11:18:59.820Z - INFO - In Above SL code
+2025-02-28T11:18:59.820Z - INFO - Current Back 2.02
+2025-02-28T11:18:59.820Z - INFO - Current Lay 2.04
+2025-02-28T11:18:59.820Z - INFO - Target Price 1.68
+2025-02-28T11:18:59.820Z - INFO - SL Price 2.39
+2025-02-28T11:18:59.820Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:00.139Z - INFO - -----------------------------------
+2025-02-28T11:19:00.139Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APIJAKwLAIIH","pt":1740741540463,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.04,466.93]],"id":26323542}]}]}
+
+2025-02-28T11:19:00.139Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:00.139Z - INFO - In Above SL code
+2025-02-28T11:19:00.139Z - INFO - Current Back 2.02
+2025-02-28T11:19:00.139Z - INFO - Current Lay 2.04
+2025-02-28T11:19:00.139Z - INFO - Target Price 1.68
+2025-02-28T11:19:00.139Z - INFO - SL Price 2.39
+2025-02-28T11:19:00.140Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:02.524Z - INFO - -----------------------------------
+2025-02-28T11:19:02.524Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMgLAIAOALAI","pt":1740741542844,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,104.17]],"id":9632777}]}]}
+
+2025-02-28T11:19:02.524Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:02.524Z - INFO - In Above SL code
+2025-02-28T11:19:02.524Z - INFO - Current Back 2.02
+2025-02-28T11:19:02.524Z - INFO - Current Lay 2.04
+2025-02-28T11:19:02.524Z - INFO - Target Price 1.68
+2025-02-28T11:19:02.524Z - INFO - SL Price 2.39
+2025-02-28T11:19:02.524Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:03.542Z - INFO - -----------------------------------
+2025-02-28T11:19:03.542Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKYMAI4PAIoJ","pt":1740741543866,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,52.25]],"id":26323542}]}]}
+
+2025-02-28T11:19:03.542Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:03.543Z - INFO - In Above SL code
+2025-02-28T11:19:03.543Z - INFO - Current Back 2.02
+2025-02-28T11:19:03.543Z - INFO - Current Lay 2.04
+2025-02-28T11:19:03.543Z - INFO - Target Price 1.68
+2025-02-28T11:19:03.543Z - INFO - SL Price 2.39
+2025-02-28T11:19:03.543Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:03.645Z - INFO - -----------------------------------
+2025-02-28T11:19:03.645Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALAMAJ0PAJQJ","pt":1740741543964,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,43.39]],"id":26323542}]}]}
+
+2025-02-28T11:19:03.645Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:03.646Z - INFO - In Above SL code
+2025-02-28T11:19:03.646Z - INFO - Current Back 2.02
+2025-02-28T11:19:03.646Z - INFO - Current Lay 2.04
+2025-02-28T11:19:03.646Z - INFO - Target Price 1.68
+2025-02-28T11:19:03.646Z - INFO - SL Price 2.39
+2025-02-28T11:19:03.646Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:04.022Z - INFO - -----------------------------------
+2025-02-28T11:19:04.022Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANYMAMkPALIJ","pt":1740741544346,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,124.7]],"id":9632777}]}]}
+
+2025-02-28T11:19:04.022Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:04.022Z - INFO - In Above SL code
+2025-02-28T11:19:04.023Z - INFO - Current Back 2.02
+2025-02-28T11:19:04.023Z - INFO - Current Lay 2.04
+2025-02-28T11:19:04.023Z - INFO - Target Price 1.68
+2025-02-28T11:19:04.023Z - INFO - SL Price 2.39
+2025-02-28T11:19:04.023Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:04.128Z - INFO - -----------------------------------
+2025-02-28T11:19:04.128Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOEMANcPALoJ","pt":1740741544452,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,43.1]],"id":9632777}]}]}
+
+2025-02-28T11:19:04.128Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:04.128Z - INFO - In Above SL code
+2025-02-28T11:19:04.128Z - INFO - Current Back 2.02
+2025-02-28T11:19:04.128Z - INFO - Current Lay 2.04
+2025-02-28T11:19:04.129Z - INFO - Target Price 1.68
+2025-02-28T11:19:04.129Z - INFO - SL Price 2.39
+2025-02-28T11:19:04.129Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:04.534Z - INFO - -----------------------------------
+2025-02-28T11:19:04.535Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI0NAIUQAN0J","pt":1740741544857,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,43.02]],"id":9632777}]}]}
+
+2025-02-28T11:19:04.535Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:04.535Z - INFO - In Above SL code
+2025-02-28T11:19:04.535Z - INFO - Current Back 2.02
+2025-02-28T11:19:04.535Z - INFO - Current Lay 2.04
+2025-02-28T11:19:04.535Z - INFO - Target Price 1.68
+2025-02-28T11:19:04.535Z - INFO - SL Price 2.39
+2025-02-28T11:19:04.535Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:05.718Z - INFO - -----------------------------------
+2025-02-28T11:19:05.718Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgOAP8QAJ4K","pt":1740741546040,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,43.27]],"id":26323542}]}]}
+
+2025-02-28T11:19:05.718Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:05.718Z - INFO - In Above SL code
+2025-02-28T11:19:05.718Z - INFO - Current Back 2.02
+2025-02-28T11:19:05.718Z - INFO - Current Lay 2.04
+2025-02-28T11:19:05.718Z - INFO - Target Price 1.68
+2025-02-28T11:19:05.718Z - INFO - SL Price 2.39
+2025-02-28T11:19:05.719Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:06.133Z - INFO - -----------------------------------
+2025-02-28T11:19:06.133Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKkOALYRALsK","pt":1740741546457,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,42.37]],"id":26323542}]}]}
+
+2025-02-28T11:19:06.134Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:06.134Z - INFO - In Above SL code
+2025-02-28T11:19:06.134Z - INFO - Current Back 2.02
+2025-02-28T11:19:06.134Z - INFO - Current Lay 2.04
+2025-02-28T11:19:06.134Z - INFO - Target Price 1.68
+2025-02-28T11:19:06.134Z - INFO - SL Price 2.39
+2025-02-28T11:19:06.135Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:07.119Z - INFO - -----------------------------------
+2025-02-28T11:19:07.119Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APwOAK0SAPsK","pt":1740741547443,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,56.82]],"id":9632777},{"batl":[[0,2.04,480.9]],"id":26323542}]}]}
+
+2025-02-28T11:19:07.119Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:07.119Z - INFO - In Above SL code
+2025-02-28T11:19:07.119Z - INFO - Current Back 2.02
+2025-02-28T11:19:07.119Z - INFO - Current Lay 2.04
+2025-02-28T11:19:07.119Z - INFO - Target Price 1.68
+2025-02-28T11:19:07.119Z - INFO - SL Price 2.39
+2025-02-28T11:19:07.119Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:07.325Z - INFO - -----------------------------------
+2025-02-28T11:19:07.325Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIsPAMASAI4L","pt":1740741547648,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,55.54]],"batl":[[0,1.97,125.98]],"id":9632777},{"batb":[[0,2.02,43.64]],"batl":[[0,2.04,479.63]],"id":26323542}]}]}
+
+2025-02-28T11:19:07.326Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:07.326Z - INFO - In Above SL code
+2025-02-28T11:19:07.326Z - INFO - Current Back 2.02
+2025-02-28T11:19:07.326Z - INFO - Current Lay 2.04
+2025-02-28T11:19:07.326Z - INFO - Target Price 1.68
+2025-02-28T11:19:07.327Z - INFO - SL Price 2.39
+2025-02-28T11:19:07.327Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:08.042Z - INFO - -----------------------------------
+2025-02-28T11:19:08.043Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANkPAJUTAMUL","pt":1740741548366,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,117.72]],"id":9632777}]}]}
+
+2025-02-28T11:19:08.043Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:08.043Z - INFO - In Above SL code
+2025-02-28T11:19:08.043Z - INFO - Current Back 2.02
+2025-02-28T11:19:08.043Z - INFO - Current Lay 2.04
+2025-02-28T11:19:08.043Z - INFO - Target Price 1.68
+2025-02-28T11:19:08.043Z - INFO - SL Price 2.39
+2025-02-28T11:19:08.044Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:09.326Z - INFO - -----------------------------------
+2025-02-28T11:19:09.326Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOYQAKQUAJ8M","pt":1740741549649,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,117.36]],"id":9632777}]}]}
+
+2025-02-28T11:19:09.326Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:09.326Z - INFO - In Above SL code
+2025-02-28T11:19:09.326Z - INFO - Current Back 2.02
+2025-02-28T11:19:09.327Z - INFO - Current Lay 2.04
+2025-02-28T11:19:09.327Z - INFO - Target Price 1.68
+2025-02-28T11:19:09.327Z - INFO - SL Price 2.39
+2025-02-28T11:19:09.327Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:09.629Z - INFO - -----------------------------------
+2025-02-28T11:19:09.629Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIYRAMkUALUM","pt":1740741549954,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,116.44]],"id":9632777}]}]}
+
+2025-02-28T11:19:09.629Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:09.629Z - INFO - In Above SL code
+2025-02-28T11:19:09.629Z - INFO - Current Back 2.02
+2025-02-28T11:19:09.629Z - INFO - Current Lay 2.04
+2025-02-28T11:19:09.629Z - INFO - Target Price 1.68
+2025-02-28T11:19:09.629Z - INFO - SL Price 2.39
+2025-02-28T11:19:09.630Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:09.740Z - INFO - -----------------------------------
+2025-02-28T11:19:09.740Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJERANQUALwM","pt":1740741550063,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,115.78]],"id":9632777}]}]}
+
+2025-02-28T11:19:09.740Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:09.740Z - INFO - In Above SL code
+2025-02-28T11:19:09.740Z - INFO - Current Back 2.02
+2025-02-28T11:19:09.740Z - INFO - Current Lay 2.04
+2025-02-28T11:19:09.740Z - INFO - Target Price 1.68
+2025-02-28T11:19:09.740Z - INFO - SL Price 2.39
+2025-02-28T11:19:09.741Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:10.350Z - INFO - -----------------------------------
+2025-02-28T11:19:10.350Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMMRAJYVAOcM","pt":1740741550673,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,43.1]],"id":26323542}]}]}
+
+2025-02-28T11:19:10.350Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:10.351Z - INFO - In Above SL code
+2025-02-28T11:19:10.351Z - INFO - Current Back 2.02
+2025-02-28T11:19:10.351Z - INFO - Current Lay 2.04
+2025-02-28T11:19:10.351Z - INFO - Target Price 1.68
+2025-02-28T11:19:10.351Z - INFO - SL Price 2.39
+2025-02-28T11:19:10.351Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:11.633Z - INFO - -----------------------------------
+2025-02-28T11:19:11.634Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALkSALIWALcN","pt":1740741551957,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,115.71]],"id":9632777}]}]}
+
+2025-02-28T11:19:11.634Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:11.634Z - INFO - In Above SL code
+2025-02-28T11:19:11.634Z - INFO - Current Back 2.02
+2025-02-28T11:19:11.634Z - INFO - Current Lay 2.04
+2025-02-28T11:19:11.634Z - INFO - Target Price 1.68
+2025-02-28T11:19:11.634Z - INFO - SL Price 2.39
+2025-02-28T11:19:11.634Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:11.946Z - INFO - -----------------------------------
+2025-02-28T11:19:11.946Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANYSANIWANMN","pt":1740741552270,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,100.87]],"batl":[[0,1.97,132.5]],"id":9632777}]}]}
+
+2025-02-28T11:19:11.947Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:11.947Z - INFO - In Above SL code
+2025-02-28T11:19:11.947Z - INFO - Current Back 2.02
+2025-02-28T11:19:11.947Z - INFO - Current Lay 2.04
+2025-02-28T11:19:11.947Z - INFO - Target Price 1.68
+2025-02-28T11:19:11.947Z - INFO - SL Price 2.39
+2025-02-28T11:19:11.947Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:12.061Z - INFO - -----------------------------------
+2025-02-28T11:19:12.061Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANkSANoWANYN","pt":1740741552384,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,131.22]],"id":9632777},{"batb":[[0,2.02,41.83]],"id":26323542}]}]}
+
+2025-02-28T11:19:12.061Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:12.061Z - INFO - In Above SL code
+2025-02-28T11:19:12.061Z - INFO - Current Back 2.02
+2025-02-28T11:19:12.061Z - INFO - Current Lay 2.04
+2025-02-28T11:19:12.061Z - INFO - Target Price 1.68
+2025-02-28T11:19:12.061Z - INFO - SL Price 2.39
+2025-02-28T11:19:12.061Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:12.146Z - INFO - -----------------------------------
+2025-02-28T11:19:12.147Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOASAOcWANoN","pt":1740741552470,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,73.1]],"batl":[[0,1.97,114.43]],"id":9632777}]}]}
+
+2025-02-28T11:19:12.147Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:12.147Z - INFO - In Above SL code
+2025-02-28T11:19:12.147Z - INFO - Current Back 2.02
+2025-02-28T11:19:12.147Z - INFO - Current Lay 2.04
+2025-02-28T11:19:12.147Z - INFO - Target Price 1.68
+2025-02-28T11:19:12.147Z - INFO - SL Price 2.39
+2025-02-28T11:19:12.148Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:12.452Z - INFO - -----------------------------------
+2025-02-28T11:19:12.452Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APkSAIkXAPIN","pt":1740741552776,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,72.1]],"id":9632777}]}]}
+
+2025-02-28T11:19:12.452Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:12.452Z - INFO - In Above SL code
+2025-02-28T11:19:12.452Z - INFO - Current Back 2.02
+2025-02-28T11:19:12.452Z - INFO - Current Lay 2.04
+2025-02-28T11:19:12.452Z - INFO - Target Price 1.68
+2025-02-28T11:19:12.452Z - INFO - SL Price 2.39
+2025-02-28T11:19:12.452Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:12.763Z - INFO - -----------------------------------
+2025-02-28T11:19:12.763Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJkTAK0XAIkO","pt":1740741553087,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,54.78]],"id":9632777},{"batb":[[0,2,57.23]],"id":26323542}]}]}
+
+2025-02-28T11:19:12.763Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:12.763Z - INFO - In Above SL code
+2025-02-28T11:19:12.763Z - INFO - Current Back 2
+2025-02-28T11:19:12.764Z - INFO - Current Lay 2.04
+2025-02-28T11:19:12.764Z - INFO - Target Price 1.68
+2025-02-28T11:19:12.764Z - INFO - SL Price 2.39
+2025-02-28T11:19:12.764Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:13.032Z - INFO - -----------------------------------
+2025-02-28T11:19:13.032Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL4TAM8XAKAO","pt":1740741553355,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,54.63]],"id":9632777}]}]}
+
+2025-02-28T11:19:13.032Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:13.032Z - INFO - In Above SL code
+2025-02-28T11:19:13.032Z - INFO - Current Back 2
+2025-02-28T11:19:13.032Z - INFO - Current Lay 2.04
+2025-02-28T11:19:13.032Z - INFO - Target Price 1.68
+2025-02-28T11:19:13.032Z - INFO - SL Price 2.39
+2025-02-28T11:19:13.032Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:13.340Z - INFO - -----------------------------------
+2025-02-28T11:19:13.340Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANYTAOwXALgO","pt":1740741553664,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,54.32]],"id":9632777}]}]}
+
+2025-02-28T11:19:13.340Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:13.340Z - INFO - In Above SL code
+2025-02-28T11:19:13.340Z - INFO - Current Back 2
+2025-02-28T11:19:13.341Z - INFO - Current Lay 2.04
+2025-02-28T11:19:13.341Z - INFO - Target Price 1.68
+2025-02-28T11:19:13.341Z - INFO - SL Price 2.39
+2025-02-28T11:19:13.341Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:15.354Z - INFO - -----------------------------------
+2025-02-28T11:19:15.354Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJQVAMEZALMP","pt":1740741555676,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,53.85]],"id":9632777}]}]}
+
+2025-02-28T11:19:15.355Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:15.355Z - INFO - In Above SL code
+2025-02-28T11:19:15.355Z - INFO - Current Back 2
+2025-02-28T11:19:15.355Z - INFO - Current Lay 2.04
+2025-02-28T11:19:15.356Z - INFO - Target Price 1.68
+2025-02-28T11:19:15.356Z - INFO - SL Price 2.39
+2025-02-28T11:19:15.356Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:15.852Z - INFO - -----------------------------------
+2025-02-28T11:19:15.852Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMgVAP4ZANgP","pt":1740741556175,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.97,4.86]],"batl":[[0,1.98,137.09]],"id":9632777},{"batb":[[0,2,146.19]],"id":26323542}]}]}
+
+2025-02-28T11:19:15.852Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:15.852Z - INFO - In Above SL code
+2025-02-28T11:19:15.852Z - INFO - Current Back 2
+2025-02-28T11:19:15.852Z - INFO - Current Lay 2.04
+2025-02-28T11:19:15.852Z - INFO - Target Price 1.68
+2025-02-28T11:19:15.852Z - INFO - SL Price 2.39
+2025-02-28T11:19:15.853Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:16.573Z - INFO - -----------------------------------
+2025-02-28T11:19:16.573Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJQWANcaAP8P","pt":1740741556896,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,58.3]],"batl":[[0,2.04,79.63]],"id":9632777},{"batb":[[0,2,57.23]],"batl":[[0,2.04,465.66]],"id":26323542}]}]}
+
+2025-02-28T11:19:16.574Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:16.574Z - INFO - In Above SL code
+2025-02-28T11:19:16.574Z - INFO - Current Back 2
+2025-02-28T11:19:16.574Z - INFO - Current Lay 2.04
+2025-02-28T11:19:16.574Z - INFO - Target Price 1.68
+2025-02-28T11:19:16.574Z - INFO - SL Price 2.39
+2025-02-28T11:19:16.574Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:16.646Z - INFO - -----------------------------------
+2025-02-28T11:19:16.646Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJwWAOMaAIkQ","pt":1740741556969,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,31.53]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:19:16.646Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:16.646Z - INFO - In Above SL code
+2025-02-28T11:19:16.646Z - INFO - Current Back 2
+2025-02-28T11:19:16.646Z - INFO - Current Lay 2.04
+2025-02-28T11:19:16.646Z - INFO - Target Price 1.68
+2025-02-28T11:19:16.646Z - INFO - SL Price 2.39
+2025-02-28T11:19:16.646Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:16.946Z - INFO - -----------------------------------
+2025-02-28T11:19:16.947Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL4WAI0bAKEQ","pt":1740741557269,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.1,2.4]],"id":9632777},{"batb":[[0,1.98,2]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:19:16.947Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:16.947Z - INFO - In Above SL code
+2025-02-28T11:19:16.947Z - INFO - Current Back 1.98
+2025-02-28T11:19:16.947Z - INFO - Current Lay 2.04
+2025-02-28T11:19:16.947Z - INFO - Target Price 1.68
+2025-02-28T11:19:16.947Z - INFO - SL Price 2.39
+2025-02-28T11:19:16.948Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:17.263Z - INFO - -----------------------------------
+2025-02-28T11:19:17.263Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOAWALAbALkQ","pt":1740741557585,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:17.263Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:17.263Z - INFO - In Above SL code
+2025-02-28T11:19:17.263Z - INFO - Current Back 1.98
+2025-02-28T11:19:17.263Z - INFO - Current Lay 2.26
+2025-02-28T11:19:17.263Z - INFO - Target Price 1.68
+2025-02-28T11:19:17.263Z - INFO - SL Price 2.39
+2025-02-28T11:19:17.263Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:18.048Z - INFO - -----------------------------------
+2025-02-28T11:19:18.048Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALUXAIgcAOwQ","pt":1740741558372,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.97,1.4]],"id":9632777}]}]}
+
+2025-02-28T11:19:18.048Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:18.048Z - INFO - In Above SL code
+2025-02-28T11:19:18.048Z - INFO - Current Back 1.98
+2025-02-28T11:19:18.048Z - INFO - Current Lay 2.26
+2025-02-28T11:19:18.048Z - INFO - Target Price 1.68
+2025-02-28T11:19:18.048Z - INFO - SL Price 2.39
+2025-02-28T11:19:18.048Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:18.961Z - INFO - -----------------------------------
+2025-02-28T11:19:18.961Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIYYAOMcAKQR","pt":1740741559285,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.99,139.34]],"id":9632777}]}]}
+
+2025-02-28T11:19:18.961Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:18.961Z - INFO - In Above SL code
+2025-02-28T11:19:18.961Z - INFO - Current Back 1.98
+2025-02-28T11:19:18.961Z - INFO - Current Lay 2.26
+2025-02-28T11:19:18.961Z - INFO - Target Price 1.68
+2025-02-28T11:19:18.962Z - INFO - SL Price 2.39
+2025-02-28T11:19:18.962Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:19.179Z - INFO - -----------------------------------
+2025-02-28T11:19:19.179Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ4YAP4cAK8R","pt":1740741559502,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.1,2.4]],"id":9632777},{"batl":[[0,2.26,4.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:19.179Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:19.179Z - INFO - In Above SL code
+2025-02-28T11:19:19.179Z - INFO - Current Back 1.98
+2025-02-28T11:19:19.179Z - INFO - Current Lay 2.26
+2025-02-28T11:19:19.179Z - INFO - Target Price 1.68
+2025-02-28T11:19:19.179Z - INFO - SL Price 2.39
+2025-02-28T11:19:19.180Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:19.441Z - INFO - -----------------------------------
+2025-02-28T11:19:19.442Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALYYAKEdAL0R","pt":1740741559765,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:19.442Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:19.442Z - INFO - In Above SL code
+2025-02-28T11:19:19.442Z - INFO - Current Back 1.98
+2025-02-28T11:19:19.442Z - INFO - Current Lay 2.26
+2025-02-28T11:19:19.442Z - INFO - Target Price 1.68
+2025-02-28T11:19:19.442Z - INFO - SL Price 2.39
+2025-02-28T11:19:19.442Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:20.459Z - INFO - -----------------------------------
+2025-02-28T11:19:20.459Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgZAI8eAIES","pt":1740741560784,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,66.89]],"id":26323542}]}]}
+
+2025-02-28T11:19:20.459Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:20.459Z - INFO - In Above SL code
+2025-02-28T11:19:20.460Z - INFO - Current Back 1.92
+2025-02-28T11:19:20.460Z - INFO - Current Lay 2.26
+2025-02-28T11:19:20.460Z - INFO - Target Price 1.68
+2025-02-28T11:19:20.460Z - INFO - SL Price 2.39
+2025-02-28T11:19:20.460Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:20.974Z - INFO - -----------------------------------
+2025-02-28T11:19:20.974Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALUZALweAKQS","pt":1740741561297,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.24,343.17]],"id":26323542}]}]}
+
+2025-02-28T11:19:20.974Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:20.975Z - INFO - In Above SL code
+2025-02-28T11:19:20.975Z - INFO - Current Back 1.92
+2025-02-28T11:19:20.975Z - INFO - Current Lay 2.24
+2025-02-28T11:19:20.975Z - INFO - Target Price 1.68
+2025-02-28T11:19:20.975Z - INFO - SL Price 2.39
+2025-02-28T11:19:20.975Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:21.075Z - INFO - -----------------------------------
+2025-02-28T11:19:21.075Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALoZAMMeAK8S","pt":1740741561398,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:21.075Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:21.075Z - INFO - In Above SL code
+2025-02-28T11:19:21.075Z - INFO - Current Back 1.92
+2025-02-28T11:19:21.075Z - INFO - Current Lay 2.26
+2025-02-28T11:19:21.075Z - INFO - Target Price 1.68
+2025-02-28T11:19:21.076Z - INFO - SL Price 2.39
+2025-02-28T11:19:21.076Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:21.753Z - INFO - -----------------------------------
+2025-02-28T11:19:21.754Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOwZAKEfANsS","pt":1740741562077,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.97,1.02]],"id":9632777}]}]}
+
+2025-02-28T11:19:21.754Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:21.754Z - INFO - In Above SL code
+2025-02-28T11:19:21.754Z - INFO - Current Back 1.92
+2025-02-28T11:19:21.754Z - INFO - Current Lay 2.26
+2025-02-28T11:19:21.755Z - INFO - Target Price 1.68
+2025-02-28T11:19:21.755Z - INFO - SL Price 2.39
+2025-02-28T11:19:21.755Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:22.472Z - INFO - -----------------------------------
+2025-02-28T11:19:22.473Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALgaAPYfAIYT","pt":1740741562795,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.04,738.45]],"id":9632777}]}]}
+
+2025-02-28T11:19:22.473Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:22.473Z - INFO - In Above SL code
+2025-02-28T11:19:22.473Z - INFO - Current Back 1.92
+2025-02-28T11:19:22.473Z - INFO - Current Lay 2.26
+2025-02-28T11:19:22.473Z - INFO - Target Price 1.68
+2025-02-28T11:19:22.473Z - INFO - SL Price 2.39
+2025-02-28T11:19:22.473Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:22.578Z - INFO - -----------------------------------
+2025-02-28T11:19:22.578Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL0aAP4fAI8T","pt":1740741562900,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2,8.26]],"id":9632777}]}]}
+
+2025-02-28T11:19:22.578Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:22.578Z - INFO - In Above SL code
+2025-02-28T11:19:22.578Z - INFO - Current Back 1.92
+2025-02-28T11:19:22.579Z - INFO - Current Lay 2.26
+2025-02-28T11:19:22.579Z - INFO - Target Price 1.68
+2025-02-28T11:19:22.579Z - INFO - SL Price 2.39
+2025-02-28T11:19:22.579Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:22.641Z - INFO - -----------------------------------
+2025-02-28T11:19:22.641Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMsaAIogAJQT","pt":1740741562965,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,14.9]],"batl":[[0,1.97,17.48]],"id":9632777},{"batb":[[0,2.04,19.12]],"batl":[[0,2.1,21.55]],"id":26323542}]}]}
+
+2025-02-28T11:19:22.641Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:22.642Z - INFO - In Above SL code
+2025-02-28T11:19:22.642Z - INFO - Current Back 2.04
+2025-02-28T11:19:22.642Z - INFO - Current Lay 2.1
+2025-02-28T11:19:22.642Z - INFO - Target Price 1.68
+2025-02-28T11:19:22.642Z - INFO - SL Price 2.39
+2025-02-28T11:19:22.642Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:22.843Z - INFO - -----------------------------------
+2025-02-28T11:19:22.843Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN0aAKAgAKAT","pt":1740741563166,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.94,305.51]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:19:22.843Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:22.844Z - INFO - In Above SL code
+2025-02-28T11:19:22.844Z - INFO - Current Back 2.04
+2025-02-28T11:19:22.844Z - INFO - Current Lay 2.1
+2025-02-28T11:19:22.844Z - INFO - Target Price 1.68
+2025-02-28T11:19:22.844Z - INFO - SL Price 2.39
+2025-02-28T11:19:22.844Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:23.054Z - INFO - -----------------------------------
+2025-02-28T11:19:23.054Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKMbALggAKoT","pt":1740741563378,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2,8.26]],"id":9632777},{"batb":[[0,1.92,66.89]],"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:23.054Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:23.054Z - INFO - In Above SL code
+2025-02-28T11:19:23.054Z - INFO - Current Back 1.92
+2025-02-28T11:19:23.054Z - INFO - Current Lay 2.26
+2025-02-28T11:19:23.054Z - INFO - Target Price 1.68
+2025-02-28T11:19:23.054Z - INFO - SL Price 2.39
+2025-02-28T11:19:23.054Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:23.662Z - INFO - -----------------------------------
+2025-02-28T11:19:23.662Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANobAPsgAM0T","pt":1740741563985,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.26,2.45]],"id":26323542}]}]}
+
+2025-02-28T11:19:23.662Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:23.662Z - INFO - In Above SL code
+2025-02-28T11:19:23.662Z - INFO - Current Back 1.92
+2025-02-28T11:19:23.662Z - INFO - Current Lay 2.26
+2025-02-28T11:19:23.662Z - INFO - Target Price 1.68
+2025-02-28T11:19:23.663Z - INFO - SL Price 2.39
+2025-02-28T11:19:23.663Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:26.083Z - INFO - -----------------------------------
+2025-02-28T11:19:26.083Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALQdAIojAPEU","pt":1740741566404,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:26.083Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:26.083Z - INFO - In Above SL code
+2025-02-28T11:19:26.083Z - INFO - Current Back 1.92
+2025-02-28T11:19:26.083Z - INFO - Current Lay 2.26
+2025-02-28T11:19:26.083Z - INFO - Target Price 1.68
+2025-02-28T11:19:26.083Z - INFO - SL Price 2.39
+2025-02-28T11:19:26.083Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:26.504Z - INFO - -----------------------------------
+2025-02-28T11:19:26.504Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMwdAMIjAIsV","pt":1740741566826,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,14.9]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:19:26.504Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:26.504Z - INFO - In Above SL code
+2025-02-28T11:19:26.504Z - INFO - Current Back 1.92
+2025-02-28T11:19:26.504Z - INFO - Current Lay 2.26
+2025-02-28T11:19:26.504Z - INFO - Target Price 1.68
+2025-02-28T11:19:26.504Z - INFO - SL Price 2.39
+2025-02-28T11:19:26.504Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:26.560Z - INFO - -----------------------------------
+2025-02-28T11:19:26.560Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANAdAMQjAJMV","pt":1740741566883,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,16.65]],"batl":[],"id":9632777},{"batb":[[0,1.93,35.4]],"batl":[[0,2.24,12]],"id":26323542}]}]}
+
+2025-02-28T11:19:26.560Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:26.560Z - INFO - In Above SL code
+2025-02-28T11:19:26.560Z - INFO - Current Back 1.93
+2025-02-28T11:19:26.560Z - INFO - Current Lay 2.24
+2025-02-28T11:19:26.560Z - INFO - Target Price 1.68
+2025-02-28T11:19:26.560Z - INFO - SL Price 2.39
+2025-02-28T11:19:26.561Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:26.775Z - INFO - -----------------------------------
+2025-02-28T11:19:26.775Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN8dANgjAKUV","pt":1740741567098,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.95,28.26]],"batl":[[0,1.99,80.63]],"id":9632777},{"batb":[[0,1.93,97.88]],"batl":[[0,2.24,84.34]],"id":26323542}]}]}
+
+2025-02-28T11:19:26.776Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:26.776Z - INFO - In Above SL code
+2025-02-28T11:19:26.776Z - INFO - Current Back 1.93
+2025-02-28T11:19:26.776Z - INFO - Current Lay 2.24
+2025-02-28T11:19:26.776Z - INFO - Target Price 1.68
+2025-02-28T11:19:26.776Z - INFO - SL Price 2.39
+2025-02-28T11:19:26.776Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:26.963Z - INFO - -----------------------------------
+2025-02-28T11:19:26.963Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APEdAPEjALcV","pt":1740741567284,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,14.9]],"batl":[[0,2,8.26]],"id":9632777},{"batb":[[0,1.92,66.89]],"batl":[[0,2.26,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:19:26.964Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:26.964Z - INFO - In Above SL code
+2025-02-28T11:19:26.964Z - INFO - Current Back 1.92
+2025-02-28T11:19:26.964Z - INFO - Current Lay 2.26
+2025-02-28T11:19:26.964Z - INFO - Target Price 1.68
+2025-02-28T11:19:26.964Z - INFO - SL Price 2.39
+2025-02-28T11:19:26.965Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:28.055Z - INFO - -----------------------------------
+2025-02-28T11:19:28.055Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANQeAOEkAJ4W","pt":1740741568378,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.93,84.53]],"id":26323542}]}]}
+
+2025-02-28T11:19:28.056Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:28.056Z - INFO - In Above SL code
+2025-02-28T11:19:28.056Z - INFO - Current Back 1.93
+2025-02-28T11:19:28.056Z - INFO - Current Lay 2.26
+2025-02-28T11:19:28.056Z - INFO - Target Price 1.68
+2025-02-28T11:19:28.056Z - INFO - SL Price 2.39
+2025-02-28T11:19:28.056Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:28.366Z - INFO - -----------------------------------
+2025-02-28T11:19:28.366Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APMeAIElALQW","pt":1740741568687,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,66.89]],"id":26323542}]}]}
+
+2025-02-28T11:19:28.366Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:28.366Z - INFO - In Above SL code
+2025-02-28T11:19:28.367Z - INFO - Current Back 1.92
+2025-02-28T11:19:28.367Z - INFO - Current Lay 2.26
+2025-02-28T11:19:28.367Z - INFO - Target Price 1.68
+2025-02-28T11:19:28.367Z - INFO - SL Price 2.39
+2025-02-28T11:19:28.367Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:29.386Z - INFO - -----------------------------------
+2025-02-28T11:19:29.386Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJcgAOYlAO0W","pt":1740741569708,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,382.95]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:19:29.386Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:29.386Z - INFO - In Above SL code
+2025-02-28T11:19:29.386Z - INFO - Current Back 1.92
+2025-02-28T11:19:29.386Z - INFO - Current Lay 2.26
+2025-02-28T11:19:29.386Z - INFO - Target Price 1.68
+2025-02-28T11:19:29.386Z - INFO - SL Price 2.39
+2025-02-28T11:19:29.386Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:29.685Z - INFO - -----------------------------------
+2025-02-28T11:19:29.685Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK0gAIYmAPsW","pt":1740741570010,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.1,2.4]],"id":9632777}]}]}
+
+2025-02-28T11:19:29.685Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:29.685Z - INFO - In Above SL code
+2025-02-28T11:19:29.685Z - INFO - Current Back 1.92
+2025-02-28T11:19:29.685Z - INFO - Current Lay 2.26
+2025-02-28T11:19:29.685Z - INFO - Target Price 1.68
+2025-02-28T11:19:29.685Z - INFO - SL Price 2.39
+2025-02-28T11:19:29.686Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:29.963Z - INFO - -----------------------------------
+2025-02-28T11:19:29.963Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMYgAKYmAJMX","pt":1740741570285,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.96,2.82]],"id":9632777}]}]}
+
+2025-02-28T11:19:29.963Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:29.963Z - INFO - In Above SL code
+2025-02-28T11:19:29.963Z - INFO - Current Back 1.92
+2025-02-28T11:19:29.963Z - INFO - Current Lay 2.26
+2025-02-28T11:19:29.963Z - INFO - Target Price 1.68
+2025-02-28T11:19:29.963Z - INFO - SL Price 2.39
+2025-02-28T11:19:29.964Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.163Z - INFO - -----------------------------------
+2025-02-28T11:19:30.163Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANcgAL8mAKIX","pt":1740741570486,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,67.72]],"id":26323542}]}]}
+
+2025-02-28T11:19:30.163Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.163Z - INFO - In Above SL code
+2025-02-28T11:19:30.163Z - INFO - Current Back 1.92
+2025-02-28T11:19:30.163Z - INFO - Current Lay 2.26
+2025-02-28T11:19:30.163Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.163Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.163Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.268Z - INFO - -----------------------------------
+2025-02-28T11:19:30.268Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOAgAMUmAKYX","pt":1740741570590,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.81,384.44]],"id":9632777}]}]}
+
+2025-02-28T11:19:30.268Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.268Z - INFO - In Above SL code
+2025-02-28T11:19:30.268Z - INFO - Current Back 1.92
+2025-02-28T11:19:30.268Z - INFO - Current Lay 2.26
+2025-02-28T11:19:30.268Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.268Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.268Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.371Z - INFO - -----------------------------------
+2025-02-28T11:19:30.371Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOogANImAK0X","pt":1740741570695,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,14.9]],"batl":[],"id":9632777},{"batb":[[0,1.92,66.89]],"id":26323542}]}]}
+
+2025-02-28T11:19:30.372Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.372Z - INFO - In Above SL code
+2025-02-28T11:19:30.372Z - INFO - Current Back 1.92
+2025-02-28T11:19:30.372Z - INFO - Current Lay 2.26
+2025-02-28T11:19:30.372Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.372Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.372Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.474Z - INFO - -----------------------------------
+2025-02-28T11:19:30.474Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APEgAN4mALUX","pt":1740741570798,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,13.7]],"id":9632777},{"batl":[[0,2.26,1.2]],"id":26323542}]}]}
+
+2025-02-28T11:19:30.474Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.474Z - INFO - In Above SL code
+2025-02-28T11:19:30.474Z - INFO - Current Back 1.92
+2025-02-28T11:19:30.474Z - INFO - Current Lay 2.26
+2025-02-28T11:19:30.474Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.474Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.474Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.673Z - INFO - -----------------------------------
+2025-02-28T11:19:30.673Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIYhAPImAMIX","pt":1740741570996,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.5]],"id":9632777},{"batb":[[0,1.91,70.28]],"batl":[[0,2.28,2]],"id":26323542}]}]}
+
+2025-02-28T11:19:30.673Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.673Z - INFO - In Above SL code
+2025-02-28T11:19:30.673Z - INFO - Current Back 1.91
+2025-02-28T11:19:30.673Z - INFO - Current Lay 2.28
+2025-02-28T11:19:30.673Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.673Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.674Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:30.884Z - INFO - -----------------------------------
+2025-02-28T11:19:30.885Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJQhAJAnAMkX","pt":1740741571207,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.36,2]],"id":26323542}]}]}
+
+2025-02-28T11:19:30.885Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:30.885Z - INFO - In Above SL code
+2025-02-28T11:19:30.886Z - INFO - Current Back 1.91
+2025-02-28T11:19:30.886Z - INFO - Current Lay 2.36
+2025-02-28T11:19:30.886Z - INFO - Target Price 1.68
+2025-02-28T11:19:30.886Z - INFO - SL Price 2.39
+2025-02-28T11:19:30.886Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:32.474Z - INFO - -----------------------------------
+2025-02-28T11:19:32.474Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI8iAMMoAL0Y","pt":1740741572797,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,3623.28]],"id":26323542}]}]}
+
+2025-02-28T11:19:32.474Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:32.474Z - INFO - In Above SL code
+2025-02-28T11:19:32.474Z - INFO - Current Back 1.91
+2025-02-28T11:19:32.474Z - INFO - Current Lay 1.94
+2025-02-28T11:19:32.474Z - INFO - Target Price 1.68
+2025-02-28T11:19:32.474Z - INFO - SL Price 2.39
+2025-02-28T11:19:32.474Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:32.883Z - INFO - -----------------------------------
+2025-02-28T11:19:32.883Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALsiAPcoAOkY","pt":1740741573206,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,1.2]],"id":9632777},{"batl":[[0,1.94,3624.48]],"id":26323542}]}]}
+
+2025-02-28T11:19:32.883Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:32.883Z - INFO - In Above SL code
+2025-02-28T11:19:32.883Z - INFO - Current Back 1.91
+2025-02-28T11:19:32.883Z - INFO - Current Lay 1.94
+2025-02-28T11:19:32.883Z - INFO - Target Price 1.68
+2025-02-28T11:19:32.883Z - INFO - SL Price 2.39
+2025-02-28T11:19:32.883Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:32.980Z - INFO - -----------------------------------
+2025-02-28T11:19:32.981Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMUiAIApAPIY","pt":1740741573304,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,1812.84]],"id":26323542}]}]}
+
+2025-02-28T11:19:32.981Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:32.981Z - INFO - In Above SL code
+2025-02-28T11:19:32.981Z - INFO - Current Back 1.91
+2025-02-28T11:19:32.982Z - INFO - Current Lay 1.94
+2025-02-28T11:19:32.982Z - INFO - Target Price 1.68
+2025-02-28T11:19:32.982Z - INFO - SL Price 2.39
+2025-02-28T11:19:32.982Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:33.088Z - INFO - -----------------------------------
+2025-02-28T11:19:33.088Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM0iAIwpAPwY","pt":1740741573411,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,1.2]],"id":26323542}]}]}
+
+2025-02-28T11:19:33.089Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:33.089Z - INFO - In Above SL code
+2025-02-28T11:19:33.089Z - INFO - Current Back 1.91
+2025-02-28T11:19:33.089Z - INFO - Current Lay 1.94
+2025-02-28T11:19:33.089Z - INFO - Target Price 1.68
+2025-02-28T11:19:33.089Z - INFO - SL Price 2.39
+2025-02-28T11:19:33.089Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:33.764Z - INFO - -----------------------------------
+2025-02-28T11:19:33.764Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgjANMpALUZ","pt":1740741574086,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,36.34]],"id":26323542}]}]}
+
+2025-02-28T11:19:33.764Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:33.764Z - INFO - In Above SL code
+2025-02-28T11:19:33.764Z - INFO - Current Back 1.91
+2025-02-28T11:19:33.764Z - INFO - Current Lay 1.94
+2025-02-28T11:19:33.765Z - INFO - Target Price 1.68
+2025-02-28T11:19:33.765Z - INFO - SL Price 2.39
+2025-02-28T11:19:33.765Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:34.075Z - INFO - -----------------------------------
+2025-02-28T11:19:34.075Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ4jAOcpAMcZ","pt":1740741574398,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.94,309.56]],"id":26323542}]}]}
+
+2025-02-28T11:19:34.075Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:34.075Z - INFO - In Above SL code
+2025-02-28T11:19:34.075Z - INFO - Current Back 1.91
+2025-02-28T11:19:34.076Z - INFO - Current Lay 1.94
+2025-02-28T11:19:34.076Z - INFO - Target Price 1.68
+2025-02-28T11:19:34.076Z - INFO - SL Price 2.39
+2025-02-28T11:19:34.076Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:36.589Z - INFO - -----------------------------------
+2025-02-28T11:19:36.589Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIMlAN4rAPAa","pt":1740741576912,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,18.94]],"batl":[[0,2.1,72.44]],"id":9632777},{"batb":[[0,1.91,126.83]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:19:36.589Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:36.589Z - INFO - In Above SL code
+2025-02-28T11:19:36.589Z - INFO - Current Back 1.91
+2025-02-28T11:19:36.590Z - INFO - Current Lay 1.94
+2025-02-28T11:19:36.590Z - INFO - Target Price 1.68
+2025-02-28T11:19:36.590Z - INFO - SL Price 2.39
+2025-02-28T11:19:36.590Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:36.688Z - INFO - -----------------------------------
+2025-02-28T11:19:36.689Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIslAOsrAPUa","pt":1740741577011,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.94,346.83]],"id":26323542}]}]}
+
+2025-02-28T11:19:36.689Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:36.689Z - INFO - In Above SL code
+2025-02-28T11:19:36.689Z - INFO - Current Back 1.91
+2025-02-28T11:19:36.689Z - INFO - Current Lay 1.94
+2025-02-28T11:19:36.689Z - INFO - Target Price 1.68
+2025-02-28T11:19:36.689Z - INFO - SL Price 2.39
+2025-02-28T11:19:36.689Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:37.100Z - INFO - -----------------------------------
+2025-02-28T11:19:37.100Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALIlAI0sAJob","pt":1740741577422,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.93,20.94]],"batl":[[0,1.94,394.72]],"id":26323542}]}]}
+
+2025-02-28T11:19:37.100Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:37.100Z - INFO - In Above SL code
+2025-02-28T11:19:37.101Z - INFO - Current Back 1.93
+2025-02-28T11:19:37.101Z - INFO - Current Lay 1.94
+2025-02-28T11:19:37.101Z - INFO - Target Price 1.68
+2025-02-28T11:19:37.101Z - INFO - SL Price 2.39
+2025-02-28T11:19:37.101Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:40.178Z - INFO - -----------------------------------
+2025-02-28T11:19:40.178Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMcnAK8uAKQd","pt":1740741580503,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,18.67]],"batl":[[0,2.1,72.71]],"id":9632777},{"batb":[],"batl":[[0,1.94,394.43]],"id":26323542}]}]}
+
+2025-02-28T11:19:40.178Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:40.178Z - INFO - In Above SL code
+2025-02-28T11:19:40.178Z - INFO - Current Back 1.93
+2025-02-28T11:19:40.178Z - INFO - Current Lay 1.94
+2025-02-28T11:19:40.178Z - INFO - Target Price 1.68
+2025-02-28T11:19:40.178Z - INFO - SL Price 2.39
+2025-02-28T11:19:40.179Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:41.475Z - INFO - -----------------------------------
+2025-02-28T11:19:41.475Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALIoAK4vAIAe","pt":1740741581798,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,17.74]],"batl":[[0,2.1,71.51]],"id":9632777},{"batb":[],"batl":[[0,1.94,393.52]],"id":26323542}]}]}
+
+2025-02-28T11:19:41.475Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:41.475Z - INFO - In Above SL code
+2025-02-28T11:19:41.475Z - INFO - Current Back 1.93
+2025-02-28T11:19:41.475Z - INFO - Current Lay 1.94
+2025-02-28T11:19:41.475Z - INFO - Target Price 1.68
+2025-02-28T11:19:41.475Z - INFO - SL Price 2.39
+2025-02-28T11:19:41.475Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:41.682Z - INFO - -----------------------------------
+2025-02-28T11:19:41.682Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMQoAMUvAJIe","pt":1740741582004,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.1,70.31]],"id":9632777}]}]}
+
+2025-02-28T11:19:41.682Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:41.682Z - INFO - In Above SL code
+2025-02-28T11:19:41.682Z - INFO - Current Back 1.93
+2025-02-28T11:19:41.683Z - INFO - Current Lay 1.94
+2025-02-28T11:19:41.683Z - INFO - Target Price 1.68
+2025-02-28T11:19:41.683Z - INFO - SL Price 2.39
+2025-02-28T11:19:41.683Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:41.991Z - INFO - -----------------------------------
+2025-02-28T11:19:41.992Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOEoAOIvAKYe","pt":1740741582315,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,17.43]],"id":9632777}]}]}
+
+2025-02-28T11:19:41.992Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:41.992Z - INFO - In Above SL code
+2025-02-28T11:19:41.992Z - INFO - Current Back 1.93
+2025-02-28T11:19:41.992Z - INFO - Current Lay 1.94
+2025-02-28T11:19:41.992Z - INFO - Target Price 1.68
+2025-02-28T11:19:41.992Z - INFO - SL Price 2.39
+2025-02-28T11:19:41.992Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:42.773Z - INFO - -----------------------------------
+2025-02-28T11:19:42.774Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMIpAJgwAOUe","pt":1740741583096,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,15.95]],"batl":[[0,1.93,57.9]],"id":26323542}]}]}
+
+2025-02-28T11:19:42.774Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:42.774Z - INFO - In Above SL code
+2025-02-28T11:19:42.774Z - INFO - Current Back 1.92
+2025-02-28T11:19:42.774Z - INFO - Current Lay 1.93
+2025-02-28T11:19:42.774Z - INFO - Target Price 1.68
+2025-02-28T11:19:42.774Z - INFO - SL Price 2.39
+2025-02-28T11:19:42.774Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:43.291Z - INFO - -----------------------------------
+2025-02-28T11:19:43.291Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APspAM4wAJ4f","pt":1740741583614,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,10.25]],"id":9632777},{"batb":[[0,1.92,90.79]],"id":26323542}]}]}
+
+2025-02-28T11:19:43.292Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:43.292Z - INFO - In Above SL code
+2025-02-28T11:19:43.292Z - INFO - Current Back 1.92
+2025-02-28T11:19:43.292Z - INFO - Current Lay 1.93
+2025-02-28T11:19:43.292Z - INFO - Target Price 1.68
+2025-02-28T11:19:43.292Z - INFO - SL Price 2.39
+2025-02-28T11:19:43.292Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:44.582Z - INFO - -----------------------------------
+2025-02-28T11:19:44.583Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APIqAOUxAIEg","pt":1740741584906,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.04,12]],"id":9632777},{"batl":[[0,1.93,27.66]],"id":26323542}]}]}
+
+2025-02-28T11:19:44.583Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:44.583Z - INFO - In Above SL code
+2025-02-28T11:19:44.583Z - INFO - Current Back 1.92
+2025-02-28T11:19:44.583Z - INFO - Current Lay 1.93
+2025-02-28T11:19:44.583Z - INFO - Target Price 1.68
+2025-02-28T11:19:44.583Z - INFO - SL Price 2.39
+2025-02-28T11:19:44.583Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:44.795Z - INFO - -----------------------------------
+2025-02-28T11:19:44.795Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIgrAP0xAJAg","pt":1740741585118,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,276.39]],"id":26323542}]}]}
+
+2025-02-28T11:19:44.795Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:44.795Z - INFO - In Above SL code
+2025-02-28T11:19:44.795Z - INFO - Current Back 1.92
+2025-02-28T11:19:44.795Z - INFO - Current Lay 1.94
+2025-02-28T11:19:44.796Z - INFO - Target Price 1.68
+2025-02-28T11:19:44.796Z - INFO - SL Price 2.39
+2025-02-28T11:19:44.796Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:44.900Z - INFO - -----------------------------------
+2025-02-28T11:19:44.900Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJUrAIoyAJgg","pt":1740741585224,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,109.52]],"batl":[[0,1.93,61.99]],"id":26323542}]}]}
+
+2025-02-28T11:19:44.900Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:44.900Z - INFO - In Above SL code
+2025-02-28T11:19:44.900Z - INFO - Current Back 1.92
+2025-02-28T11:19:44.900Z - INFO - Current Lay 1.93
+2025-02-28T11:19:44.900Z - INFO - Target Price 1.68
+2025-02-28T11:19:44.900Z - INFO - SL Price 2.39
+2025-02-28T11:19:44.900Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:45.110Z - INFO - -----------------------------------
+2025-02-28T11:19:45.110Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKsrAKkyAKsg","pt":1740741585433,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.1,70.04]],"id":9632777},{"batb":[[0,1.92,90.5]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:19:45.110Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:45.110Z - INFO - In Above SL code
+2025-02-28T11:19:45.110Z - INFO - Current Back 1.92
+2025-02-28T11:19:45.110Z - INFO - Current Lay 1.93
+2025-02-28T11:19:45.110Z - INFO - Target Price 1.68
+2025-02-28T11:19:45.110Z - INFO - SL Price 2.39
+2025-02-28T11:19:45.110Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:45.211Z - INFO - -----------------------------------
+2025-02-28T11:19:45.211Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALYrALgyALMg","pt":1740741585533,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,61.88]],"id":26323542}]}]}
+
+2025-02-28T11:19:45.211Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:45.211Z - INFO - In Above SL code
+2025-02-28T11:19:45.211Z - INFO - Current Back 1.92
+2025-02-28T11:19:45.211Z - INFO - Current Lay 1.93
+2025-02-28T11:19:45.212Z - INFO - Target Price 1.68
+2025-02-28T11:19:45.212Z - INFO - SL Price 2.39
+2025-02-28T11:19:45.212Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:45.317Z - INFO - -----------------------------------
+2025-02-28T11:19:45.317Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMQrAMYyALgg","pt":1740741585641,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.16,202.56]],"id":9632777}]}]}
+
+2025-02-28T11:19:45.318Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:45.318Z - INFO - In Above SL code
+2025-02-28T11:19:45.318Z - INFO - Current Back 1.92
+2025-02-28T11:19:45.318Z - INFO - Current Lay 1.93
+2025-02-28T11:19:45.318Z - INFO - Target Price 1.68
+2025-02-28T11:19:45.318Z - INFO - SL Price 2.39
+2025-02-28T11:19:45.318Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:46.877Z - INFO - -----------------------------------
+2025-02-28T11:19:46.877Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN8sAP4zAJMh","pt":1740741587200,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.14,75.81]],"id":9632777}]}]}
+
+2025-02-28T11:19:46.877Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:46.877Z - INFO - In Above SL code
+2025-02-28T11:19:46.877Z - INFO - Current Back 1.92
+2025-02-28T11:19:46.877Z - INFO - Current Lay 1.93
+2025-02-28T11:19:46.877Z - INFO - Target Price 1.68
+2025-02-28T11:19:46.877Z - INFO - SL Price 2.39
+2025-02-28T11:19:46.877Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:47.127Z - INFO - -----------------------------------
+2025-02-28T11:19:47.127Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APYsAJk0AKAh","pt":1740741587450,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,325.31]],"batl":[],"id":9632777},{"batb":[[0,1.92,15.66]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:19:47.127Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:47.127Z - INFO - In Above SL code
+2025-02-28T11:19:47.127Z - INFO - Current Back 1.92
+2025-02-28T11:19:47.127Z - INFO - Current Lay 1.93
+2025-02-28T11:19:47.127Z - INFO - Target Price 1.68
+2025-02-28T11:19:47.128Z - INFO - SL Price 2.39
+2025-02-28T11:19:47.128Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:47.187Z - INFO - -----------------------------------
+2025-02-28T11:19:47.187Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP4sAKI0AKgh","pt":1740741587511,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,13.85]],"id":26323542}]}]}
+
+2025-02-28T11:19:47.187Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:47.187Z - INFO - In Above SL code
+2025-02-28T11:19:47.188Z - INFO - Current Back 1.92
+2025-02-28T11:19:47.188Z - INFO - Current Lay 1.93
+2025-02-28T11:19:47.188Z - INFO - Target Price 1.68
+2025-02-28T11:19:47.188Z - INFO - SL Price 2.39
+2025-02-28T11:19:47.188Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:47.495Z - INFO - -----------------------------------
+2025-02-28T11:19:47.495Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJgtANA0AL4h","pt":1740741587817,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.02,191.4]],"batl":[[0,2.2,2]],"id":9632777}]}]}
+
+2025-02-28T11:19:47.495Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:47.495Z - INFO - In Above SL code
+2025-02-28T11:19:47.495Z - INFO - Current Back 1.92
+2025-02-28T11:19:47.495Z - INFO - Current Lay 1.93
+2025-02-28T11:19:47.495Z - INFO - Target Price 1.68
+2025-02-28T11:19:47.495Z - INFO - SL Price 2.39
+2025-02-28T11:19:47.496Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:47.597Z - INFO - -----------------------------------
+2025-02-28T11:19:47.597Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKAtANo0AMYh","pt":1740741587919,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,2]],"id":9632777}]}]}
+
+2025-02-28T11:19:47.597Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:47.597Z - INFO - In Above SL code
+2025-02-28T11:19:47.597Z - INFO - Current Back 1.92
+2025-02-28T11:19:47.598Z - INFO - Current Lay 1.93
+2025-02-28T11:19:47.598Z - INFO - Target Price 1.68
+2025-02-28T11:19:47.598Z - INFO - SL Price 2.39
+2025-02-28T11:19:47.598Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:48.216Z - INFO - -----------------------------------
+2025-02-28T11:19:48.216Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOUtAJ81APYh","pt":1740741588538,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.14,76.5]],"id":9632777}]}]}
+
+2025-02-28T11:19:48.216Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:48.216Z - INFO - In Above SL code
+2025-02-28T11:19:48.216Z - INFO - Current Back 1.92
+2025-02-28T11:19:48.216Z - INFO - Current Lay 1.93
+2025-02-28T11:19:48.216Z - INFO - Target Price 1.68
+2025-02-28T11:19:48.216Z - INFO - SL Price 2.39
+2025-02-28T11:19:48.217Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:48.415Z - INFO - -----------------------------------
+2025-02-28T11:19:48.415Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APotALI1AIci","pt":1740741588739,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.2,2]],"id":9632777}]}]}
+
+2025-02-28T11:19:48.416Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:48.416Z - INFO - In Above SL code
+2025-02-28T11:19:48.416Z - INFO - Current Back 1.92
+2025-02-28T11:19:48.416Z - INFO - Current Lay 1.93
+2025-02-28T11:19:48.416Z - INFO - Target Price 1.68
+2025-02-28T11:19:48.416Z - INFO - SL Price 2.39
+2025-02-28T11:19:48.417Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:50.007Z - INFO - -----------------------------------
+2025-02-28T11:19:50.007Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJgvAO02APwi","pt":1740741590330,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.12,74.39]],"id":9632777}]}]}
+
+2025-02-28T11:19:50.007Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:50.007Z - INFO - In Above SL code
+2025-02-28T11:19:50.007Z - INFO - Current Back 1.92
+2025-02-28T11:19:50.007Z - INFO - Current Lay 1.93
+2025-02-28T11:19:50.007Z - INFO - Target Price 1.68
+2025-02-28T11:19:50.007Z - INFO - SL Price 2.39
+2025-02-28T11:19:50.007Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:50.216Z - INFO - -----------------------------------
+2025-02-28T11:19:50.216Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKkvAIQ3AIoj","pt":1740741590540,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.2,2]],"id":9632777}]}]}
+
+2025-02-28T11:19:50.216Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:50.216Z - INFO - In Above SL code
+2025-02-28T11:19:50.216Z - INFO - Current Back 1.92
+2025-02-28T11:19:50.216Z - INFO - Current Lay 1.93
+2025-02-28T11:19:50.216Z - INFO - Target Price 1.68
+2025-02-28T11:19:50.216Z - INFO - SL Price 2.39
+2025-02-28T11:19:50.216Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:51.197Z - INFO - -----------------------------------
+2025-02-28T11:19:51.197Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIIwAOc3AMwj","pt":1740741591520,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,13.86]],"id":26323542}]}]}
+
+2025-02-28T11:19:51.198Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:51.198Z - INFO - In Above SL code
+2025-02-28T11:19:51.198Z - INFO - Current Back 1.92
+2025-02-28T11:19:51.198Z - INFO - Current Lay 1.93
+2025-02-28T11:19:51.198Z - INFO - Target Price 1.68
+2025-02-28T11:19:51.198Z - INFO - SL Price 2.39
+2025-02-28T11:19:51.198Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:51.621Z - INFO - -----------------------------------
+2025-02-28T11:19:51.621Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALAwAJQ4AOcj","pt":1740741591944,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.1,237.61]],"id":26323542}]}]}
+
+2025-02-28T11:19:51.621Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:51.621Z - INFO - In Above SL code
+2025-02-28T11:19:51.621Z - INFO - Current Back 1.92
+2025-02-28T11:19:51.621Z - INFO - Current Lay 2.1
+2025-02-28T11:19:51.621Z - INFO - Target Price 1.68
+2025-02-28T11:19:51.621Z - INFO - SL Price 2.39
+2025-02-28T11:19:51.621Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:51.998Z - INFO - -----------------------------------
+2025-02-28T11:19:51.999Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANMwAME4AIIk","pt":1740741592317,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.89,2]],"batl":[],"id":9632777},{"batb":[],"batl":[[0,2.14,1.22]],"id":26323542}]}]}
+
+2025-02-28T11:19:51.999Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:51.999Z - INFO - In Above SL code
+2025-02-28T11:19:51.999Z - INFO - Current Back 1.92
+2025-02-28T11:19:51.999Z - INFO - Current Lay 2.14
+2025-02-28T11:19:51.999Z - INFO - Target Price 1.68
+2025-02-28T11:19:51.999Z - INFO - SL Price 2.39
+2025-02-28T11:19:51.999Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:53.330Z - INFO - -----------------------------------
+2025-02-28T11:19:53.331Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMwxANA5ANck","pt":1740741593653,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.87,249.67]],"id":9632777}]}]}
+
+2025-02-28T11:19:53.331Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:53.331Z - INFO - In Above SL code
+2025-02-28T11:19:53.331Z - INFO - Current Back 1.92
+2025-02-28T11:19:53.331Z - INFO - Current Lay 2.14
+2025-02-28T11:19:53.331Z - INFO - Target Price 1.68
+2025-02-28T11:19:53.331Z - INFO - SL Price 2.39
+2025-02-28T11:19:53.331Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:53.498Z - INFO - -----------------------------------
+2025-02-28T11:19:53.498Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANwxANs5AOYk","pt":1740741593821,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,3.13]],"id":26323542}]}]}
+
+2025-02-28T11:19:53.499Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:53.499Z - INFO - In Above SL code
+2025-02-28T11:19:53.499Z - INFO - Current Back 1.92
+2025-02-28T11:19:53.499Z - INFO - Current Lay 1.93
+2025-02-28T11:19:53.499Z - INFO - Target Price 1.68
+2025-02-28T11:19:53.499Z - INFO - SL Price 2.39
+2025-02-28T11:19:53.499Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:54.099Z - INFO - -----------------------------------
+2025-02-28T11:19:54.099Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKcyAKI6AJYl","pt":1740741594422,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.06,4.64]],"id":9632777},{"batl":[[0,2.14,1.2]],"id":26323542}]}]}
+
+2025-02-28T11:19:54.099Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:54.100Z - INFO - In Above SL code
+2025-02-28T11:19:54.100Z - INFO - Current Back 1.92
+2025-02-28T11:19:54.100Z - INFO - Current Lay 2.14
+2025-02-28T11:19:54.100Z - INFO - Target Price 1.68
+2025-02-28T11:19:54.100Z - INFO - SL Price 2.39
+2025-02-28T11:19:54.100Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:54.414Z - INFO - -----------------------------------
+2025-02-28T11:19:54.414Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMoyAMQ6AKkl","pt":1740741594738,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,124.7]],"id":9632777},{"batb":[[0,2.02,5910.12]],"id":26323542}]}]}
+
+2025-02-28T11:19:54.414Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:54.415Z - INFO - In Above SL code
+2025-02-28T11:19:54.415Z - INFO - Current Back 2.02
+2025-02-28T11:19:54.415Z - INFO - Current Lay 2.14
+2025-02-28T11:19:54.415Z - INFO - Target Price 1.68
+2025-02-28T11:19:54.415Z - INFO - SL Price 2.39
+2025-02-28T11:19:54.415Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:54.619Z - INFO - -----------------------------------
+2025-02-28T11:19:54.619Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOEyANw6ALMl","pt":1740741594942,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.04,5.87]],"id":26323542}]}]}
+
+2025-02-28T11:19:54.619Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:54.619Z - INFO - In Above SL code
+2025-02-28T11:19:54.619Z - INFO - Current Back 2.04
+2025-02-28T11:19:54.619Z - INFO - Current Lay 2.14
+2025-02-28T11:19:54.619Z - INFO - Target Price 1.68
+2025-02-28T11:19:54.619Z - INFO - SL Price 2.39
+2025-02-28T11:19:54.619Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:54.898Z - INFO - -----------------------------------
+2025-02-28T11:19:54.898Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIozAIE7AMUl","pt":1740741595221,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,265.53]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:19:54.898Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:54.899Z - INFO - In Above SL code
+2025-02-28T11:19:54.899Z - INFO - Current Back 2.04
+2025-02-28T11:19:54.899Z - INFO - Current Lay 2.14
+2025-02-28T11:19:54.899Z - INFO - Target Price 1.68
+2025-02-28T11:19:54.899Z - INFO - SL Price 2.39
+2025-02-28T11:19:54.899Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:54.992Z - INFO - -----------------------------------
+2025-02-28T11:19:54.993Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJEzAI07AM0l","pt":1740741595315,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,125.9]],"id":9632777},{"batb":[[0,2.08,1.2]],"id":26323542}]}]}
+
+2025-02-28T11:19:54.993Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:54.993Z - INFO - In Above SL code
+2025-02-28T11:19:54.993Z - INFO - Current Back 2.08
+2025-02-28T11:19:54.993Z - INFO - Current Lay 2.14
+2025-02-28T11:19:54.993Z - INFO - Target Price 1.68
+2025-02-28T11:19:54.993Z - INFO - SL Price 2.39
+2025-02-28T11:19:54.993Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:57.222Z - INFO - -----------------------------------
+2025-02-28T11:19:57.223Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJw1AL09AOsm","pt":1740741597545,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,121.32]],"id":9632777}]}]}
+
+2025-02-28T11:19:57.223Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:57.223Z - INFO - In Above SL code
+2025-02-28T11:19:57.223Z - INFO - Current Back 2.08
+2025-02-28T11:19:57.224Z - INFO - Current Lay 2.14
+2025-02-28T11:19:57.224Z - INFO - Target Price 1.68
+2025-02-28T11:19:57.224Z - INFO - SL Price 2.39
+2025-02-28T11:19:57.224Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:57.533Z - INFO - -----------------------------------
+2025-02-28T11:19:57.533Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALs1AN89AIsn","pt":1740741597856,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.14,7.2]],"id":26323542}]}]}
+
+2025-02-28T11:19:57.533Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:57.533Z - INFO - In Above SL code
+2025-02-28T11:19:57.533Z - INFO - Current Back 2.08
+2025-02-28T11:19:57.534Z - INFO - Current Lay 2.14
+2025-02-28T11:19:57.534Z - INFO - Target Price 1.68
+2025-02-28T11:19:57.534Z - INFO - SL Price 2.39
+2025-02-28T11:19:57.534Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:57.596Z - INFO - -----------------------------------
+2025-02-28T11:19:57.596Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMU1AOo9AJYn","pt":1740741597919,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,9.54]],"id":26323542}]}]}
+
+2025-02-28T11:19:57.597Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:57.597Z - INFO - In Above SL code
+2025-02-28T11:19:57.597Z - INFO - Current Back 2.08
+2025-02-28T11:19:57.597Z - INFO - Current Lay 2.14
+2025-02-28T11:19:57.597Z - INFO - Target Price 1.68
+2025-02-28T11:19:57.597Z - INFO - SL Price 2.39
+2025-02-28T11:19:57.597Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:19:59.024Z - INFO - -----------------------------------
+2025-02-28T11:19:59.024Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMg2AIE/AI4o","pt":1740741599348,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,69.33]],"batl":[[0,1.93,134.61]],"id":9632777}]}]}
+
+2025-02-28T11:19:59.025Z - INFO - Odds Data [object Object]
+2025-02-28T11:19:59.025Z - INFO - In Above SL code
+2025-02-28T11:19:59.025Z - INFO - Current Back 2.08
+2025-02-28T11:19:59.025Z - INFO - Current Lay 2.14
+2025-02-28T11:19:59.025Z - INFO - Target Price 1.68
+2025-02-28T11:19:59.025Z - INFO - SL Price 2.39
+2025-02-28T11:19:59.025Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:02.116Z - INFO - -----------------------------------
+2025-02-28T11:20:02.117Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALo5AO5BANEp","pt":1740741602440,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,134.3]],"id":9632777}]}]}
+
+2025-02-28T11:20:02.117Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:02.117Z - INFO - In Above SL code
+2025-02-28T11:20:02.117Z - INFO - Current Back 2.08
+2025-02-28T11:20:02.117Z - INFO - Current Lay 2.14
+2025-02-28T11:20:02.117Z - INFO - Target Price 1.68
+2025-02-28T11:20:02.117Z - INFO - SL Price 2.39
+2025-02-28T11:20:02.117Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:02.331Z - INFO - -----------------------------------
+2025-02-28T11:20:02.332Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM05AItCAOMp","pt":1740741602652,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,68.51]],"batl":[[0,1.93,119.89]],"id":9632777}]}]}
+
+2025-02-28T11:20:02.332Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:02.332Z - INFO - In Above SL code
+2025-02-28T11:20:02.332Z - INFO - Current Back 2.08
+2025-02-28T11:20:02.332Z - INFO - Current Lay 2.14
+2025-02-28T11:20:02.332Z - INFO - Target Price 1.68
+2025-02-28T11:20:02.332Z - INFO - SL Price 2.39
+2025-02-28T11:20:02.332Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:02.428Z - INFO - -----------------------------------
+2025-02-28T11:20:02.428Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANg5AJxCAOwp","pt":1740741602752,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,67.22]],"batl":[[0,1.93,120.42]],"id":9632777}]}]}
+
+2025-02-28T11:20:02.428Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:02.428Z - INFO - In Above SL code
+2025-02-28T11:20:02.428Z - INFO - Current Back 2.08
+2025-02-28T11:20:02.429Z - INFO - Current Lay 2.14
+2025-02-28T11:20:02.429Z - INFO - Target Price 1.68
+2025-02-28T11:20:02.429Z - INFO - SL Price 2.39
+2025-02-28T11:20:02.429Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:03.308Z - INFO - -----------------------------------
+2025-02-28T11:20:03.309Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALE6APdCALYq","pt":1740741603632,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,9.39]],"id":26323542}]}]}
+
+2025-02-28T11:20:03.309Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:03.309Z - INFO - In Above SL code
+2025-02-28T11:20:03.309Z - INFO - Current Back 2.08
+2025-02-28T11:20:03.309Z - INFO - Current Lay 2.14
+2025-02-28T11:20:03.309Z - INFO - Target Price 1.68
+2025-02-28T11:20:03.309Z - INFO - SL Price 2.39
+2025-02-28T11:20:03.309Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:03.520Z - INFO - -----------------------------------
+2025-02-28T11:20:03.520Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMk6AI1DAMkq","pt":1740741603843,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.93,119.22]],"id":9632777},{"batb":[[0,2.08,8.34]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:20:03.521Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:03.521Z - INFO - In Above SL code
+2025-02-28T11:20:03.521Z - INFO - Current Back 2.08
+2025-02-28T11:20:03.521Z - INFO - Current Lay 2.14
+2025-02-28T11:20:03.521Z - INFO - Target Price 1.68
+2025-02-28T11:20:03.521Z - INFO - SL Price 2.39
+2025-02-28T11:20:03.521Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:03.611Z - INFO - -----------------------------------
+2025-02-28T11:20:03.612Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM46AJhDAM0q","pt":1740741603935,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,8.29]],"id":26323542}]}]}
+
+2025-02-28T11:20:03.612Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:03.612Z - INFO - In Above SL code
+2025-02-28T11:20:03.612Z - INFO - Current Back 2.08
+2025-02-28T11:20:03.612Z - INFO - Current Lay 2.14
+2025-02-28T11:20:03.612Z - INFO - Target Price 1.68
+2025-02-28T11:20:03.612Z - INFO - SL Price 2.39
+2025-02-28T11:20:03.612Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:03.815Z - INFO - -----------------------------------
+2025-02-28T11:20:03.815Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOc6AK1DANsq","pt":1740741604140,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.14,6]],"id":26323542}]}]}
+
+2025-02-28T11:20:03.815Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:03.815Z - INFO - In Above SL code
+2025-02-28T11:20:03.815Z - INFO - Current Back 2.08
+2025-02-28T11:20:03.815Z - INFO - Current Lay 2.14
+2025-02-28T11:20:03.815Z - INFO - Target Price 1.68
+2025-02-28T11:20:03.815Z - INFO - SL Price 2.39
+2025-02-28T11:20:03.815Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:04.033Z - INFO - -----------------------------------
+2025-02-28T11:20:04.033Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIU7ANJDAOkq","pt":1740741604356,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,119.12]],"id":9632777}]}]}
+
+2025-02-28T11:20:04.033Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:04.033Z - INFO - In Above SL code
+2025-02-28T11:20:04.034Z - INFO - Current Back 2.08
+2025-02-28T11:20:04.034Z - INFO - Current Lay 2.14
+2025-02-28T11:20:04.034Z - INFO - Target Price 1.68
+2025-02-28T11:20:04.034Z - INFO - SL Price 2.39
+2025-02-28T11:20:04.034Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:05.420Z - INFO - -----------------------------------
+2025-02-28T11:20:05.420Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKI8AOZEANkr","pt":1740741605743,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,65.08]],"id":9632777}]}]}
+
+2025-02-28T11:20:05.420Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:05.420Z - INFO - In Above SL code
+2025-02-28T11:20:05.420Z - INFO - Current Back 2.08
+2025-02-28T11:20:05.420Z - INFO - Current Lay 2.14
+2025-02-28T11:20:05.420Z - INFO - Target Price 1.68
+2025-02-28T11:20:05.420Z - INFO - SL Price 2.39
+2025-02-28T11:20:05.420Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:05.621Z - INFO - -----------------------------------
+2025-02-28T11:20:05.621Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALY8APhEAOcr","pt":1740741605945,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,7.7]],"id":26323542}]}]}
+
+2025-02-28T11:20:05.622Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:05.622Z - INFO - In Above SL code
+2025-02-28T11:20:05.622Z - INFO - Current Back 2.08
+2025-02-28T11:20:05.622Z - INFO - Current Lay 2.14
+2025-02-28T11:20:05.622Z - INFO - Target Price 1.68
+2025-02-28T11:20:05.622Z - INFO - SL Price 2.39
+2025-02-28T11:20:05.622Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:06.299Z - INFO - -----------------------------------
+2025-02-28T11:20:06.299Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO88ANJFAJ4s","pt":1740741606621,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,40.19]],"id":9632777}]}]}
+
+2025-02-28T11:20:06.299Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:06.299Z - INFO - In Above SL code
+2025-02-28T11:20:06.299Z - INFO - Current Back 2.08
+2025-02-28T11:20:06.299Z - INFO - Current Lay 2.14
+2025-02-28T11:20:06.299Z - INFO - Target Price 1.68
+2025-02-28T11:20:06.299Z - INFO - SL Price 2.39
+2025-02-28T11:20:06.299Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:06.608Z - INFO - -----------------------------------
+2025-02-28T11:20:06.608Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJg9APxFALIs","pt":1740741606933,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,38.41]],"batl":[],"id":9632777}]}]}
+
+2025-02-28T11:20:06.608Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:06.608Z - INFO - In Above SL code
+2025-02-28T11:20:06.608Z - INFO - Current Back 2.08
+2025-02-28T11:20:06.608Z - INFO - Current Lay 2.14
+2025-02-28T11:20:06.608Z - INFO - Target Price 1.68
+2025-02-28T11:20:06.608Z - INFO - SL Price 2.39
+2025-02-28T11:20:06.608Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:06.808Z - INFO - -----------------------------------
+2025-02-28T11:20:06.808Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AK09AJJGAMEs","pt":1740741607132,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,118.6]],"id":9632777}]}]}
+
+2025-02-28T11:20:06.808Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:06.808Z - INFO - In Above SL code
+2025-02-28T11:20:06.808Z - INFO - Current Back 2.08
+2025-02-28T11:20:06.808Z - INFO - Current Lay 2.14
+2025-02-28T11:20:06.808Z - INFO - Target Price 1.68
+2025-02-28T11:20:06.808Z - INFO - SL Price 2.39
+2025-02-28T11:20:06.808Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:06.918Z - INFO - -----------------------------------
+2025-02-28T11:20:06.918Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALo9AJ9GAM0s","pt":1740741607238,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,105.63]],"batl":[[0,1.93,138.12]],"id":9632777}]}]}
+
+2025-02-28T11:20:06.919Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:06.919Z - INFO - In Above SL code
+2025-02-28T11:20:06.919Z - INFO - Current Back 2.08
+2025-02-28T11:20:06.919Z - INFO - Current Lay 2.14
+2025-02-28T11:20:06.919Z - INFO - Target Price 1.68
+2025-02-28T11:20:06.919Z - INFO - SL Price 2.39
+2025-02-28T11:20:06.919Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:07.011Z - INFO - -----------------------------------
+2025-02-28T11:20:07.012Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMI9AK5GANQs","pt":1740741607335,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,137.3]],"id":9632777}]}]}
+
+2025-02-28T11:20:07.012Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:07.012Z - INFO - In Above SL code
+2025-02-28T11:20:07.012Z - INFO - Current Back 2.08
+2025-02-28T11:20:07.012Z - INFO - Current Lay 2.14
+2025-02-28T11:20:07.012Z - INFO - Target Price 1.68
+2025-02-28T11:20:07.012Z - INFO - SL Price 2.39
+2025-02-28T11:20:07.012Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:07.116Z - INFO - -----------------------------------
+2025-02-28T11:20:07.116Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMo9ALpGANss","pt":1740741607440,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.94,163.6]],"id":9632777},{"batb":[[0,2.06,110.98]],"id":26323542}]}]}
+
+2025-02-28T11:20:07.117Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:07.117Z - INFO - In Above SL code
+2025-02-28T11:20:07.117Z - INFO - Current Back 2.06
+2025-02-28T11:20:07.117Z - INFO - Current Lay 2.14
+2025-02-28T11:20:07.117Z - INFO - Target Price 1.68
+2025-02-28T11:20:07.117Z - INFO - SL Price 2.39
+2025-02-28T11:20:07.117Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:08.516Z - INFO - -----------------------------------
+2025-02-28T11:20:08.516Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOc+AOVHALYt","pt":1740741608839,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,110.24]],"batl":[[0,2.08,7.51]],"id":26323542}]}]}
+
+2025-02-28T11:20:08.517Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:08.517Z - INFO - In Above SL code
+2025-02-28T11:20:08.517Z - INFO - Current Back 2.06
+2025-02-28T11:20:08.517Z - INFO - Current Lay 2.08
+2025-02-28T11:20:08.517Z - INFO - Target Price 1.68
+2025-02-28T11:20:08.517Z - INFO - SL Price 2.39
+2025-02-28T11:20:08.517Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:08.720Z - INFO - -----------------------------------
+2025-02-28T11:20:08.721Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APo+AIBIAMYt","pt":1740741609041,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,97.44]],"id":9632777},{"batl":[[0,2.14,6]],"id":26323542}]}]}
+
+2025-02-28T11:20:08.721Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:08.721Z - INFO - In Above SL code
+2025-02-28T11:20:08.721Z - INFO - Current Back 2.06
+2025-02-28T11:20:08.721Z - INFO - Current Lay 2.14
+2025-02-28T11:20:08.721Z - INFO - Target Price 1.68
+2025-02-28T11:20:08.721Z - INFO - SL Price 2.39
+2025-02-28T11:20:08.721Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:09.435Z - INFO - -----------------------------------
+2025-02-28T11:20:09.435Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMI/AOBIAPkt","pt":1740741609758,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,73.5]],"id":9632777}]}]}
+
+2025-02-28T11:20:09.435Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:09.435Z - INFO - In Above SL code
+2025-02-28T11:20:09.435Z - INFO - Current Back 2.06
+2025-02-28T11:20:09.435Z - INFO - Current Lay 2.14
+2025-02-28T11:20:09.435Z - INFO - Target Price 1.68
+2025-02-28T11:20:09.435Z - INFO - SL Price 2.39
+2025-02-28T11:20:09.435Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:09.909Z - INFO - -----------------------------------
+2025-02-28T11:20:09.909Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOk/AJ9JAJwu","pt":1740741610230,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,163.6]],"id":9632777}]}]}
+
+2025-02-28T11:20:09.910Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:09.910Z - INFO - In Above SL code
+2025-02-28T11:20:09.910Z - INFO - Current Back 2.06
+2025-02-28T11:20:09.910Z - INFO - Current Lay 2.14
+2025-02-28T11:20:09.910Z - INFO - Target Price 1.68
+2025-02-28T11:20:09.910Z - INFO - SL Price 2.39
+2025-02-28T11:20:09.910Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:12.636Z - INFO - -----------------------------------
+2025-02-28T11:20:12.636Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AONBAORLANUv","pt":1740741612960,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,98.05]],"id":9632777}]}]}
+
+2025-02-28T11:20:12.636Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:12.636Z - INFO - In Above SL code
+2025-02-28T11:20:12.636Z - INFO - Current Back 2.06
+2025-02-28T11:20:12.636Z - INFO - Current Lay 2.14
+2025-02-28T11:20:12.636Z - INFO - Target Price 1.68
+2025-02-28T11:20:12.636Z - INFO - SL Price 2.39
+2025-02-28T11:20:12.636Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:13.619Z - INFO - -----------------------------------
+2025-02-28T11:20:13.619Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM1CANhMAKIw","pt":1740741613942,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,98.43]],"id":9632777}]}]}
+
+2025-02-28T11:20:13.620Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:13.620Z - INFO - In Above SL code
+2025-02-28T11:20:13.620Z - INFO - Current Back 2.06
+2025-02-28T11:20:13.620Z - INFO - Current Lay 2.14
+2025-02-28T11:20:13.620Z - INFO - Target Price 1.68
+2025-02-28T11:20:13.620Z - INFO - SL Price 2.39
+2025-02-28T11:20:13.620Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:15.130Z - INFO - -----------------------------------
+2025-02-28T11:20:15.130Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO5DAI5OAP0w","pt":1740741615454,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.94,163.51]],"id":9632777}]}]}
+
+2025-02-28T11:20:15.130Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:15.130Z - INFO - In Above SL code
+2025-02-28T11:20:15.130Z - INFO - Current Back 2.06
+2025-02-28T11:20:15.130Z - INFO - Current Lay 2.14
+2025-02-28T11:20:15.130Z - INFO - Target Price 1.68
+2025-02-28T11:20:15.130Z - INFO - SL Price 2.39
+2025-02-28T11:20:15.130Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:16.263Z - INFO - -----------------------------------
+2025-02-28T11:20:16.263Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANhEAKZPAMIx","pt":1740741616587,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,97.7]],"id":9632777}]}]}
+
+2025-02-28T11:20:16.264Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:16.264Z - INFO - In Above SL code
+2025-02-28T11:20:16.264Z - INFO - Current Back 2.06
+2025-02-28T11:20:16.264Z - INFO - Current Lay 2.14
+2025-02-28T11:20:16.264Z - INFO - Target Price 1.68
+2025-02-28T11:20:16.264Z - INFO - SL Price 2.39
+2025-02-28T11:20:16.264Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:17.559Z - INFO - -----------------------------------
+2025-02-28T11:20:17.559Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANRFAN9QAKwy","pt":1740741617882,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,110.22]],"id":26323542}]}]}
+
+2025-02-28T11:20:17.559Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:17.559Z - INFO - In Above SL code
+2025-02-28T11:20:17.559Z - INFO - Current Back 2.06
+2025-02-28T11:20:17.559Z - INFO - Current Lay 2.14
+2025-02-28T11:20:17.559Z - INFO - Target Price 1.68
+2025-02-28T11:20:17.559Z - INFO - SL Price 2.39
+2025-02-28T11:20:17.559Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:19.156Z - INFO - -----------------------------------
+2025-02-28T11:20:19.156Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOhGAItSAMAz","pt":1740741619478,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,93.06]],"id":9632777}]}]}
+
+2025-02-28T11:20:19.156Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:19.156Z - INFO - In Above SL code
+2025-02-28T11:20:19.156Z - INFO - Current Back 2.06
+2025-02-28T11:20:19.156Z - INFO - Current Lay 2.14
+2025-02-28T11:20:19.156Z - INFO - Target Price 1.68
+2025-02-28T11:20:19.156Z - INFO - SL Price 2.39
+2025-02-28T11:20:19.156Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:21.740Z - INFO - -----------------------------------
+2025-02-28T11:20:21.740Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOZIAMhUAOY0","pt":1740741622064,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,75.76]],"id":9632777}]}]}
+
+2025-02-28T11:20:21.740Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:21.740Z - INFO - In Above SL code
+2025-02-28T11:20:21.740Z - INFO - Current Back 2.06
+2025-02-28T11:20:21.740Z - INFO - Current Lay 2.14
+2025-02-28T11:20:21.740Z - INFO - Target Price 1.68
+2025-02-28T11:20:21.740Z - INFO - SL Price 2.39
+2025-02-28T11:20:21.741Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:22.255Z - INFO - -----------------------------------
+2025-02-28T11:20:22.255Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ9JAJJVAIc1","pt":1740741622579,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.12,18.41]],"id":26323542}]}]}
+
+2025-02-28T11:20:22.255Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:22.255Z - INFO - In Above SL code
+2025-02-28T11:20:22.255Z - INFO - Current Back 2.06
+2025-02-28T11:20:22.255Z - INFO - Current Lay 2.12
+2025-02-28T11:20:22.255Z - INFO - Target Price 1.68
+2025-02-28T11:20:22.255Z - INFO - SL Price 2.39
+2025-02-28T11:20:22.255Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:25.276Z - INFO - -----------------------------------
+2025-02-28T11:20:25.276Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANVLAO1XAN02","pt":1740741625599,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.94,81.29]],"id":9632777}]}]}
+
+2025-02-28T11:20:25.277Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:25.277Z - INFO - In Above SL code
+2025-02-28T11:20:25.277Z - INFO - Current Back 2.06
+2025-02-28T11:20:25.277Z - INFO - Current Lay 2.12
+2025-02-28T11:20:25.277Z - INFO - Target Price 1.68
+2025-02-28T11:20:25.277Z - INFO - SL Price 2.39
+2025-02-28T11:20:25.277Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:25.439Z - INFO - -----------------------------------
+2025-02-28T11:20:25.440Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOhLAIZYAOY2","pt":1740741625763,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,1.97,304.28]],"id":9632777},{"batb":[],"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:25.440Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:25.440Z - INFO - In Above SL code
+2025-02-28T11:20:25.440Z - INFO - Current Back 2.06
+2025-02-28T11:20:25.440Z - INFO - Current Lay 2.38
+2025-02-28T11:20:25.440Z - INFO - Target Price 1.68
+2025-02-28T11:20:25.440Z - INFO - SL Price 2.39
+2025-02-28T11:20:25.440Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:25.586Z - INFO - -----------------------------------
+2025-02-28T11:20:25.586Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO1LAJRYAOw2","pt":1740741625910,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,57.8]],"id":26323542}]}]}
+
+2025-02-28T11:20:25.586Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:25.586Z - INFO - In Above SL code
+2025-02-28T11:20:25.586Z - INFO - Current Back 2.06
+2025-02-28T11:20:25.586Z - INFO - Current Lay 2.38
+2025-02-28T11:20:25.586Z - INFO - Target Price 1.68
+2025-02-28T11:20:25.587Z - INFO - SL Price 2.39
+2025-02-28T11:20:25.587Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:25.644Z - INFO - -----------------------------------
+2025-02-28T11:20:25.644Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APJLAKBYAPQ2","pt":1740741625968,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.06,1.2]],"id":9632777},{"batb":[[0,2.02,189.49]],"id":26323542}]}]}
+
+2025-02-28T11:20:25.644Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:25.644Z - INFO - In Above SL code
+2025-02-28T11:20:25.644Z - INFO - Current Back 2.02
+2025-02-28T11:20:25.644Z - INFO - Current Lay 2.38
+2025-02-28T11:20:25.644Z - INFO - Target Price 1.68
+2025-02-28T11:20:25.644Z - INFO - SL Price 2.39
+2025-02-28T11:20:25.644Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:25.745Z - INFO - -----------------------------------
+2025-02-28T11:20:25.745Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APtLAKtYAPw2","pt":1740741626069,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,20.4]],"id":9632777},{"batb":[[0,1.95,64.24]],"id":26323542}]}]}
+
+2025-02-28T11:20:25.745Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:25.745Z - INFO - In Above SL code
+2025-02-28T11:20:25.745Z - INFO - Current Back 1.95
+2025-02-28T11:20:25.745Z - INFO - Current Lay 2.38
+2025-02-28T11:20:25.745Z - INFO - Target Price 1.68
+2025-02-28T11:20:25.745Z - INFO - SL Price 2.39
+2025-02-28T11:20:25.745Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:27.547Z - INFO - -----------------------------------
+2025-02-28T11:20:27.547Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKRNAIJaAPM3","pt":1740741627871,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.91,20.71]],"id":9632777}]}]}
+
+2025-02-28T11:20:27.547Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:27.547Z - INFO - In Above SL code
+2025-02-28T11:20:27.547Z - INFO - Current Back 1.95
+2025-02-28T11:20:27.548Z - INFO - Current Lay 2.38
+2025-02-28T11:20:27.548Z - INFO - Target Price 1.68
+2025-02-28T11:20:27.548Z - INFO - SL Price 2.39
+2025-02-28T11:20:27.548Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:27.756Z - INFO - -----------------------------------
+2025-02-28T11:20:27.756Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALVNAJhaAIM4","pt":1740741628080,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.81]],"id":9632777}]}]}
+
+2025-02-28T11:20:27.756Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:27.756Z - INFO - In Above SL code
+2025-02-28T11:20:27.756Z - INFO - Current Back 1.95
+2025-02-28T11:20:27.756Z - INFO - Current Lay 2.38
+2025-02-28T11:20:27.756Z - INFO - Target Price 1.68
+2025-02-28T11:20:27.756Z - INFO - SL Price 2.39
+2025-02-28T11:20:27.756Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:28.226Z - INFO - -----------------------------------
+2025-02-28T11:20:28.227Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOhNAOhaAKY4","pt":1740741628551,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.16,76.3]],"id":26323542}]}]}
+
+2025-02-28T11:20:28.227Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:28.227Z - INFO - In Above SL code
+2025-02-28T11:20:28.227Z - INFO - Current Back 1.95
+2025-02-28T11:20:28.227Z - INFO - Current Lay 2.16
+2025-02-28T11:20:28.227Z - INFO - Target Price 1.68
+2025-02-28T11:20:28.227Z - INFO - SL Price 2.39
+2025-02-28T11:20:28.227Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:28.444Z - INFO - -----------------------------------
+2025-02-28T11:20:28.444Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIZOAP9aALQ4","pt":1740741628765,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.95,58.36]],"id":9632777},{"batl":[[0,2.14,87.7]],"id":26323542}]}]}
+
+2025-02-28T11:20:28.445Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:28.445Z - INFO - In Above SL code
+2025-02-28T11:20:28.445Z - INFO - Current Back 1.95
+2025-02-28T11:20:28.445Z - INFO - Current Lay 2.14
+2025-02-28T11:20:28.445Z - INFO - Target Price 1.68
+2025-02-28T11:20:28.445Z - INFO - SL Price 2.39
+2025-02-28T11:20:28.445Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:28.648Z - INFO - -----------------------------------
+2025-02-28T11:20:28.648Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJROAJpbAMI4","pt":1740741628972,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.96,58.04]],"id":9632777},{"batl":[[0,2.36,79.66]],"id":26323542}]}]}
+
+2025-02-28T11:20:28.648Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:28.648Z - INFO - In Above SL code
+2025-02-28T11:20:28.648Z - INFO - Current Back 1.95
+2025-02-28T11:20:28.648Z - INFO - Current Lay 2.36
+2025-02-28T11:20:28.648Z - INFO - Target Price 1.68
+2025-02-28T11:20:28.648Z - INFO - SL Price 2.39
+2025-02-28T11:20:28.648Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:28.790Z - INFO - -----------------------------------
+2025-02-28T11:20:28.790Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ9OAKVbAMk4","pt":1740741629114,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.5]],"batl":[[0,2.06,1.2]],"id":9632777},{"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:28.790Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:28.790Z - INFO - In Above SL code
+2025-02-28T11:20:28.790Z - INFO - Current Back 1.95
+2025-02-28T11:20:28.790Z - INFO - Current Lay 2.38
+2025-02-28T11:20:28.790Z - INFO - Target Price 1.68
+2025-02-28T11:20:28.790Z - INFO - SL Price 2.39
+2025-02-28T11:20:28.790Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:28.941Z - INFO - -----------------------------------
+2025-02-28T11:20:28.941Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALJOALdbANg4","pt":1740741629265,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.92,2.04]],"id":9632777},{"batb":[[0,1.96,6.42]],"id":26323542}]}]}
+
+2025-02-28T11:20:28.941Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:28.941Z - INFO - In Above SL code
+2025-02-28T11:20:28.941Z - INFO - Current Back 1.96
+2025-02-28T11:20:28.941Z - INFO - Current Lay 2.38
+2025-02-28T11:20:28.941Z - INFO - Target Price 1.68
+2025-02-28T11:20:28.941Z - INFO - SL Price 2.39
+2025-02-28T11:20:28.941Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:29.148Z - INFO - -----------------------------------
+2025-02-28T11:20:29.148Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMZOAMhbAOk4","pt":1740741629472,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.5]],"id":9632777}]}]}
+
+2025-02-28T11:20:29.148Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:29.148Z - INFO - In Above SL code
+2025-02-28T11:20:29.148Z - INFO - Current Back 1.96
+2025-02-28T11:20:29.148Z - INFO - Current Lay 2.38
+2025-02-28T11:20:29.148Z - INFO - Target Price 1.68
+2025-02-28T11:20:29.148Z - INFO - SL Price 2.39
+2025-02-28T11:20:29.149Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:29.973Z - INFO - -----------------------------------
+2025-02-28T11:20:29.973Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJRPAJZcAJ85","pt":1740741630297,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.38,2.72]],"id":26323542}]}]}
+
+2025-02-28T11:20:29.974Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:29.974Z - INFO - In Above SL code
+2025-02-28T11:20:29.974Z - INFO - Current Back 1.96
+2025-02-28T11:20:29.974Z - INFO - Current Lay 2.38
+2025-02-28T11:20:29.974Z - INFO - Target Price 1.68
+2025-02-28T11:20:29.974Z - INFO - SL Price 2.39
+2025-02-28T11:20:29.974Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.141Z - INFO - -----------------------------------
+2025-02-28T11:20:30.141Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKVPAKxcALI5","pt":1740741630464,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.02,8.37]],"id":26323542}]}]}
+
+2025-02-28T11:20:30.141Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.141Z - INFO - In Above SL code
+2025-02-28T11:20:30.141Z - INFO - Current Back 1.96
+2025-02-28T11:20:30.141Z - INFO - Current Lay 2.02
+2025-02-28T11:20:30.141Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.141Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.141Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.553Z - INFO - -----------------------------------
+2025-02-28T11:20:30.553Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AM9PAN9cANI5","pt":1740741630877,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,756.65]],"id":9632777},{"batl":[[0,2.38,2.72]],"id":26323542}]}]}
+
+2025-02-28T11:20:30.553Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.553Z - INFO - In Above SL code
+2025-02-28T11:20:30.553Z - INFO - Current Back 1.96
+2025-02-28T11:20:30.553Z - INFO - Current Lay 2.38
+2025-02-28T11:20:30.553Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.553Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.553Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.656Z - INFO - -----------------------------------
+2025-02-28T11:20:30.656Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANpPAPBcAOE5","pt":1740741630978,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,8.26]],"id":9632777}]}]}
+
+2025-02-28T11:20:30.656Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.656Z - INFO - In Above SL code
+2025-02-28T11:20:30.656Z - INFO - Current Back 1.96
+2025-02-28T11:20:30.656Z - INFO - Current Lay 2.38
+2025-02-28T11:20:30.656Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.656Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.656Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.754Z - INFO - -----------------------------------
+2025-02-28T11:20:30.755Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AONPAPlcAOU5","pt":1740741631078,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,18.16]],"id":9632777},{"batb":[[0,2.08,18.56]],"batl":[[0,2.16,20.72]],"id":26323542}]}]}
+
+2025-02-28T11:20:30.755Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.755Z - INFO - In Above SL code
+2025-02-28T11:20:30.755Z - INFO - Current Back 2.08
+2025-02-28T11:20:30.755Z - INFO - Current Lay 2.16
+2025-02-28T11:20:30.755Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.755Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.755Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.856Z - INFO - -----------------------------------
+2025-02-28T11:20:30.857Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOxPAIhdAO05","pt":1740741631180,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,18.26]],"id":9632777}]}]}
+
+2025-02-28T11:20:30.857Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.857Z - INFO - In Above SL code
+2025-02-28T11:20:30.857Z - INFO - Current Back 2.08
+2025-02-28T11:20:30.857Z - INFO - Current Lay 2.16
+2025-02-28T11:20:30.857Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.857Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.857Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:30.961Z - INFO - -----------------------------------
+2025-02-28T11:20:30.961Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APdPAJFdAPk5","pt":1740741631284,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.97,8.36]],"id":9632777},{"batb":[[0,1.95,64.24]],"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:30.961Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:30.961Z - INFO - In Above SL code
+2025-02-28T11:20:30.961Z - INFO - Current Back 1.95
+2025-02-28T11:20:30.961Z - INFO - Current Lay 2.38
+2025-02-28T11:20:30.961Z - INFO - Target Price 1.68
+2025-02-28T11:20:30.961Z - INFO - SL Price 2.39
+2025-02-28T11:20:30.961Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:31.072Z - INFO - -----------------------------------
+2025-02-28T11:20:31.072Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIZQAKBdAIQ6","pt":1740741631395,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.87,278.21]],"batl":[[0,1.93,351.96]],"id":9632777}]}]}
+
+2025-02-28T11:20:31.072Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:31.072Z - INFO - In Above SL code
+2025-02-28T11:20:31.072Z - INFO - Current Back 1.95
+2025-02-28T11:20:31.072Z - INFO - Current Lay 2.38
+2025-02-28T11:20:31.072Z - INFO - Target Price 1.68
+2025-02-28T11:20:31.072Z - INFO - SL Price 2.39
+2025-02-28T11:20:31.072Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:31.435Z - INFO - -----------------------------------
+2025-02-28T11:20:31.435Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ9QAMxdAJ06","pt":1740741631759,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.87,287.09]],"id":9632777}]}]}
+
+2025-02-28T11:20:31.435Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:31.435Z - INFO - In Above SL code
+2025-02-28T11:20:31.435Z - INFO - Current Back 1.95
+2025-02-28T11:20:31.435Z - INFO - Current Lay 2.38
+2025-02-28T11:20:31.435Z - INFO - Target Price 1.68
+2025-02-28T11:20:31.435Z - INFO - SL Price 2.39
+2025-02-28T11:20:31.435Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:31.639Z - INFO - -----------------------------------
+2025-02-28T11:20:31.640Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALVQAOVdALA6","pt":1740741631963,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.88,9.22]],"id":9632777},{"batb":[[0,2.06,5.57]],"id":26323542}]}]}
+
+2025-02-28T11:20:31.640Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:31.640Z - INFO - In Above SL code
+2025-02-28T11:20:31.640Z - INFO - Current Back 2.06
+2025-02-28T11:20:31.640Z - INFO - Current Lay 2.38
+2025-02-28T11:20:31.640Z - INFO - Target Price 1.68
+2025-02-28T11:20:31.640Z - INFO - SL Price 2.39
+2025-02-28T11:20:31.640Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:33.852Z - INFO - -----------------------------------
+2025-02-28T11:20:33.852Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIZSAN1fAN47","pt":1740741634175,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.36,13.6]],"id":26323542}]}]}
+
+2025-02-28T11:20:33.852Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:33.852Z - INFO - In Above SL code
+2025-02-28T11:20:33.852Z - INFO - Current Back 2.06
+2025-02-28T11:20:33.852Z - INFO - Current Lay 2.36
+2025-02-28T11:20:33.852Z - INFO - Target Price 1.68
+2025-02-28T11:20:33.852Z - INFO - SL Price 2.39
+2025-02-28T11:20:33.852Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:33.959Z - INFO - -----------------------------------
+2025-02-28T11:20:33.959Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AI1SAOxfAOU7","pt":1740741634283,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,15.84]],"id":26323542}]}]}
+
+2025-02-28T11:20:33.959Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:33.959Z - INFO - In Above SL code
+2025-02-28T11:20:33.959Z - INFO - Current Back 2.06
+2025-02-28T11:20:33.959Z - INFO - Current Lay 2.36
+2025-02-28T11:20:33.959Z - INFO - Target Price 1.68
+2025-02-28T11:20:33.959Z - INFO - SL Price 2.39
+2025-02-28T11:20:33.959Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:34.266Z - INFO - -----------------------------------
+2025-02-28T11:20:34.266Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKdSAIdgAPo7","pt":1740741634589,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.08,8.34]],"id":26323542}]}]}
+
+2025-02-28T11:20:34.266Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:34.266Z - INFO - In Above SL code
+2025-02-28T11:20:34.266Z - INFO - Current Back 2.08
+2025-02-28T11:20:34.266Z - INFO - Current Lay 2.36
+2025-02-28T11:20:34.266Z - INFO - Target Price 1.68
+2025-02-28T11:20:34.266Z - INFO - SL Price 2.39
+2025-02-28T11:20:34.266Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:34.902Z - INFO - -----------------------------------
+2025-02-28T11:20:34.902Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN9SALdgALA8","pt":1740741635226,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.93,352.06]],"id":9632777}]}]}
+
+2025-02-28T11:20:34.902Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:34.902Z - INFO - In Above SL code
+2025-02-28T11:20:34.902Z - INFO - Current Back 2.08
+2025-02-28T11:20:34.903Z - INFO - Current Lay 2.36
+2025-02-28T11:20:34.903Z - INFO - Target Price 1.68
+2025-02-28T11:20:34.903Z - INFO - SL Price 2.39
+2025-02-28T11:20:34.903Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:35.056Z - INFO - -----------------------------------
+2025-02-28T11:20:35.056Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APNSAMNgAME8","pt":1740741635379,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:35.056Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:35.056Z - INFO - In Above SL code
+2025-02-28T11:20:35.056Z - INFO - Current Back 2.08
+2025-02-28T11:20:35.056Z - INFO - Current Lay 2.38
+2025-02-28T11:20:35.056Z - INFO - Target Price 1.68
+2025-02-28T11:20:35.056Z - INFO - SL Price 2.39
+2025-02-28T11:20:35.056Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:36.242Z - INFO - -----------------------------------
+2025-02-28T11:20:36.242Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOZTALJhAKc9","pt":1740741636565,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.06,1.4]],"id":9632777}]}]}
+
+2025-02-28T11:20:36.242Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:36.242Z - INFO - In Above SL code
+2025-02-28T11:20:36.242Z - INFO - Current Back 2.08
+2025-02-28T11:20:36.242Z - INFO - Current Lay 2.38
+2025-02-28T11:20:36.242Z - INFO - Target Price 1.68
+2025-02-28T11:20:36.242Z - INFO - SL Price 2.39
+2025-02-28T11:20:36.243Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:36.350Z - INFO - -----------------------------------
+2025-02-28T11:20:36.351Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APBTALxhAK89","pt":1740741636673,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.92,59.45]],"id":9632777},{"batb":[[0,2.08,98.73]],"batl":[[0,2.36,24.08]],"id":26323542}]}]}
+
+2025-02-28T11:20:36.351Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:36.351Z - INFO - In Above SL code
+2025-02-28T11:20:36.351Z - INFO - Current Back 2.08
+2025-02-28T11:20:36.351Z - INFO - Current Lay 2.36
+2025-02-28T11:20:36.351Z - INFO - Target Price 1.68
+2025-02-28T11:20:36.351Z - INFO - SL Price 2.39
+2025-02-28T11:20:36.351Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:36.552Z - INFO - -----------------------------------
+2025-02-28T11:20:36.552Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIBUANRhALs9","pt":1740741636876,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.5]],"batl":[[0,2.06,1.4]],"id":9632777},{"batb":[[0,2.06,10.27]],"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:36.552Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:36.552Z - INFO - In Above SL code
+2025-02-28T11:20:36.552Z - INFO - Current Back 2.06
+2025-02-28T11:20:36.552Z - INFO - Current Lay 2.38
+2025-02-28T11:20:36.552Z - INFO - Target Price 1.68
+2025-02-28T11:20:36.552Z - INFO - SL Price 2.39
+2025-02-28T11:20:36.552Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:36.859Z - INFO - -----------------------------------
+2025-02-28T11:20:36.859Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJdUAPNhAM49","pt":1740741637183,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.06,1.3]],"id":9632777}]}]}
+
+2025-02-28T11:20:36.860Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:36.860Z - INFO - In Above SL code
+2025-02-28T11:20:36.860Z - INFO - Current Back 2.06
+2025-02-28T11:20:36.860Z - INFO - Current Lay 2.38
+2025-02-28T11:20:36.860Z - INFO - Target Price 1.68
+2025-02-28T11:20:36.860Z - INFO - SL Price 2.39
+2025-02-28T11:20:36.860Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:36.962Z - INFO - -----------------------------------
+2025-02-28T11:20:36.962Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKJUAPxhANg9","pt":1740741637284,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.34,24.34]],"id":26323542}]}]}
+
+2025-02-28T11:20:36.962Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:36.962Z - INFO - In Above SL code
+2025-02-28T11:20:36.962Z - INFO - Current Back 2.06
+2025-02-28T11:20:36.962Z - INFO - Current Lay 2.34
+2025-02-28T11:20:36.962Z - INFO - Target Price 1.68
+2025-02-28T11:20:36.962Z - INFO - SL Price 2.39
+2025-02-28T11:20:36.962Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:37.171Z - INFO - -----------------------------------
+2025-02-28T11:20:37.171Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ALlUAI9iAOg9","pt":1740741637494,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.38,2.4]],"id":26323542}]}]}
+
+2025-02-28T11:20:37.172Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:37.172Z - INFO - In Above SL code
+2025-02-28T11:20:37.172Z - INFO - Current Back 2.06
+2025-02-28T11:20:37.172Z - INFO - Current Lay 2.38
+2025-02-28T11:20:37.172Z - INFO - Target Price 1.68
+2025-02-28T11:20:37.172Z - INFO - SL Price 2.39
+2025-02-28T11:20:37.172Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:37.277Z - INFO - -----------------------------------
+2025-02-28T11:20:37.277Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMVUAJtiAPI9","pt":1740741637600,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.84,31.54]],"batl":[[0,1.94,22.94]],"id":9632777},{"batb":[[0,2.06,42.37]],"id":26323542}]}]}
+
+2025-02-28T11:20:37.277Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:37.277Z - INFO - In Above SL code
+2025-02-28T11:20:37.277Z - INFO - Current Back 2.06
+2025-02-28T11:20:37.277Z - INFO - Current Lay 2.38
+2025-02-28T11:20:37.277Z - INFO - Target Price 1.68
+2025-02-28T11:20:37.277Z - INFO - SL Price 2.39
+2025-02-28T11:20:37.277Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:37.368Z - INFO - -----------------------------------
+2025-02-28T11:20:37.368Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMxUAJ9iAPk9","pt":1740741637691,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.1,89.35]],"id":26323542}]}]}
+
+2025-02-28T11:20:37.368Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:37.368Z - INFO - In Above SL code
+2025-02-28T11:20:37.368Z - INFO - Current Back 2.1
+2025-02-28T11:20:37.368Z - INFO - Current Lay 2.38
+2025-02-28T11:20:37.368Z - INFO - Target Price 1.68
+2025-02-28T11:20:37.368Z - INFO - SL Price 2.39
+2025-02-28T11:20:37.368Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:37.476Z - INFO - -----------------------------------
+2025-02-28T11:20:37.477Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AN1UAK9iAP49","pt":1740741637801,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.8,12.5]],"batl":[[0,2.06,1.2]],"id":9632777},{"batb":[[0,2.1,88.94]],"id":26323542}]}]}
+
+2025-02-28T11:20:37.477Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:37.477Z - INFO - In Above SL code
+2025-02-28T11:20:37.477Z - INFO - Current Back 2.1
+2025-02-28T11:20:37.477Z - INFO - Current Lay 2.38
+2025-02-28T11:20:37.477Z - INFO - Target Price 1.68
+2025-02-28T11:20:37.477Z - INFO - SL Price 2.39
+2025-02-28T11:20:37.477Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:37.576Z - INFO - -----------------------------------
+2025-02-28T11:20:37.577Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOVUALNiAIc+","pt":1740741637900,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.06,10.27]],"id":26323542}]}]}
+
+2025-02-28T11:20:37.577Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:37.577Z - INFO - In Above SL code
+2025-02-28T11:20:37.577Z - INFO - Current Back 2.06
+2025-02-28T11:20:37.577Z - INFO - Current Lay 2.38
+2025-02-28T11:20:37.577Z - INFO - Target Price 1.68
+2025-02-28T11:20:37.577Z - INFO - SL Price 2.39
+2025-02-28T11:20:37.577Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:40.162Z - INFO - -----------------------------------
+2025-02-28T11:20:40.162Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AMpWANBkANQ/","pt":1740741640486,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.08,3.2]],"id":9632777}]}]}
+
+2025-02-28T11:20:40.162Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:40.162Z - INFO - In Above SL code
+2025-02-28T11:20:40.162Z - INFO - Current Back 2.06
+2025-02-28T11:20:40.162Z - INFO - Current Lay 2.38
+2025-02-28T11:20:40.162Z - INFO - Target Price 1.68
+2025-02-28T11:20:40.162Z - INFO - SL Price 2.39
+2025-02-28T11:20:40.163Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:40.465Z - INFO - -----------------------------------
+2025-02-28T11:20:40.466Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AO9WAPNkAOY/","pt":1740741640789,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.08,2]],"id":9632777}]}]}
+
+2025-02-28T11:20:40.466Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:40.466Z - INFO - In Above SL code
+2025-02-28T11:20:40.466Z - INFO - Current Back 2.06
+2025-02-28T11:20:40.466Z - INFO - Current Lay 2.38
+2025-02-28T11:20:40.466Z - INFO - Target Price 1.68
+2025-02-28T11:20:40.466Z - INFO - SL Price 2.39
+2025-02-28T11:20:40.466Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:40.984Z - INFO - -----------------------------------
+2025-02-28T11:20:40.984Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJxXAKBlAJFA","pt":1740741641307,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.95,64.24]],"id":26323542}]}]}
+
+2025-02-28T11:20:40.984Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:40.984Z - INFO - In Above SL code
+2025-02-28T11:20:40.984Z - INFO - Current Back 1.95
+2025-02-28T11:20:40.984Z - INFO - Current Lay 2.38
+2025-02-28T11:20:40.984Z - INFO - Target Price 1.68
+2025-02-28T11:20:40.985Z - INFO - SL Price 2.39
+2025-02-28T11:20:40.985Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:41.253Z - INFO - -----------------------------------
+2025-02-28T11:20:41.254Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AL5XALplAKZA","pt":1740741641577,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.38,2.45]],"id":26323542}]}]}
+
+2025-02-28T11:20:41.254Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:41.254Z - INFO - In Above SL code
+2025-02-28T11:20:41.254Z - INFO - Current Back 1.95
+2025-02-28T11:20:41.254Z - INFO - Current Lay 2.38
+2025-02-28T11:20:41.254Z - INFO - Target Price 1.68
+2025-02-28T11:20:41.254Z - INFO - SL Price 2.39
+2025-02-28T11:20:41.254Z - INFO - Monitoring loop running, status: false
+2025-02-28T11:20:41.968Z - INFO - -----------------------------------
+2025-02-28T11:20:41.968Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APhXAPNlANBA","pt":1740741642291,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.7,2]],"batl":[[0,1.76,3266.33]],"id":9632777},{"batb":[[0,2.4,95.42]],"batl":[[0,2.44,2]],"id":26323542}]}]}
+
+2025-02-28T11:20:41.968Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:41.968Z - INFO - In Above SL code
+2025-02-28T11:20:41.968Z - INFO - Current Back 2.4
+2025-02-28T11:20:41.968Z - INFO - Current Lay 2.44
+2025-02-28T11:20:41.968Z - INFO - Target Price 1.68
+2025-02-28T11:20:41.968Z - INFO - SL Price 2.39
+2025-02-28T11:20:41.969Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:42.073Z - INFO - -----------------------------------
+2025-02-28T11:20:42.074Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIZYAIJmANRA","pt":1740741642396,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.76,3287.35]],"id":9632777}]}]}
+
+2025-02-28T11:20:42.074Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:42.074Z - INFO - In Above SL code
+2025-02-28T11:20:42.074Z - INFO - Current Back 2.4
+2025-02-28T11:20:42.074Z - INFO - Current Lay 2.44
+2025-02-28T11:20:42.074Z - INFO - Target Price 1.68
+2025-02-28T11:20:42.074Z - INFO - SL Price 2.39
+2025-02-28T11:20:42.074Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:42.282Z - INFO - -----------------------------------
+2025-02-28T11:20:42.282Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJRYAJJmAONA","pt":1740741642605,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.68,451.27]],"id":9632777},{"batl":[[0,2.46,3.36]],"id":26323542}]}]}
+
+2025-02-28T11:20:42.282Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:42.282Z - INFO - In Above SL code
+2025-02-28T11:20:42.282Z - INFO - Current Back 2.4
+2025-02-28T11:20:42.282Z - INFO - Current Lay 2.46
+2025-02-28T11:20:42.282Z - INFO - Target Price 1.68
+2025-02-28T11:20:42.282Z - INFO - SL Price 2.39
+2025-02-28T11:20:42.282Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:42.589Z - INFO - -----------------------------------
+2025-02-28T11:20:42.589Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AKlYAKtmAPZA","pt":1740741642914,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,1.76,21.02]],"id":9632777}]}]}
+
+2025-02-28T11:20:42.590Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:42.590Z - INFO - In Above SL code
+2025-02-28T11:20:42.590Z - INFO - Current Back 2.4
+2025-02-28T11:20:42.590Z - INFO - Current Lay 2.46
+2025-02-28T11:20:42.590Z - INFO - Target Price 1.68
+2025-02-28T11:20:42.590Z - INFO - SL Price 2.39
+2025-02-28T11:20:42.590Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:43.062Z - INFO - -----------------------------------
+2025-02-28T11:20:43.062Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"ANtYAOVmAJZB","pt":1740741643385,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.4,94.74]],"id":26323542}]}]}
+
+2025-02-28T11:20:43.062Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:43.062Z - INFO - In Above SL code
+2025-02-28T11:20:43.062Z - INFO - Current Back 2.4
+2025-02-28T11:20:43.062Z - INFO - Current Lay 2.46
+2025-02-28T11:20:43.062Z - INFO - Target Price 1.68
+2025-02-28T11:20:43.062Z - INFO - SL Price 2.39
+2025-02-28T11:20:43.063Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:43.165Z - INFO - -----------------------------------
+2025-02-28T11:20:43.165Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AOJYAO5mAJ5B","pt":1740741643489,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.68,226.4]],"id":9632777}]}]}
+
+2025-02-28T11:20:43.165Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:43.165Z - INFO - In Above SL code
+2025-02-28T11:20:43.165Z - INFO - Current Back 2.4
+2025-02-28T11:20:43.165Z - INFO - Current Lay 2.46
+2025-02-28T11:20:43.165Z - INFO - Target Price 1.68
+2025-02-28T11:20:43.165Z - INFO - SL Price 2.39
+2025-02-28T11:20:43.165Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:43.361Z - INFO - -----------------------------------
+2025-02-28T11:20:43.362Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APNYAIFnAKlB","pt":1740741643684,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.72,411.68]],"batl":[],"id":9632777},{"batb":[[0,2.38,72.03]],"id":26323542}]}]}
+
+2025-02-28T11:20:43.362Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:43.362Z - INFO - In Above SL code
+2025-02-28T11:20:43.362Z - INFO - Current Back 2.38
+2025-02-28T11:20:43.362Z - INFO - Current Lay 2.46
+2025-02-28T11:20:43.362Z - INFO - Target Price 1.68
+2025-02-28T11:20:43.362Z - INFO - SL Price 2.39
+2025-02-28T11:20:43.363Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:44.922Z - INFO - -----------------------------------
+2025-02-28T11:20:44.922Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APFZAJtoAKRC","pt":1740741645245,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.38,71.72]],"id":26323542}]}]}
+
+2025-02-28T11:20:44.923Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:44.923Z - INFO - In Above SL code
+2025-02-28T11:20:44.923Z - INFO - Current Back 2.38
+2025-02-28T11:20:44.923Z - INFO - Current Lay 2.46
+2025-02-28T11:20:44.923Z - INFO - Target Price 1.68
+2025-02-28T11:20:44.923Z - INFO - SL Price 2.39
+2025-02-28T11:20:44.923Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:45.071Z - INFO - -----------------------------------
+2025-02-28T11:20:45.071Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AP9ZAKpoALlC","pt":1740741645395,"mc":[{"id":"1.240153465","rc":[{"batb":[],"batl":[[0,2.42,10]],"id":26323542}]}]}
+
+2025-02-28T11:20:45.071Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:45.071Z - INFO - In Above SL code
+2025-02-28T11:20:45.071Z - INFO - Current Back 2.38
+2025-02-28T11:20:45.071Z - INFO - Current Lay 2.42
+2025-02-28T11:20:45.071Z - INFO - Target Price 1.68
+2025-02-28T11:20:45.071Z - INFO - SL Price 2.39
+2025-02-28T11:20:45.071Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:45.174Z - INFO - -----------------------------------
+2025-02-28T11:20:45.174Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AIZaALVoALxC","pt":1740741645498,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.4,95.19]],"id":26323542}]}]}
+
+2025-02-28T11:20:45.174Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:45.175Z - INFO - In Above SL code
+2025-02-28T11:20:45.175Z - INFO - Current Back 2.38
+2025-02-28T11:20:45.175Z - INFO - Current Lay 2.4
+2025-02-28T11:20:45.175Z - INFO - Target Price 1.68
+2025-02-28T11:20:45.175Z - INFO - SL Price 2.39
+2025-02-28T11:20:45.175Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:45.399Z - INFO - -----------------------------------
+2025-02-28T11:20:45.399Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AJ1aAMtoAM1C","pt":1740741645714,"mc":[{"id":"1.240153465","rc":[{"batl":[[0,2.46,3.36]],"id":26323542}]}]}
+
+2025-02-28T11:20:45.400Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:45.400Z - INFO - In Above SL code
+2025-02-28T11:20:45.400Z - INFO - Current Back 2.38
+2025-02-28T11:20:45.400Z - INFO - Current Lay 2.46
+2025-02-28T11:20:45.400Z - INFO - Target Price 1.68
+2025-02-28T11:20:45.400Z - INFO - SL Price 2.39
+2025-02-28T11:20:45.400Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:45.965Z - INFO - -----------------------------------
+2025-02-28T11:20:45.966Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"AONaAIVpAP5C","pt":1740741646289,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,2.38,70.86]],"batl":[],"id":26323542}]}]}
+
+2025-02-28T11:20:45.966Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:45.966Z - INFO - In Above SL code
+2025-02-28T11:20:45.966Z - INFO - Current Back 2.38
+2025-02-28T11:20:45.966Z - INFO - Current Lay 2.46
+2025-02-28T11:20:45.966Z - INFO - Target Price 1.68
+2025-02-28T11:20:45.966Z - INFO - SL Price 2.39
+2025-02-28T11:20:45.966Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:46.217Z - INFO - -----------------------------------
+2025-02-28T11:20:46.217Z - INFO - Market Data: {"op":"mcm","id":1,"clk":"APpaAJVpAJJD","pt":1740741646541,"mc":[{"id":"1.240153465","rc":[{"batb":[[0,1.72,304.48]],"batl":[[0,1.75,68.22]],"id":9632777},{"batl":[[0,2.46,24.77]],"id":26323542}]}]}
+
+2025-02-28T11:20:46.217Z - INFO - Odds Data [object Object]
+2025-02-28T11:20:46.217Z - INFO - In Above SL code
+2025-02-28T11:20:46.217Z - INFO - Current Back 2.38
+2025-02-28T11:20:46.217Z - INFO - Current Lay 2.46
+2025-02-28T11:20:46.217Z - INFO - Target Price 1.68
+2025-02-28T11:20:46.217Z - INFO - SL Price 2.39
+2025-02-28T11:20:46.218Z - INFO - SL Price Hit Successfully!!!
+2025-02-28T11:20:47.036Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:47.036Z - INFO - lay bet placed
+2025-02-28T11:20:47.036Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:47.136Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:47.136Z - INFO - lay bet placed
+2025-02-28T11:20:47.136Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:47.662Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:47.662Z - INFO - lay bet placed
+2025-02-28T11:20:47.662Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:48.113Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:48.113Z - INFO - lay bet placed
+2025-02-28T11:20:48.113Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:48.427Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:48.427Z - INFO - lay bet placed
+2025-02-28T11:20:48.427Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:49.929Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:49.929Z - INFO - lay bet placed
+2025-02-28T11:20:49.929Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:50.133Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:50.133Z - INFO - lay bet placed
+2025-02-28T11:20:50.134Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:50.497Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:50.498Z - INFO - lay bet placed
+2025-02-28T11:20:50.498Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:50.579Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:50.579Z - INFO - lay bet placed
+2025-02-28T11:20:50.579Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:51.069Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:51.069Z - INFO - lay bet placed
+2025-02-28T11:20:51.069Z - INFO - lay bet placed and connection shut down
+2025-02-28T11:20:51.127Z - INFO - Monitoring loop running, status: true
+2025-02-28T11:20:51.127Z - INFO - lay bet placed
+2025-02-28T11:20:51.127Z - INFO - lay bet placed and connection shut down

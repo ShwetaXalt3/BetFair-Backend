@@ -11,7 +11,7 @@ const fetchProbability = async (req, res) => {
     const sessionToken = authHeader.split(' ')[1];
 
     const { amount, strategies } = req.body;
-    console.log(amount, strategies);
+    // console.log(amount, strategies);
     const allData = AllData.getAllData();
     const matchData = allData.matchh.result;
     // console.log(matchData);

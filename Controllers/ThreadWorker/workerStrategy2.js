@@ -27,6 +27,46 @@ async function prediction(firstRunner, secondRunner, tournamentDate, sessionToke
         logger.error("Prediction API Error:" + err.message);
     }
 }
+
+async function placeBettt(strategyData, sessionToken) {
+    const { selection_Id, marketId, side, size, price } = strategyData;
+    const apiUrl = "https://api.betfair.com/exchange/betting/json-rpc/v1";
+ 
+    const payload = {
+        jsonrpc: '2.0',
+        method: "SportsAPING/v1.0/placeOrders",
+        params: {
+            marketId,
+            instructions: [{
+                selectionId: selection_Id,
+                handicap: 0,
+                side: side,
+                orderType: "LIMIT",
+                limitOrder: {
+                    size: parseFloat(size),
+                    price: parseFloat(price),
+                    persistenceType: "PERSIST",
+                },
+            }],
+        },
+        id: 1,
+    };
+ 
+    try {
+        const response = await axios.post(apiUrl, payload, {
+            headers: {
+                'X-Application': process.env.API_KEY,
+                'Content-Type': 'application/json',
+                'X-Authentication': sessionToken,
+            },
+        });
+ 
+        return response.data;
+    } catch (error) {
+        logger.error('Error placing bet:' + error.message);
+        return null;
+    }
+}
  
 const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
  
@@ -182,45 +222,7 @@ const processStrategy2 = async (sessionToken, marketId, amount, matchData) => {
     }
 }
  
-async function placeBettt(strategyData, sessionToken) {
-    const { selection_Id, marketId, side, size, price } = strategyData;
-    const apiUrl = "https://api.betfair.com/exchange/betting/json-rpc/v1";
- 
-    const payload = {
-        jsonrpc: '2.0',
-        method: "SportsAPING/v1.0/placeOrders",
-        params: {
-            marketId,
-            instructions: [{
-                selectionId: selection_Id,
-                handicap: 0,
-                side: side,
-                orderType: "LIMIT",
-                limitOrder: {
-                    size: parseFloat(size),
-                    price: parseFloat(price),
-                    persistenceType: "PERSIST",
-                },
-            }],
-        },
-        id: 1,
-    };
- 
-    try {
-        const response = await axios.post(apiUrl, payload, {
-            headers: {
-                'X-Application': process.env.API_KEY,
-                'Content-Type': 'application/json',
-                'X-Authentication': sessionToken,
-            },
-        });
- 
-        return response.data;
-    } catch (error) {
-        logger.error('Error placing bet:' + error.message);
-        return null;
-    }
-}
+
  
 parentPort.on("message", async (data) => {
     await processStrategy2(data.sessionToken, data.marketId, data.amount, data.matchData);
