@@ -41053,3 +41053,6 @@
 2025-03-05T12:51:14.995Z - INFO - TLS connection closed
 2025-03-05T12:51:16.046Z - INFO - Received lay bet response from worker
 2025-03-05T12:51:16.047Z - INFO - Lay bet completed for market:1.240389640
+2025-03-06T05:39:58.783Z - INFO - Starting Strategy 1 in Worker Thread...
+2025-03-06T05:39:59.021Z - INFO - Processing Strategy 1 for Market ID: 1.240464353
+2025-03-06T05:40:02.090Z - INFO - Prediction data not found.

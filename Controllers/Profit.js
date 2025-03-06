@@ -79,14 +79,14 @@ const fetchProfit = async (req, res) => {
       if (updatedRecord) {
         console.log(`Updated marketId: ${marketId} with ProfitLoss: ${profit}`);
       } else {
-        console.log(`No record found for marketId: ${marketId}`);
+        // console.log(`No record found for marketId: ${marketId}`);
       }
 
       if (updatedTemp) {
         console.log(`Updated temporary marketId: ${marketId} with ProfitLoss: ${profit}`);
         await TempBet.deleteOne({ marketId: marketId });
       } else {
-        console.log(`No record found for marketId: ${marketId}`);
+        // console.log(`No record found for marketId: ${marketId}`);
       }
     }
  

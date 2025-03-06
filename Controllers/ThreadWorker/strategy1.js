@@ -1,19 +1,20 @@
 const { Worker } = require('worker_threads');
 const path = require('path');
 const AllData = require('../../services/AllData');
- 
+const { processAndStoreBackBet, processAndStoreLayBet } = require('../../services/dataService');
+
 const { setLogger } = require('../../logger');
 const logger = setLogger("Strategy_3", "logs/Betting_data.log");
 const activeWorkers = new Map();
  
 const fetchStrategy1 = async (sessionToken, marketId, amount) => {
     try {
-        logger.info("Starting Strategy 1 in Worker Thread...");
- 
+        
         // Fetch required data
         const allData = AllData.getAllData();
         const matchData = allData.matchh;
- 
+        logger.info("Starting Strategy 1 in Worker Thread...");
+        
  
         return new Promise((resolve, reject) => {
             // Create a new worker thread
@@ -30,8 +31,8 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
             worker.postMessage({ sessionToken, marketId, amount, matchData });
  
             // Listen for messages from the worker thread
-            worker.on("message", (result) => {
-                AllData.getLastPrice(result.back_bet_price)
+            worker.on("message", async (result) => {
+                AllData.getLastPrice(result.backBetPrice)
  
                 const workerState = activeWorkers.get(worker);
                 if (!workerState) return; // Worker not found in our tracking map
@@ -40,10 +41,11 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                 if (result.success) {
                     // Process back response
                     if (result.backResponse && !workerState.backResolved) {
+                        const backBetStorage = await processAndStoreBackBet(sessionToken, result);
                         logger.info("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
                         AllData.data.BackAmount = result.backStack;
-                        logger.info("Result of BackStake" + result.backStack);
+                    
                        
                      
                         // Mark back as resolved and immediately resolve promise with back response
@@ -60,12 +62,15 @@ const fetchStrategy1 = async (sessionToken, marketId, amount) => {
                    
                  
                     if (result.layResponse && !workerState.layResolved) {
+                        const layBetStorage = await processAndStoreLayBet(result);
                          logger.info("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
                         AllData.data.layAmount = result.layStake;
                        
                         workerState.layResolved = true;
                         activeWorkers.set(worker, workerState);
+                        
+                        logger.info("Lay bet completed for market:"+ marketId);
                        
                     }
                 } else if (!workerState.backResolved) {

@@ -4,9 +4,6 @@ const { fetchMarketBook } = require('../marketBook');
 const tls = require('tls');
 const { setupLogger } = require('../../logger');
 const { setLogger } = require('../../logger');
-const { cli } = require('winston/lib/winston/config');
-const { error } = require('console');
-const { match } = require('assert');
 const logger = setLogger("Strategy_1", "logs/Betting_data.log");
 
 async function prediction(firstRunner, secondRunner, tournamentDate, sessionToken) {
@@ -101,7 +98,7 @@ async function backResponsefn(marketId, selectionId) {
 
 }
 
-async function layResponsefn(marketId, selectionId, layStack, current_lay_bet_price) {
+async function layResponsefn(marketId, selectionId, layStake, current_lay_bet_price) {
     const layResponse = {
         "jsonrpc": "2.0",
         "result": {
@@ -112,7 +109,7 @@ async function layResponsefn(marketId, selectionId, layStack, current_lay_bet_pr
                         "selectionId": selectionId,
                         "handicap": 0,
                         "limitOrder": {
-                            "size": layStack,
+                            "size": layStake,
                             "price": current_lay_bet_price,
                             "persistenceType": "LAPSE"
                         },
@@ -159,7 +156,10 @@ async function fetchLiveOdds(sessionToken, marketId) {
                     op: "marketSubscription",
                     id: 1,
                     marketFilter: { marketIds: [marketId] },
-                    marketDataFilter: { fields: ["EX_BEST_OFFERS"], ladderLevels: 1 }
+                    marketDataFilter: {
+                        fields: ["EX_BEST_OFFERS"],
+                        ladderLevels: 1
+                    }
                 });
                 client.write(marketSubscription + "\r\n");
 
@@ -184,7 +184,7 @@ async function fetchLiveOdds(sessionToken, marketId) {
                 try {
                     const marketData = JSON.parse(decodedData);
                     if (marketData.op === "connection" && marketData.connectionId) {
-                        logger.info("Connected to stream logger.info marketData.connectionId");
+                        logger.info("Connected to stream with ID: " + marketData.connectionId);
                         return;
                     }
                     if (marketData.op === "status" && marketData.connectionClosed) {
@@ -228,7 +228,6 @@ async function fetchLiveOdds(sessionToken, marketId) {
                                     }
                                 }
 
-                                logger.info("Processed odds data: " + odds_data);
                                 client.end();
                                 resolve({ odds_data, market_status });
                                 return;
@@ -292,6 +291,8 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
         const currentDate = new Date();
         const tournamentDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
 
+        //----------Predication api calling--------
+
         const responseData = await prediction(firstRunner.runnerName, secondRunner.runnerName, tournamentDate, sessionToken);
         if (!responseData || Object.keys(responseData).length === 0) {
             logger.info("Prediction data not found.");
@@ -300,23 +301,7 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
         }
 
 
-        const marketBookData = await fetchMarketBook(sessionToken, marketId);
-        if (!marketBookData?.result?.length || !marketBookData.result[0].runners.length) {
-            logger.error("Error: Market Book data is not available.");
-            return;
-        }
-
-        const runnerData = marketBookData.result[0].runners;
-        let back_bet_price, lay_bet_price;
-        let selection_Id;
-
-        if (responseData["Prediction"]["0"] === 0) {
-            selection_Id = firstRunner.selectionId;
-        } else {
-            selection_Id = secondRunner.selectionId;
-        }
-
-        //-----------------Logger match-----------------
+        //-----------------Match runners name-----------------
         var runnername1 = null
         var runnername2 = null;
         const data = matchData.result;
@@ -332,45 +317,81 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
         const matchName = `${runnername1} VS ${runnername2}`;
         const match = setupLogger(matchName, strategyName);
 
+
+        const marketBookData = await fetchMarketBook(sessionToken, marketId);
+        if (!marketBookData || !marketBookData.result || marketBookData.result.length === 0) {
+            throw new Error("Invlid market book data")
+        }
+
+        const runnerData = marketBookData.result[0].runners;
+        let backBetPrice, layBetPrice;
+        let selection_Id;
+
+        if (responseData["Prediction"]["0"] === 0) {
+            selection_Id = firstRunner.selectionId;
+        } else {
+            selection_Id = secondRunner.selectionId;
+        }
+
+
+
         runnerData.forEach((i) => {
             if (i.selectionId == selection_Id) {
-                back_bet_price = i.ex.availableToBack[0].price;
-                lay_bet_price = i.ex.availableToLay[0].price;
+                backBetPrice = i.ex.availableToBack[0].price;
+                layBetPrice = i.ex.availableToLay[0].price;
             }
         });
 
-        logger.info("Back Price: " + back_bet_price);
-        logger.info("Lay Price: " + lay_bet_price);
+        logger.info("Back Price: " + backBetPrice);
+        logger.info("Lay Price: " + layBetPrice);
 
-        if (back_bet_price == 0 || back_bet_price <= 1.1) {
-            logger.info("Cannot place bet: Back price is too low.");
-            parentPort.postMessage({ success: false, error: "Back price is too low." });
+        if (!backBetPrice) {
+            logger.info("Price Not found!!!!!");
+            const reason = "Price Not found!!!!!";
+            parentPort.postMessage({ success: false, reason });
+            return;
+        }
+        if (backBetPrice <= 1.1) {
+            logger.info("Back bet is low");
+            const reason = "Back bet is low";
+            parentPort.postMessage({ success: false, reason });
             return;
         }
 
-        if (back_bet_price <= 1.2) {
-            lay_bet_price = (back_bet_price - 0.05);
-        } else if (back_bet_price > 1.2) {
-            lay_bet_price = (back_bet_price - 0.1);
+        if (backBetPrice <= 1.2) {
+            layBetPrice = (backBetPrice - 0.05);
+        } else if (backBetPrice > 1.2) {
+            layBetPrice = (backBetPrice - 0.1);
         }
-        if (lay_bet_price < 1.05) {
-            lay_bet_price = 1.05;
+        if (layBetPrice < 1.05) {
+            layBetPrice = 1.05;
         }
-        //---------------In strategy 1 back stake is with backstackkkkk-------
-        const backStack = amount / 2;
-        const layStack = amount / 2;
+        //---------------In strategy 1 back stake is with backStakekkkk-------
+        const backStake = amount / 2;
+        const layStake = amount / 2;
+
+
+        const betTrackingData = {
+            marketId: marketId,
+            strategyName: strategyName,
+            sportsName: "Tennis",
+            selectionId: selection_Id,
+            backStake: backStake,
+            backPrice: backBetPrice,
+            timestamp: new Date().toISOString()
+        };
+
         var backResponse;
         var statuss;
-
         try {
             const betData = {
                 selection_Id,
                 marketId,
                 side: 'BACK',
-                size: backStack,
-                price: back_bet_price,
+                size: backStake,
+                price: backBetPrice,
             };
-            // const backResponse = await placeBackBet(marketId, selection_Id, back_bet_price, backStack, sessionToken);
+            // const backResponse = await placeBackBet(marketId, selection_Id, backBetPrice, backStake, sessionToken);
             backResponse = await backResponsefn(marketId, selection_Id)
             statuss = backResponse.result.status;
 
@@ -381,8 +402,19 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
                 return;
             }
             else {
-                logger.info("Back Bet placed Successfully!!!!! at " + back_bet_price);
-                parentPort.postMessage({ success: true, backResponse, back_bet_price, backStack });
+                logger.info("Back Bet placed Successfully!!");
+                logger.info(" back bet placed at  " + backBetPrice);
+
+                betTrackingData.backBetId = backResponse.result.instructionReports[0].betId;
+                betTrackingData.backStatus = statuss;
+
+                parentPort.postMessage({
+                    success: true,
+                    backResponse,
+                    backBetPrice,
+                    backStake,
+                    trackingData: betTrackingData
+                });
 
             }
         } catch (err) {
@@ -390,26 +422,39 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
             parentPort.postMessage({ success: false, error: err.message });
             return;
         }
+
+        // -----Start monitoring for lay bet in background---------------
+
         if (statuss === "SUCCESS") {
             try {
-                const layResponse = await monitorMarket(
+                const layResponse = await monitor_market(
                     marketId,
-                    back_bet_price,
-                    lay_bet_price,
+                    backBetPrice,
+                    layBetPrice,
                     selection_Id,
-                    backStack,
+                    backStake,
                     sessionToken,
                     matchData,
-                    layStack,
+                    layStake,
+                    betTrackingData,
                     match
                 );
                 console.log("Layresponse from process Strategy++", layResponse);
 
                 if (layResponse && layResponse.success) {
+                      
+                    betTrackingData.layStake = layResponse.layStake;
+                    betTrackingData.layPrice = layResponse.layPrice;
+                    betTrackingData.layBetId = layResponse.layResponse.result.instructionReports[0].betId;
+                    betTrackingData.layStatus = layResponse.layResponse.result.status;
+                    betTrackingData.completed = true;
+                    betTrackingData.completedAt = new Date().toISOString();
+
                     parentPort.postMessage({
                         success: true,
                         layResponse: layResponse.layResponse,
-                        layStack: layResponse.layStack
+                        layStake: layResponse.layStake,
+                        trackingData: betTrackingData
                     });
                     return;
                 }
@@ -432,25 +477,29 @@ const processStrategy1 = async (sessionToken, marketId, amount, matchData) => {
 
 };
 
-async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionId, backStake, sessionToken, matchData, layStack, match) {
-    let previousLayPrice = lay_bet_price;
-    let originalSlPrice = parseFloat((lay_bet_price + 0.5).toFixed(2));
-    let targetPrice = parseFloat((back_bet_price - 0.2).toFixed(2));
-    let slPrice = originalSlPrice;
-    let normalLayPrice = lay_bet_price;
+async function monitor_market(marketId, backBetPrice, layBetPrice, selectionId, backStake, sessionToken, matchData, layStake, trackingData, match) {
+    let previous_lay_price = layBetPrice;
+    let original_sl_price = parseFloat((layBetPrice + 0.5).toFixed(2));
+    let target_price = parseFloat((backBetPrice - 0.2).toFixed(2));
+    let sl_price = original_sl_price;
+    let normal_lay_price = layBetPrice;
 
     match.info("Starting market monitoring with initial values:");
-    match.info(`Back Bet Price: ${back_bet_price}`);
-    match.info(`Initial Lay Price: ${lay_bet_price}`);
-    match.info(`Target Price: ${targetPrice}`);
-    match.info(`Stop Loss Price: ${slPrice}`);
+    match.info(`Back Bet Price: ${backBetPrice}`);
+    match.info(`Initial Lay Price: ${layBetPrice}`);
+    match.info(`Target Price: ${target_price}`);
+    match.info(`Stop Loss Price: ${sl_price}`);
+
+    trackingData.monitoringStarted = new Date().toISOString();
+    trackingData.initialTargetPrice = target_price;
+    trackingData.initialStopLossPrice = sl_price;
 
     try {
 
         let streamResponse = await fetchLiveOdds(sessionToken, marketId);
         let odds_data = streamResponse.odds_data;
         let market_status = streamResponse.market_status;
-        match.info("Initial stream data: " + odds_data);
+        // match.info("Initial stream data: " + odds_data);
 
         let monitoring = true;
         let checkCount = 0;
@@ -471,12 +520,17 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
                 }
                 const current_back_bet_price = odds_data[`${selectionId}`]?.back_odds;
                 const current_lay_bet_price = odds_data[`${selectionId}`]?.lay_odds;
-
+                match.info("--------------------------")
                 match.info(`Monitoring check #${checkCount}:`);
                 match.info(`Current back: ${current_back_bet_price}`);
                 match.info(`Current lay: ${current_lay_bet_price}`);
-                match.info(`target price: ${targetPrice}`);
-                match.info(`stop loss price: ${slPrice}`);
+                match.info(`target price: ${target_price}`);
+                match.info(`stop loss price: ${sl_price}`);
+
+                trackingData.currentBackPrice = current_back_bet_price;
+                trackingData.currentLayPrice = current_lay_bet_price;
+                trackingData.currentTargetPrice = target_price;
+                trackingData.currentStopLossPrice = sl_price;
 
 
                 if (!current_back_bet_price || !current_lay_bet_price) {
@@ -485,40 +539,55 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
                     continue;
                 }
 
-                if (current_lay_bet_price - normalLayPrice > 0.50) {
-                    match.info("Abnormal Lay price");
-                    await new Promise(resolve => setTimeout(resolve, 30000));
+                if (current_lay_bet_price - normal_lay_price > 0.50) {
+                    match.info("Abnormal lay price detected. Skipping this check."); await new Promise(resolve => setTimeout(resolve, 30000));
                     continue;
                 } else {
-                    normalLayPrice = current_lay_bet_price;
+                    normal_lay_price = current_lay_bet_price;
                 }
 
                 // Update prices based on conditions
-                if (current_lay_bet_price < previousLayPrice) {
-                    [targetPrice, slPrice] = updatePrices(current_back_bet_price, current_lay_bet_price, back_bet_price, lay_bet_price, targetPrice, slPrice);
+                if (current_lay_bet_price < previous_lay_price) {
+                    [target_price, sl_price] = update_prices(
+                        current_back_bet_price,
+                        current_lay_bet_price,
+                        backBetPrice,
+                        layBetPrice,
+                        target_price,
+                        sl_price
+                    );
+                    console.log("Monitor market updated ---", updated);
 
-                    previousLayPrice = current_lay_bet_price;
+                    previous_lay_price = current_lay_bet_price;
 
                     match.info("Prices updated:---------");
-                    match.info(`New target price: ${targetPrice}`);
-                    match.info(`New stop loss price: ${slPrice}`);
+                    match.info(`New target price: ${target_price}`);
+                    match.info(`New stop loss price: ${sl_price}`);
+
+                    trackingData.currentTargetPrice = target_price;
+                    trackingData.currentStopLossPrice = sl_price;
                 }
 
-                if (current_lay_bet_price >= back_bet_price) {
-                    slPrice = originalSlPrice;
-                    previousLayPrice = current_lay_bet_price;
+                if (current_lay_bet_price >= backBetPrice) {
+                    match.info("Lay price above back price. Resetting stop loss.");
+                    sl_price = original_sl_price;
+                    previous_lay_price = current_lay_bet_price;
+                    trackingData.currentStopLossPrice = sl_price;
+
                 }
 
-                const exit_status = await checkExitConditions(current_back_bet_price,
+                const exit_status = await check_exit_conditions(
+                    current_back_bet_price,
                     current_lay_bet_price,
-                    targetPrice,
-                    slPrice,
+                    target_price,
+                    sl_price,
                     backStake,
-                    back_bet_price,
+                    backBetPrice,
                     selectionId,
                     marketId,
                     sessionToken,
-                    layStack,
+                    layStake,
+                    trackingData,
                     match
                 );
 
@@ -537,67 +606,121 @@ async function monitorMarket(marketId, back_bet_price, lay_bet_price, selectionI
             }
         }
         match.info("Market monitoring completed without placing lay bet.");
+        trackingData.monitoringCompleted = true;
+        trackingData.monitoringCompletedAt = new Date().toISOString();
+        trackingData.monitoringResult = "No lay bet placed";
+
         return { success: false, reason: "Monitoring period ended without conditions being met" };
     }
     catch (error) {
-        match.error("Fatal error in market monitoring:" +  error);
+        match.error("Fatal error in market monitoring:" + error);
+        trackingData.monitoringError = error.message;
         throw error;
     }
 }
 
-function updatePrices(current_back_bet_price, current_lay_bet_price, back_bet_price, lay_bet_price, targetPrice, slPrice) {
-    if (current_lay_bet_price < back_bet_price) {
-        if (current_lay_bet_price >= back_bet_price - 0.1) {
-            slPrice = (current_lay_bet_price + 0.5).toFixed(2);
-        } else if (back_bet_price > 1.5 && (back_bet_price - current_lay_bet_price) >= 0.2) {
-            slPrice = (current_lay_bet_price + 0.05).toFixed(2);
-        } else if (back_bet_price <= 1.5 && (back_bet_price - current_lay_bet_price) >= 0.1) {
-            slPrice = (current_lay_bet_price + 0.05).toFixed(2);
+function update_prices(current_back_bet_price, current_lay_bet_price, backBetPrice, layBetPrice, target_price, sl_price) {
+    if (current_lay_bet_price < backBetPrice) {
+        if (current_lay_bet_price >= backBetPrice - 0.1) {
+            sl_price = (current_lay_bet_price + 0.5).toFixed(2);
+        } else if (backBetPrice > 1.5 && (backBetPrice - current_lay_bet_price) >= 0.2) {
+            sl_price = (current_lay_bet_price + 0.05).toFixed(2);
+        } else if (backBetPrice <= 1.5 && (backBetPrice - current_lay_bet_price) >= 0.1) {
+            sl_price = (current_lay_bet_price + 0.05).toFixed(2);
         } else {
-            slPrice = (current_lay_bet_price + 0.1).toFixed(2);
+            sl_price = (current_lay_bet_price + 0.1).toFixed(2);
         }
     }
 
-    targetPrice = Math.max((current_back_bet_price - 0.2).toFixed(2), 1.01);
-    return [targetPrice, slPrice];
+    target_price = Math.max((current_back_bet_price - 0.2).toFixed(2), 1.01);
+    return [target_price, sl_price];
 }
 
-async function checkExitConditions(current_back_bet_price, current_lay_bet_price, targetPrice, slPrice, backStake, back_bet_price, selectionId, marketId, sessionToken, layStack , match) {
-    if (current_lay_bet_price <= targetPrice) {
+async function check_exit_conditions(
+    current_back_bet_price,
+    current_lay_bet_price,
+    target_price,
+    sl_price,
+    backStake,
+    backBetPrice,
+    selectionId,
+    marketId,
+    sessionToken,
+    layStake,
+    trackingData,
+    match) {
+        let exitReason = null;
+    if (current_lay_bet_price <= target_price) {
+        exitReason = "Target price reached";
         match.info("Lay condition met: Placing lay bet at target price.");
+        match.info(`Target price ${target_price} hit successfully with ${current_lay_bet_price}`);
+
         const betData = {
             selectionId,
             marketId,
             side: "LAY",
-            size: layStack,
+            size: layStake,
             price: current_lay_bet_price,
         };
         // const layResponse = await placeBettt(betData, sessionToken);
-        const layResponse = await layResponsefn(marketId, selectionId, layStack, current_lay_bet_price)
+        const layResponse = await layResponsefn(marketId, selectionId, layStake, current_lay_bet_price)
 
         match.info(`LAY bet placed at ${current_lay_bet_price}`);
-        parentPort.postMessage({ success: true, layResponse, layStack });
+                  
+        trackingData.layPrice = current_lay_bet_price;
+        trackingData.layStake = layStake;
+        trackingData.exitReason = exitReason;
+        trackingData.exitConditionMet = true;
+        trackingData.exitTime = new Date().toISOString();
 
-        return { success: true, layResponse, layStack };
+
+        return { 
+            success: true,
+             layResponse,
+              layStake ,
+             layPrice : current_lay_bet_price,
+             exitReason,
+             marketId,
+             selectionId,
+
+            };
     }
 
-    else if (current_lay_bet_price >= slPrice) {
+    else if (current_lay_bet_price >= sl_price) {
+        exitReason = "Stop loss triggered";
         match.info("Stop loss condition met: Placing lay bet at stop loss price.");
+        match.info(`SL Price ${sl_price} Hit with ${current_lay_bet_price}`);
 
         const betData = {
             selectionId,
             marketId,
             side: "LAY",
-            size: layStack,
+            size: layStake,
             price: current_lay_bet_price,
         };
-        const layResponse = await layResponsefn(marketId, selectionId, layStack, current_lay_bet_price)
+        // const layResponse = await placeBettt(betData, sessionToken);
+        const layResponse = await layResponsefn(marketId, selectionId, layStake, current_lay_bet_price)
         match.info(`LAY bet placed at ${current_lay_bet_price}`);
 
-        parentPort.postMessage({ success: true, layResponse, layStack });
+        trackingData.layPrice = current_lay_bet_price;
+    trackingData.layStake = layStake;
+    trackingData.exitReason = exitReason;
+    trackingData.exitConditionMet = true;
+    trackingData.exitTime = new Date().toISOString();
+    
+
+        // parentPort.postMessage({ success: true, layResponse, layStake });
 
 
-        return { success: true, layResponse, layStack };
+        return {
+             success: true,
+              layResponse,
+               layStake,
+              layPrice : current_lay_bet_price,
+              exitReason,
+               marketId ,
+               selectionId
+            };
     }
 
     // **Ensure we return false if no condition is met**

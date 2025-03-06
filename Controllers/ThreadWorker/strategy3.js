@@ -41,10 +41,6 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                         AllData.backplaceorder(result.backResponse);
 
                         AllData.data.BackAmount = result.backStake;
-
-
-                     
-                        
                         
                         // Mark back as resolved and immediately resolve promise with back response
                         workerState.backResolved = true;
@@ -65,11 +61,6 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                         AllData.layplaceorder(result.layResponse);
                         
                         AllData.data.layAmount = result.layStake;
-
-                     
-                        
-                     
-                        
                        
                         workerState.layResolved = true;
                         activeWorkers.set(worker, workerState);

@@ -145,7 +145,8 @@ async function fetchLiveOdds(sessionToken, marketId) {
           op: "marketSubscription",
           id: 1,
           marketFilter: { marketIds: [marketId] },
-          marketDataFilter: { fields: ["EX_BEST_OFFERS"], ladderLevels: 1 }
+          marketDataFilter: { fields: ["EX_BEST_OFFERS"], 
+            ladderLevels: 1 }
         });
        
         client.write(marketSubscription + "\r\n");
@@ -412,12 +413,10 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
       return;
     }
  
-    // ------------------------------Start monitoring for lay bet in background---------------
+    // -----Start monitoring for lay bet in background---------------
     
     if (statuss === "SUCCESS") {
       try {
-        console.log("I am going in monitor market");
-        console.log("++++++++++++++++++++status", statuss);
         // Properly await the lay 
         
         const layResponse = await monitor_market(
@@ -519,7 +518,6 @@ async function monitor_market(marketBookData, backBetPrice, layBetPrice, selecti
         // Get current prices for this selection
         const current_back_bet_price = odds_data[`${selectionId}`]?.back_odds;
         const current_lay_bet_price = odds_data[`${selectionId}`]?.lay_odds;
-       match.info("\n")
        match.info("--------------------------")
         match.info(`Monitoring check #${checkCount}:`);
         match.info(`Current back: ${current_back_bet_price}`);
@@ -680,7 +678,6 @@ async function check_exit_conditions(
       price: current_lay_bet_price,
     };
  
-    // Uncomment for real implementation
     //  const layResponse = await placeBettt(betData, sessionToken);
    const layResponse = await layResponsefn(marketId, selectionId, layStake, current_lay_bet_price);
  
