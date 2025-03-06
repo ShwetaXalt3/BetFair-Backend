@@ -3,6 +3,7 @@ const moment = require('moment');
 const AllData = require('../services/AllData');
 const { sessionToken } = require('./authController'); // Import session token object
 const MergedData = require('../models/MergedData');
+const TempBet = require('../models/TempSchema');
 // Function to log the profit data
 const logProfitData = (data) => {
   console.log('Updated profit data at:', moment().format('YYYY-MM-DD HH:mm:ss'));
@@ -45,6 +46,8 @@ const fetchProfit = async (req, res) => {
     });
  
     const profitData = response.data.result.clearedOrders;
+    // console.log("Profit data" , profitData);
+    
  
     // // Log the profit data
     // logProfitData(profitData);
@@ -58,20 +61,30 @@ const fetchProfit = async (req, res) => {
  
     // Loop through profit data and update the database
     for (const order of profitData) {
-      const { marketId, profit } = order;
+      const { marketId, profit , side } = order;
  
       if (!marketId) continue; // Skip if marketId is missing
  
       const updatedRecord = await MergedData.findOneAndUpdate(
-        { market_id: marketId },  // Find by market_id
+        { market_id: marketId },  
+        { Type: side },  
         { $set: { "Profit/Loss": profit } },  // Update the profit/loss field
-        // { $set: { end_Date: lastMatchedDate } },
-        { $set: { Status: "MATCH" } },
-        { new: true }
       );
+      const updatedTemp = await TempBet.findOneAndUpdate(
+        { marketId: marketId },  
+        {side: side},
+        { $set: { "Profit/Loss": profit } },  // Update the profit/loss field
+      );      
  
       if (updatedRecord) {
         console.log(`Updated marketId: ${marketId} with ProfitLoss: ${profit}`);
+      } else {
+        console.log(`No record found for marketId: ${marketId}`);
+      }
+
+      if (updatedTemp) {
+        console.log(`Updated temporary marketId: ${marketId} with ProfitLoss: ${profit}`);
+        await TempBet.deleteOne({ marketId: marketId });
       } else {
         console.log(`No record found for marketId: ${marketId}`);
       }
@@ -114,7 +127,7 @@ setInterval(async () => {
   } catch (error) {
     console.error("Scheduled fetchProfit failed:", error);
   }
-}, 7200000);
+}, 5000);
  
 module.exports = { fetchProfit };
  

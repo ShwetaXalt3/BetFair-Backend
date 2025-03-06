@@ -1,0 +1,387 @@
+2025-03-05T11:18:51.745Z - INFO - Starting market monitoring with initial values:
+2025-03-05T11:18:51.746Z - INFO - Back Bet Price: 1.8
+2025-03-05T11:18:51.746Z - INFO - Initial Lay Price: 1.81
+2025-03-05T11:18:51.746Z - INFO - Target Price: 1.6
+2025-03-05T11:18:51.747Z - INFO - Stop Loss Price: 2.31
+2025-03-05T11:18:57.770Z - INFO - 
+
+2025-03-05T11:18:57.770Z - INFO - --------------------------
+2025-03-05T11:18:57.770Z - INFO - Monitoring check #1:
+2025-03-05T11:18:57.770Z - INFO - Current back: 1.8
+2025-03-05T11:18:57.770Z - INFO - Current lay: 1.81
+2025-03-05T11:18:57.770Z - INFO - target price: 1.6
+2025-03-05T11:18:57.770Z - INFO - stop loss price: 2.31
+2025-03-05T11:18:57.770Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:01.177Z - INFO - 
+
+2025-03-05T11:19:01.177Z - INFO - --------------------------
+2025-03-05T11:19:01.177Z - INFO - Monitoring check #2:
+2025-03-05T11:19:01.177Z - INFO - Current back: 1.8
+2025-03-05T11:19:01.177Z - INFO - Current lay: 1.81
+2025-03-05T11:19:01.177Z - INFO - target price: 1.6
+2025-03-05T11:19:01.177Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:01.177Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:04.589Z - INFO - 
+
+2025-03-05T11:19:04.589Z - INFO - --------------------------
+2025-03-05T11:19:04.589Z - INFO - Monitoring check #3:
+2025-03-05T11:19:04.589Z - INFO - Current back: 1.8
+2025-03-05T11:19:04.589Z - INFO - Current lay: 1.81
+2025-03-05T11:19:04.590Z - INFO - target price: 1.6
+2025-03-05T11:19:04.590Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:04.590Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:07.989Z - INFO - 
+
+2025-03-05T11:19:07.989Z - INFO - --------------------------
+2025-03-05T11:19:07.989Z - INFO - Monitoring check #4:
+2025-03-05T11:19:07.989Z - INFO - Current back: 1.8
+2025-03-05T11:19:07.990Z - INFO - Current lay: 1.81
+2025-03-05T11:19:07.990Z - INFO - target price: 1.6
+2025-03-05T11:19:07.990Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:07.990Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:11.354Z - INFO - 
+
+2025-03-05T11:19:11.354Z - INFO - --------------------------
+2025-03-05T11:19:11.354Z - INFO - Monitoring check #5:
+2025-03-05T11:19:11.355Z - INFO - Current back: 1.8
+2025-03-05T11:19:11.355Z - INFO - Current lay: 1.81
+2025-03-05T11:19:11.355Z - INFO - target price: 1.6
+2025-03-05T11:19:11.355Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:11.355Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:14.444Z - INFO - 
+
+2025-03-05T11:19:14.444Z - INFO - --------------------------
+2025-03-05T11:19:14.445Z - INFO - Monitoring check #6:
+2025-03-05T11:19:14.445Z - INFO - Current back: 1.8
+2025-03-05T11:19:14.445Z - INFO - Current lay: 1.81
+2025-03-05T11:19:14.445Z - INFO - target price: 1.6
+2025-03-05T11:19:14.445Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:14.445Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:17.835Z - INFO - 
+
+2025-03-05T11:19:17.835Z - INFO - --------------------------
+2025-03-05T11:19:17.835Z - INFO - Monitoring check #7:
+2025-03-05T11:19:17.835Z - INFO - Current back: 1.8
+2025-03-05T11:19:17.835Z - INFO - Current lay: 1.81
+2025-03-05T11:19:17.835Z - INFO - target price: 1.6
+2025-03-05T11:19:17.835Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:17.835Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:21.270Z - INFO - 
+
+2025-03-05T11:19:21.270Z - INFO - --------------------------
+2025-03-05T11:19:21.270Z - INFO - Monitoring check #8:
+2025-03-05T11:19:21.270Z - INFO - Current back: 1.8
+2025-03-05T11:19:21.271Z - INFO - Current lay: 1.81
+2025-03-05T11:19:21.271Z - INFO - target price: 1.6
+2025-03-05T11:19:21.271Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:21.271Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:24.944Z - INFO - 
+
+2025-03-05T11:19:24.945Z - INFO - --------------------------
+2025-03-05T11:19:24.945Z - INFO - Monitoring check #9:
+2025-03-05T11:19:24.945Z - INFO - Current back: 1.8
+2025-03-05T11:19:24.945Z - INFO - Current lay: 1.81
+2025-03-05T11:19:24.945Z - INFO - target price: 1.6
+2025-03-05T11:19:24.945Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:24.945Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:28.678Z - INFO - 
+
+2025-03-05T11:19:28.679Z - INFO - --------------------------
+2025-03-05T11:19:28.679Z - INFO - Monitoring check #10:
+2025-03-05T11:19:28.679Z - INFO - Current back: 1.73
+2025-03-05T11:19:28.679Z - INFO - Current lay: 1.81
+2025-03-05T11:19:28.679Z - INFO - target price: 1.6
+2025-03-05T11:19:28.679Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:28.680Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:31.766Z - INFO - 
+
+2025-03-05T11:19:31.766Z - INFO - --------------------------
+2025-03-05T11:19:31.766Z - INFO - Monitoring check #11:
+2025-03-05T11:19:31.766Z - INFO - Current back: 1.74
+2025-03-05T11:19:31.766Z - INFO - Current lay: 1.81
+2025-03-05T11:19:31.766Z - INFO - target price: 1.6
+2025-03-05T11:19:31.766Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:31.766Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:35.174Z - INFO - 
+
+2025-03-05T11:19:35.174Z - INFO - --------------------------
+2025-03-05T11:19:35.174Z - INFO - Monitoring check #12:
+2025-03-05T11:19:35.174Z - INFO - Current back: 1.74
+2025-03-05T11:19:35.174Z - INFO - Current lay: 1.81
+2025-03-05T11:19:35.174Z - INFO - target price: 1.6
+2025-03-05T11:19:35.174Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:35.174Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:38.555Z - INFO - 
+
+2025-03-05T11:19:38.555Z - INFO - --------------------------
+2025-03-05T11:19:38.555Z - INFO - Monitoring check #13:
+2025-03-05T11:19:38.555Z - INFO - Current back: 1.74
+2025-03-05T11:19:38.555Z - INFO - Current lay: 1.81
+2025-03-05T11:19:38.555Z - INFO - target price: 1.6
+2025-03-05T11:19:38.555Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:38.555Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:42.007Z - INFO - 
+
+2025-03-05T11:19:42.007Z - INFO - --------------------------
+2025-03-05T11:19:42.007Z - INFO - Monitoring check #14:
+2025-03-05T11:19:42.007Z - INFO - Current back: 1.74
+2025-03-05T11:19:42.007Z - INFO - Current lay: 1.81
+2025-03-05T11:19:42.007Z - INFO - target price: 1.6
+2025-03-05T11:19:42.008Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:42.008Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:45.415Z - INFO - 
+
+2025-03-05T11:19:45.415Z - INFO - --------------------------
+2025-03-05T11:19:45.415Z - INFO - Monitoring check #15:
+2025-03-05T11:19:45.415Z - INFO - Current back: 1.74
+2025-03-05T11:19:45.415Z - INFO - Current lay: 1.81
+2025-03-05T11:19:45.415Z - INFO - target price: 1.6
+2025-03-05T11:19:45.415Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:45.415Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:48.518Z - INFO - 
+
+2025-03-05T11:19:48.518Z - INFO - --------------------------
+2025-03-05T11:19:48.518Z - INFO - Monitoring check #16:
+2025-03-05T11:19:48.518Z - INFO - Current back: 1.74
+2025-03-05T11:19:48.519Z - INFO - Current lay: 1.81
+2025-03-05T11:19:48.519Z - INFO - target price: 1.6
+2025-03-05T11:19:48.519Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:48.519Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:52.012Z - INFO - 
+
+2025-03-05T11:19:52.012Z - INFO - --------------------------
+2025-03-05T11:19:52.012Z - INFO - Monitoring check #17:
+2025-03-05T11:19:52.012Z - INFO - Current back: 1.74
+2025-03-05T11:19:52.012Z - INFO - Current lay: 1.81
+2025-03-05T11:19:52.012Z - INFO - target price: 1.6
+2025-03-05T11:19:52.012Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:52.012Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:19:56.553Z - INFO - 
+
+2025-03-05T11:19:56.553Z - INFO - --------------------------
+2025-03-05T11:19:56.554Z - INFO - Monitoring check #18:
+2025-03-05T11:19:56.554Z - INFO - Current back: 1.74
+2025-03-05T11:19:56.554Z - INFO - Current lay: 1.81
+2025-03-05T11:19:56.554Z - INFO - target price: 1.6
+2025-03-05T11:19:56.554Z - INFO - stop loss price: 2.31
+2025-03-05T11:19:56.554Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:20:00.227Z - INFO - 
+
+2025-03-05T11:20:00.227Z - INFO - --------------------------
+2025-03-05T11:20:00.227Z - INFO - Monitoring check #19:
+2025-03-05T11:20:00.227Z - INFO - Current back: 1.74
+2025-03-05T11:20:00.227Z - INFO - Current lay: 1.81
+2025-03-05T11:20:00.227Z - INFO - target price: 1.6
+2025-03-05T11:20:00.227Z - INFO - stop loss price: 2.31
+2025-03-05T11:20:00.227Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:20:03.613Z - INFO - 
+
+2025-03-05T11:20:03.613Z - INFO - --------------------------
+2025-03-05T11:20:03.613Z - INFO - Monitoring check #20:
+2025-03-05T11:20:03.613Z - INFO - Current back: 1.74
+2025-03-05T11:20:03.613Z - INFO - Current lay: 1.76
+2025-03-05T11:20:03.613Z - INFO - target price: 1.6
+2025-03-05T11:20:03.613Z - INFO - stop loss price: 2.31
+2025-03-05T11:20:03.614Z - INFO - Prices updated:
+2025-03-05T11:20:03.614Z - INFO - New target price: 1.54
+2025-03-05T11:20:03.614Z - INFO - New stop loss price: 2.24
+2025-03-05T11:20:06.988Z - INFO - 
+
+2025-03-05T11:20:06.989Z - INFO - --------------------------
+2025-03-05T11:20:06.989Z - INFO - Monitoring check #21:
+2025-03-05T11:20:06.989Z - INFO - Current back: 1.73
+2025-03-05T11:20:06.989Z - INFO - Current lay: 1.74
+2025-03-05T11:20:06.989Z - INFO - target price: 1.54
+2025-03-05T11:20:06.989Z - INFO - stop loss price: 2.24
+2025-03-05T11:20:06.990Z - INFO - Prices updated:
+2025-03-05T11:20:06.990Z - INFO - New target price: 1.53
+2025-03-05T11:20:06.990Z - INFO - New stop loss price: 2.23
+2025-03-05T11:20:10.386Z - INFO - 
+
+2025-03-05T11:20:10.386Z - INFO - --------------------------
+2025-03-05T11:20:10.386Z - INFO - Monitoring check #22:
+2025-03-05T11:20:10.386Z - INFO - Current back: 1.73
+2025-03-05T11:20:10.386Z - INFO - Current lay: 1.74
+2025-03-05T11:20:10.386Z - INFO - target price: 1.53
+2025-03-05T11:20:10.386Z - INFO - stop loss price: 2.23
+2025-03-05T11:20:13.821Z - INFO - 
+
+2025-03-05T11:20:13.821Z - INFO - --------------------------
+2025-03-05T11:20:13.821Z - INFO - Monitoring check #23:
+2025-03-05T11:20:13.822Z - INFO - Current back: 1.72
+2025-03-05T11:20:13.822Z - INFO - Current lay: 1.73
+2025-03-05T11:20:13.822Z - INFO - target price: 1.53
+2025-03-05T11:20:13.822Z - INFO - stop loss price: 2.23
+2025-03-05T11:20:13.822Z - INFO - Prices updated:
+2025-03-05T11:20:13.822Z - INFO - New target price: 1.52
+2025-03-05T11:20:13.823Z - INFO - New stop loss price: 2.22
+2025-03-05T11:20:17.300Z - INFO - 
+
+2025-03-05T11:20:17.301Z - INFO - --------------------------
+2025-03-05T11:20:17.301Z - INFO - Monitoring check #24:
+2025-03-05T11:20:17.301Z - INFO - Current back: 1.72
+2025-03-05T11:20:17.301Z - INFO - Current lay: 1.73
+2025-03-05T11:20:17.301Z - INFO - target price: 1.52
+2025-03-05T11:20:17.301Z - INFO - stop loss price: 2.22
+2025-03-05T11:20:20.673Z - INFO - 
+
+2025-03-05T11:20:20.673Z - INFO - --------------------------
+2025-03-05T11:20:20.673Z - INFO - Monitoring check #25:
+2025-03-05T11:20:20.673Z - INFO - Current back: 1.72
+2025-03-05T11:20:20.673Z - INFO - Current lay: 1.73
+2025-03-05T11:20:20.673Z - INFO - target price: 1.52
+2025-03-05T11:20:20.673Z - INFO - stop loss price: 2.22
+2025-03-05T11:20:24.047Z - INFO - 
+
+2025-03-05T11:20:24.047Z - INFO - --------------------------
+2025-03-05T11:20:24.047Z - INFO - Monitoring check #26:
+2025-03-05T11:20:24.047Z - INFO - Current back: 1.65
+2025-03-05T11:20:24.047Z - INFO - Current lay: 1.87
+2025-03-05T11:20:24.047Z - INFO - target price: 1.52
+2025-03-05T11:20:24.048Z - INFO - stop loss price: 2.22
+2025-03-05T11:20:24.048Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T11:20:27.159Z - INFO - 
+
+2025-03-05T11:20:27.159Z - INFO - --------------------------
+2025-03-05T11:20:27.159Z - INFO - Monitoring check #27:
+2025-03-05T11:20:27.159Z - INFO - Current back: 1.64
+2025-03-05T11:20:27.159Z - INFO - Current lay: 1.69
+2025-03-05T11:20:27.159Z - INFO - target price: 1.52
+2025-03-05T11:20:27.159Z - INFO - stop loss price: 2.31
+2025-03-05T11:20:27.159Z - INFO - Prices updated:
+2025-03-05T11:20:27.159Z - INFO - New target price: 1.44
+2025-03-05T11:20:27.159Z - INFO - New stop loss price: 1.79
+2025-03-05T11:20:30.880Z - INFO - 
+
+2025-03-05T11:20:30.880Z - INFO - --------------------------
+2025-03-05T11:20:30.880Z - INFO - Monitoring check #28:
+2025-03-05T11:20:30.880Z - INFO - Current back: 1.62
+2025-03-05T11:20:30.880Z - INFO - Current lay: 1.64
+2025-03-05T11:20:30.880Z - INFO - target price: 1.44
+2025-03-05T11:20:30.880Z - INFO - stop loss price: 1.79
+2025-03-05T11:20:30.880Z - INFO - Prices updated:
+2025-03-05T11:20:30.880Z - INFO - New target price: 1.42
+2025-03-05T11:20:30.880Z - INFO - New stop loss price: 1.74
+2025-03-05T11:20:34.632Z - INFO - 
+
+2025-03-05T11:20:34.632Z - INFO - --------------------------
+2025-03-05T11:20:34.632Z - INFO - Monitoring check #29:
+2025-03-05T11:20:34.632Z - INFO - Current back: 1.62
+2025-03-05T11:20:34.632Z - INFO - Current lay: 1.63
+2025-03-05T11:20:34.632Z - INFO - target price: 1.42
+2025-03-05T11:20:34.632Z - INFO - stop loss price: 1.74
+2025-03-05T11:20:34.632Z - INFO - Prices updated:
+2025-03-05T11:20:34.632Z - INFO - New target price: 1.42
+2025-03-05T11:20:34.632Z - INFO - New stop loss price: 1.73
+2025-03-05T11:20:38.051Z - INFO - 
+
+2025-03-05T11:20:38.051Z - INFO - --------------------------
+2025-03-05T11:20:38.051Z - INFO - Monitoring check #30:
+2025-03-05T11:20:38.051Z - INFO - Current back: 1.62
+2025-03-05T11:20:38.051Z - INFO - Current lay: 1.63
+2025-03-05T11:20:38.051Z - INFO - target price: 1.42
+2025-03-05T11:20:38.051Z - INFO - stop loss price: 1.73
+2025-03-05T11:20:41.484Z - INFO - 
+
+2025-03-05T11:20:41.484Z - INFO - --------------------------
+2025-03-05T11:20:41.484Z - INFO - Monitoring check #31:
+2025-03-05T11:20:41.484Z - INFO - Current back: 1.6
+2025-03-05T11:20:41.484Z - INFO - Current lay: 1.61
+2025-03-05T11:20:41.485Z - INFO - target price: 1.42
+2025-03-05T11:20:41.485Z - INFO - stop loss price: 1.73
+2025-03-05T11:20:41.485Z - INFO - Prices updated:
+2025-03-05T11:20:41.485Z - INFO - New target price: 1.4
+2025-03-05T11:20:41.485Z - INFO - New stop loss price: 1.71
+2025-03-05T11:20:44.585Z - INFO - 
+
+2025-03-05T11:20:44.585Z - INFO - --------------------------
+2025-03-05T11:20:44.585Z - INFO - Monitoring check #32:
+2025-03-05T11:20:44.585Z - INFO - Current back: 1.58
+2025-03-05T11:20:44.585Z - INFO - Current lay: 1.61
+2025-03-05T11:20:44.585Z - INFO - target price: 1.4
+2025-03-05T11:20:44.586Z - INFO - stop loss price: 1.71
+2025-03-05T11:20:47.975Z - INFO - 
+
+2025-03-05T11:20:47.975Z - INFO - --------------------------
+2025-03-05T11:20:47.976Z - INFO - Monitoring check #33:
+2025-03-05T11:20:47.976Z - INFO - Current back: 1.56
+2025-03-05T11:20:47.976Z - INFO - Current lay: 1.57
+2025-03-05T11:20:47.976Z - INFO - target price: 1.4
+2025-03-05T11:20:47.976Z - INFO - stop loss price: 1.71
+2025-03-05T11:20:47.977Z - INFO - Prices updated:
+2025-03-05T11:20:47.977Z - INFO - New target price: 1.36
+2025-03-05T11:20:47.977Z - INFO - New stop loss price: 1.62
+2025-03-05T11:20:51.072Z - INFO - 
+
+2025-03-05T11:20:51.072Z - INFO - --------------------------
+2025-03-05T11:20:51.072Z - INFO - Monitoring check #34:
+2025-03-05T11:20:51.072Z - INFO - Current back: 1.55
+2025-03-05T11:20:51.072Z - INFO - Current lay: 1.56
+2025-03-05T11:20:51.072Z - INFO - target price: 1.36
+2025-03-05T11:20:51.072Z - INFO - stop loss price: 1.62
+2025-03-05T11:20:51.072Z - INFO - Prices updated:
+2025-03-05T11:20:51.072Z - INFO - New target price: 1.35
+2025-03-05T11:20:51.073Z - INFO - New stop loss price: 1.61
+2025-03-05T11:20:54.497Z - INFO - 
+
+2025-03-05T11:20:54.497Z - INFO - --------------------------
+2025-03-05T11:20:54.497Z - INFO - Monitoring check #35:
+2025-03-05T11:20:54.497Z - INFO - Current back: 1.55
+2025-03-05T11:20:54.497Z - INFO - Current lay: 1.56
+2025-03-05T11:20:54.497Z - INFO - target price: 1.35
+2025-03-05T11:20:54.497Z - INFO - stop loss price: 1.61
+2025-03-05T11:20:57.877Z - INFO - 
+
+2025-03-05T11:20:57.877Z - INFO - --------------------------
+2025-03-05T11:20:57.877Z - INFO - Monitoring check #36:
+2025-03-05T11:20:57.877Z - INFO - Current back: 1.55
+2025-03-05T11:20:57.877Z - INFO - Current lay: 1.56
+2025-03-05T11:20:57.877Z - INFO - target price: 1.35
+2025-03-05T11:20:57.877Z - INFO - stop loss price: 1.61
+2025-03-05T11:21:01.318Z - INFO - 
+
+2025-03-05T11:21:01.318Z - INFO - --------------------------
+2025-03-05T11:21:01.318Z - INFO - Monitoring check #37:
+2025-03-05T11:21:01.318Z - INFO - Current back: 1.54
+2025-03-05T11:21:01.318Z - INFO - Current lay: 1.56
+2025-03-05T11:21:01.318Z - INFO - target price: 1.35
+2025-03-05T11:21:01.318Z - INFO - stop loss price: 1.61
+2025-03-05T11:21:05.010Z - INFO - 
+
+2025-03-05T11:21:05.010Z - INFO - --------------------------
+2025-03-05T11:21:05.010Z - INFO - Monitoring check #38:
+2025-03-05T11:21:05.010Z - INFO - Current back: 1.55
+2025-03-05T11:21:05.010Z - INFO - Current lay: 1.56
+2025-03-05T11:21:05.010Z - INFO - target price: 1.35
+2025-03-05T11:21:05.010Z - INFO - stop loss price: 1.61
+2025-03-05T11:21:08.083Z - INFO - 
+
+2025-03-05T11:21:08.083Z - INFO - --------------------------
+2025-03-05T11:21:08.083Z - INFO - Monitoring check #39:
+2025-03-05T11:21:08.083Z - INFO - Current back: 1.53
+2025-03-05T11:21:08.083Z - INFO - Current lay: 1.54
+2025-03-05T11:21:08.083Z - INFO - target price: 1.35
+2025-03-05T11:21:08.083Z - INFO - stop loss price: 1.61
+2025-03-05T11:21:08.083Z - INFO - Prices updated:
+2025-03-05T11:21:08.083Z - INFO - New target price: 1.33
+2025-03-05T11:21:08.083Z - INFO - New stop loss price: 1.59
+2025-03-05T11:21:11.502Z - INFO - 
+
+2025-03-05T11:21:11.502Z - INFO - --------------------------
+2025-03-05T11:21:11.502Z - INFO - Monitoring check #40:
+2025-03-05T11:21:11.502Z - INFO - Current back: 1.53
+2025-03-05T11:21:11.502Z - INFO - Current lay: 1.54
+2025-03-05T11:21:11.502Z - INFO - target price: 1.33
+2025-03-05T11:21:11.502Z - INFO - stop loss price: 1.59
+2025-03-05T11:21:14.964Z - INFO - 
+
+2025-03-05T11:21:14.965Z - INFO - --------------------------
+2025-03-05T11:21:14.965Z - INFO - Monitoring check #41:
+2025-03-05T11:21:14.965Z - INFO - Current back: 1.6
+2025-03-05T11:21:14.965Z - INFO - Current lay: 1.61
+2025-03-05T11:21:14.965Z - INFO - target price: 1.33
+2025-03-05T11:21:14.965Z - INFO - stop loss price: 1.59
+2025-03-05T11:21:14.965Z - INFO - Stop loss condition met: Placing lay bet at stop loss price.
+2025-03-05T11:21:14.965Z - INFO - SL Price 1.59 Hit with 1.61
+2025-03-05T11:21:14.965Z - INFO - LAY bet placed at 1.61
+2025-03-05T11:21:14.965Z - INFO - Exit condition met. Lay bet placed.

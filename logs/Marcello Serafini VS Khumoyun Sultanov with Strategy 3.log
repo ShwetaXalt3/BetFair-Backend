@@ -1,0 +1,98 @@
+2025-03-05T08:51:01.045Z - INFO - Starting market monitoring with initial values:
+2025-03-05T08:51:01.045Z - INFO - Back Bet Price: 1.11
+2025-03-05T08:51:01.046Z - INFO - Initial Lay Price: 1.12
+2025-03-05T08:51:01.046Z - INFO - Target Price: 0.91
+2025-03-05T08:51:01.046Z - INFO - Stop Loss Price: 1.62
+2025-03-05T08:51:03.717Z - INFO - Initial stream data: [object Object]
+2025-03-05T08:51:06.072Z - INFO - 
+
+2025-03-05T08:51:06.072Z - INFO - --------------------------
+2025-03-05T08:51:06.073Z - INFO - Monitoring check #1:
+2025-03-05T08:51:06.073Z - INFO - Current back: 1.11
+2025-03-05T08:51:06.073Z - INFO - Current lay: 1.12
+2025-03-05T08:51:06.073Z - INFO - target price: 0.91
+2025-03-05T08:51:06.073Z - INFO - stop loss price: 1.62
+2025-03-05T08:51:06.073Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T08:51:06.074Z - INFO - Lay condition met: Placing lay bet at target price.
+2025-03-05T08:51:06.074Z - INFO - Target price 0.91 hit successfully with 1.12
+2025-03-05T08:51:06.074Z - INFO - LAY bet placed at 1.12
+2025-03-05T08:51:06.075Z - INFO - Exit condition met. Lay bet placed.
+2025-03-05T08:58:20.345Z - INFO - Starting market monitoring with initial values:
+2025-03-05T08:58:20.345Z - INFO - Back Bet Price: 1.18
+2025-03-05T08:58:20.346Z - INFO - Initial Lay Price: 1.21
+2025-03-05T08:58:20.346Z - INFO - Target Price: 0.98
+2025-03-05T08:58:20.346Z - INFO - Stop Loss Price: 1.71
+2025-03-05T08:58:23.304Z - INFO - Initial stream data: [object Object]
+2025-03-05T08:58:25.752Z - INFO - 
+
+2025-03-05T08:58:25.752Z - INFO - --------------------------
+2025-03-05T08:58:25.752Z - INFO - Monitoring check #1:
+2025-03-05T08:58:25.753Z - INFO - Current back: 1.16
+2025-03-05T08:58:25.753Z - INFO - Current lay: 1.18
+2025-03-05T08:58:25.753Z - INFO - target price: 0.98
+2025-03-05T08:58:25.753Z - INFO - stop loss price: 1.71
+2025-03-05T08:58:25.754Z - INFO - Prices updated:
+2025-03-05T08:58:25.754Z - INFO - New target price: 0.98
+2025-03-05T08:58:25.754Z - INFO - New stop loss price: 1.71
+2025-03-05T08:58:25.754Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T08:58:25.754Z - INFO - Lay condition met: Placing lay bet at target price.
+2025-03-05T08:58:25.754Z - INFO - Target price 0.98 hit successfully with 1.18
+2025-03-05T08:58:25.754Z - INFO - LAY bet placed at 1.18
+2025-03-05T08:58:25.755Z - INFO - Exit condition met. Lay bet placed.
+2025-03-05T08:59:26.755Z - INFO - Starting market monitoring with initial values:
+2025-03-05T08:59:26.756Z - INFO - Back Bet Price: 1.15
+2025-03-05T08:59:26.756Z - INFO - Initial Lay Price: 1.17
+2025-03-05T08:59:26.756Z - INFO - Target Price: 0.95
+2025-03-05T08:59:26.756Z - INFO - Stop Loss Price: 1.67
+2025-03-05T08:59:29.421Z - INFO - Initial stream data: [object Object]
+2025-03-05T08:59:31.515Z - INFO - 
+
+2025-03-05T08:59:31.515Z - INFO - --------------------------
+2025-03-05T08:59:31.515Z - INFO - Monitoring check #1:
+2025-03-05T08:59:31.515Z - INFO - Current back: 1.15
+2025-03-05T08:59:31.515Z - INFO - Current lay: 1.17
+2025-03-05T08:59:31.515Z - INFO - target price: 0.95
+2025-03-05T08:59:31.515Z - INFO - stop loss price: 1.67
+2025-03-05T08:59:31.515Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T08:59:31.516Z - INFO - Lay condition met: Placing lay bet at target price.
+2025-03-05T08:59:31.516Z - INFO - Target price 0.95 hit successfully with 1.17
+2025-03-05T08:59:31.516Z - INFO - LAY bet placed at 1.17
+2025-03-05T08:59:31.516Z - INFO - Exit condition met. Lay bet placed.
+2025-03-05T09:00:09.977Z - INFO - Starting market monitoring with initial values:
+2025-03-05T09:00:09.978Z - INFO - Back Bet Price: 1.16
+2025-03-05T09:00:09.978Z - INFO - Initial Lay Price: 1.17
+2025-03-05T09:00:09.978Z - INFO - Target Price: 0.96
+2025-03-05T09:00:09.978Z - INFO - Stop Loss Price: 1.67
+2025-03-05T09:00:12.687Z - INFO - Initial stream data: [object Object]
+2025-03-05T09:00:15.056Z - INFO - 
+
+2025-03-05T09:00:15.056Z - INFO - --------------------------
+2025-03-05T09:00:15.056Z - INFO - Monitoring check #1:
+2025-03-05T09:00:15.056Z - INFO - Current back: 1.16
+2025-03-05T09:00:15.056Z - INFO - Current lay: 1.17
+2025-03-05T09:00:15.056Z - INFO - target price: 0.96
+2025-03-05T09:00:15.056Z - INFO - stop loss price: 1.67
+2025-03-05T09:00:15.056Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T09:00:15.057Z - INFO - Lay condition met: Placing lay bet at target price.
+2025-03-05T09:00:15.057Z - INFO - Target price 0.96 hit successfully with 1.17
+2025-03-05T09:00:15.057Z - INFO - LAY bet placed at 1.17
+2025-03-05T09:00:15.057Z - INFO - Exit condition met. Lay bet placed.
+2025-03-05T09:01:07.482Z - INFO - Starting market monitoring with initial values:
+2025-03-05T09:01:07.482Z - INFO - Back Bet Price: 1.13
+2025-03-05T09:01:07.482Z - INFO - Initial Lay Price: 1.14
+2025-03-05T09:01:07.483Z - INFO - Target Price: 0.93
+2025-03-05T09:01:07.483Z - INFO - Stop Loss Price: 1.64
+2025-03-05T09:01:10.156Z - INFO - Initial stream data: [object Object]
+2025-03-05T09:01:12.511Z - INFO - 
+
+2025-03-05T09:01:12.511Z - INFO - --------------------------
+2025-03-05T09:01:12.511Z - INFO - Monitoring check #1:
+2025-03-05T09:01:12.511Z - INFO - Current back: 1.13
+2025-03-05T09:01:12.511Z - INFO - Current lay: 1.15
+2025-03-05T09:01:12.512Z - INFO - target price: 0.93
+2025-03-05T09:01:12.512Z - INFO - stop loss price: 1.64
+2025-03-05T09:01:12.512Z - INFO - Lay price above back price. Resetting stop loss.
+2025-03-05T09:01:12.512Z - INFO - Lay condition met: Placing lay bet at target price.
+2025-03-05T09:01:12.512Z - INFO - Target price 0.93 hit successfully with 1.15
+2025-03-05T09:01:12.512Z - INFO - LAY bet placed at 1.15
+2025-03-05T09:01:12.512Z - INFO - Exit condition met. Lay bet placed.

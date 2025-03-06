@@ -61,7 +61,7 @@ const processAndStoreData = async (req, res) => {
     const tempLayBet = new TempBet({
       marketId: mId,
       selectionId: sId,
-      amount: null, // Initially null
+      amount: Lay_amount, // Initially null
       odds: Lp,
       side: 'LAY',
       status: 'UNMATCHED',
@@ -105,7 +105,7 @@ const processAndStoreData = async (req, res) => {
 // New function to complete the bet
 const completeBet = async (req, res) => {
   try {
-    const { marketId, selectionId, layStake, layPrice, exitReason } = req.body;
+    const { marketId, selectionId, layStake, layPrice} = req.body;
 
     // Find the temporary back and lay bets
     const tempBackBet = await TempBet.findOne({ 
@@ -120,9 +120,9 @@ const completeBet = async (req, res) => {
       side: 'LAY' 
     });
 
-    if (!tempBackBet || !tempLayBet) {
-      return res.status(404).json({ message: "Bet not found" });
-    }
+    // if (!tempBackBet || !tempLayBet) {
+    //   return res.status(404).json({ message: "Bet not found" });
+    // }
 
     // Calculate profit/loss
     const backAmount = tempBackBet.amount;

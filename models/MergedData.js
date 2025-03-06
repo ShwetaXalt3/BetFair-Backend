@@ -13,7 +13,8 @@ const mergedDataSchema =new mongoose.Schema({
     // Probability : {type : Number},
     market_id:{type: Number},
     date: {type: String},
-    Sport:{type: String}
+    Sport:{type: String},
+    betId : {type: Number}
 }
 )
 const MergedData = mongoose.model("MergeData",mergedDataSchema);

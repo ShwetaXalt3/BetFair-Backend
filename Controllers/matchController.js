@@ -37,7 +37,7 @@ const fetchMatch = async (req, res) => {
         filter: {
           eventTypeIds: [eventId],
           competitionIds: [competitionId],
-          // marketStartTime: { from: formattedMarketStartTime, to: formattedMarketEndTime },
+          marketStartTime: { from: formattedMarketStartTime, to: formattedMarketEndTime },
           marketTypeCodes: ['MATCH_ODDS'],
           inPlayOnly: "true",
           sort :"FIRST_TO_START"

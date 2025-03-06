@@ -223,7 +223,7 @@ async function fetchLiveOdds(sessionToken, marketId) {
                   }
                 }
                
-                logger.info("Processed odds data: "+  odds_data);
+                // logger.info("Processed odds data: "+  odds_data);
                 client.end();
                 resolve({ odds_data, market_status });
                 return;
@@ -362,10 +362,10 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
       timestamp: new Date().toISOString()
     };
     
-    logger.info("Bet tracking data: " + betTrackingData);
+    // logger.info("Bet tracking data: " + betTrackingData);
    
     var backResponse;
-    var statuss = "SUCCESS";
+    var statuss;
  
     // -------------------back bet try catch---------------
     try {
@@ -376,8 +376,7 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
         size: backStake,
         price: backBetPrice,
       };  
-      logger.info(" back bet placed at  " + backBetPrice);
- 
+      
       // Uncomment for real implementation
       // backResponse = await placeBettt(betData, sessionToken);
       backResponse = await backResponsefn(marketId, selectionId);
@@ -391,6 +390,8 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
       }
       else {
         logger.info("Back Bet placed Successfully!!");
+        logger.info(" back bet placed at  " + backBetPrice);
+
         
         // Update tracking data with back bet result
         betTrackingData.backBetId = backResponse.result.instructionReports[0].betId;
@@ -404,11 +405,6 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
           trackingData: betTrackingData
         });
         
-        // try {
-        //   const response = await axios.post('http://localhost:6060/api/Bhistory');
-        // } catch (error) {
-        // console.error('Error hitting API:', error.message);
-        // }
       }
     } catch (err) {
       logger.error("Error placing back bet " + err);
@@ -417,9 +413,13 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
     }
  
     // ------------------------------Start monitoring for lay bet in background---------------
+    
     if (statuss === "SUCCESS") {
       try {
-        // Properly await the lay monitoring
+        console.log("I am going in monitor market");
+        console.log("++++++++++++++++++++status", statuss);
+        // Properly await the lay 
+        
         const layResponse = await monitor_market(
           marketBookData,
           backBetPrice,
@@ -433,6 +433,9 @@ const processStrategy3 = async (sessionToken, marketId, amount, matchData) => {
           match
         );
          console.log("Layresponse from process Strategy++" , layResponse);
+        
+       
+
        
         if (layResponse && layResponse.success) {
           // Update tracking data with lay information
@@ -492,7 +495,7 @@ async function monitor_market(marketBookData, backBetPrice, layBetPrice, selecti
     let odds_data = streamResponse.odds_data;
     let market_status = streamResponse.market_status;
    
-    match.info("Initial stream data: " + odds_data);
+    // match.info("Initial stream data: " + odds_data);
    
     // Loop for monitoring market conditions
     let monitoring = true;
@@ -599,7 +602,7 @@ async function monitor_market(marketBookData, backBetPrice, layBetPrice, selecti
         }
        
         // Wait before next check
-        await new Promise(resolve => setTimeout(resolve, 10000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
        
       } catch (error) {
         match.error("Error during market monitoring iteration: " + error);
@@ -662,7 +665,8 @@ async function check_exit_conditions(
 ) {
   let exitReason = null;
   
-  if (current_lay_bet_price <= target_price) {
+   if (current_lay_bet_price <= target_price) {
+  // if(true){
     exitReason = "Target price reached";
     const layStake = layStakeCalculator(backStake, current_lay_bet_price, backBetPrice);
     match.info("Lay condition met: Placing lay bet at target price.");
@@ -689,16 +693,21 @@ async function check_exit_conditions(
     trackingData.exitConditionMet = true;
     trackingData.exitTime = new Date().toISOString();
     
-    parentPort.postMessage({
-      success: true, 
-      layResponse, 
-      layStake,
-      layPrice: current_lay_bet_price,
-      exitReason,
-      trackingData,
-      marketId,
-      selectionId
-    });
+    // parentPort.postMessage({
+    //   success: true, 
+    //   layResponse, 
+    //   layStake,
+    //   layPrice: current_lay_bet_price,
+    //   exitReason,
+    //   trackingData,
+    //   marketId,
+    //   selectionId,
+    //   backBetPrice,
+    //   backStake
+    // });
+    
+    
+   
  
     return { 
       success: true, 
@@ -738,16 +747,16 @@ async function check_exit_conditions(
     trackingData.exitConditionMet = true;
     trackingData.exitTime = new Date().toISOString();
     
-    parentPort.postMessage({
-      success: true, 
-      layResponse, 
-      layStake,
-      layPrice: current_lay_bet_price,
-      exitReason,
-      trackingData,
-      marketId,
-      selectionId
-    });
+    // parentPort.postMessage({
+    //   success: true, 
+    //   layResponse, 
+    //   layStake,
+    //   layPrice: current_lay_bet_price,
+    //   exitReason,
+    //   trackingData,
+    //   marketId,
+    //   selectionId
+    // });
     
     return { 
       success: true, 

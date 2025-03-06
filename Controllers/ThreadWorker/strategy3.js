@@ -1,7 +1,7 @@
 const { Worker } = require('worker_threads');
 const path = require('path');
 const AllData = require('../../services/AllData');
-
+const { processAndStoreBackBet, processAndStoreLayBet } = require('../../services/dataService');
  
 const { setLogger } = require('../../logger');
 const logger = setLogger("Strategy_3", "logs/Betting_data.log");
@@ -36,6 +36,7 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                 if (result.success) {
                     // Process back response
                     if (result.backResponse && !workerState.backResolved) {
+                        const backBetStorage = await processAndStoreBackBet(sessionToken, result);
                         logger.info("Received back bet response from worker");
                         AllData.backplaceorder(result.backResponse);
 
@@ -59,25 +60,15 @@ const fetchStrategy3 = async (sessionToken, marketId, amount) => {
                     
                   
                     if (result.layResponse && !workerState.layResolved) {
+                        const layBetStorage = await processAndStoreLayBet(result);
                         logger.info("Received lay bet response from worker");
                         AllData.layplaceorder(result.layResponse);
                         
                         AllData.data.layAmount = result.layStake;
 
-                        //----------Complete bet----------
-
-                        try {
-                            await axios.post('http://localhost:6060/completeBet', {
-                                marketId: result.marketId,
-                                selectionId: result.selectionId,
-                                layStake: result.layStake,
-                                layPrice: result.layPrice,
-                                exitReason: result.exitReason
-                            });
-                        } catch (error) {
-                            logger.error("Error calling completeBet API:", error);
-                        }
+                     
                         
+                     
                         
                        
                         workerState.layResolved = true;
